@@ -1,0 +1,25 @@
+<!-- find-include-buttons-ccpbm Juan Manuel Rodríguez -->
+<!--
+<nav class="navbar navbar-default">
+  <ul class="nav navbar-nav">
+    <li><a class="blue" style="color:#4a6159; font-size:100%; text-decoration:none;"  href="&server_f?func=find-b-0&local_base=CCPBM" class="blue">B&uacute;squeda b&aacute;sica</a></li>
+    <li><a class="blue" style="color:#4a6159; font-size:100%; text-decoration:none;" href="&server_f?func=find-d-0&local_base=CCPBM" class="blue">B&uacute;squeda avanzada</a></li>
+    <li><a class="blue" style="color:#4a6159; font-size:100%; text-decoration:none;" href="&server_f?func=scan-list&local_base=CCPBM" class="blue">&Iacute;ndices</a></li>
+    <li><a class="blue" style="color:#4a6159; font-size:100%; text-decoration:none;" href="&server_f?func=find-r&local_base=CCPBM" class="blue">Colecciones</a></li>
+    <li><a class="blue" style="color:#4a6159; font-size:100%; text-decoration:none;" href="&server_f?func=short&local_base=CCPBM" class="blue">Lista de resultados</a></li>
+  </ul>
+</nav>-->
+
+<div class="row">
+		<div class="col-md-12">
+			<nav class="navbar navbar-default">
+			  <ul class="nav navbar-nav">
+			    <li><a class="blue" style="color:#4a6159; font-size:100%; text-decoration:none;"  href="&server_f?func=find-b-0&local_base=CCPBM" class="blue">B&uacute;squeda b&aacute;sica</a></li>
+			    <li><a class="blue" style="color:#4a6159; font-size:100%; text-decoration:none;" href="&server_f?func=find-d-0&local_base=CCPBM" class="blue">B&uacute;squeda avanzada</a></li>
+			    <li><a class="blue" style="color:#4a6159; font-size:100%; text-decoration:none;" href="&server_f?func=scan-list&local_base=CCPBM" class="blue">&Iacute;ndices</a></li>
+			    <li><a class="blue" style="color:#4a6159; font-size:100%; text-decoration:none;" href="&server_f?func=find-r&local_base=CCPBM" class="blue">Colecciones</a></li>
+			    <li><a class="blue" style="color:#4a6159; font-size:100%; text-decoration:none;" href="&server_f?func=short&local_base=CCPBM" class="blue">Lista de resultados</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>

@@ -1,0 +1,33 @@
+<!-- filename: find-include-filter-ccpbm Juan Manuel Rodríguez -->
+<div class="row">
+      <div class="col-md-4">
+        <div>
+          <label>Año o período de edición:</label>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="fromYear" class="control-label col-md-2">Del año:</label>
+          <input class="form-control" id="fromYear">  
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="toYear" class="control-label col-md-2">Al año:</label>
+          <input class="form-control" id="toYear">
+        </div>
+      </div>
+      <!--
+      <div class="form-group">
+          <div class="col-md-4">
+            <label for="fromYear" class="control-label col-md-2">Del año:</label>
+            <input class="form-control" id="fromYear">
+          </div>
+          <div class="col-md-4">
+            <label for="toYear" class="control-label col-md-2">Al año:</label>
+            <input class="form-control" id="toYear">
+          </div>
+      </div>
+      -->
+</div>
+

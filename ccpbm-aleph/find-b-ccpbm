@@ -1,0 +1,70 @@
+<!-- filename: find-b-ccpbm Juan Manuel Rodriguez -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>&f-base - Búsqueda básica</title>
+<include>meta-tags
+</head>
+<body>
+<div class="container">
+<include>head-1
+
+	<form class="form-inline" role="form">
+		<div class="row">
+			<div class="col-md-12">
+				<h3> Búsqueda básica</h3>
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label" for="inputText">Escribir palabra(s)</label>
+			<input type="text" class="form-control" id="inputText">
+		</div>
+		<button class="btn btn-primary">Aceptar</button>
+		<button class="btn btn-primary">Borrar</button>
+	</form>
+
+	<form class="form-horizontal" role="form">
+		<div class="row">
+			<div class="col-md-12">
+				<div><h3>Delimitadores de búsqueda</h3></div>
+			</div>
+			<div class="form-group">
+				<label for="sel1" class="control-label col-md-2">Campo de búsqueda</label>
+				<div class="col-md-4">
+					<include>find-code-include
+					<!--
+					<select class="form-control" id="sel1">
+				    <option>1</option>
+				    <option>2</option>
+				    <option>3</option>
+				    <option>4</option>
+			  	</select>
+			  	-->
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="myradio" class="control-label col-md-2">Palabras adyacentes</label>
+				<div class="col-md-4">
+					<label class="radio-inline" id="myradio">
+						<input type="radio" name="optradio">No
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="optradio">Sí
+					</label>
+				</div>
+			</div>
+		</div>
+
+		<include>find-include-filter
+	</form>
+
+	<include>copyrights
+</div> <!-- Fin del div container -->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

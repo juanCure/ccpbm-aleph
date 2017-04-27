@@ -1,0 +1,179 @@
+<!-- filename: find-b Juan Manuel Rodríguez -->
+<!DOCTYPE html>
+<html>
+<head>
+<!--<include>meta-tags-->
+<!-- Esto debe ir el archivo meta-tags -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Bootstrap -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<title>Búsqueda básica</title>
+
+<style type="text/css">
+	.home-buttons a {
+		float: left;
+	}
+</style>
+</head>
+
+<body>
+<div class="container">
+	<!--<include>head-1	-->
+	<!-- Lo siguiente debe ir el archivo head-1-->
+	<div class="row">
+		<div class="col-md-12">
+			<div class="header">
+				<img width="100%" src="../images/bndm-cabeza.jpg" usemap="#Map"/>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-3">
+			<div class="home-buttons">
+				 <a href="&server_f?func=login&local_base=BNDM" class="blue" title="Inicio"><img src="http://catalogo.iib.unam.mx/exlibris/aleph/u23_1/alephe/www_f_spa/icon/bndm-menup0.jpg" /></a>
+				 <a href="&server_f?func=find-a&local_base=BNDM" class="blue" title="Acerca de la BNDM"><img src="http://catalogo.iib.unam.mx/exlibris/aleph/u23_1/alephe/www_f_spa/icon/bndm-menup1.jpg" /></a>
+				 <a href="&server_f?func=login&local_base=BNDM" class="blue" title="Otras bases de datos"><img src="http://catalogo.iib.unam.mx/exlibris/aleph/u23_1/alephe/www_f_spa/icon/bndm-menup2.jpg" /></a>
+				 <a href="&server_f?func=find-a&local_base=BNDM" class="blue" title="Ir a la HNDM"><img src="http://catalogo.iib.unam.mx/exlibris/aleph/u23_1/alephe/www_f_spa/icon/bndm-menup3.jpg" /></a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Lo siguiente debe ir el archivo find-include-buttons -->
+
+	<div class="row">
+		<div class="col-md-12">
+			<nav class="navbar navbar-default">
+			  <ul class="nav navbar-nav">
+			    <li><a class="blue" style="color:#4a6159; font-size:100%; text-decoration:none;"  href="&server_f?func=find-b-0&local_base=CCPBM" class="blue">B&uacute;squeda b&aacute;sica</a></li>
+			    <li><a class="blue" style="color:#4a6159; font-size:100%; text-decoration:none;" href="&server_f?func=find-d-0&local_base=CCPBM" class="blue">B&uacute;squeda avanzada</a></li>
+			    <li><a class="blue" style="color:#4a6159; font-size:100%; text-decoration:none;" href="&server_f?func=scan-list&local_base=CCPBM" class="blue">&Iacute;ndices</a></li>
+			    <li><a class="blue" style="color:#4a6159; font-size:100%; text-decoration:none;" href="&server_f?func=find-r&local_base=CCPBM" class="blue">Colecciones</a></li>
+			    <li><a class="blue" style="color:#4a6159; font-size:100%; text-decoration:none;" href="&server_f?func=short&local_base=CCPBM" class="blue">Lista de resultados</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+
+	<!-- Este es el contenido del archivo find-b -->
+	<!-- Opción 1 -->
+	<!--
+	<form class="form-horizontal">
+		<div class="row">
+				<div class="col-md-12">
+					<div><p>Búsqueda básica</p></div>
+				</div>
+				<div class="form-group">
+					<label for="inputText" class="control-label col-md-2">Escribir palabra(s)</label>
+					<div class="col-md-4">
+						<input class="form-control" id="inputText">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<div class="col-xs-offset-2 col-xs-10">
+						<button type="submit" class="btn btn-primary">Aceptar</button>
+						<button type="submit" class="btn btn-primary">Limpiar</button>
+					</div>
+	      </div>
+		</div>
+	</form>
+	-->
+	<form class="form-inline" role="form">
+		<div class="row">
+			<div class="col-md-12">
+				<h3> Búsqueda básica</h3>
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label" for="inputText">Escribir palabra(s)</label>
+			<input type="text" class="form-control" id="inputText">
+		</div>
+		<button class="btn btn-primary">Aceptar</button>
+		<button class="btn btn-primary">Borrar</button>
+	</form>
+
+	<form class="form-horizontal" role="form">
+		<div class="row">
+			<div class="col-md-12">
+				<div><h3>Delimitadores de búsqueda</h3></div>
+			</div>
+			<div class="form-group">
+				<label for="sel1" class="control-label col-md-2">Campo de búsqueda</label>
+				<div class="col-md-4">
+					<select class="form-control" id="sel1">
+				    <option>1</option>
+				    <option>2</option>
+				    <option>3</option>
+				    <option>4</option>
+			  	</select>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="myradio" class="control-label col-md-2">Palabras adyacentes</label>
+				<div class="col-md-4">
+					<label class="radio-inline" id="myradio">
+						<input type="radio" name="optradio">No
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="optradio">Sí
+					</label>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-4">
+				<div>
+					<label>Año o período de edición:</label>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="fromYear" class="control-label col-md-2">Del año:</label>
+					<input class="form-control" id="fromYear">	
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="toYear" class="control-label col-md-2">Al año:</label>
+					<input class="form-control" id="toYear">
+				</div>
+			</div>
+			<!--
+			<div class="form-group">
+					<div class="col-md-4">
+						<label for="fromYear" class="control-label col-md-2">Del año:</label>
+						<input class="form-control" id="fromYear">
+					</div>
+					<div class="col-md-4">
+						<label for="toYear" class="control-label col-md-2">Al año:</label>
+						<input class="form-control" id="toYear">
+					</div>
+			</div>
+			-->
+		</div>
+	</form>
+
+	<!--<include>copyrights-->
+	<!-- Esto debe ir el archivo copyrights --> 
+<div class="row text-center">
+  <div class="col-md-12">
+  	<p>Hecho en México, Universidad Nacional Autónoma de México (UNAM), todos los derechos reservados, 2015. Esta página puede ser reproducida con fines no lucrativos, siempre y cuando no se mutile, se cite la fuente completa y su dirección electrónica. De otra forma, se requiere permiso previo y por escrito de la institución. &copy;</p>
+  	<p><a style="color:#4a6159; font-size:80%; text-decoration:none;" href="http://catalogo.iib.unam.mx:80/F/S582U84X638TKNCC4L4M17PSDND53T8H6V1QKXM8PRJTU1JAKY-46937?func=find-f&local_base=BNDM" class="blue">Créditos</a></p>
+  </div>
+</div>
+</div> <!-- Aquí termina el div container -->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

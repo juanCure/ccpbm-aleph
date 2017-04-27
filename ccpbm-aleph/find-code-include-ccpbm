@@ -1,0 +1,9 @@
+<!-- filename: find-code-include-ccpbm  Juan Manuel Rodríguez-->    
+    <select class="form-control" id="sel1" name=find_code>
+     <option value="WRD">Todos los campos</option> 
+     <option value="WTI">Título</option> 
+     <option value="WAU">Autor</option> 
+     <option value="WSU">Tema</option> 
+     <option value="TXT">Contenidos</option>
+    </select>
+
