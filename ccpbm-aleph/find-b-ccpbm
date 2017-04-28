@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
 <title>&f-base - Búsqueda básica</title>
 <include>meta-tags
 </head>
@@ -9,56 +10,52 @@
 <div class="container">
 <include>head-1
 
-	<form class="form-inline" role="form">
-		<div class="row">
-			<div class="col-md-12">
-				<h3> Búsqueda básica</h3>
+<form method=get name=form1 action="&server_f" role="form">
+	<input type="hidden" name="func" value="find-b">
+	<div class="row">
+		<div class="col-md-12">
+			<h3> Búsqueda básica</h3>
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="control-label" for="inputText">Escribir palabra(s)</label>
+		<input name="request" value="$0100" type="text" class="form-control" id="inputText">
+	</div>
+	<input type="submit" alt="Go" class="btn btn-primary" value="Aceptar">
+	<a href="&server_f?func=find-b-0&clear_level=2" class="btn btn-primary">Borrar</a>
+	<!--
+	<button class="btn btn-primary">Aceptar</button>
+	<button class="btn btn-primary">Borrar</button>
+	-->
+	<div class="row">
+		<div class="col-md-12">
+			<div>
+				<h3>Delimitadores de búsqueda</h3>
 			</div>
 		</div>
 		<div class="form-group">
-			<label class="control-label" for="inputText">Escribir palabra(s)</label>
-			<input type="text" class="form-control" id="inputText">
+			<label for="sel1" class="control-label col-md-2">Campo de búsqueda</label>
+			<div class="col-md-4">
+<include>find-code-include
+			</div>
 		</div>
-		<button class="btn btn-primary">Aceptar</button>
-		<button class="btn btn-primary">Borrar</button>
-	</form>
-
-	<form class="form-horizontal" role="form">
-		<div class="row">
-			<div class="col-md-12">
-				<div><h3>Delimitadores de búsqueda</h3></div>
-			</div>
-			<div class="form-group">
-				<label for="sel1" class="control-label col-md-2">Campo de búsqueda</label>
-				<div class="col-md-4">
-					<include>find-code-include
-					<!--
-					<select class="form-control" id="sel1">
-				    <option>1</option>
-				    <option>2</option>
-				    <option>3</option>
-				    <option>4</option>
-			  	</select>
-			  	-->
-				</div>
-			</div>
-			<div class="form-group">
-				<label for="myradio" class="control-label col-md-2">Palabras adyacentes</label>
+		<div class="form-group">
+			<label for="myradio" class="control-label col-md-2">Palabras adyacentes</label>
 				<div class="col-md-4">
 					<label class="radio-inline" id="myradio">
-						<input type="radio" name="optradio">No
+						<input type="radio" name="adjacent" value="N">No
 					</label>
 					<label class="radio-inline">
-						<input type="radio" name="optradio">Sí
+						<input type="radio" name="adjacent" value="Y">Sí
 					</label>
 				</div>
-			</div>
 		</div>
+	</div>
 
-		<include>find-include-filter
-	</form>
+<include>find-include-filter
+</form>
 
-	<include>copyrights
+<include>copyrights
 </div> <!-- Fin del div container -->
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -66,5 +63,18 @@
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+        var href = document.location.href;
+        console.log("this is href: ", href);
+        var lastPathSegment = href.substr(href.lastIndexOf('/') + 1);
+        var matches = /func=([^&#=]*)/.exec(href);
+        var param1 = matches[1];
+
+        var image_header = document.getElementById("image_header");
+        console.log("src of image_header: ", image_header.getAttribute("src"));
+        image_header.setAttribute("src", "&icon_path/" + "bndm-cabeza-" + param1 + ".jpg");
+
+</script>
+
 </body>
 </html>
