@@ -1,0 +1,12 @@
+<!-- find-include-buttons-ccpbm Juan Manuel Rodríguez -->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+ <tr class="topbar" height="65" valign="middle" align="center" >
+    <td width="15%" align="center" ><a class="blue" style="color:#4a6159; font-size:100%; text-decoration:none;"  href="&server_f?func=find-b-0&local_base=CCPBM" class="blue">B&uacute;squeda b&aacute;sica</a></td>
+    <td width="15%" align="center" ><a class="blue" style="color:#4a6159; font-size:100%; text-decoration:none;" href="&server_f?func=find-d-0&local_base=BNDM" class="blue">B&uacute;squeda avanzada</a></td>
+    <td width="10%" align="center" ><a class="blue" style="color:#4a6159; font-size:100%; text-decoration:none;" href="&server_f?func=scan-list&local_base=BNDM" class="blue">&Iacute;ndices</a></td>
+    <td width="10%" align="center" ><a class="blue" style="color:#4a6159; font-size:100%; text-decoration:none;" href="&server_f?func=find-r&local_base=BNDM" class="blue">Colecciones</a></td>
+    <td width="15%" align="center" ><a class="blue" style="color:#4a6159; font-size:100%; text-decoration:none;" href="&server_f?func=short&local_base=BNDM" class="blue">Lista de resultados</a></td>
+    <td width="15%" align="center" ><a class="blue" style="color:#4a6159; font-size:100%; text-decoration:none;" href="&server_f?func=history&local_base=BNDM" class="blue">B&uacute;squedas anteriores</a></td>
+    <td width="15%" align="center" ><a class="blue" style="color:#4a6159; font-size:100%; text-decoration:none;" href="&server_f?func=myshelf-short&local_base=BNDM" class="blue">Mi bibliograf&iacute;a</a></td>
+ </tr>
+</table>

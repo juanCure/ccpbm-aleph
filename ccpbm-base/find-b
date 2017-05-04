@@ -1,0 +1,47 @@
+<!-- filename: login-ccpbm Juan Manuel Rodríguez -->
+<!DOCTYPE html>
+<html>
+<head>
+<!--<include>meta-tags-->
+<!-- Esto debe ir el archivo meta-tags -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Bootstrap -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<title>Búsqueda básica</title>
+
+</head>
+
+<body>
+<div id="container">
+	<!--<include>head-1	-->
+	<!-- Lo siguiente debe ir el archivo head-1-->
+
+	<!-- Lo siguiente debe ir el archivo find-include-buttons -->
+
+
+	<div class="row">
+		<div class="col-md-12">
+			<form method=post 
+      name="form1"
+      action="&server_f">
+
+			</form>
+		</div>
+	</div>
+
+	<!--<include>copyrights-->
+	<!-- Esto debe ir el archivo copyrights --> 
+</div> <!-- Aquí termina el div container -->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<script language="Javascript">
+<!--
+  function submit_form1 (val)
+  {
+    document.form1.submit_action.value=val;
+    document.form1.submit();
+  }
+// -->
+</script>

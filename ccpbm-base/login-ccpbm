@@ -1,0 +1,46 @@
+<!-- filename: login-ccpbm Juan Manuel Rodríguez -->
+<html>
+<head>
+<title>CCPBM - Entrar</title>
+<include>meta-tags
+</head>
+<body topmargin="0" onload="window.document.form1.reset(); window.document.form1.bor_id.focus();">
+<script language="Javascript">
+<!--
+//function setCookie()
+//{
+//   var expire= new Date();
+//   expire.setTime(expire.getTime() + 1000*60*30);
+//   document.cookie = "SESSION_ID = $SESS" +
+//                     "; expires = " +
+//                     expire.toGMTString() +
+//                     "; path = /" 
+//}
+// -->
+</script>
+<include>head-1
+<br>
+<form method=post 
+      name="form1"
+      action="&server_f">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align=center>
+  <tr>
+    <td align="center" valign="middle"><a href="&server_f?func=find-b&find_code=WBA&request=RSM&adjacent=N&local_base=BNDM"><img src="&icon_path/btn_impresmex.jpg" width="213" height="213" alt="Impresos Méxicanos"/></a></td>  
+    <td align="center" valign="middle"><a href="&server_f?func=find-b&find_code=WBA&request=RLAF&adjacent=N&local_base=BNDM"><img src="&icon_path/btn_lafragua.jpg" width="213" height="213" alt="Colecci&oacute;n Lafragua" /></td>
+    <td align="center" valign="middle"><a href="&server_f?func=find-b&find_code=WBA&request=ABN&adjacent=N&local_base=BNDM"><img src="&icon_path/btn_archhistorico.jpg" width="213" height="213" alt="Archivo Biblioteca Nacional" /></a></td>
+    <td align="center" valign="middle"><a href="&server_f?func=find-b&find_code=WBA&request=ENP&adjacent=N&local_base=BNDM"><img src="&icon_path/btn_enp.jpg" width="213" height="213" alt="Colección ENP"/></a> </td>
+  </tr>
+  <tr><td>&nbsp;</td><td></td><td></td><td></td></tr>
+  <tr>
+    <td align="center" valign="middle"><a href="&server_f?func=find-b&find_code=WBA&request=MS&adjacent=N&local_base=BNDM"><img src="&icon_path/btn_manus.jpg" width="213" height="213" alt="Manuscritos" /></a></td>
+    <td align="center" valign="middle"><a href="&server_f?func=find-b&find_code=WBA&request=RFO&adjacent=N&local_base=BNDM"><img src="&icon_path/btn_fondorigen.jpg" width="213" height="213" alt="Fondo de Origen" /></a></td>
+    <td align="center" valign="middle"><a href="&server_f?func=find-b&find_code=WBA&request=A&adjacent=N&local_base=BNDM"><img src="&icon_path/btn_archivos.jpg" width="213" height="213" alt="Archivos" /></a></td>
+    <td align="center" valign="middle"><a href="&server_f?func=find-b&find_code=WBA&request=ICON&adjacent=N&local_base=BNDM"><img src="&icon_path/btn_iconoteca.jpg" width="213" height="213" alt="Iconoteca" /></a></td>
+  </tr>
+</table>
+</form>
+<include>copyrights
+</body>
+</html>
+
+

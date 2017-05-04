@@ -1,0 +1,165 @@
+<script language="Javascript">
+<!--
+  function open_window (loc)
+  {
+    self.name="main";
+    if ((navigator.appVersion.indexOf("MSIE 5.0") != -1) && (navigator.appName.indexOf("Explorer") != -1)){
+   var w = window.open ("","win1","height=500,width=500,scrollbars,resizable");
+     w.document.write("<html>\n");
+     w.document.write('<body onLoad="window.location.href=');
+     w.document.write("'" + loc + "';\n"); 
+     w.document.write('"'); 
+     w.document.write("</body>\n");
+     w.document.write("</html>\n");
+     w.document.close();
+    } else {
+    var w = window.open (loc,"win1","height=500,width=500,scrollbars,resizable");
+    }
+    w.focus();
+  }
+
+
+  function open_window2 (loc)
+  {
+    self.name="main";
+    if ((navigator.appVersion.indexOf("MSIE 5.0") != -1) && (navigator.appName.indexOf("Explorer") != -1)){
+
+    var w = window.open ("",
+                         "win1",
+                         "height=100,width=500,scrollbars,resizable"
+                         );
+     w.document.write("<html>\n");
+     w.document.write('<body onLoad="window.location.href=');
+     w.document.write("'" + loc + "';\n");
+     w.document.write('"');
+     w.document.write("</body>\n");
+     w.document.write("</html>\n");
+     w.document.close();
+    } else {
+    var w = window.open (loc,
+                         "win1",
+                         "height=100,width=500,scrollbars,resizable"
+                         );
+    }
+     w.focus();
+  }
+
+
+  function open_window3 (loc)
+  {
+    self.name="main";
+    if ((navigator.appVersion.indexOf("MSIE 5.0") != -1) && (navigator.appName.indexOf("Explorer") != -1)){
+
+    var w = window.open ("",
+                         "win1",
+                         "height=400,width=450,scrollbars,resizable,top=200"
+                         );
+     w.document.write("<html>\n");
+     w.document.write('<body onLoad="window.location.href=');
+     w.document.write("'" + loc + "';\n");
+     w.document.write('"');
+     w.document.write("</body>\n");
+     w.document.write("</html>\n");
+     w.document.close();
+    } else {
+    var w = window.open (loc,
+                         "win1",
+                         "height=400,width=450,scrollbars,resizable,top=200"
+                         );
+    }
+     w.focus();
+  }
+
+
+  function open_window4 (loc)
+  {
+    self.name="main";
+    if ((navigator.appVersion.indexOf("MSIE 5.0") != -1) && (navigator.appName.indexOf("Explorer") != -1)){
+
+    var w = window.open ("",
+                         "win1",
+                         "height=150,width=450,scrollbars,resizable,top=200"
+                         );
+     w.document.write("<html>\n");
+     w.document.write('<body onLoad="window.location.href=');
+     w.document.write("'" + loc + "';\n");
+     w.document.write('"');
+     w.document.write("</body>\n");
+     w.document.write("</html>\n");
+     w.document.close();
+    } else {
+    var w = window.open (loc,
+                         "win1",
+                         "height=150,width=450,scrollbars,resizable,top=200"
+                         );
+    }
+     w.focus();
+  }
+
+
+  function open_window_ext (loc)
+  {
+    self.name="main";
+    if ((navigator.appVersion.indexOf("MSIE 5.0") != -1) && (navigator.appName.indexOf("Explorer") != -1)){
+    var w = window.open ("","win2","height=500,width=500,scrollbars,resizable,toolbar,status,menubar");
+     w.document.write("<html>\n");
+     w.document.write('<body onLoad="window.location.href=');
+     w.document.write("'" + loc + "';\n");
+     w.document.write('"');
+     w.document.write("</body>\n");
+     w.document.write("</html>\n");
+     w.document.close();
+    } else {
+    var w = window.open (loc,"win2","height=500,width=500,scrollbars,resizable,toolbar,status,menubar");
+    }
+    w.focus();
+  }
+
+  function set_iframe_location(url,id){
+    eval('document.all.' + id).src = url;
+  }
+
+  function open_window_confirm (loc,frame)
+  {
+    self.name=frame; 
+    if ((navigator.appVersion.indexOf("MSIE 5.0") != -1) && (navigator.appName.indexOf("Explorer") != -1)){
+   var w = window.open ("","win1","height=220,width=450,scrollbars,resizable");
+     w.document.write("<html>\n");
+     w.document.write('<body onLoad="window.location.href=');
+     w.document.write("'" + loc + "';\n");
+     w.document.write('"');
+     w.document.write("</body>\n");
+     w.document.write("</html>\n");
+     w.document.close();
+    } else {
+    var w = window.open (loc,"win1","height=220,width=450,scrollbars,resizable");
+    }
+    w.focus();
+  }
+
+  function delete_win1 ()
+  {
+    var w = window.open ("","win1","height=220,width=450,scrollbars,resizable");
+    w.close(); 
+  }
+
+  function open_window_ill (loc)
+  {
+    if ((navigator.appVersion.indexOf("MSIE 5.0") != -1) && (navigator.appName.indexOf("Explorer") != -1)){
+  var w = window.open ("","win1","height=500,width=500,scrollbars,resizable");
+     w.document.write("<html>\n");
+     w.document.write('<body onLoad="window.location.href=');
+     w.document.write("'" + loc + "';\n");
+     w.document.write('"');
+     w.document.write("</body>\n");
+     w.document.write("</html>\n");
+     w.document.close();
+    } else {
+    var w = window.open (loc,"win1","height=500,width=500,scrollbars,resizable");
+    }
+    w.focus();
+  }
+
+// -->
+</script>
+

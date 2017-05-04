@@ -1,0 +1,8 @@
+<!-- filename: short-b-body-separator -->
+ <tr>
+  <td><br></td>
+  <td><br></td>
+  <td colspan=2>
+   <hr>
+  </td>
+ </tr>

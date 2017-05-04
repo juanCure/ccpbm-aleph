@@ -1,0 +1,265 @@
+
+/* The font-family defines the preferred font for ALEPH WEB interface.
+   The system checks the fonts installed on the user's PC against the
+   the definitions, and uses the first match found. 
+   HOWEVER,
+   Note that font definitions in the aleph.css file are NOT used if
+   the user's browser has been set up to ignore font styles.
+   In MS Internet Explorer this is set up under Internet options ->
+   Accessibility -> "Ignore font styles specified on Web pages".
+   In Netscape this is set up under Edit -> Preferences -> Fonts ->
+   "Use my default fonts overriding document specified font".
+   NOTE! fonts differ from each other in the characters that are 
+   included, and in performance, usually in direct proportion; i.e.
+   fonts that include large range are heavy load on PC. Therefore,
+   when defining your fonts, take into account the characters in your 
+   database. 
+   NOTE: Aug. 21, 2001. Ex Libris has found that Arial Unicode MS has
+   the largest range, but creates performance problems on PC operating
+   under NT, with IE 5.5 and 6.0 
+   Comentario Yuri..  el color de fondo y letra estan definidos en el Body .*/
+
+body
+{
+  background-color:#f1f2ef;
+  font-size:100%;
+  font-family:Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+  color:#4a6159;
+  text-decoration:none;
+  width:1000px;
+  margin: 0 auto;
+}
+hr 
+{
+  width:1000;
+  color:# ec6c2d;
+  background-color:#ec6c2d;
+  height:5px;
+}
+.title
+{
+  text-align:left;
+  font-size:120%;
+  font-family:Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+  font-weight:bold;
+  color:#4a6159;
+}
+.topbar
+{
+  font-family:Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+  font-size:100%;
+  font-weight:bold;
+  color:#4a6159;
+  background-image:url(/exlibris/aleph/u23_1/alephe/www_f_spa/icon/bndm-menu.jpg); 
+  background-color:#dee1d9; 
+}
+.middlebar
+{
+  font-family:Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+  font-size:90%;
+  font-weight:bold;
+  color:#4a6159;
+  background-color:#dee1d9;
+}
+.bottombar
+{
+  font-family:Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+  font-size:90%;
+  font-weight:bold;
+  color:white;
+  background-color:#ec6c2d;
+
+.feedbackbar
+{
+  font-size:100%;
+  font-family:Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+  font-weight:bold;
+  color:#4F7400;
+  background-color:#ec6c2d;  
+}
+.bar
+{
+  font-size:100%;
+  font-family:Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+  font-weight:bold;
+  color:#330c21;;
+  background-color:f1ebe8;
+}
+.indent1
+{
+  font-family:Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+  margin-left:5%;
+}
+.copyright
+{
+  font-size:30%;
+  font-family:Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+  color:#ec6c2d;
+  text-align:center;
+  background-color:#939c81;
+}
+.text1
+{
+  font-size:80%;
+  font-family:Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+  font-weight:normal;
+  color:#4a6159;
+}
+.text2
+{
+  font-size:120%;
+  font-family:Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+  font-weight:bold;
+  color:red;
+}
+.text3
+{
+  font-size:100%;
+  font-family:Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+  font-weight:bold;
+  color:#4a6159;
+}
+#small
+{
+  font-size:80%;
+}
+#italics
+{
+  font-style: italic;
+}
+.text9
+{
+  font-size:100%;
+  font-family:Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+  font-weight:normal;
+  color:#4a6159;
+}
+#italics
+{
+  font-style: italic;
+}
+.tr1
+{
+  font-size:100%;
+  font-family:Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+  font-weight:normal;
+  color:#4a6159;
+  background-color:#B5CBE7;
+}
+#bold
+{  
+  font-weight:bold;
+}
+.campus
+{
+  font-size:100%;
+  font-family:Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+  font-weight:normal;
+  color:#FFFFFF;
+  background-color:#939c81;
+}
+
+.campus_line
+{
+  font-size:100%;
+  font-family:Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+  font-weight:normal;
+  color:#000000;
+  background-color:#939c81;
+}
+#yellow
+{
+  background-color:#FFCC00;
+}
+
+.td1
+{
+  font-size:80%;
+  font-family:Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+  font-weight:normal;
+  color:#4a6159;
+  background-color:#4a6159;
+}
+#bold
+{  
+  font-weight:bold;
+}
+#centered
+{
+  text-align: center;
+}
+#right
+{
+  text-align: right;
+}
+.td2
+{
+  font-size:100%;
+  font-family:Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+  font-weight:bold;
+  color:#4a6159;
+  background-color:#4a6159;
+}
+#small
+{
+  font-size:80%;
+}
+a:link
+{
+  color:#4a6159;
+  font-family:Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+}
+a:visited
+{
+  color:#ec6c2d;
+  font-family:Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+  text-decoration: none;
+}
+a:active
+{
+  color:#ec6c2d;
+  font-family:Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+}
+a.blue:link
+{
+  font-size:100%;
+  font-family:Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+  font-weight:bold;
+  color:#4a6159;
+  text-align:center;
+  text-decoration: none;
+}
+a.blue:visited
+{
+  font-size:100%;
+  font-family:Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+  font-weight:bold;
+  color:#ec6c2d;
+  text-align:center;
+  text-decoration: none;
+}
+a.blue:hover
+{
+  color:#ec6c2d;
+}
+.d-topbar
+{
+  font-weight:bold;
+  color:#4a6159;
+  background-color:#dee1d9;
+}
+.d-middlebar
+{
+  font-family:Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+  f1ebe8font-weight:bold;
+  color:#4a6159;
+  background-color:#dee1d9;
+}
+.d-bottombar
+{
+  font-family:Candara, Calibri, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+  font-weight:bold;
+  color:#4a6159;
+  background-color:#dee1d9;
+}
+

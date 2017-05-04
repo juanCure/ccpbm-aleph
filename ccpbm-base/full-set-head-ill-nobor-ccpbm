@@ -1,0 +1,60 @@
+<!-- filename: full-set-head-ill-nobor-bndm Yuri -->
+<html>
+<head>
+  <title>&f-base - Vista completa del registro </title>
+<include>meta-tags
+<include>include-window
+</head>
+<body topmargin="0"
+      onload="window.focus();">
+<include>head-1
+<table width="30%" align="right" border="0" cellpadding="0" cellspacing="0">
+ <tr height="35">
+  <td class="topbar" align="center" nowrap>
+      <a style="color:#4a6159; font-size:70%; text-decoration:none;" href=&server_f?func=full-mail-0&doc_library=$0900&doc_number=$0600
+               title="Guardar y/o enviar al Correo" class="blue">
+               Guardar y/o enviar al correo</a>
+  </td>
+ </tr>
+</table>
+<br>
+<p class=title>
+  Vista completa del registro
+</p>
+<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" >
+ <tr height="35" align=center valign=center >
+  <td class=text3>Seleccione formato de despliegue:</td>
+  <td style="background-color:#dee1d9; ">
+    <a style="background-color:#dee1d9; color:#4a6159; font-size:100%; text-decoration: none; font-weight:bold"  href=&server_f?func=full-set-set&set_number=$0800&set_entry=$0500&format=999>
+     Est&aacute;ndar</a>
+  </td>
+  <td style="background-color:#dee1d9; ">
+    <a style="background-color:#dee1d9; color:#4a6159; font-size:100%; text-decoration: none; font-weight:bold" href=&server_f?func=full-set-set&set_number=$0800&set_entry=$0500&format=037>
+     Ficha catalogr&aacute;fica</a>
+  </td>
+  <td style="background-color:#dee1d9; ">
+    <a style="background-color:#dee1d9; color:#4a6159; font-size:100%; text-decoration: none; font-weight:bold" href=&server_f?func=full-set-set&set_number=$0800&set_entry=$0500&format=040>
+    Cita bibliográfica</a>
+  </td>
+  <td style="background-color:#dee1d9; ">
+     <a style="background-color:#dee1d9; color:#4a6159; font-size:100%; text-decoration: none; font-weight:bold" href=&server_f?func=full-set-set&set_number=$0800&set_entry=$0500&format=002>
+      Nombres de etiquetas</a>
+  </td>
+  <td style="background-color:#dee1d9; ">
+    <a style="background-color:#dee1d9; color:#4a6159; font-size:100%; text-decoration: none; font-weight:bold" href=&server_f?func=full-set-set&set_number=$0800&set_entry=$0500&format=001>
+    Etiquetas MARC</a>
+  </td>
+ </tr>
+</table>
+<hr>
+<table width=100% align="center" border="0" cellpadding="0" cellspacing="0">
+ <tr>
+  <td class=title align=left>
+    Registro $0100 de $0200
+  </td> 
+  <td align=right>
+    $0300 &nbsp; $0400 
+  </td>
+ </tr>
+</table>
+<table cellspacing=2 border=0 width=100%>

@@ -1,0 +1,145 @@
+<!-- filename: find-d-bndm Yuri -->
+<html>
+<head>
+<title>&f-base - Búsqueda avanzada </title>
+<include>meta-tags
+<script language="Javascript">
+<!--
+  function my_reset()
+  {
+    for (var i = 0; i< document.form1.elements.length; i++) {
+      if (document.form1.elements[i].name == "request") {
+         document.form1.elements[i].value = "";
+      }
+</span>
+    }
+  }
+// -->
+</script>
+</head>
+<body topmargin="0"> 
+<include>head-1
+<br>
+<div class=title>
+  &f-base - Búsqueda avanzada
+</div>
+<form method=get
+      name=form1
+      action="&server_f">
+
+<input type="hidden" name="func" value="find-d">
+<br>
+<table border=0 cellspacing=2 width="90%" style="margin-left:55; margin-right:55;" >
+ <tr>
+  <td class=td2 align=left>
+      Campos de búsqueda
+  </td>
+  <td class=td2 align=left>
+     Escriba una palabra o frase
+  </td>
+  <td class=td2 align=left nowrap>
+     ¿Palabras adyacentes?
+  </td>
+  <td class=td2 align=left>
+      Núm. de registros
+  </td>
+ </tr>
+ <tr>
+  <td class=td2 id="small">
+<include>find-code-include\FXX\0100\
+  </td>
+  <td class=td2 id="small">
+       <input size=25 name=request value="$0200">
+  </td>
+  <td class=td2 align=left >
+       <input TYPE="radio" 
+              NAME=adjacent1
+              VALUE="N" 
+              $$0400-C"N"> No &nbsp;
+       <input TYPE="radio" 
+              NAME=adjacent1
+              VALUE="Y" 
+              $$0400-C"Y"> Sí 
+  </td>
+  <td class=td2 valign=middle>
+       &nbsp;$0300
+  </td>
+ </tr>
+ <tr>
+  <td class=td2 id="small">
+<include>find-code-include\FXX\1100\
+  </td>
+  <td class=td2 id="small"> 
+       <input size=25 
+              name=request
+              value="$1200">
+  </td>
+  <td class=td2 align=left >
+       <input TYPE="radio" 
+              NAME=adjacent2
+              VALUE="N" 
+              $$1400-C"N"> No &nbsp;
+       <input TYPE="radio" 
+              NAME=adjacent2
+              VALUE="Y" 
+              $$1400-C"Y"> Sí 
+  </td>
+  <td class=td2 valign=middle>
+       &nbsp;$1300
+  </td>
+ </tr>
+ <tr>
+  <td class=td2 id="small">
+<include>find-code-include\FXX\2100\
+  </td>
+  <td class=td2 id="small">
+       <input size=25 name=request value="$2200">
+  </td>
+  <td class=td2 align=left >
+       <input type="radio"
+              name=adjacent3
+              value="N"
+              $$2400-C"N"> No &nbsp;
+       <input type="radio"
+              name=adjacent3
+              value="Y"
+              $$2400-C"Y"> Sí 
+  </td>
+  <td class=td2 valign=middle>
+       &nbsp;$2300
+  </td>
+ </tr>
+<tr>
+   <td class=td2 colspan=5 align="center">
+      <br> <input type="image"
+       alt=" Go "
+       src="&icon_path/f-go.gif" border=0>
+       &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <a href="javascript:my_reset();">
+       <img src="&icon_path/f-clear0.gif" border=0
+       alt="Clear"></a>
+  </td>
+ </tr>
+ <tr>
+  <td class=td2 colspan=4 align="right" valign="top">
+    Total:
+  </td>
+  <td class=td2 valign="top" align="left">
+     &nbsp;$5000
+  </td>
+ </tr>
+ <tr>
+  <td colspan=5 class=td2 align="right" valign="middle">
+    Presione sobre el total para ver los registros       
+  </td>
+ </tr>
+</table>
+<br>
+<div class=title>
+  Delimitador de búsqueda
+</div>
+<include>find-include-filter
+</form>
+<br>
+<include>copyrights
+</body>
+</html>

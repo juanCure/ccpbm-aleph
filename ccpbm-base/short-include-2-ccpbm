@@ -1,0 +1,92 @@
+<!-- short-include-2-bndm Yuri    -->
+<br>
+ <div  class=title >
+  Lista de Resultados
+</div>
+<br>
+<table border=0 width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+ <tr>
+   <td colspan=3 style="color:#4a6159; font-size:80%; font-weight:bold"  align=center nowrap>
+     Estimado usuario: el número de registros ordenados y desplegados por el sistema de la BNDM, es de 1,000 registros, máximo, en cada búsqueda.<br><br><br>
+  </td>
+ </tr>
+ <tr>
+  <td class=text3 id=bold nowrap>
+  &nbsp;  $2100 &nbsp;&nbsp;&nbsp; 
+  </td>
+  <td class=text1 nowrap>
+     $2200 &nbsp;&nbsp;
+  </td>
+  <td class=text1 width=100% nowrap>
+    &nbsp;
+  </td>
+</tr>
+</table>
+<div class=text3 id=bold nowrap>
+&nbsp;&nbsp;Cambiar formato de despliegue:&nbsp; &nbsp;&nbsp;
+   <img src="&icon_path/f-small-dot.gif"
+        alt="Presenta resultados con formato de tabla"
+        border=0>
+   <a style="color:#4a6159; font-size:80%; text-decoration: none; font-weight:bold" href="&server_f?func=short-format&format=000">Tabla</a>&nbsp;
+   <img src="&icon_path/f-small-dot.gif"
+        alt="Presenta resultados con formato vertical"
+        border=0>
+       <a style="color:#4a6159; font-size:80%; text-decoration: none; font-weight:bold" href="&server_f?func=short-format&format=958">Vertical</a>&nbsp;
+</div>
+
+<table border=0 width=100% valign="bottom">
+ <tr height="5">
+  <td style="color:#4a6159; font-size:105%; font-weight:bold" width=50% align=left>
+    Para:&nbsp;&nbsp; $0400 &nbsp;
+  </td>
+  <td  width=100% style="color:#4a6159; font-size:100%; font-weight:bold"  align=right>
+    &nbsp; $1200 &nbsp;
+  </td>
+ </tr>
+</table>
+<hr>
+<table border=0 width=100% valign="bottom">
+ <tr height="5">
+  <td class=title width=45%  valign=middle>
+   Registros &nbsp; $0100 -$0200 &nbsp; de &nbsp; $0300
+  </td>
+  <td width=5%>
+     &nbsp;
+  </td>
+  <td align="right" valign="bottom"  nowrap>
+       <form method=get
+             name=form_jumpText
+             action="&server_f">
+         <input type="hidden" name="func" value="short-jump-text">
+         <input type=image name=action_short_jump_text
+               src="&icon_path/f-find-text.gif"
+               alt="Ir al texto especificado"
+               border=0>
+         <input type=text
+                size=5
+                maxlength=20
+                name="jump_text"
+                value="">
+       </form>
+  </td>
+  <td align=right valign=bottom nowrap>
+       <form method=get
+             name=form_jumpRecord
+             action="&server_f">
+         <input type="hidden" name="func" value="short-jump">
+         <input type=image name=action_short_jump
+                src="&icon_path/f-jump-to.gif"
+                alt="Ir al número de la lista especificado"
+                border=0>
+         <input type=text
+                size=5
+                maxlength=5
+                name="jump"
+                value="">
+       </form>
+  </td>
+  <td align=right valign=top nowrap>
+     $0900 &nbsp; $1000
+  </td>
+ </tr>
+</table>

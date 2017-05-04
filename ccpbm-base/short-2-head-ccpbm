@@ -1,0 +1,16 @@
+<!-- filename: short-2-head-bndm Yuri  -->
+<html>
+<head>
+<title>&f-base - Resultados de la búsqueda</title>
+<include>meta-tags
+<include>include-window
+<include>submit-form-include
+<include>short-select-include
+</head>
+<body topmargin="0" 
+      onload="window.focus();">
+<include>head-1
+<br>
+<include>short-include-buttons 
+<include>short-include-2 
+

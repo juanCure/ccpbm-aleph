@@ -1,0 +1,83 @@
+<!-- filename: find-b-ccpbm Juan Manuel Rodriguez -->
+<html>
+<head>
+<title>&f-base - Búsqueda básica</title>
+<include>meta-tags
+<script language="Javascript">
+<!--
+function setCookie()
+{
+   document.cookie = "ALEPH_SESSION_ID = $SESS; path = /";
+}
+// -->
+</script>
+</head>
+<body topmargin="0" 
+      onload="javascript:setCookie();window.document.form1.request.focus();">
+<include>head-1
+<br>
+<div class="title">
+  Búsqueda básica
+</div>
+<p>&nbsp; &nbsp;&nbsp;&nbsp; </p>
+<form method=get 
+      name=form1
+      action="&server_f">
+<input type="hidden" name="func" value="find-b">
+<table cellspacing=2 border=0 cellpadding="0" width="100%">
+ <tr>
+  <td>&nbsp; &nbsp;&nbsp;  &nbsp; &nbsp;&nbsp; </td>
+  <td> &nbsp; &nbsp;&nbsp; </td>
+  <td> &nbsp; &nbsp;&nbsp; </td>
+  <td class="td2" valign="middle" align="right" >
+    Escribir palabra(s)&nbsp;&nbsp;  
+  </td>
+  <td class="td2"  id="small" align="center">
+    <input size=40 align="center"  name="request" value="$0100">
+  </td>
+  <td class="td2"  valign=middle align="left" >
+        <input type="image"
+               alt=" Go "
+               src="&icon_path/f-go.gif"
+               border=0>
+      &nbsp; &nbsp;&nbsp;&nbsp; <a href="&server_f?func=find-b-0&clear_level=2">
+       <img src="&icon_path/f-clear0.gif" border=0
+       alt="Clear"></a>
+  </td>
+  <td> &nbsp; &nbsp;&nbsp; </td>
+  <td> &nbsp; &nbsp;&nbsp; </td>
+  <td> &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;  </td>
+ </tr>
+</table>
+<p>&nbsp; &nbsp;&nbsp;&nbsp; </p>
+<p>&nbsp; &nbsp;&nbsp;&nbsp; </p>
+</p>
+<div class=title>
+  Delimitadores de búsqueda 
+</div>
+</p>
+<table border=0 cellpadding="0" width="100%" style="margin-left:55; margin-right:55;" >
+ <tr>
+  <td class="td2" valign="middle" align="right">Campo de búsqueda :
+     &nbsp; &nbsp;&nbsp; </td>
+  <td class="td2" id="small">
+<include>find-code-include
+  </td>
+  <td class="td2" valign="middle" align="right">
+    ¿Palabras adyacentes?
+  </td>
+  <td class="td2" valign="middle" align="right">
+    <input type="radio" name="adjacent" $$1000-C"N" value="N"> No
+    <input type="radio" name="adjacent" $$1000-C"Y" value="Y"> Sí 
+  </td>
+ <td>&nbsp;&nbsp;  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </td>
+ <td>&nbsp;&nbsp;  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </td>
+ <td>&nbsp;&nbsp;  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; </td>
+ </tr>
+</table>
+<include>find-include-filter
+</form>
+<include>copyrights
+</body>
+</html>
+

@@ -1,0 +1,50 @@
+<!-- short-include-buttons-bndm yuri -->
+<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+ <tr class="topbar" height="40" >
+  <td align="center">
+      <a class="blue" style="color:#4a6159; font-size:100%; text-decoration:none;" href="&server_f?func=full-set-selected"
+         title="Ver selección" class="blue">
+         Ver selección</a>
+  </td>
+  <td align="center">
+      <a class="blue" style="color:#4a6159; font-size:100%; text-decoration:none;" href="&server_f?func=short-mail-0"
+         title="Guardar/Enviar a correo" class="blue">
+                  Guardar/Enviar a correo</a>
+  </td>
+  <td  align="center">
+      <a class="blue" style="color:#4a6159; font-size:100%; text-decoration:none;" href="&server_f?func=myshelf-add-sel-1"
+         title="Agregar a mi bibliografía" class="blue">
+         Agregar a Mi bibliografía</a>
+  </td>
+ </tr>
+</table>
+<table width="50%" align="right" border="0" cellpadding="0" cellspacing="0">
+ <tr class="topbar" height="35">
+  <td class="bar" align="center" nowrap>
+      <a class="blue" style="color:#4a6159; font-size:70%; text-decoration:none;" href="&server_f?func=short-select-all"
+         title="Seleccionar todo" class="blue">
+         Seleccionar todo</a>
+  </td>
+  <td class="bar" align="center" nowrap>
+      <a  class="blue" style="color:#4a6159; font-size:70%; text-decoration:none;" href="&server_f?func=short-deselect-all"
+         title="Borrar selección" class="blue">
+         Borrar selección</a>
+  </td>
+  <td align="center">
+      <a class="blue" style="color:#4a6159; font-size:70%; text-decoration:none;" href="&server_f?func=short-filter"
+         title="Filtrar resultados" class="blue">
+         Filtrar resultados</a>
+  </td>
+  <td align="center">
+      <a class="blue" style="color:#4a6159; font-size:70%; text-decoration:none;" href="&server_f?func=short-rank"
+         title="Rango" class="blue">
+         Rango</a>
+  </td>
+  <td align="center">
+      <a class="blue" style="color:#4a6159; font-size:70%; text-decoration:none;" href="&server_f?func=short-refine"
+         title="Refinar búsqueda" class="blue">
+         Refinar búsqueda</a>
+  </td>
+ </tr>
+</table>
+<br>
