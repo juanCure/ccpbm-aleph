@@ -7,7 +7,7 @@
 <table border=0 width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
  <tr>
    <td colspan=3 style="color:#4a6159; font-size:80%; font-weight:bold"  align=center nowrap>
-     Estimado usuario: el número de registros ordenados y desplegados por el sistema de la BNDM, es de 1,000 registros, máximo, en cada búsqueda.<br><br><br>
+     Estimado usuario: el n?mero de registros ordenados y desplegados por el sistema de la BNDM, es de 1,000 registros, m?imo, en cada b?squeda.<br><br><br>
   </td>
  </tr>
  <tr>
@@ -76,7 +76,7 @@
          <input type="hidden" name="func" value="short-jump">
          <input type=image name=action_short_jump
                 src="&icon_path/f-jump-to.gif"
-                alt="Ir al número de la lista especificado"
+                alt="Ir al n?mero de la lista especificado"
                 border=0>
          <input type=text
                 size=5

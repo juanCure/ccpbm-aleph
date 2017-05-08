@@ -1,0 +1,13 @@
+<!-- filename: short-tail-ccpbm Juan Manuel Rodríguez -->
+<div class="row">
+	<div class="col-md-3 col-md-offset-9">
+		<ul class="pager">
+			<li class="previous"><a href="#">&larr; Anterior</a></li>
+			<li class="previous"><a href="#">Siguiente &rarr;</a></li>
+		</ul>
+	</div>
+</div>
+<include>copyrights
+</div> <!-- Aquí termina el div container -->
+</body>
+</html>

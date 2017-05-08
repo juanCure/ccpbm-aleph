@@ -1,0 +1,27 @@
+<!-- short-include-buttons-ccpbm Juan Manuel Rodríguez -->
+<div class="row">
+	<div class="col-md-12">
+		<nav class="nav navbar-default">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="&server_f?func=full-set-selected" title="Ver selección">Ver selección</a></li>
+				<li><a href="&server_f?func=short-mail-0" title="Guardar/Enviar a correo">Guardar/Enviar a correo</a></li>
+				<li><a href="&server_f?func=myshelf-add-sel-1" title="Agregar a mi bibliografía">Agregar a mi bibliografía</a></li>
+			</ul>
+		</nav>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-7 col-md-offset-5">
+		<nav class="nav navbar-default">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="&server_f?func=short-select-all" title="Seleccionar todo">Seleccionar todo</a></li>
+				<li><a href="&server_f?func=short-deselect-all" title="Borrar selección">Borrar selección</a></li>
+				<li><a href="&server_f?func=short-filter" title="Filtrar resultados">Filtrar resultados</a></li>
+				<li><a href="&server_f?func=short-rank" title="Rango">Rango</a></li>
+				<li><a href="&server_f?func=short-refine" title="Refinar búsqueda">Refinar búsqueda</a></li>
+			</ul>
+		</nav>
+	</div>
+</div>
+<br>

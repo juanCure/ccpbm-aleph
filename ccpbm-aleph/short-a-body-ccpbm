@@ -1,0 +1,32 @@
+<!-- filename: short-a-body-ccpbm Juan Manuel Rodríguez -->
+<div class="row">
+	<div class="col-md-3 text-center" >
+		<div>
+			<!-- <a href="#">1</a>
+			<img src="../images/item1.jpg" width="60px" hspace="5" vspace="5" border="1" class="center-block">  -->
+			$0100 $0600
+		</div>
+	</div>
+	<div class="col-md-3">
+		<div>
+			<!-- <form>
+				<label for="select_row000001" >Seleccionar</label>
+				<input type="checkbox" name="chbox">
+				<p>Hippocratis coi Aphorismi versu heroico explicati</p>
+			</form> -->
+			<br>$0200 $0400
+		</div>
+	</div>
+	<div class="col-md-3">
+		<div>
+			<!-- <p>2010</p> -->
+			<br><br>$0500
+		</div>
+	</div>
+	<div class="col-md-3">
+		<div>
+			<!-- <p>Hipócrates</p> -->
+			<br><br>$0300
+		</div>
+	</div>
+</div>

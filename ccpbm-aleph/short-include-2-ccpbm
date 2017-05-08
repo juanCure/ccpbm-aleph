@@ -1,0 +1,79 @@
+<!-- short-include-2-ccpbm Juan Manuel Rodríguez -->
+<br>
+<div><h3>Lista de resultados</h3></div>
+<br>
+<div class="row text-center">
+	<div class="col-md-12">
+		<p>Estimado usuario: el número de registros ordenados y desplegados por el sistema de la BNDM, es de 1,000 registros, máximo, en cada búsqueda</p>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-3">
+		<!-- <div><p>Opciones de ordenamiento</p></div> -->
+		&nbsp;  $2100 &nbsp;&nbsp;&nbsp;
+	</div>
+	<div class="col-md-9">
+		<!-- <img src="../images/f-small-dot.gif"><a href="#">Autor y Año </a>
+		<img src="../images/f-small-dot.gif"><a href="#">Año y Autor </a>
+		<img src="../images/f-small-dot.gif"><a href="#">Autor y Título </a>
+		<img src="../images/f-small-dot.gif"><a href="#">Título y Año </a>
+		<img src="../images/f-small-dot.gif"><a href="#">Año y Títutlo </a> -->
+		$2200 &nbsp;&nbsp;
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-3">
+		<div><p>Cambiar formato de despliegue</p></div>
+	</div>
+	<div class="col-md-9">
+		<img src="&icon_path/f-small-dot.gif"
+        alt="Presenta resultados con formato de tabla"
+        border=0>
+   	<a style="color:#4a6159; font-size:80%; text-decoration: none; font-weight:bold" href="&server_f?func=short-format&format=000">Tabla</a>&nbsp;
+   	<img src="&icon_path/f-small-dot.gif"
+        alt="Presenta resultados con formato vertical"
+        border=0>
+    <a style="color:#4a6159; font-size:80%; text-decoration: none; font-weight:bold" href="&server_f?func=short-format&format=958">Vertical</a>&nbsp;
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-3">
+		<div><p>Para:&nbsp;&nbsp; $0400 &nbsp;</p></div>
+	</div>
+	<div class="col-md-3 col-md-offset-6">
+		<div><p>&nbsp; $1200 &nbsp;</p></div>
+	</div>
+</div>
+<hr>
+
+<div class="row">
+	<div class="col-md-3">
+		<div><h3>Registros &nbsp; $0100 -$0200 &nbsp; de &nbsp; $0300</h3></div>
+	</div>
+	<div class="col-md-3">
+		<form method="get" name="form_jumpText" action="&server_f">
+				<input type="hidden" name="func" value="short-jump-text">
+				<input type="button" class="btn btn-primary" value="Ir a texto" name="action_short_jump_text" >
+				<input type="text" name="jump_text">
+		</form>
+	</div>
+	<div class="col-md-3">
+		<form method="get" name="form_jumpRecord" action="&server_f">
+				<input type="hidden" name="func" value="short-jump">
+				<input type="button" class="btn btn-primary" value="Ir a #" name="action_short_jump" >
+				<input type="text" name="jump">
+		</form>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-3 col-md-offset-9">
+		<ul class="pager">
+			<li class="previous"><a href="#">&larr; Anterior</a></li>
+			<li class="previous"><a href="#">Siguiente &rarr;</a></li>
+		</ul>
+	</div>
+</div>

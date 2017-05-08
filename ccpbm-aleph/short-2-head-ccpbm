@@ -1,4 +1,5 @@
 <!-- filename: short-2-head-ccpbm Juan Manuel Rodríguez  -->
+<!DOCTYPE html>
 <html>
 <head>
 <title>&f-base - Resultados de la búsqueda</title>
@@ -7,10 +8,9 @@
 <include>submit-form-include
 <include>short-select-include
 </head>
-<body topmargin="0" 
-      onload="window.focus();">
+<body>
+<div class="container">
 <include>head-1
 <br>
 <include>short-include-buttons 
 <include>short-include-2 
-
