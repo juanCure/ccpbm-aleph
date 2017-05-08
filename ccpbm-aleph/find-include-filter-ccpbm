@@ -1,5 +1,5 @@
 <!-- filename: find-include-filter-ccpbm Juan Manuel Rodríguez -->
-<div class="row">
+<!-- <div class="row">
   <div class="col-md-4">
     <div>
       <label>Año o período de edición:</label>
@@ -19,5 +19,36 @@
       <input type="text" size="10" name="filter_request_3" value="" class="form-control" id="toYear">
     </div>
   </div>
+</div> -->
+<div class="row">
+  <div class="col-md-12">
+    <label>Año o período de edición:</label>
+  </div>
 </div>
+
+<div class="row">
+  <div class="col-md-4">
+    <label class="control-label">Del año</label>
+    <div>
+      <input type="hidden" name="filter_code_2" value="WYR">
+      <input type="text" size="10" name="filter_request_2" value="" class="form-control" id="fromYear"> 
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <label class="control-label">Hasta el año</label>
+    <div>
+      <input type="hidden" name="filter_code_3" value="WYR">
+      <input type="text" size="10" name="filter_request_3" value="" class="form-control" id="toYear">
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <span class="help-block">Escriba los años usando 4 dígitos, ejemplo: 1718</span>
+    <span class="help-block">Utilice <b>?</b> para truncar cuando no use del/al año)</span>
+  </div>
+</div>
+
 
