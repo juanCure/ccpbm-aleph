@@ -1,0 +1,11 @@
+<!-- filename: full-999-body-r -->
+ <tr>
+  <td class=td1 id=bold
+    width=15% nowrap>
+    $0100
+  </td>
+  <td class=td1 align=right>
+    $0200
+  </td>
+ </tr>
+

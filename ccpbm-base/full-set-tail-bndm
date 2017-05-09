@@ -1,0 +1,60 @@
+<!-- filename: full-set-tail-bndm Yuri -->
+
+</table>
+</table>
+
+<script src="$0700"></script>
+<p align=right>$0300 &nbsp; $0400
+<hr>
+<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" >
+ <tr height="35" align=center valign=center >
+  <td class=text3>Seleccione formato de despliegue:</td>
+  <td style="background-color:#dee1d9; ">
+    <a style="background-color:#dee1d9; color:#4a6159; font-size:100%; text-decoration: none; font-weight:bold"  href=&server_f?func=full-set-set&set_number=$0800&set_entry=$0500&format=999>
+     Est&aacute;ndar</a>
+  </td>
+  <td style="background-color:#dee1d9; ">
+    <a style="background-color:#dee1d9; color:#4a6159; font-size:100%; text-decoration: none; font-weight:bold" href=&server_f?func=full-set-set&set_number=$0800&set_entry=$0500&format=037>
+     Ficha catalogr&aacute;fica</a>
+  </td>
+  <td style="background-color:#dee1d9; ">
+    <a style="background-color:#dee1d9; color:#4a6159; font-size:100%; text-decoration: none; font-weight:bold" href=&server_f?func=full-set-set&set_number=$0800&set_entry=$0500&format=040>
+    Cita bibliográfica</a>
+  </td>
+  <td style="background-color:#dee1d9; ">
+     <a style="background-color:#dee1d9; color:#4a6159; font-size:100%; text-decoration: none; font-weight:bold" href=&server_f?func=full-set-set&set_number=$0800&set_entry=$0500&format=002>
+      Nombres de etiquetas</a>
+  </td>
+  <td style="background-color:#dee1d9; ">
+    <a style="background-color:#dee1d9; color:#4a6159; font-size:100%; text-decoration: none; font-weight:bold" href=&server_f?func=full-set-set&set_number=$0800&set_entry=$0500&format=001>
+    Etiquetas MARC</a>
+  </td>
+ </tr>
+</table>
+<a  id="$0800" style="display:none;" target="_blank">
+<img           style="display:none;" id="google_book"/ >
+Acerca de este libro en Google Book Search
+</a>
+<script>
+// Function to process GBS info and update the dom.
+function ProcessGBSBookInfo(booksInfo) {
+    for (isbn in booksInfo) {
+        var url_elem = document.getElementById(isbn);
+        var pic_elem = document.getElementById("google_book");
+        var bookInfo = booksInfo[isbn];
+        if (bookInfo) {
+           url_elem.href = bookInfo.info_url;
+           url_elem.style.display = '';
+           if (bookInfo.thumbnail_url)
+           {
+              pic_elem.src = bookInfo.thumbnail_url;
+              pic_elem.style.display = '';
+           }
+        }
+    }
+}
+</script>
+<include>copyrights
+</body>
+</html>
+
