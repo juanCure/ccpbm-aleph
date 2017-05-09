@@ -1,0 +1,61 @@
+<!-- filename: full-set-head-ill-nobor-ccpbm Juan Manuel Rodríguez -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>&f-base - Vista completa del registro </title>
+<include>meta-tags
+<include>include-window
+</head>
+<body>
+<div class="container">
+<include>head-1
+<!-- Aquí inicia el contenido del archivo full-set-head-ill-nobor-ccpbm -->
+
+<div class="row">
+	<div class="col-md-4">
+		<h3>Vista completa del registro</h3>
+	</div>
+	<div class="col-md-4 col-md-offset-4">
+		<nav class="navbar navbar-default">
+			<ul class="nav navbar-nav">
+				<li><a href="&server_f?func=full-mail-0&doc_library=$0900&doc_number=$0600"
+               title="Guardar y/o enviar al Correo">Guardar y/o enviar al correo</a></li>
+			</ul>
+		</nav>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-3 text-center">
+		<h4><small>Seleccione formato de despliegue</small></h4>
+	</div>
+	<div class="col-md-9">
+		<nav class="navbar navbar-default">
+			<ul class="nav navbar-nav">
+				<li><a href="&server_f?func=full-set-set&set_number=$0800&set_entry=$0500&format=999">Estándar</a></li>
+				<li><a href="&server_f?func=full-set-set&set_number=$0800&set_entry=$0500&format=037">Ficha catalográfica</a></li>
+				<li><a href="&server_f?func=full-set-set&set_number=$0800&set_entry=$0500&format=040">Cita bibliográfica</a></li>
+				<li><a href="&server_f?func=full-set-set&set_number=$0800&set_entry=$0500&format=002">Nombres de etiquetas</a></li>
+				<li><a href="&server_f?func=full-set-set&set_number=$0800&set_entry=$0500&format=001">Etiquetas MARC</a></li>
+			</ul>
+		</nav>
+	</div>
+</div>
+
+<hr>
+<div class="row">
+	<div class="col-md-3 text-center">
+		<h3><small>Registro $0100 de $0200</small></h3>
+	</div>
+	<div style="display: none;">
+		$0300 &nbsp; $0400
+	</div>
+	<div class="col-md-3 col-md-offset-6">
+		<ul class="pager">
+			<li><a href="#">&larr; Anterior</a></li>
+			<li><a href="#">Siguiente &rarr;</a></li>
+		</ul>
+	</div>
+</div>
+
+<div class="row">
