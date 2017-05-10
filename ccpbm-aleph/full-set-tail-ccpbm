@@ -1,7 +1,7 @@
-<!-- filename: full-set-tail-ccpbm Juan Manuel Rodr√≠guez -->
+<!-- filename: full-set-tail-ccpbm Juan Manuel RodrÌguez -->
 
-</div> <!-- Aqu√≠ termina el div id="detalle_registro" -->
-</div> <!-- Aqu√≠ termina el div class="row" -->
+</div> <!-- AquÌ termina el div id="detalle_registro" -->
+</div> <!-- AquÌ termina el div class="row" -->
 <div class="row">
 	<div style="display: none;">
 		$0300 &nbsp; $0400
@@ -21,9 +21,9 @@
 	<div class="col-md-9">
 		<nav class="navbar navbar-default">
 			<ul class="nav navbar-nav">
-				<li><a href="&server_f?func=full-set-set&set_number=$0800&set_entry=$0500&format=999">Est√°ndar</a></li>
-				<li><a href="&server_f?func=full-set-set&set_number=$0800&set_entry=$0500&format=037">Ficha catalogr√°fica</a></li>
-				<li><a href="&server_f?func=full-set-set&set_number=$0800&set_entry=$0500&format=040">Cita bibliogr√°fica</a></li>
+				<li><a href="&server_f?func=full-set-set&set_number=$0800&set_entry=$0500&format=999">Est·ndar</a></li>
+				<li><a href="&server_f?func=full-set-set&set_number=$0800&set_entry=$0500&format=037">Ficha catalogr·fica</a></li>
+				<li><a href="&server_f?func=full-set-set&set_number=$0800&set_entry=$0500&format=040">Cita bibliogr·fica</a></li>
 				<li><a href="&server_f?func=full-set-set&set_number=$0800&set_entry=$0500&format=002">Nombres de etiquetas</a></li>
 				<li><a href="&server_f?func=full-set-set&set_number=$0800&set_entry=$0500&format=001">Etiquetas MARC</a></li>
 			</ul>
@@ -37,6 +37,6 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-</div> <!-- Aqu√≠ termina el div container -->
+</div> <!-- AquÌ	 termina el div container -->
 </body>
 </html>

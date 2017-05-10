@@ -1,15 +1,15 @@
-<!-- filename: full-set-head-ill-nobor-ccpbm Juan Manuel Rodr√≠guez -->
+<!-- filename: full-set-head-ill-nobor-ccpbm Juan Manuel RodrÌguez -->
 <!DOCTYPE html>
 <html>
 <head>
-<title>&f-base - Vista completa del registro </title>
+	<title>&f-base - Vista completa del registro </title>
 <include>meta-tags
 <include>include-window
 </head>
 <body>
 <div class="container">
 <include>head-1
-<!-- Aqu√≠ inicia el contenido del archivo full-set-head-ill-nobor-ccpbm -->
+<!-- AquÌ inicia el contenido del archivo full-set-head-ill-nobor-ccpbm -->
 
 <div class="row">
 	<div class="col-md-4">
@@ -32,16 +32,15 @@
 	<div class="col-md-9">
 		<nav class="navbar navbar-default">
 			<ul class="nav navbar-nav">
-				<li><a href="&server_f?func=full-set-set&set_number=$0800&set_entry=$0500&format=999">Est√°ndar</a></li>
-				<li><a href="&server_f?func=full-set-set&set_number=$0800&set_entry=$0500&format=037">Ficha catalogr√°fica</a></li>
-				<li><a href="&server_f?func=full-set-set&set_number=$0800&set_entry=$0500&format=040">Cita bibliogr√°fica</a></li>
+				<li><a href="&server_f?func=full-set-set&set_number=$0800&set_entry=$0500&format=999">Est·ndar</a></li>
+				<li><a href="&server_f?func=full-set-set&set_number=$0800&set_entry=$0500&format=037">Ficha catalogr·fica</a></li>
+				<li><a href="&server_f?func=full-set-set&set_number=$0800&set_entry=$0500&format=040">Cita bibliogr·fica</a></li>
 				<li><a href="&server_f?func=full-set-set&set_number=$0800&set_entry=$0500&format=002">Nombres de etiquetas</a></li>
 				<li><a href="&server_f?func=full-set-set&set_number=$0800&set_entry=$0500&format=001">Etiquetas MARC</a></li>
 			</ul>
 		</nav>
 	</div>
 </div>
-
 <hr>
 <div class="row">
 	<div class="col-md-3 text-center">
