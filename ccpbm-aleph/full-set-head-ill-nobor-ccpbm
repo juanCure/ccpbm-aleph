@@ -46,7 +46,7 @@
 	<div class="col-md-3 text-center">
 		<h3><small>Registro $0100 de $0200</small></h3>
 	</div>
-	<div style="display: none;">
+	<div id="hidden_pager" style="display: none;">
 		$0300 &nbsp; $0400
 	</div>
 	<div class="col-md-3 col-md-offset-6">

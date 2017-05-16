@@ -3,9 +3,6 @@
 </div> <!-- Aquí termina el div id="detalle_registro" -->
 </div> <!-- Aquí termina el div class="row" -->
 <div class="row">
-	<div style="display: none;">
-		$0300 &nbsp; $0400
-	</div>
 	<div class="col-md-3 col-md-offset-9">
 		<ul class="pager">
 			<li><a href="#">&larr; Anterior</a></li>

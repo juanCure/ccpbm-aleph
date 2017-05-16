@@ -337,83 +337,11 @@
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="./js/my_functions.js"></script>
 
 <script type="text/javascript">
-	/*
-	var href_login = "http://catalogo.iib.unam.mx/F/15IQXSJ19QEPGKFU3KVVHTS2L4C44N5LD8CP7R2HI7JBVG96J8-34357?func=login&local_base=ccpbm";
-	var href_find_b = "http://catalogo.iib.unam.mx/F/15IQXSJ19QEPGKFU3KVVHTS2L4C44N5LD8CP7R2HI7JBVG96J8-08786?func=find-b-0&local_base=CCPBM";
-	var image_base_src = "http://catalogo.iib.unam.mx/exlibris/aleph/u23_1/alephe/www_f_spa/icon/bndm-cabeza.jpg";
-	var href = document.location.href;
-
-	var matches = /func=([^&#=]*)/.exec(href_login);
-	var param1 = matches[1];
-
-
-	var image_find_b = "../images/bndm-cabeza-find-b-0.jpg";
-
-	var image_header = document.getElementById("image_header");
-	image_header.setAttribute("src", image_find_b);*/
-	
-	//image_header.setAttribute("src", "&icon_path/" + "bndm-cabeza-" + param1 + ".jpg");
-
-	// Implementado la funcionalidad para agregar href para los botones anterior y siguiente de pager
-
-	var children = document.getElementById("hidden_pager").children;
-	var values = {};
-	if(children != null && children.length == 2) {
-		// El caso cuando es img y anchor
-		if(children[0].tagName == "IMG" && children[1].tagName == "A"){
-			values.previous = false;
-			values.next = true;
-			values.previous_href = "#";
-			values.next_href = children[1].href;
-		}
-
-		// El caso cuando ambos son anchors
-
-		if(children[0].tagName == "A" && children[1].tagName == "A"){
-			values.previous = true;
-			values.next = true;
-			values.previous_href = children[0].href;
-			values.next_href = children[1].href;
-		}
-
-		// El caso cuando es anchor y img
-
-		if(children[0].tagName == "A" && children[1].tagName == "IMG"){
-			values.previous = true;
-			values.next = false;
-			values.previous_href = children[0].href;
-			values.next_href = "#";
-		}
-
-	}
-
-	var previous = document.getElementsByClassName("my_previous");
-	var next = document.getElementsByClassName("my_next");
-	var list_items = document.querySelectorAll(".pager li");
-
-
-	if(!values.previous){
-		list_items[0].className += " disabled";
-		list_items[2].className += " disabled"
-	}
-
-	if(!values.next) {
-		list_items[1].className += " disabled";
-		list_items[3].className += " disabled"
-	}
-
-	for(var i = 0; i < previous.length; i++) {
-		previous[i].href = values.previous_href;
-	}
-
-	for(var i = 0; i < next.length; i++) {
-		next[i].href = values.next_href;
-	}
-
-
-
+	// Llamando a la función preparingPagerButtons definida en el archivo my_functions.js
+	preparingPagerButtons();
 </script>
 </body>
 </html>
