@@ -155,8 +155,8 @@
 <div class="row">
 	<div class="col-md-3 col-md-offset-9">
 		<ul class="pager">
-			<li class="previous"><a href="#">&larr; Anterior</a></li>
-			<li class="previous"><a href="#">Siguiente &rarr;</a></li>
+			<li><a class="my_previous" href="#">&larr; Anterior</a></li>
+			<li><a class="my_next" href="#">Siguiente &rarr;</a></li>
 		</ul>
 	</div>
 </div>
@@ -294,25 +294,30 @@
 <hr>
 <div class="row">
 	<div class="col-md-3 col-md-offset-9">
-		<div style="display: none;">
-			<!-- Este es el caso cuando el botón de previo esta deshabilitado -->
-			<img src="http://catalogo.iib.unam.mx:80/exlibris/aleph/u23_1/alephe/www_f_spa/icon/f-prev-page-dim.gif" border="0" alt="No Previous Page"> &nbsp; <a href="http://catalogo.iib.unam.mx:80/F/NYHKXGDB8DR43AI315RDR2UM5GQ92YB9G7DS3QDNQHSARNTV63-07101?func=short-jump&amp;jump=000021" title="Next" page=""><img src="http://catalogo.iib.unam.mx:80/exlibris/aleph/u23_1/alephe/www_f_spa/icon/f-next-page.gif" border="0" alt="Next Page"></a>
-
-			<!-- Este es el caso cuando ambos botones están habilitados
+		<div id="hidden_pager" style="display: none;">
+			<!-- Este es el caso cuando el botón anterior esta deshabilitado y el botón siguiente esta habilitado-->
+			<!--
+			<img src="http://catalogo.iib.unam.mx:80/exlibris/aleph/u23_1/alephe/www_f_spa/icon/f-prev-page-dim.gif" border="0" alt="No Previous Page"> &nbsp; 
+			<a href="http://catalogo.iib.unam.mx:80/F/NYHKXGDB8DR43AI315RDR2UM5GQ92YB9G7DS3QDNQHSARNTV63-07101?func=short-jump&amp;jump=000021" title="Next" page="">
+			<img src="http://catalogo.iib.unam.mx:80/exlibris/aleph/u23_1/alephe/www_f_spa/icon/f-next-page.gif" border="0" alt="Next Page"></a>
+			-->
+			<!-- Este es el caso cuando ambos botones están habilitados -->
+			<!--
 			<a href="http://catalogo.iib.unam.mx:80/F/NYHKXGDB8DR43AI315RDR2UM5GQ92YB9G7DS3QDNQHSARNTV63-09028?func=short-jump&amp;jump=000001" title="Previous" page=""><img src="http://catalogo.iib.unam.mx:80/exlibris/aleph/u23_1/alephe/www_f_spa/icon/f-prev-page.gif" border="0" alt="Previous Page"></a> &nbsp; <a href="http://catalogo.iib.unam.mx:80/F/NYHKXGDB8DR43AI315RDR2UM5GQ92YB9G7DS3QDNQHSARNTV63-09029?func=short-jump&amp;jump=000041" title="Next" page=""><img src="http://catalogo.iib.unam.mx:80/exlibris/aleph/u23_1/alephe/www_f_spa/icon/f-next-page.gif" border="0" alt="Next Page"></a> 
-
 			-->
+			
 
-			<!-- Este es el caso cuando el botón siguiente esta deshabilitado 
+			<!-- Este es el caso cuando el botón anterior esta habilitado y el botón siguiente esta deshabilitado -->
 
+			
 			<a href="http://catalogo.iib.unam.mx:80/F/NYHKXGDB8DR43AI315RDR2UM5GQ92YB9G7DS3QDNQHSARNTV63-10895?func=short-jump&amp;jump=000021" title="Previous" page=""><img src="http://catalogo.iib.unam.mx:80/exlibris/aleph/u23_1/alephe/www_f_spa/icon/f-prev-page.gif" border="0" alt="Previous Page"></a> &nbsp; <img src="http://catalogo.iib.unam.mx:80/exlibris/aleph/u23_1/alephe/www_f_spa/icon/f-next-page-dim.gif" border="0" alt="No Next Page">
-
-			-->
+			
+			
 
 		</div>
 		<ul class="pager">
-			<li class="disabled"><a href="#">&larr; Anterior</a></li>
-			<li><a href="#">Siguiente &rarr;</a></li>
+			<li><a class="my_previous" href="#">&larr; Anterior</a></li>
+			<li><a class="my_next" href="#">Siguiente &rarr;</a></li>
 		</ul>
 	</div>
 </div>
@@ -350,6 +355,64 @@
 	image_header.setAttribute("src", image_find_b);*/
 	
 	//image_header.setAttribute("src", "&icon_path/" + "bndm-cabeza-" + param1 + ".jpg");
+
+	// Implementado la funcionalidad para agregar href para los botones anterior y siguiente de pager
+
+	var children = document.getElementById("hidden_pager").children;
+	var values = {};
+	if(children != null && children.length == 2) {
+		// El caso cuando es img y anchor
+		if(children[0].tagName == "IMG" && children[1].tagName == "A"){
+			values.previous = false;
+			values.next = true;
+			values.previous_href = "#";
+			values.next_href = children[1].href;
+		}
+
+		// El caso cuando ambos son anchors
+
+		if(children[0].tagName == "A" && children[1].tagName == "A"){
+			values.previous = true;
+			values.next = true;
+			values.previous_href = children[0].href;
+			values.next_href = children[1].href;
+		}
+
+		// El caso cuando es anchor y img
+
+		if(children[0].tagName == "A" && children[1].tagName == "IMG"){
+			values.previous = true;
+			values.next = false;
+			values.previous_href = children[0].href;
+			values.next_href = "#";
+		}
+
+	}
+
+	var previous = document.getElementsByClassName("my_previous");
+	var next = document.getElementsByClassName("my_next");
+	var list_items = document.querySelectorAll(".pager li");
+
+
+	if(!values.previous){
+		list_items[0].className += " disabled";
+		list_items[2].className += " disabled"
+	}
+
+	if(!values.next) {
+		list_items[1].className += " disabled";
+		list_items[3].className += " disabled"
+	}
+
+	for(var i = 0; i < previous.length; i++) {
+		previous[i].href = values.previous_href;
+	}
+
+	for(var i = 0; i < next.length; i++) {
+		next[i].href = values.next_href;
+	}
+
+
 
 </script>
 </body>
