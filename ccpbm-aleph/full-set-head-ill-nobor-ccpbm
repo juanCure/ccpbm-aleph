@@ -51,8 +51,8 @@
 	</div>
 	<div class="col-md-3 col-md-offset-6">
 		<ul class="pager">
-			<li><a href="#">&larr; Anterior</a></li>
-			<li><a href="#">Siguiente &rarr;</a></li>
+			<li><a class="my_previous" href="#">&larr; Anterior</a></li>
+			<li><a class="my_next" href="#">Siguiente &rarr;</a></li>
 		</ul>
 	</div>
 </div>

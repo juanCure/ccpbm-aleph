@@ -71,10 +71,12 @@
 
 <div class="row">
 	<div class="col-md-3 col-md-offset-9">
-		$0900 &nbsp; $1000
-		<!-- <ul class="pager">
-			<li class="previous"><a href="#">&larr; Anterior</a></li>
-			<li class="previous"><a href="#">Siguiente &rarr;</a></li>
-		</ul> -->
+		<div id="hidden_pager" style="display: none;">
+			$0900 &nbsp; $1000	
+		</div>
+		<ul class="pager">
+			<li><a class="my_previous" href="#">&larr; Anterior</a></li>
+			<li><a class="my_next" href="#">Siguiente &rarr;</a></li>
+		</ul>
 	</div>
 </div>
