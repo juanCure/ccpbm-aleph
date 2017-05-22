@@ -13,6 +13,27 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 <title>CCPBM - Entrar</title>
+<style type="text/css">
+  /* The heart of the matter */
+  .testimonial-group > .row {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .testimonial-group > .row > .col-md-3 {
+    display: inline-block;
+    float: none;
+  }
+
+  #myMenu {
+    top: -30px;
+  }
+
+  /* Sobreescribiendo estilos de boostrap */
+
+  .navbar-collapse {
+    padding-left: 0px;
+  }
+</style>
 </head>
 
 <body>
@@ -28,7 +49,7 @@
   </div>
 </div>
 
-<div class="row">
+<!-- <div class="row">
   <div class="col-md-3">
     <div class="home-buttons">
       <a href="&server_f?func=login&local_base=BNDM" class="blue" title="Inicio"><img src="http://catalogo.iib.unam.mx/exlibris/aleph/u23_1/alephe/www_f_spa/icon/bndm-menup0.jpg" /></a>
@@ -37,12 +58,42 @@
       <a href="&server_f?func=find-a&local_base=BNDM" class="blue" title="Ir a la HNDM"><img src="http://catalogo.iib.unam.mx/exlibris/aleph/u23_1/alephe/www_f_spa/icon/bndm-menup3.jpg" /></a>
     </div>
   </div>
-</div>
+</div> -->
 
 <!-- Lo siguiente debe ir el archivo find-include-buttons -->
 
 <div class="row">
-  <div class="col-md-12">
+  <!-- Agregando un nuevo menú-->
+  <div id="myMenu" class="col-md-8 col-md-offset-4">
+    <nav class="navbar navbar-default">
+    <!-- <div class="container-fluid"> -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Inicio</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Consulta <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Búsqueda básica</a></li>
+              <li><a href="#">Búsqueda avanzada</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Indices</a></li>
+          <li><a href="#">Colecciones</a></li>
+          <li><a href="#">Lista de resultados</a></li>
+        </ul>
+      </div>
+    <!-- </div> -->
+    </nav>
+  </div>
+
+  <!-- <div class="col-md-12">
     <nav class="navbar navbar-default">
        <ul class="nav navbar-nav">
          <li><a class="blue" style="color:#4a6159; font-size:100%; text-decoration:none;"  href="file:///home/juanmanuel/Documentos/iib/ccpbm-boostrap/ccpbm-html/find-b.html" class="blue">B&uacute;squeda b&aacute;sica</a></li>
@@ -52,105 +103,53 @@
          <li><a class="blue" style="color:#4a6159; font-size:100%; text-decoration:none;" href="&server_f?func=short&local_base=CCPBM" class="blue">Lista de resultados</a></li>
       </ul>
     </nav>
-  </div>
+  </div> -->
 </div>
-
-
-<div class="row">
-  <div class="col-md-12">
-	<!-- insertando el carrousel -->
-
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <img src="http://i.imgur.com/lgx7az7.jpg" alt="Lake Garda">
-      <div class="carousel-caption">
-        <h3>Lake Garda. Italy</h3>
-        <p>The atmosphere in Lake Garda, Italy is lorem ipsum.</p>
-      </div> 
-    </div>
-
-    <div class="item">
-      <img src="http://i.imgur.com/hk7DFNb.jpg" alt="Chicago">
-      <div class="carousel-caption">
-        <h3>Chicago</h3>
-        <p>Thank you, Chicago - A night we won't forget.</p>
-      </div> 
-    </div>
-
-    <div class="item">
-      <img src="http://i.imgur.com/79GKfUA.jpg" alt="Los Angeles">
-      <div class="carousel-caption">
-        <h3>LA</h3>
-        <p>Even though the traffic was a mess, we had the best time.</p>
-      </div> 
-    </div>
-  </div>
-
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-  </div>
-</div>
-<!-- adding some break lines here -->
-<br/><br/>
+	
 <form method=post 
       name="form1"
       action="&server_f">
-<div class="row">
-  <div class="col-md-3">
-    <div class="thumbnail">
-      <a href="&server_f?func=find-b&find_code=WBA&request=RSM&adjacent=N&local_base=BNDM">
-        <img class="img-responsive" src="../images/btn_impresmex.jpg" width="213" height="213"  alt="Impresos Méxicanos"/>
-        <div class="caption">
-          <p>Lorem ipsum...</p>
-        </div>
-      </a>
+<div class="container testimonial-group">
+  <div class="row text-center">
+    <div class="col-md-3">
+      <div class="thumbnail">
+        <a href="&server_f?func=find-b&find_code=WBA&request=RSM&adjacent=N&local_base=BNDM">
+          <img class="img-responsive" src="../images/btn_impresmex.jpg" width="213" height="213"  alt="Impresos Méxicanos"/>
+          <div class="caption">
+            <p>Lorem ipsum...</p>
+          </div>
+        </a>
+      </div>
     </div>
-  </div>
-  <div class="col-md-3">
-    <div class="thumbnail">
-      <a href="&server_f?func=find-b&find_code=WBA&request=RLAF&adjacent=N&local_base=BNDM">
-        <img class="img-responsive" src="../images/btn_lafragua.jpg" width="213" height="213"  alt="Colecci&oacute;n Lafragua"/>
-        <div class="caption">
-          <p>Lorem ipsum...</p>
-        </div>
-      </a>
+    <div class="col-md-3">
+      <div class="thumbnail">
+        <a href="&server_f?func=find-b&find_code=WBA&request=RLAF&adjacent=N&local_base=BNDM">
+          <img class="img-responsive" src="../images/btn_lafragua.jpg" width="213" height="213"  alt="Colecci&oacute;n Lafragua"/>
+          <div class="caption">
+            <p>Lorem ipsum...</p>
+          </div>
+        </a>
+      </div>
     </div>
-  </div>
-  <div class="col-md-3">
-    <div class="thumbnail">
-      <a href="&server_f?func=find-b&find_code=WBA&request=ABN&adjacent=N&local_base=BNDM">
-        <img class="img-responsive" src="../images/btn_archhistorico.jpg" width="213" height="213"  alt="Archivo Biblioteca Nacional"/>
-        <div class="caption">
-          <p>Lorem ipsum...</p>
-        </div>
-      </a>
+    <div class="col-md-3">
+      <div class="thumbnail">
+        <a href="&server_f?func=find-b&find_code=WBA&request=ABN&adjacent=N&local_base=BNDM">
+          <img class="img-responsive" src="../images/btn_archhistorico.jpg" width="213" height="213"  alt="Archivo Biblioteca Nacional"/>
+          <div class="caption">
+            <p>Lorem ipsum...</p>
+          </div>
+        </a>
+      </div>
     </div>
-  </div>
-  <div class="col-md-3">
-    <div class="thumbnail">
-      <a href="&server_f?func=find-b&find_code=WBA&request=ENP&adjacent=N&local_base=BNDM">
-        <img class="img-responsive" src="../images/btn_enp.jpg" width="213" height="213"  alt="Colección ENP"/>
-        <div class="caption">
-          <p>Lorem ipsum...</p>
-        </div>
-      </a>
+    <div class="col-md-3">
+      <div class="thumbnail">
+        <a href="&server_f?func=find-b&find_code=WBA&request=ENP&adjacent=N&local_base=BNDM">
+          <img class="img-responsive" src="../images/btn_enp.jpg" width="213" height="213"  alt="Colección ENP"/>
+          <div class="caption">
+            <p>Lorem ipsum...</p>
+          </div>
+        </a>
+      </div>
     </div>
   </div>
 </div>
