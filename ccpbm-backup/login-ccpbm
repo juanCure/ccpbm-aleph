@@ -4,90 +4,9 @@
 <head>
 <title>CCPBM - Entrar</title>
 <include>meta-tags
-<style type="text/css">
-  /* The heart of the matter */
-  .testimonial-group > .row {
-    overflow-x: auto;
-    white-space: nowrap;
-  }
-  .testimonial-group > .row > .col-md-3 {
-    display: inline-block;
-    float: none;
-  }
-
-  #myMenu {
-    top: -65px;
-  }
-
-  /* Sobreescribiendo estilos de boostrap */
-
-  .navbar-collapse {
-    padding-left: 0px;
-  }
-
-  /* Agregando estilos para el menú de navegación */
-  #myNav, .navbar-nav>li>.dropdown-menu {
-    background-color: #a88e5f;
-  }
-
-  #myNav {
-    opacity: 0.8; 
-  }
-
-  .navbar-nav {
-    padding: 10px;
-  }
-
-  .navbar-default .navbar-nav>li>a {
-    color: #fff;
-    font-family: Raleway;
-    font-size: 16px;
-    font-weight: 600;
-  }
-
-  .dropdown-menu>li>a{
-    color: #fff;
-    font-family: Raleway;
-  }
-
-  .with-border-left{
-    border-left: 2px solid white;
-  }
-</style>
 </head>
 
 <body>
-<style scoped contenteditable>/* For the "inset" look only */
-/* Agragando estilo a la scrollbar horizontal */
-
-/* Let's get this party started */
-div::-webkit-scrollbar {
-    width: 10px;
-    height: 12px;
-}
- 
-/* Track */
-div::-webkit-scrollbar-track{
-    background: rgba(131, 110, 45, 1);
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-}
- 
-/* Handle */
-div::-webkit-scrollbar-thumb:horizontal {
-    width: 1em;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    /*background: rgba(255,0,0,0.8); */
-    background: rgba(182, 160, 91, 1);
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
-}
-div::-webkit-scrollbar-thumb:window-inactive {
-  background: rgba(255,0,0,0.4); 
-  /*background: rgba(131, 110, 45, 1);*/
-}
-</style>
 
 <div class="container-fluid">
 <!-- <include>head-1 -->

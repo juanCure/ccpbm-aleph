@@ -1,0 +1,103 @@
+<!-- filename: find-d-ccpbm Juan Manuel RodrÃ­guez -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>&f-base - Búsqueda avanzada</title>
+<include>meta-tags
+</head>
+<body>
+<div class="container">
+<include>head-1
+
+<form method=get name=form1 action="&server_f" role="form">
+	<input type="hidden" name="func" value="find-d">
+	<div class="row">
+		<div class="col-md-12">
+			<h3> Búsqueda avanzada</h3>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-3">
+			<p>Campos de búsqueda</p>
+<include>find-code-include\FXX\0100\
+		</div>
+		<div class="col-md-3">
+			<p>Escriba una palabra o frase</p>
+			<input type="text" class="form-control" name=request value="$0200">
+		</div>
+		<div class="col-md-3">
+			<p>¿Palabras adyacentes?</p>
+			<label class="radio-inline"><input type="radio" name="adjacent1" value="N" $$0400-C"N">No</label>
+			<label class="radio-inline"><input type="radio" name="adjacent1" value="Y" $$0400-C"Y">Sí</label>
+		</div>
+		<div class="col-md-3">
+			<p>Núm de registros</p>
+			&nbsp;$0300
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-3">
+<include>find-code-include\FXX\1100\		
+		</div>
+		<div class="col-md-3">
+			<input type="text" class="form-control" name=request value="$1200">
+		</div>
+		<div class="col-md-3">
+			<label class="radio-inline"><input type="radio" name="adjacent2" value="N" $$1400-C"N">No</label>
+			<label class="radio-inline"><input type="radio" name="adjacent2" value="Y" $$1400-C"Y">Sí</label>
+		</div>
+		<div class="col-md-3">
+			&nbsp;$1300
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-3">
+<include>find-code-include\FXX\2100\
+		</div>
+		<div class="col-md-3">
+			<input type="text" class="form-control" name=request value="$2200">
+		</div>
+		<div class="col-md-3">
+			<label class="radio-inline"><input type="radio" name="adjacent3" value="N" $$2400-C"N">No</label>
+			<label class="radio-inline"><input type="radio" name="adjacent3" value="Y" $$2400-C"Y">Sí</label>
+		</div>
+		<div class="col-md-3">
+			&nbsp;$2300
+		</div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col-md-4 col-md-offset-8">
+			<input type="submit" alt="Go" class="btn btn-primary" value="Aceptar">
+			<a href="&server_f?func=find-d-0&clear_level=2" class="btn btn-primary">Borrar</a>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4 col-md-offset-8">
+			<label>Total:</label>&nbsp;$5000
+			<br>
+			<p>Presione sobre el total para ver los registros</p>
+		</div>
+	</div>
+
+	<hr>
+	<div class="row">
+		<div class="col-md-12">
+			<div>
+				<h3>Delimitador de búsqueda</h3>
+			</div>
+		</div>
+	</div>
+<include>find-include-filter
+</form>
+<br>
+<hr>
+<include>copyrights
+</body>
+</html>
+
+
+
