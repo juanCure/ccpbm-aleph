@@ -1,27 +1,10 @@
-<!-- filename: head-1-nobor-ccpbm Juan Manuel Rodriguez -->
+<!-- filename: head-1-nobor-ccpbm Juan Manuel Rodríguez -->
 <div class="row">
 	<div class="col-md-12">
 		<div class="header">
-			<img width="100%"  src="&icon_path/bndm-cabeza.jpg" usemap="#Map"/>
+			<img width="100%" src="&icon_path/banner_contenidos_01.jpg">
 		</div>
-	</div>
+<include>find-include-buttons	
+	</div>	
 </div>
-<div class="row">
-	<div class="col-md-3">
-		<div class="home-buttons">
-				 <a href="&server_f?func=login&local_base=BNDM" class="blue" title="Inicio"><img src="&icon_path/bndm-menup0.jpg" /></a>
-				 <a href="&server_f?func=find-a&local_base=BNDM" class="blue" title="Acerca de la BNDM"><img src="&icon_path/bndm-menup1.jpg" /></a>
-				 <a href="&server_f?func=login&local_base=BNDM" class="blue" title="Otras bases de datos"><img src="&icon_path/bndm-menup2.jpg" /></a>
-				 <a href="&server_f?func=find-a&local_base=BNDM" class="blue" title="Ir a la HNDM"><img src="&icon_path/bndm-menup3.jpg" /></a>
-		</div>
-	</div>
-</div>
-<include>find-include-buttons
-<!--
-<map name="Map" id="Map">
- <area shape="rect" coords="0,12,221,89" href="http://www.unam.mx" target="new" alt="UNAM" />
-  <area shape="rect" coords="920,13,995,84" href="http://www.iib.unam.mx" target="new" alt="IIB" />
-  <area shape="rect" coords="3,106,170,123" href="http://www.bnm.unam.mx" target="new" alt="Biblioteca Nacional" />
-  <area shape="rect" coords="1,129,172,145" href="http://www.hnm.unam.mx" target="new" alt="Hemeroteca Nacional" />
-</map>
--->
+<br><br><br>

@@ -108,7 +108,7 @@ div::-webkit-scrollbar-thumb:window-inactive {
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
               <li><a href="&server_f?func=login&local_base=CCPBM">INICIO</a></li>
-              <li class="with-border-left"><a href="#">PROYECTO</a></li>
+              <li class="with-border-left"><a href="&server_f?func=find-a&local_base=CCPBM">PROYECTO</a></li>
               <li class="with-border-left"><a href="#">INSTITUCIONES</a></li>
               <li class="dropdown with-border-left">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">CATÁLOGO <span class="caret"></span></a>

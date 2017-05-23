@@ -1,0 +1,28 @@
+<!-- filename: find-a-bndm Yuri -->
+<html>
+<head>
+<include>meta-tags
+<title>Acerda de la BNDM</title>
+</head>
+
+<body topmargin="0">
+<include>head-1
+<br>
+<div class=title>
+  Acerca de la Biblioteca Nacional Digital de México (BNDM)
+</div>
+<hr>
+<table border=0 cellspacing=2 width="90%">
+ <tr>
+  <td><img src="&icon_path/imgconte1.jpg">  </td> 
+  <td> <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+  <td>La Biblioteca Nacional Digital de México (BNDM), en consonancia con la misión que desde 1867 ha cumplido la Biblioteca Nacional y que consiste en recopilar, preservar, divulgar y resguardar la memoria bibliográfica de México, pone ahora a disposición del mundo parte de sus colecciones, fondos archivísticos y documentales, los cuales dan cuenta veraz de la riqueza del patrimonio cultural de nuestro país y cuyo proceso de digitalización irá en aumento.<br>    
+<br>Sensible a la necesidad de irse modificando al ritmo de las evoluciones sociales, culturales y tecnológicas, hoy, la BN da un paso decisivo, a través de la digitalización consciente y reflexiva de parte de su acervo, para facilitar el acceso a la información y los documentos resguardados.<br>  
+<br>El objetivo medular de esta iniciativa, cuyos frutos se irán enriqueciendo con el paso del tiempo, consiste en ampliar el espectro de acción e influencia de la BN al facilitar al usuario el acceso remoto a documentos de diversa índole que, en su conjunto, son reflejo del espíritu de la cultura mexicana a lo largo de los siglos. Con ello se difundirá la memoria bibliográfica del país y se facilitará el desarrollo del conocimiento en diversas latitudes.
+
+  </td>
+</table>
+<include>copyrights
+</body>
+</html>
+ 

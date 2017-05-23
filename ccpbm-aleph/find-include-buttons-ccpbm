@@ -1,25 +1,28 @@
 <!-- find-include-buttons-ccpbm Juan Manuel Rodríguez -->
-<!--
-<nav class="navbar navbar-default">
-  <ul class="nav navbar-nav">
-    <li><a class="blue" style="color:#4a6159; font-size:100%; text-decoration:none;"  href="&server_f?func=find-b-0&local_base=CCPBM" class="blue">B&uacute;squeda b&aacute;sica</a></li>
-    <li><a class="blue" style="color:#4a6159; font-size:100%; text-decoration:none;" href="&server_f?func=find-d-0&local_base=CCPBM" class="blue">B&uacute;squeda avanzada</a></li>
-    <li><a class="blue" style="color:#4a6159; font-size:100%; text-decoration:none;" href="&server_f?func=scan-list&local_base=CCPBM" class="blue">&Iacute;ndices</a></li>
-    <li><a class="blue" style="color:#4a6159; font-size:100%; text-decoration:none;" href="&server_f?func=find-r&local_base=CCPBM" class="blue">Colecciones</a></li>
-    <li><a class="blue" style="color:#4a6159; font-size:100%; text-decoration:none;" href="&server_f?func=short&local_base=CCPBM" class="blue">Lista de resultados</a></li>
-  </ul>
-</nav>-->
-
-<div class="row">
-		<div class="col-md-12">
-			<nav class="navbar navbar-default">
-			  <ul class="nav navbar-nav">
-			    <li><a class="blue" style="color:#4a6159; font-size:100%; text-decoration:none;"  href="&server_f?func=find-b-0&local_base=CCPBM" class="blue">B&uacute;squeda b&aacute;sica</a></li>
-			    <li><a class="blue" style="color:#4a6159; font-size:100%; text-decoration:none;" href="&server_f?func=find-d-0&local_base=CCPBM" class="blue">B&uacute;squeda avanzada</a></li>
-			    <li><a class="blue" style="color:#4a6159; font-size:100%; text-decoration:none;" href="&server_f?func=scan-list&local_base=CCPBM" class="blue">&Iacute;ndices</a></li>
-			    <li><a class="blue" style="color:#4a6159; font-size:100%; text-decoration:none;" href="&server_f?func=find-r&local_base=CCPBM" class="blue">Colecciones</a></li>
-			    <li><a class="blue" style="color:#4a6159; font-size:100%; text-decoration:none;" href="&server_f?func=short&local_base=CCPBM" class="blue">Lista de resultados</a></li>
-				</ul>
-			</nav>
-		</div>
-	</div>
+<div id="myMenu" class="col-md-8 col-md-offset-2">
+  <nav class="navbar navbar-default" id="myNav">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="&server_f?func=login&local_base=CCPBM">INICIO</a></li>
+        <li class="with-border-left"><a href="&server_f?func=find-a&local_base=CCPBM">PROYECTO</a></li>
+        <li class="with-border-left"><a href="#">INSTITUCIONES</a></li>
+        <li class="dropdown with-border-left">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">CATÁLOGO <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="&server_f?func=find-b-0&local_base=CCPBM">BÚSQUEDA BÁSICA</a></li>
+            <li><a href="&server_f?func=find-d-0&local_base=CCPBM">BÚSQUEDA AVANZADA</a></li>
+          </ul>
+        </li>
+        <li class="with-border-left"><a href="#">CONTACTO</a></li>
+        <li class="with-border-left"><a href="#">SALIR</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>	
