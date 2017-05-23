@@ -25,7 +25,7 @@
   }
 
   #myMenu {
-    top: -30px;
+    top: -65px;
   }
 
   /* Sobreescribiendo estilos de boostrap */
@@ -33,18 +33,108 @@
   .navbar-collapse {
     padding-left: 0px;
   }
+
+  /* Agregando estilos para el menú de navegación */
+  #myNav, .navbar-nav>li>.dropdown-menu {
+    background-color: #a88e5f;
+  }
+
+  #myNav {
+    opacity: 0.8; 
+  }
+
+  .navbar-nav {
+    padding: 10px;
+  }
+
+  .navbar-default .navbar-nav>li>a {
+    color: #fff;
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .dropdown-menu>li>a{
+    color: #fff;
+    font-family: Raleway;
+  }
+
+  .with-border-left{
+    border-left: 2px solid white;
+  }
 </style>
 </head>
 
 <body>
 
-<div class="container">
+<style scoped contenteditable>/* For the "inset" look only */
+/* Agragando estilo a la scrollbar horizontal */
+
+/* Let's get this party started */
+div::-webkit-scrollbar {
+    width: 10px;
+    height: 12px;
+}
+ 
+/* Track */
+div::-webkit-scrollbar-track{
+    background: rgba(131, 110, 45, 1);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+/* Handle */
+div::-webkit-scrollbar-thumb:horizontal {
+    width: 1em;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    /*background: rgba(255,0,0,0.8); */
+    background: rgba(182, 160, 91, 1);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+div::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(255,0,0,0.4); 
+  /*background: rgba(131, 110, 45, 1);*/
+}
+</style>
+<div class="container-fluid">
 <!--<include>head-1 -->
 <!-- Lo siguiente debe ir el archivo head-1-->
 <div class="row">
   <div class="col-md-12">
     <div class="header">
-      <img width="100%" src="../images/bndm-cabeza.jpg" usemap="#Map"/>
+      <img width="100%" src="../images/banner_home02.jpg" usemap="#Map"/>
+      <!-- Agregando un nuevo menú-->
+      <div id="myMenu" class="col-md-8 col-md-offset-4">
+        <nav class="navbar navbar-default" id="myNav">
+        <!-- <div class="container-fluid"> -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="#">INICIO</a></li>
+              <li class="with-border-left"><a href="#">PROYECTO</a></li>
+              <li class="with-border-left"><a href="#">INSTITUCIONES</a></li>
+              <li class="dropdown with-border-left">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">CATÁLOGO <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">BÚSQUEDA BÁSICA</a></li>
+                  <li><a href="#">BÚSQUEDA AVANZADA</a></li>
+                </ul>
+              </li>
+              <li class="with-border-left"><a href="#">CONTACTO</a></li>
+              <li class="with-border-left"><a href="#">SALIR</a></li>
+            </ul>
+          </div>
+        <!-- </div> -->
+        </nav>
+      </div>
     </div>
   </div>
 </div>
@@ -63,35 +153,6 @@
 <!-- Lo siguiente debe ir el archivo find-include-buttons -->
 
 <div class="row">
-  <!-- Agregando un nuevo menú-->
-  <div id="myMenu" class="col-md-8 col-md-offset-4">
-    <nav class="navbar navbar-default">
-    <!-- <div class="container-fluid"> -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>                        
-        </button>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Inicio</a></li>
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Consulta <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Búsqueda básica</a></li>
-              <li><a href="#">Búsqueda avanzada</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Indices</a></li>
-          <li><a href="#">Colecciones</a></li>
-          <li><a href="#">Lista de resultados</a></li>
-        </ul>
-      </div>
-    <!-- </div> -->
-    </nav>
-  </div>
 
   <!-- <div class="col-md-12">
     <nav class="navbar navbar-default">
@@ -114,40 +175,120 @@
     <div class="col-md-3">
       <div class="thumbnail">
         <a href="&server_f?func=find-b&find_code=WBA&request=RSM&adjacent=N&local_base=BNDM">
-          <img class="img-responsive" src="../images/btn_impresmex.jpg" width="213" height="213"  alt="Impresos Méxicanos"/>
-          <div class="caption">
+          <img class="img-responsive" src="../images/item01.jpg" width="250" height="250"  alt="Impresos Méxicanos"/>
+          <!-- <div class="caption">
             <p>Lorem ipsum...</p>
-          </div>
+          </div> -->
         </a>
       </div>
     </div>
     <div class="col-md-3">
       <div class="thumbnail">
         <a href="&server_f?func=find-b&find_code=WBA&request=RLAF&adjacent=N&local_base=BNDM">
-          <img class="img-responsive" src="../images/btn_lafragua.jpg" width="213" height="213"  alt="Colecci&oacute;n Lafragua"/>
-          <div class="caption">
+          <img class="img-responsive" src="../images/item02.jpg" width="250" height="250"  alt="Colecci&oacute;n Lafragua"/>
+          <!-- <div class="caption">
             <p>Lorem ipsum...</p>
-          </div>
+          </div> -->
         </a>
       </div>
     </div>
     <div class="col-md-3">
       <div class="thumbnail">
         <a href="&server_f?func=find-b&find_code=WBA&request=ABN&adjacent=N&local_base=BNDM">
-          <img class="img-responsive" src="../images/btn_archhistorico.jpg" width="213" height="213"  alt="Archivo Biblioteca Nacional"/>
-          <div class="caption">
+          <img class="img-responsive" src="../images/item03.jpg" width="250" height="250"  alt="Archivo Biblioteca Nacional"/>
+          <!-- <div class="caption">
             <p>Lorem ipsum...</p>
-          </div>
+          </div> -->
         </a>
       </div>
     </div>
     <div class="col-md-3">
       <div class="thumbnail">
         <a href="&server_f?func=find-b&find_code=WBA&request=ENP&adjacent=N&local_base=BNDM">
-          <img class="img-responsive" src="../images/btn_enp.jpg" width="213" height="213"  alt="Colección ENP"/>
-          <div class="caption">
+          <img class="img-responsive" src="../images/item04.jpg" width="250" height="250"  alt="Colección ENP"/>
+          <!-- <div class="caption">
             <p>Lorem ipsum...</p>
-          </div>
+          </div> -->
+        </a>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="thumbnail">
+        <a href="&server_f?func=find-b&find_code=WBA&request=ENP&adjacent=N&local_base=BNDM">
+          <img class="img-responsive" src="../images/item04.jpg" width="250" height="250"  alt="Colección ENP"/>
+          <!-- <div class="caption">
+            <p>Lorem ipsum...</p>
+          </div> -->
+        </a>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="thumbnail">
+        <a href="&server_f?func=find-b&find_code=WBA&request=ENP&adjacent=N&local_base=BNDM">
+          <img class="img-responsive" src="../images/item04.jpg" width="250" height="250"  alt="Colección ENP"/>
+          <!-- <div class="caption">
+            <p>Lorem ipsum...</p>
+          </div> -->
+        </a>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="thumbnail">
+        <a href="&server_f?func=find-b&find_code=WBA&request=ENP&adjacent=N&local_base=BNDM">
+          <img class="img-responsive" src="../images/item04.jpg" width="250" height="250"  alt="Colección ENP"/>
+          <!-- <div class="caption">
+            <p>Lorem ipsum...</p>
+          </div> -->
+        </a>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="thumbnail">
+        <a href="&server_f?func=find-b&find_code=WBA&request=ENP&adjacent=N&local_base=BNDM">
+          <img class="img-responsive" src="../images/item04.jpg" width="250" height="250"  alt="Colección ENP"/>
+          <!-- <div class="caption">
+            <p>Lorem ipsum...</p>
+          </div> -->
+        </a>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="thumbnail">
+        <a href="&server_f?func=find-b&find_code=WBA&request=ENP&adjacent=N&local_base=BNDM">
+          <img class="img-responsive" src="../images/item04.jpg" width="250" height="250"  alt="Colección ENP"/>
+          <!-- <div class="caption">
+            <p>Lorem ipsum...</p>
+          </div> -->
+        </a>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="thumbnail">
+        <a href="&server_f?func=find-b&find_code=WBA&request=ENP&adjacent=N&local_base=BNDM">
+          <img class="img-responsive" src="../images/item04.jpg" width="250" height="250"  alt="Colección ENP"/>
+          <!-- <div class="caption">
+            <p>Lorem ipsum...</p>
+          </div> -->
+        </a>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="thumbnail">
+        <a href="&server_f?func=find-b&find_code=WBA&request=ENP&adjacent=N&local_base=BNDM">
+          <img class="img-responsive" src="../images/item04.jpg" width="250" height="250"  alt="Colección ENP"/>
+          <!-- <div class="caption">
+            <p>Lorem ipsum...</p>
+          </div> -->
+        </a>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="thumbnail">
+        <a href="&server_f?func=find-b&find_code=WBA&request=ENP&adjacent=N&local_base=BNDM">
+          <img class="img-responsive" src="../images/item04.jpg" width="250" height="250"  alt="Colección ENP"/>
+          <!-- <div class="caption">
+            <p>Lorem ipsum...</p>
+          </div> -->
         </a>
       </div>
     </div>
