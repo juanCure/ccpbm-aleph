@@ -5,20 +5,16 @@ function changing_header(){
 	/*
 	var href_login = "http://catalogo.iib.unam.mx/F/15IQXSJ19QEPGKFU3KVVHTS2L4C44N5LD8CP7R2HI7JBVG96J8-34357?func=login&local_base=ccpbm";
 	var href_find_b = "http://catalogo.iib.unam.mx/F/15IQXSJ19QEPGKFU3KVVHTS2L4C44N5LD8CP7R2HI7JBVG96J8-08786?func=find-b-0&local_base=CCPBM";
-	var image_base_src = "http://catalogo.iib.unam.mx/exlibris/aleph/u23_1/alephe/www_f_spa/icon/bndm-cabeza.jpg";
-	*/
+	var image_base_src = "http://catalogo.iib.unam.mx/exlibris/aleph/u23_1/alephe/www_f_spa/icon/bndm-cabeza.jpg";*/
+	
 	var href = document.location.href;
 
-	var matches = /func=([^&#=]*)/.exec(href_login);
+	var matches = /func=([^&#=]*)/.exec(href);
 	var param1 = matches[1];
-
-
-	var image_find_b = "../images/bndm-cabeza-find-b-0.jpg";
-
+	// var image_find_b = "../images/bndm-cabeza-find-b-0.jpg";
 	var image_header = document.getElementById("image_header");
-	image_header.setAttribute("src", image_find_b);
-	
-	//image_header.setAttribute("src", "&icon_path/" + "bndm-cabeza-" + param1 + ".jpg");
+	// image_header.setAttribute("src", image_find_b);
+	image_header.setAttribute("src", "&icon_path/" + "bndm-cabeza-" + param1 + ".jpg");
 }
 
 // Implementado la funcionalidad para agregar href para los botones anterior y siguiente del pager

@@ -4,7 +4,7 @@
 <head>
 <include>meta-tags
 <title>Acerca de CCPBM</title>
-<style type="text/css">
+<!-- <style type="text/css">
   /* Agregando estilos para el menú de navegación */
 
   #myMenu {
@@ -55,7 +55,7 @@
   }
 
   
-</style>
+</style> -->
 </head>
 
 <body>
