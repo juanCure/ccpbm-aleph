@@ -2,61 +2,81 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>&f-base - BÃºsqueda bÃ¡sica</title>
+<title>&f-base - Búsqueda básica</title>
 <include>meta-tags
 </head>
 <body>
-<div class="container">
+<div class="container-fluid">
 <include>head-1
+</div> <!-- Aquí termina el div.container-fluid que contiene el banner -->
 
 <form method=get name=form1 action="&server_f" role="form">
 	<input type="hidden" name="func" value="find-b">
-	<div class="row">
-		<div class="col-md-12">
-			<h3> BÃºsqueda bÃ¡sica</h3>
-		</div>
-	</div>
-	<div class="form-group">
-		<label class="control-label" for="inputText">Escribir palabra(s)</label>
-		<input name="request" value="$0100" type="text" class="form-control" id="inputText">
-	</div>
-	<input type="submit" alt="Go" class="btn btn-primary" value="Aceptar">
-	<a href="&server_f?func=find-b-0&clear_level=2" class="btn btn-primary">Borrar</a>
-	<!--
-	<button class="btn btn-primary">Aceptar</button>
-	<button class="btn btn-primary">Borrar</button>
-	-->
-	<div class="row">
-		<div class="col-md-12">
-			<div>
-				<h3>Delimitadores de bÃºsqueda</h3>
+	<div class="jumbotron" style="margin-top: 80px;">
+		<div class="row">
+			<div class="col-md-12">
+				<h3> Búsqueda básica</h3>
 			</div>
 		</div>
-		<div class="form-group">
-			<label for="sel1" class="control-label col-md-2">Campo de bÃºsqueda</label>
+		<div class="form-group row">
+			<label class="control-label col-md-4" for="inputText">Escribir palabra(s)</label>
+			<div class="col-md-12">
+				<input name="request" value="$0100" type="text" class="form-control" id="inputText">	
+			</div>
+		</div>
+		<div class="form-group row">
 			<div class="col-md-4">
-<include>find-code-include
+				<select class="form-control" id="sel2" name=colecciones>
+					<option value="0">Seleccionar colección</option> 
+					<option value="1">Colección 1</option> 
+					<option value="2">Colección 2</option> 
+					<option value="3">Colección 3</option> 
+					<option value="4">Colección 4</option>
+				</select>	
 			</div>
-		</div>
-		<div class="form-group">
-			<label for="myradio" class="control-label col-md-2">Palabras adyacentes</label>
-				<div class="col-md-4">
-					<label class="radio-inline" id="myradio">
-						<input type="radio" name="adjacent" value="N">No
-					</label>
-					<label class="radio-inline">
-						<input type="radio" name="adjacent" value="Y">SÃ­
-					</label>
-				</div>
-		</div>
+			<div class="col-md-2 col-md-offset-6">
+				<input type="submit" alt="Go" class="btn btn-primary" value="Aceptar">
+				<a href="&server_f?func=find-b-0&clear_level=2" class="btn btn-primary">Borrar</a>
+			</div>
+		</div>	
 	</div>
 
+	<div class="jumbotron">
+		<div class="row">
+			<div class="col-md-12">
+				<h3>Delimitadores de búsqueda</h3>
+			</div>	
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="form-group row">
+				  <label for="sel1" class="control-label col-md-6">Campos de búsqueda</label>
+				  <div class="col-md-10">
+<include>find-code-include
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-2">
+				<div class="form-group row">
+					<label class="control-label col-md-6">Palabras adyacentes</label>
+					<div class="col-md-10">
+						<label class="radio-inline" id="myradio">
+							<input type="radio" name="adjacent" value="N">No
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="adjacent" value="Y">Sí
+						</label>
+					</div>
+				</div>
+			</div>
 <include>find-include-filter
+		</div>
+	</div>
 </form>
 
 <include>copyrights
-</div> <!-- Fin del div container -->
+</div> <!-- Aquí termina el div.container que contiene el contenido de la página -->
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

@@ -1,4 +1,5 @@
 <!-- find-include-buttons-ccpbm Juan Manuel Rodríguez -->
+<div class="container">
 <div id="myMenu" class="col-md-8 col-md-offset-2">
   <nav class="navbar navbar-default" id="myNav">
     <div class="navbar-header">

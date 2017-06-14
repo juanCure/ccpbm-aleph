@@ -1,54 +1,30 @@
 <!-- filename: find-include-filter-ccpbm Juan Manuel Rodríguez -->
-<!-- <div class="row">
-  <div class="col-md-4">
-    <div>
-      <label>Año o período de edición:</label>
+<div class="col-md-6">
+  <div class="row">
+    <div class="col-md-12">
+      <label class="control-label">Año o periodo de edición</label>
     </div>
   </div>
-  <div class="col-md-4">
-    <div class="form-group">
-      <label for="fromYear" class="control-label col-md-2">Del año:</label>
-      <input type="hidden" name="filter_code_2" value="WYR">
-      <input type="text" size="10" name="filter_request_2" value="" class="form-control" id="fromYear"> 
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group row">
+        <label for="fromYear" class="control-label col-md-6">Del año:</label>
+        <div class="col-md-6">
+          <input type="hidden" name="filter_code_2" value="WYR">
+          <input type="text" size="10" name="filter_request_2" value="" class="form-control" id="fromYear">   
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="col-md-4">
-    <div class="form-group">
-      <label for="toYear" class="control-label col-md-2">Al año:</label>
-      <input type="hidden" name="filter_code_3" value="WYR">
-      <input type="text" size="10" name="filter_request_3" value="" class="form-control" id="toYear">
+    <div class="col-md-6">
+      <div class="form-group row">
+        <label for="toYear" class="control-label col-md-6">Al año:</label>
+        <div class="col-md-6">
+          <input type="hidden" name="filter_code_3" value="WYR">
+          <input type="text" size="10" name="filter_request_3" value="" class="form-control" id="toYear">
+        </div>
+      </div>
     </div>
-  </div>
-</div> -->
-<div class="row">
-  <div class="col-md-12">
-    <label>Año o período de edición:</label>
+    <span class="help-block col-md-12">Escriba los años usando 4 dígitos, ejemplo: 1718</span>
+    <span class="help-block col-md-12">Utilice <b>?</b> para truncar cuando no use del/al año)</span>
   </div>
 </div>
-
-<div class="row">
-  <div class="col-md-4">
-    <label class="control-label">Del año</label>
-    <div>
-      <input type="hidden" name="filter_code_2" value="WYR">
-      <input type="text" size="10" name="filter_request_2" value="" class="form-control" id="fromYear"> 
-    </div>
-  </div>
-
-  <div class="col-md-4">
-    <label class="control-label">Hasta el año</label>
-    <div>
-      <input type="hidden" name="filter_code_3" value="WYR">
-      <input type="text" size="10" name="filter_request_3" value="" class="form-control" id="toYear">
-    </div>
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-md-12">
-    <span class="help-block">Escriba los años usando 4 dígitos, ejemplo: 1718</span>
-    <span class="help-block">Utilice <b>?</b> para truncar cuando no use del/al año)</span>
-  </div>
-</div>
-
-
