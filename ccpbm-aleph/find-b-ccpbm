@@ -6,9 +6,7 @@
 <include>meta-tags
 </head>
 <body>
-<div class="container-fluid">
 <include>head-1
-</div> <!-- Aquí termina el div.container-fluid que contiene el banner -->
 
 <form method=get name=form1 action="&server_f" role="form">
 	<input type="hidden" name="func" value="find-b">

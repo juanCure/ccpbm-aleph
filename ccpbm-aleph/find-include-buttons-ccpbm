@@ -1,6 +1,6 @@
 <!-- find-include-buttons-ccpbm Juan Manuel Rodríguez -->
 <div class="container">
-<div id="myMenu" class="col-md-8 col-md-offset-2">
+<div id="myMenu" class="col-md-12">
   <nav class="navbar navbar-default" id="myNav">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -22,8 +22,17 @@
           </ul>
         </li>
         <li class="with-border-left"><a href="#">CONTACTO</a></li>
-        <!-- <li class="with-border-left"><a href="#">SALIR</a></li> -->
       </ul>
+      <form class="navbar-form navbar-right">
+        <div class="input-group">
+          <span style="background-color: #b8a27c;" class="input-group-addon"><span style="color: #fff;" class="glyphicon glyphicon-stats"></span></span>
+          <input type="text" name="algo" class="form-control" placeholder="Búsqueda">
+          <span class="input-group-btn">
+            <button type="button" class="btn btn-default"><span style="color: #b8a27c;" class="glyphicon glyphicon-search"></span></button>
+          </span>
+        </div>
+      </form>
     </div>
   </nav>
-</div>	
+</div>
+<br><br>	
