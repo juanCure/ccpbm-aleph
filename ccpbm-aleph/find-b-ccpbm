@@ -6,7 +6,7 @@
 <include>meta-tags
 </head>
 <body>
-<include>head-1
+<!-- <include>head-1 -->
 
 <form method=get name=form1 action="&server_f" role="form">
 	<input type="hidden" name="func" value="find-b">

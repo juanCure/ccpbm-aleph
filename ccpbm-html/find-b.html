@@ -11,10 +11,11 @@
 <!-- Bootstrap -->
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="./ccpbm.css">
 
 <title>Búsqueda Básica</title>
 
-<style type="text/css">
+<!-- <style type="text/css">
 	.jumbotron{
 		background-color: #e3e0d9;
 	}
@@ -32,182 +33,203 @@
 		border-color: #c1a37b;
 		box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
 	}
-</style>
+
+	#myMenuPrincipal {
+		/*background-color: #b8a27c;*/
+		background-color: #a88e5f;
+	}
+
+	#mySubmenu{
+		background-color: #e3e0d9;
+	}
+
+	#mySubmenu .navbar-nav>li>a{
+		color: #7c6a53;
+		padding: 3px 15px;
+	}
+
+	#mySubmenu .with-border-left{
+    border-left: 2px solid #7c6a53;
+  }
+
+	#myNav.navbar-default {
+		border-color: #fff;
+	}
+
+	#myNavbar, #myNavbarForm  {
+		padding: 0;
+	}
+
+</style> -->
 </head>
 
 <body>
 <div class="container-fluid">
-<!--<include>head-1	-->
-<!-- Lo siguiente debe ir el archivo head-1-->
-<div class="row">
-	<div class="col-md-12">
-		<div class="header">
-			<img width="100%" src="../images/banner_contenidos_01.jpg" usemap="#Map" id="image_header"/>
+	<!--<include>head-1	-->
+	<!-- Lo siguiente debe ir el archivo head-1-->
+	<div class="row">
+		<div class="col-md-12">
+			<div class="header">
+				<img width="100%" src="../images/banner_contenidos_01.jpg" usemap="#Map" id="image_header"/>
+			</div>
 		</div>
 	</div>
-</div>
 </div> <!-- Aquí termina el div.container-fluid que contiene el banner -->
-<br><br><br>
+
 <!-- Lo siguiente debe ir el archivo find-include-buttons -->
 <div class="container">
-
-<div id="myMenu" class="col-md-12">
-  <nav class="navbar navbar-default" id="myNav">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li><a href="&server_f?func=login&local_base=CCPBM">INICIO</a></li>
-        <li class="with-border-left"><a href="&server_f?func=find-a&local_base=CCPBM">PROYECTO</a></li>
-        <li class="with-border-left"><a href="#">COLECCIONES</a></li>
-        <li class="dropdown with-border-left">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">BÚSQUEDAS <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="&server_f?func=find-b-0&local_base=CCPBM">BÁSICA</a></li>
-            <li><a href="&server_f?func=find-d-0&local_base=CCPBM">AVANZADA</a></li>
-          </ul>
-        </li>
-        <li class="with-border-left"><a href="#">CONTACTO</a></li>
-        <!-- <li class="with-border-left"><a href="#">SALIR</a></li> -->
-      </ul>
-      <form class="navbar-form navbar-right">
-      	<div class="input-group">
-      		<span style="background-color: #b8a27c;" class="input-group-addon"><span style="color: #fff;" class="glyphicon glyphicon-stats"></span></span>
-      		<input type="text" name="algo" class="form-control" placeholder="Búsqueda">
-      		<span class="input-group-btn">
-	          <button type="button" class="btn btn-default"><span style="color: #b8a27c;" class="glyphicon glyphicon-search"></span></button>
-	      	</span>
-      	</div>
-      </form>
-    </div>
-  </nav>
-</div>	
-
-	<!-- Este es el contenido del archivo find-b -->
-<form method=get name=form1 action="http://catalogo.iib.unam.mx:80/F/15IQXSJ19QEPGKFU3KVVHTS2L4C44N5LD8CP7R2HI7JBVG96J8-03262"  role="form">
-	<input type="hidden" name="func" value="find-b">
-	<div class="jumbotron" style="margin-top: 80px;">
-		<div class="row">
-			<div class="col-md-12">
-				<h3> Búsqueda básica</h3>
-			</div>
-		</div>
-		<div class="form-group row">
-			<label class="control-label col-md-4" for="inputText">Escribir palabra(s)</label>
-			<div class="col-md-12">
-				<input type="text" class="form-control" id="inputText" name="request">	
-			</div>
-		</div>
-		<div class="form-group row">
-			<div class="col-md-4">
-				<select class="form-control" id="sel2" name=colecciones>
-					<option value="WRD">Todos los campos</option> 
-					<option value="WTI">Título</option> 
-					<option value="WAU">Autor</option> 
-					<option value="WSU">Tema</option> 
-					<option value="TXT">Contenidos</option>
-				</select>	
-			</div>
-			<div class="col-md-2 col-md-offset-6">
-				<input type="submit" alt="Go" class="btn btn-primary" value="Aceptar">
-				<a href="http://catalogo.iib.unam.mx:80/F/15IQXSJ19QEPGKFU3KVVHTS2L4C44N5LD8CP7R2HI7JBVG96J8-03263?func=find-b-0&clear_level=2" class="btn btn-primary">Borrar</a>
-			</div>
-		</div>
+	<div id="myMenu" class="col-md-12">
+	  <nav class="navbar navbar-default" id="myNav">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>                        
+	      </button>
+	    </div>
+	    <div class="collapse navbar-collapse" id="myNavbar">
+	    <div class="col-md-9" id="myMenuPrincipal">
+	    	<ul class="nav navbar-nav">
+	        <li><a href="#">INICIO</a></li>
+	        <li class="with-border-left"><a href="#">PROYECTO</a></li>
+	        <li class="with-border-left"><a href="#">COLECCIONES</a></li>
+	        <li class="with-border-left"><a href="#">BÚSQUEDAS</a></li>
+	        <li class="with-border-left"><a href="#">CONTACTO</a></li>
+	      </ul>
+	    </div>
+	    <div class="col-md-3" id="myNavbarForm">
+	    	<form class="navbar-form navbar-right">
+	      	<div class="input-group input-group-lg">
+	      		<span style="background-color: #b8a27c;" class="input-group-addon"><span style="color: #fff;" class="glyphicon glyphicon-stats"></span></span>
+	      		<input type="text" name="algo" class="form-control" placeholder="Búsqueda">
+	      		<span class="input-group-btn">
+		          <button type="button" class="btn btn-default"><span style="color: #b8a27c;" class="glyphicon glyphicon-search"></span></button>
+		      	</span>
+	      	</div>
+	      </form>
+	    </div>
+	    <div class="col-md-9" id="mySubmenu" style="top: 10px">
+	    	<ul class="nav navbar-nav">
+					<li><a href="#">Búsqueda básica</a></li>
+					<li class="with-border-left"><a href="#">Búsqueda avanzada</a></li>
+					<li class="with-border-left"><a href="#">Indices</a></li>
+					<li class="with-border-left"><a href="#">Búsquedas Anteriores</a></li>
+					<li class="with-border-left"><a href="#">Lista de resultados</a></li>
+				</ul>
+	    </div>
+	    </div>
+	  </nav>
 	</div>
+</div><!-- Aquí termina el div.container que contiene el menú -->	
 
-	<div class="jumbotron">
-		<div class="row">
-			<div class="col-md-12">
-				<h3>Delimitadores de búsqueda</h3>
-			</div>	
+<!-- Este es el contenido del archivo find-b -->
+
+<div class="container" style="margin-top: 20px;">
+	<form method=get name=form1 action="http://catalogo.iib.unam.mx:80/F/15IQXSJ19QEPGKFU3KVVHTS2L4C44N5LD8CP7R2HI7JBVG96J8-03262"  role="form">
+		<input type="hidden" name="func" value="find-b">
+		<div class="jumbotron" style="margin-top: 20px;">
+			<div class="row">
+				<div class="col-md-12">
+					<h3> Búsqueda básica</h3>
+				</div>
+			</div>
+			<div class="form-group row">
+				<label class="control-label col-md-4" for="inputText">Escribir palabra(s)</label>
+				<div class="col-md-12">
+					<input type="text" class="form-control" id="inputText" name="request">	
+				</div>
+			</div>
+			<div class="form-group row">
+				<div class="col-md-4">
+					<select class="form-control" id="sel2" name=colecciones>
+						<option value="WRD">Todos los campos</option> 
+						<option value="WTI">Título</option> 
+						<option value="WAU">Autor</option> 
+						<option value="WSU">Tema</option> 
+						<option value="TXT">Contenidos</option>
+					</select>	
+				</div>
+				<div class="col-md-2 col-md-offset-6">
+					<input type="submit" alt="Go" class="btn btn-primary" value="Aceptar">
+					<a href="http://catalogo.iib.unam.mx:80/F/15IQXSJ19QEPGKFU3KVVHTS2L4C44N5LD8CP7R2HI7JBVG96J8-03263?func=find-b-0&clear_level=2" class="btn btn-primary">Borrar</a>
+				</div>
+			</div>
 		</div>
-		<div class="row">
-			<div class="col-md-4">
-				<div class="form-group row">
-				  <label for="sel1" class="control-label col-md-6">Campo de búsqueda</label>
-				  <div class="col-md-10">
-				    <select class="form-control" id="sel1" name=find_code>
-							<option value="WRD">Todos los campos</option> 
-						  <option value="WTI">Título</option> 
-						  <option value="WAU">Autor</option> 
-						  <option value="WSU">Tema</option> 
-						  <option value="TXT">Contenidos</option>
-						</select>
-				  </div>
-				</div>
+
+		<div class="jumbotron">
+			<div class="row">
+				<div class="col-md-12">
+					<h3>Delimitadores de búsqueda</h3>
+				</div>	
 			</div>
-			<div class="col-md-2">
-				<div class="form-group row">
-					<label class="control-label col-md-6">Palabras adyacentes</label>
-					<div class="col-md-10">
-						<label class="radio-inline" id="myradio">
-							<input type="radio" name="optradio">No
-						</label>
-						<label class="radio-inline">
-							<input type="radio" name="optradio">Sí
-						</label>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="form-group row">
+					  <label for="sel1" class="control-label col-md-6">Campo de búsqueda</label>
+					  <div class="col-md-10">
+					    <select class="form-control" id="sel1" name=find_code>
+								<option value="WRD">Todos los campos</option> 
+							  <option value="WTI">Título</option> 
+							  <option value="WAU">Autor</option> 
+							  <option value="WSU">Tema</option> 
+							  <option value="TXT">Contenidos</option>
+							</select>
+					  </div>
 					</div>
 				</div>
-			</div>
-			<div class="col-md-6">
-				<div class="row">
-					<div class="col-md-12">
-						<label class="control-label">Año o periodo de edición</label>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-6">
-						<div class="form-group row">
-							<label for="fromYear" class="control-label col-md-6">Del año:</label>
-							<div class="col-md-6">
-								<input type="hidden" name="filter_code_2" value="WYR">
-	    					<input type="text" size="10" name="filter_request_2" value="" class="form-control" id="fromYear">		
-							</div>
+				<div class="col-md-2">
+					<div class="row">
+						<label class="control-label">¿Palabras adyacentes?</label>
+						<div class="col-md-10">
+							<label class="radio-inline" id="myradio">
+								<input type="radio" name="optradio">No
+							</label>
+							<label class="radio-inline">
+								<input type="radio" name="optradio">Sí
+							</label>
 						</div>
 					</div>
-					<div class="col-md-6">
-						<div class="form-group row">
-							<label for="toYear" class="control-label col-md-6">Al año:</label>
-							<div class="col-md-6">
-								<input type="hidden" name="filter_code_3" value="WYR">
-		    				<input type="text" size="10" name="filter_request_3" value="" class="form-control" id="toYear">
-							</div>
+				</div>
+				<div class="col-md-6">
+					<div class="row">
+						<div class="col-md-12">
+							<label class="control-label">Año o periodo de edición</label>
 						</div>
 					</div>
-					<span class="help-block col-md-12">Escriba los años usando 4 digitos, ejemplo: 1728.</span>
+					<div class="row">
+						<div class="form-horizontal col-md-6">
+							<div class="form-group row">
+								<label for="fromYear" class="control-label col-md-6">Del año:</label>
+								<div class="col-md-6">
+									<input type="hidden" name="filter_code_2" value="WYR">
+		    					<input type="text" size="10" name="filter_request_2" value="" class="form-control" id="fromYear">		
+								</div>
+							</div>
+						</div>
+						<div class="form-horizontal col-md-6">
+							<div class="form-group row">
+								<label for="toYear" class="control-label col-md-6">Al año:</label>
+								<div class="col-md-6">
+									<input type="hidden" name="filter_code_3" value="WYR">
+			    				<input type="text" size="10" name="filter_request_3" value="" class="form-control" id="toYear">
+								</div>
+							</div>
+						</div>
+						<span class="help-block col-md-12 text-center">Escriba los años usando 4 digitos, ejemplo: 1728.</span>
+					</div>
 				</div>
-				<!-- <div class="row">
-					<label class="control-label col-md-12">Año o periodo de edición</label>
-					<div class="form-group col-md-6">
-						<label for="fromYear" class="control-label">Del año:</label>
-						<input type="hidden" name="filter_code_2" value="WYR">
-    				<input type="text" size="10" name="filter_request_2" value="" class="form-control" id="fromYear"> 
-					</div>
-					<div class="form-group col-md-6">
-						<label for="toYear" class="control-label">Al año:</label>
-						<input type="hidden" name="filter_code_3" value="WYR">
-    				<input type="text" size="10" name="filter_request_3" value="" class="form-control" id="toYear">
-					</div>
-					 <span class="help-block col-md-12">Escriba los años usando 4 digitos, ejemplo: 1728.</span>
-				</div> -->
 			</div>
 		</div>
-	</div>
-</form>
+	</form>
 
-<!--<include>copyrights-->
-<!-- Esto debe ir el archivo copyrights --> 
-<div class="row text-center">
-  <div class="col-md-12">
-  	<p>Hecho en México, Universidad Nacional Autónoma de Néxico (UNAM), todos los derechos reservados, 2015. Esta pÃƒÂ¡gina puede ser reproducida con fines no lucrativos, siempre y cuando no se mutile, se cite la fuente completa y su dirección electrónica. De otra forma, se requiere permiso previo y por escrito de la institución. &copy;</p>
-  	<p><a style="color:#4a6159; font-size:80%; text-decoration:none;" href="http://catalogo.iib.unam.mx:80/F/S582U84X638TKNCC4L4M17PSDND53T8H6V1QKXM8PRJTU1JAKY-46937?func=find-f&local_base=BNDM" class="blue">Créditos</a></p>
-  </div>
-</div>
+	<!--<include>copyrights-->
+	<!-- Esto debe ir el archivo copyrights --> 
+	<div class="row text-center">
+	  <div class="col-md-12">
+	  	<p>Hecho en México, Universidad Nacional Autónoma de Néxico (UNAM), todos los derechos reservados, 2015. Esta pÃƒÂ¡gina puede ser reproducida con fines no lucrativos, siempre y cuando no se mutile, se cite la fuente completa y su dirección electrónica. De otra forma, se requiere permiso previo y por escrito de la institución. &copy;</p>
+	  	<p><a style="color:#4a6159; font-size:80%; text-decoration:none;" href="http://catalogo.iib.unam.mx:80/F/S582U84X638TKNCC4L4M17PSDND53T8H6V1QKXM8PRJTU1JAKY-46937?func=find-f&local_base=BNDM" class="blue">Créditos</a></p>
+	  </div>
+	</div>
 </div> <!-- Aquí termina el div.container que contiene el contenido de la página -->
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
