@@ -103,7 +103,7 @@
 	      		<span style="background-color: #b8a27c;" class="input-group-addon"><span style="color: #fff;" class="glyphicon glyphicon-stats"></span></span>
 	      		<input type="text" name="algo" class="form-control" placeholder="Búsqueda">
 	      		<span class="input-group-btn">
-		          <button type="button" class="btn btn-default"><span style="color: #b8a27c;" class="glyphicon glyphicon-search"></span></button>
+		          <button type="submit" class="btn btn-default"><span style="color: #b8a27c;" class="glyphicon glyphicon-search"></span></button>
 		      	</span>
 	      	</div>
 	      </form>
@@ -142,12 +142,12 @@
 			<div class="form-group row">
 				<div class="col-md-4">
 					<select class="form-control" id="sel2" name=colecciones>
-						<option value="WRD">Todos los campos</option> 
-						<option value="WTI">Título</option> 
-						<option value="WAU">Autor</option> 
-						<option value="WSU">Tema</option> 
-						<option value="TXT">Contenidos</option>
-					</select>	
+					<option value="0">Seleccionar colección</option> 
+					<option value="1">Colección 1</option> 
+					<option value="2">Colección 2</option> 
+					<option value="3">Colección 3</option> 
+					<option value="4">Colección 4</option>
+				</select>	
 				</div>
 				<div class="col-md-2 col-md-offset-6">
 					<input type="submit" alt="Go" class="btn btn-primary" value="Aceptar">
@@ -165,7 +165,7 @@
 			<div class="row">
 				<div class="col-md-4">
 					<div class="form-group row">
-					  <label for="sel1" class="control-label col-md-6">Campo de búsqueda</label>
+					  <label for="sel1" class="control-label col-md-12">Campos de búsqueda</label>
 					  <div class="col-md-10">
 					    <select class="form-control" id="sel1" name=find_code>
 								<option value="WRD">Todos los campos</option> 
@@ -177,9 +177,9 @@
 					  </div>
 					</div>
 				</div>
-				<div class="col-md-2">
-					<div class="row">
-						<label class="control-label">¿Palabras adyacentes?</label>
+				<div class="col-md-3">
+					<div class="form-group row">
+						<label class="control-label col-md-12">¿Palabras adyacentes?</label>
 						<div class="col-md-10">
 							<label class="radio-inline" id="myradio">
 								<input type="radio" name="optradio">No
@@ -190,11 +190,9 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6">
-					<div class="row">
-						<div class="col-md-12">
-							<label class="control-label">Año o periodo de edición</label>
-						</div>
+				<div class="col-md-5">
+					<div class="form-group row">
+						<label class="control-label col-md-12">Año o período de edición</label>
 					</div>
 					<div class="row">
 						<div class="form-horizontal col-md-6">

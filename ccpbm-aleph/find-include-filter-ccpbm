@@ -1,12 +1,10 @@
 <!-- filename: find-include-filter-ccpbm Juan Manuel Rodríguez -->
-<div class="col-md-6">
-  <div class="row">
-    <div class="col-md-12">
-      <label class="control-label">Año o periodo de edición</label>
-    </div>
+<div class="col-md-5">
+  <div class="form-group row">
+    <label class="control-label col-md-12">Año o período de edición</label>
   </div>
   <div class="row">
-    <div class="col-md-6">
+    <div class="form-horizontal col-md-6">
       <div class="form-group row">
         <label for="fromYear" class="control-label col-md-6">Del año:</label>
         <div class="col-md-6">
@@ -15,7 +13,7 @@
         </div>
       </div>
     </div>
-    <div class="col-md-6">
+    <div class="form-horizontal col-md-6">
       <div class="form-group row">
         <label for="toYear" class="control-label col-md-6">Al año:</label>
         <div class="col-md-6">
@@ -24,7 +22,7 @@
         </div>
       </div>
     </div>
-    <span class="help-block col-md-12">Escriba los años usando 4 dígitos, ejemplo: 1718</span>
-    <span class="help-block col-md-12">Utilice <b>?</b> para truncar cuando no use del/al año)</span>
+    <span class="help-block col-md-12 text-center">Escriba los años usando 4 dígitos, ejemplo: 1718</span>
+    <span class="help-block col-md-12 text-center" >Utilice <b>?</b> para truncar cuando no use del/al año)</span>
   </div>
 </div>
