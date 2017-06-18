@@ -11,101 +11,85 @@
 <!-- Bootstrap -->
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="./ccpbm.css">
 <title>Acerca de CCPBM</title>
 <style type="text/css">
-  /* Agregando estilos para el men√∫ de navegaci√≥n */
-
-  #myMenu {
-    top: 20px;
-  }
-
-  #myNav, .navbar-nav>li>.dropdown-menu {
-    background-color: #a88e5f;
-  }
-
-  #myNav {
-    opacity: 0.8; 
-  }
-
-  .navbar-nav {
-    padding: 10px;
-  }
-
-  .navbar-default .navbar-nav>li>a {
-    color: #fff;
-    font-family: Raleway;
-    font-size: 16px;
-    font-weight: 600;
-  }
-
-  .dropdown-menu>li>a{
-    color: #fff;
-    font-family: Raleway;
-  }
-
-  .with-border-left{
-    border-left: 2px solid white;
-  }
-
-  /* Estilos para las barras lateres de color mediante padding*/
-  .with-padding-color {
-    background-color: #b8a27c;
-    padding: 0 15px;
-  }
+  /*Este estilo se define aquÌ porque la variable icon_path no puede ser evaluada desde un
+  archivo css externo.*/
 
   .with-background-image{
-    /*background: url(../images/pie_de_pagina.jpg) left center fixed;*/
     background-image: url(../images/pie_de_pagina.jpg);
     background-color: white;
     background-repeat: no-repeat;
     /*background-attachment: fixed;*/
     background-position: left bottom; 
   }
-
-  
 </style>
 </head>
 
 <body>
 
 <div class="container-fluid">
-<div class="row">
-	<div class="col-md-12">
-		<div class="header">
-			<img width="100%" src="../images/banner_contenidos_01.jpg">
+	<!--<include>head-1	-->
+	<!-- Lo siguiente debe ir el archivo head-1-->
+	<div class="row">
+		<div class="col-md-12">
+			<div class="header">
+				<img width="100%" src="../images/banner_contenidos_01.jpg" id="image_header"/>
+			</div>
 		</div>
-		<div id="myMenu" class="col-md-8 col-md-offset-2">
-      <nav class="navbar navbar-default" id="myNav">
-      <!-- <div class="container-fluid"> -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>                        
-          </button>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav">
-            <li><a href="#">INICIO</a></li>
-            <li class="with-border-left"><a href="#">PROYECTO</a></li>
-            <li class="with-border-left"><a href="#">INSTITUCIONES</a></li>
-            <li class="dropdown with-border-left">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#">CAT√ÅLOGO <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">B√öSQUEDA B√ÅSICA</a></li>
-                <li><a href="#">B√öSQUEDA AVANZADA</a></li>
-              </ul>
-            </li>
-            <li class="with-border-left"><a href="#">CONTACTO</a></li>
-            <li class="with-border-left"><a href="#">SALIR</a></li>
-          </ul>
-        </div>
-        <!-- </div> -->
-      </nav>
-    </div>
-	</div>	
-</div>
-<br><br><br>
+	</div>
+</div> <!-- AquÌ termina el div.container-fluid que contiene el banner -->
+
+<!-- Lo siguiente debe ir el archivo find-include-buttons -->
+<div class="container">
+	<div id="myMenu" class="col-md-12">
+	  <nav class="navbar navbar-default" id="myNav">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>                        
+	      </button>
+	    </div>
+	    <div class="collapse navbar-collapse" id="myNavbar">
+	    <div class="col-md-9" id="myMenuPrincipal">
+	    	<ul class="nav navbar-nav">
+	        <li><a href="#">INICIO</a></li>
+	        <li class="with-border-left"><a href="#">PROYECTO</a></li>
+	        <li class="with-border-left"><a href="#">COLECCIONES</a></li>
+	        <li class="with-border-left"><a href="#">B⁄SQUEDAS</a></li>
+	        <li class="with-border-left"><a href="#">CONTACTO</a></li>
+	      </ul>
+	    </div>
+	    <div class="col-md-3" id="myNavbarForm">
+	    	<form class="navbar-form navbar-right">
+	      	<div class="input-group input-group-lg">
+	      		<span style="background-color: #b8a27c;" class="input-group-addon"><span style="color: #fff;" class="glyphicon glyphicon-stats"></span></span>
+	      		<input type="text" name="algo" class="form-control" placeholder="B˙squeda">
+	      		<span class="input-group-btn">
+		          <button type="submit" class="btn btn-default"><span style="color: #b8a27c;" class="glyphicon glyphicon-search"></span></button>
+		      	</span>
+	      	</div>
+	      </form>
+	    </div>
+<!-- 	    <div class="col-md-9" id="mySubmenu" style="top: 10px">
+	    	<ul class="nav navbar-nav">
+					<li><a href="#">B˙squeda b·sica</a></li>
+					<li class="with-border-left"><a href="#">B˙squeda avanzada</a></li>
+					<li class="with-border-left"><a href="#">Indices</a></li>
+					<li class="with-border-left"><a href="#">B˙squedas Anteriores</a></li>
+					<li class="with-border-left"><a href="#">Lista de resultados</a></li>
+				</ul>
+	    </div> -->
+	    </div>
+	  </nav>
+	</div>
+</div><!-- AquÌ termina el div.container que contiene el men˙ -->	
+
+<!-- Este es el contenido del archivo find-a-ccpbm -->
+<div class="container-fluid" style="margin-top: 20px;">
+
 <div class="row with-padding-color">
   <div class="col-md-12 with-background-image">
     <div class="row">
@@ -113,11 +97,13 @@
         <div class="micontenido">
           <h1>PROYECTO</h1>
           <p></p>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+          <p>El Cat·logo Colectivo del Patrimonio Bibliogr·fico Mexicano es un proyecto cultural de alcance nacional orientado a la descripciÛn y localizaciÛn de los fondos antiguos pertenecientes a diversas bibliotecas, p˙blicas y privadas, en MÈxico, que por su antig¸edad, rareza y valor, constituyen el patrimonio bibliogr·fico</p>
 
-          <p> In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. </p>
+          <p> El objetivo es reunir en una base de datos los registros de los impresos antiguos desde la invenciÛn de la imprenta hasta 1821 en su primera fase, mediante la descripciÛn y ubicaciÛn fÌsica de las obras en las bibliotecas o fondos de la Rep˙blica Mexicana. </p>
 
-          <p>Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>    
+          <p>La conformaciÛn de un cat·logo de esta naturaleza ha sido de especial interÈs para la Biblioteca Nacional de MÈxico, que extiende una invitaciÛn permanente a todas aquellas instituciones que resguardan fondos antiguos para sumarse a este esfuerzo</p>    
+          
+          <p>El Cat·logo Colectivo del Patrimonio Bibliogr·fico mexicano es un proyecto en proceso de desarrollo.</p>
         </div>
       </div>
     </div>
@@ -128,14 +114,14 @@
     <!-- Esto debe ir el archivo copyrights --> 
     <div class="row text-center">
       <div class="col-md-12">
-        <p>Hecho en M√©xico, Universidad Nacional Aut√≥noma de M√©xico (UNAM), todos los derechos reservados, 2015. Esta p√°gina puede ser reproducida con fines no lucrativos, siempre y cuando no se mutile, se cite la fuente completa y su direcci√≥n electr√≥nica. De otra forma, se requiere permiso previo y por escrito de la instituci√≥n. &copy;</p>
-        <p><a style="color:#4a6159; font-size:80%; text-decoration:none;" href="http://catalogo.iib.unam.mx:80/F/S582U84X638TKNCC4L4M17PSDND53T8H6V1QKXM8PRJTU1JAKY-46937?func=find-f&local_base=BNDM" class="blue">Cr√©ditos</a></p>
+        <p>Hecho en MÈxico, Universidad Nacional AutÛnoma de MÈxico (UNAM), todos los derechos reservados, 2015. Esta p·gina puede ser reproducida con fines no lucrativos, siempre y cuando no se mutile, se cite la fuente completa y su direcciÛn electrÛnica. De otra forma, se requiere permiso previo y por escrito de la instituciÛn. &copy;</p>
+        <p><a style="color:#4a6159; font-size:80%; text-decoration:none;" href="http://catalogo.iib.unam.mx:80/F/S582U84X638TKNCC4L4M17PSDND53T8H6V1QKXM8PRJTU1JAKY-46937?func=find-f&local_base=BNDM" class="blue">CrÈditos</a></p>
       </div>
     </div>
   </div>
 </div>
 
-</div> <!-- Aqu√≠ termina el div.container-fluid -->
+</div> <!-- AquÌ termina el div.container-fluid que contiene el contenido de find-a-ccpbm -->
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

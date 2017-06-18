@@ -34,15 +34,6 @@
     padding: 0 15px;
   }
 
-  .with-background-image{
-    /*background: url(../images/pie_de_pagina.jpg) left center fixed;*/
-    background-image: url(&icon_path/pie_de_pagina.jpg);
-    background-color: white;
-    background-repeat: no-repeat;
-    /*background-attachment: fixed;*/
-    background-position: left bottom; 
-  }
-
   /* Estilos para find-b-ccpbm */
 
   .jumbotron{

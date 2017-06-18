@@ -2,33 +2,29 @@
 
   #myMenu {
     top: 20px;
+    padding: 0;
   }
 
   #myNav, .navbar-nav>li>.dropdown-menu {
-    background-color: #a88e5f;
+    background-color: #fff;
   }
 
   #myNav {
-    opacity: 0.8; 
+    /*opacity: 0.8; */
   }
 
-  .navbar-nav {
-    padding: 10px;
+  #myMenu .navbar-nav {
+    padding: 7px;
   }
 
-  .navbar-default .navbar-nav>li>a {
+  #myMenuPrincipal .navbar-nav>li>a {
     color: #fff;
     font-family: Raleway;
     font-size: 16px;
     font-weight: 600;
   }
 
-  .dropdown-menu>li>a{
-    color: #fff;
-    font-family: Raleway;
-  }
-
-  .with-border-left{
+  #myMenuPrincipal .with-border-left{
     border-left: 2px solid white;
   }
 
@@ -36,15 +32,6 @@
   .with-padding-color {
     background-color: #b8a27c;
     padding: 0 15px;
-  }
-
-  .with-background-image{
-    /*background: url(../images/pie_de_pagina.jpg) left center fixed;*/
-    background-image: url(&icon_path/pie_de_pagina.jpg);
-    background-color: white;
-    background-repeat: no-repeat;
-    /*background-attachment: fixed;*/
-    background-position: left bottom; 
   }
 
   /* Estilos para find-b-ccpbm */
@@ -65,4 +52,30 @@
   .form-control:focus{
     border-color: #c1a37b;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+  }
+
+  #myMenuPrincipal {
+    /*background-color: #b8a27c;*/
+    background-color: #a88e5f;
+  }
+
+  #mySubmenu{
+    background-color: #e3e0d9;
+  }
+
+  #mySubmenu .navbar-nav>li>a{
+    color: #7c6a53;
+    padding: 3px 15px;
+  }
+
+  #mySubmenu .with-border-left{
+    border-left: 2px solid #7c6a53;
+  }
+
+  #myNav.navbar-default {
+    border-color: #fff;
+  }
+
+  #myNavbar, #myNavbarForm  {
+    padding: 0;
   }
