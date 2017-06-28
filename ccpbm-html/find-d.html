@@ -1,4 +1,4 @@
-<!-- filename: find-b Juan Manuel RodrÃ­guez -->
+<!-- filename: find-b Juan Manuel Rodríguez -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,180 +11,213 @@
 <!-- Bootstrap -->
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="./ccpbm.css">
 
-<title>BÃºsqueda Avanzada</title>
+<title>Búsqueda Avanzada</title>
 
 <style type="text/css">
 	.home-buttons a {
 		float: left;
 	}
+
+	.top-separation {
+		margin-top: 10px;
+	}
 </style>
 </head>
 
 <body>
-<div class="container">
-<!--<include>head-1	-->
-<!-- Lo siguiente debe ir el archivo head-1-->
-<div class="row">
-	<div class="col-md-12">
-		<div class="header">
-			<img width="100%" src="../images/bndm-cabeza.jpg" usemap="#Map" id="image_header"/>
-		</div>
-	</div>
-</div>
 
-<div class="row">
-	<div class="col-md-3">
-		<div class="home-buttons">
-			<a href="&server_f?func=login&local_base=BNDM" class="blue" title="Inicio"><img src="http://catalogo.iib.unam.mx/exlibris/aleph/u23_1/alephe/www_f_spa/icon/bndm-menup0.jpg" /></a>
-			<a href="&server_f?func=find-a&local_base=BNDM" class="blue" title="Acerca de la BNDM"><img src="http://catalogo.iib.unam.mx/exlibris/aleph/u23_1/alephe/www_f_spa/icon/bndm-menup1.jpg" /></a>
-			<a href="&server_f?func=login&local_base=BNDM" class="blue" title="Otras bases de datos"><img src="http://catalogo.iib.unam.mx/exlibris/aleph/u23_1/alephe/www_f_spa/icon/bndm-menup2.jpg" /></a>
-			<a href="&server_f?func=find-a&local_base=BNDM" class="blue" title="Ir a la HNDM"><img src="http://catalogo.iib.unam.mx/exlibris/aleph/u23_1/alephe/www_f_spa/icon/bndm-menup3.jpg" /></a>
+<div class="container-fluid">
+	<!--<include>head-1	-->
+	<!-- Lo siguiente debe ir el archivo head-1-->
+	<div class="row">
+		<div class="col-md-12">
+			<div class="header">
+				<img width="100%" src="../images/banner_contenidos_01.jpg" usemap="#Map" id="image_header"/>
+			</div>
 		</div>
 	</div>
-</div>
+</div> <!-- Aquí termina el div.container-fluid que contiene el banner -->
 
 <!-- Lo siguiente debe ir el archivo find-include-buttons -->
-
-<div class="row">
-	<div class="col-md-12">
-		<nav class="navbar navbar-default">
-			 <ul class="nav navbar-nav">
-			   <li><a class="blue" style="color:#4a6159; font-size:100%; text-decoration:none;"  href="&server_f?func=find-b-0&local_base=CCPBM" class="blue">B&uacute;squeda b&aacute;sica</a></li>
-			   <li><a class="blue" style="color:#4a6159; font-size:100%; text-decoration:none;" href="&server_f?func=find-d-0&local_base=CCPBM" class="blue">B&uacute;squeda avanzada</a></li>
-			   <li><a class="blue" style="color:#4a6159; font-size:100%; text-decoration:none;" href="&server_f?func=scan-list&local_base=CCPBM" class="blue">&Iacute;ndices</a></li>
-			   <li><a class="blue" style="color:#4a6159; font-size:100%; text-decoration:none;" href="&server_f?func=find-r&local_base=CCPBM" class="blue">Colecciones</a></li>
-			   <li><a class="blue" style="color:#4a6159; font-size:100%; text-decoration:none;" href="&server_f?func=short&local_base=CCPBM" class="blue">Lista de resultados</a></li>
-			</ul>
-		</nav>
+<div class="container">
+	<div id="myMenu" class="col-md-12">
+	  <nav class="navbar navbar-default" id="myNav">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>                        
+	      </button>
+	    </div>
+	    <div class="collapse navbar-collapse" id="myNavbar">
+	    <div class="col-md-9" id="myMenuPrincipal">
+	    	<ul class="nav navbar-nav">
+	        <li><a href="#">INICIO</a></li>
+	        <li class="with-border-left"><a href="#">PROYECTO</a></li>
+	        <li class="with-border-left"><a href="#">COLECCIONES</a></li>
+	        <li class="with-border-left"><a href="#">BÚSQUEDAS</a></li>
+	        <li class="with-border-left"><a href="#">CONTACTO</a></li>
+	      </ul>
+	    </div>
+	    <div class="col-md-3" id="myNavbarForm">
+	    	<form class="navbar-form navbar-right">
+	      	<div class="input-group input-group-lg">
+	      		<span style="background-color: #b8a27c;" class="input-group-addon"><span style="color: #fff;" class="glyphicon glyphicon-stats"></span></span>
+	      		<input type="text" name="algo" class="form-control" placeholder="Búsqueda">
+	      		<span class="input-group-btn">
+		          <button type="submit" class="btn btn-default"><span style="color: #b8a27c;" class="glyphicon glyphicon-search"></span></button>
+		      	</span>
+	      	</div>
+	      </form>
+	    </div>
+	    <div class="col-md-9" id="mySubmenu" style="top: 10px">
+	    	<ul class="nav navbar-nav">
+					<li><a href="#">Búsqueda básica</a></li>
+					<li class="with-border-left"><a href="#">Búsqueda avanzada</a></li>
+					<li class="with-border-left"><a href="#">Indices</a></li>
+					<li class="with-border-left"><a href="#">Búsquedas Anteriores</a></li>
+					<li class="with-border-left"><a href="#">Lista de resultados</a></li>
+				</ul>
+	    </div>
+	    </div>
+	  </nav>
 	</div>
-</div>
+</div><!-- Aquí termina el div.container que contiene el menú -->	
 
 <!-- Aqui empieza el contenido del archivo find-d -->
+<div class="container" style="margin-top: 40px;">
 
 <form method=get name=form1 action="&server_f" role="form">
 	<input type="hidden" name="func" value="find-d">
-	<div class="row">
-		<div class="col-md-12">
-			<h3> BÃºsqueda avanzada</h3>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="col-md-3">
-			<p>Campos de bÃºsqueda</p>
-			<select class="form-control" id="sel1" name=find_code>
-					<option value="WRD">Todos los campos</option> 
-				  <option value="WTI">TÃ­tulo</option> 
-				  <option value="WAU">Autor</option> 
-				  <option value="WSU">Tema</option> 
-				  <option value="TXT">Contenidos</option>
-				</select>
-		</div>
-		<div class="col-md-3">
-			<p>Escriba una palabra o frase</p>
-			<input type="text" class="form-control" name=request value="$0200">
-		</div>
-		<div class="col-md-3">
-			<p>Â¿Palabras adyacentes?</p>
-			<label class="radio-inline"><input type="radio" name="adjacent1" value="N">No</label>
-			<label class="radio-inline"><input type="radio" name="adjacent1" value="Y">SÃ­</label>
-		</div>
-		<div class="col-md-3">
-			<p>NÃºm de registros</p>
-			<!-- AquÃ­ debe de ir la variable $0300 en vez del contenido de abajo -->
-			<a href="#">2521</a>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-3">
-			<select class="form-control" id="sel1" name=find_code>
-					<option value="WRD">Todos los campos</option> 
-				  <option value="WTI">TÃ­tulo</option> 
-				  <option value="WAU">Autor</option> 
-				  <option value="WSU">Tema</option> 
-				  <option value="TXT">Contenidos</option>
-				</select>
-		</div>
-		<div class="col-md-3">
-			<input type="text" class="form-control" name=request value="$1200">
-		</div>
-		<div class="col-md-3">
-			<label class="radio-inline"><input type="radio" name="adjacent2" value="N">No</label>
-			<label class="radio-inline"><input type="radio" name="adjacent2" value="Y">SÃ­</label>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-3">
-			<select class="form-control" id="sel1" name=find_code>
-					<option value="WRD">Todos los campos</option> 
-				  <option value="WTI">TÃ­tulo</option> 
-				  <option value="WAU">Autor</option> 
-				  <option value="WSU">Tema</option> 
-				  <option value="TXT">Contenidos</option>
-				</select>
-		</div>
-		<div class="col-md-3">
-			<input type="text" class="form-control" name=request value="$2200">
-		</div>
-		<div class="col-md-3">
-			<label class="radio-inline"><input type="radio" name="adjacent3" value="N">No</label>
-			<label class="radio-inline"><input type="radio" name="adjacent3" value="Y">SÃ­</label>
-		</div>
-	</div>
-	<br>
-	<div class="row">
-		<div class="col-md-4 col-md-offset-8">
-			<input type="submit" alt="Go" class="btn btn-primary" value="Aceptar">
-			<a href="&server_f?func=find-d-0&clear_level=2" class="btn btn-primary">Borrar</a>
-		</div>
-	</div>
-	<br>
-	<div class="row">
-		<div class="col-md-4 col-md-offset-8">
-			<label>Total:</label><a href="#"> &nbsp; 2521</a>
-			<br>
-			<p>Presione sobre el total para ver los registros</p>
-		</div>
-	</div>
-
-	<hr>
-	<div class="row">
-		<div class="col-md-12">
-			<div>
-			<h3>Delimitador de bÃºsqueda</h3>
-			<label>AÃ±o o perÃ­odo de ediciÃ³n:</label></div>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="col-md-4">
-			<label class="control-label">Del aÃ±o</label>
-			<div>
-				<input type="hidden" name="filter_code_2" value="WYR">
-	      <input type="text" size="10" name="filter_request_2" value="" class="form-control" id="fromYear">	
+	<div class="jumbotron">
+		<div class="row">
+			<div class="col-md-12">
+				<h3> Búsqueda avanzada</h3>
+			</div>
+			<div class="col-md-4">
+				<select class="form-control" id="sel2" name=colecciones>
+					<option value="0">Seleccionar colección</option> 
+					<option value="1">Colección 1</option> 
+					<option value="2">Colección 2</option> 
+					<option value="3">Colección 3</option> 
+					<option value="4">Colección 4</option>
+				</select>	
 			</div>
 		</div>
 
-		<div class="col-md-4">
-			<label class="control-label">Hasta el aÃ±o</label>
-			<div>
-				<input type="hidden" name="filter_code_3" value="WYR">
-	      <input type="text" size="10" name="filter_request_3" value="" class="form-control" id="toYear">
+		<div class="row" style="margin-top: 20px;">
+			<div class="col-md-4 text-center">
+				<div class="form-group row">
+					<label for="sel1" class="control-label col-md-12">Campos de búsqueda</label>
+					<div class="col-md-12">
+						<select class="form-control" id="sel1" name=find_code>
+							<option value="WRD">Todos los campos</option> 
+						  <option value="WTI">TÃ­tulo</option> 
+						  <option value="WAU">Autor</option> 
+						  <option value="WSU">Tema</option> 
+						  <option value="TXT">Contenidos</option>
+						</select>
+					</div>
+					<div class="col-md-12 top-separation">
+						<select class="form-control" id="sel2" name=find_code>
+							<option value="WRD">Todos los campos</option> 
+						  <option value="WTI">TÃ­tulo</option> 
+						  <option value="WAU">Autor</option> 
+						  <option value="WSU">Tema</option> 
+						  <option value="TXT">Contenidos</option>
+						</select>
+					</div>
+					<div class="col-md-12 top-separation">
+						<select class="form-control" id="sel3" name=find_code>
+							<option value="WRD">Todos los campos</option> 
+						  <option value="WTI">TÃ­tulo</option> 
+						  <option value="WAU">Autor</option> 
+						  <option value="WSU">Tema</option> 
+						  <option value="TXT">Contenidos</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 text-center">
+				<div class="form-group row">
+					<label for="input1" class="control-label col-md-12">Escribe una palabra o frase</label>
+					<div class="col-md-12">
+						<input type="text" class="form-control" name=request value="$0200" id="input1">
+					</div>
+					<div class="col-md-12 top-separation">
+						<input type="text" class="form-control" name=request value="$1200">
+					</div>
+					<div class="col-md-12 top-separation">
+						<input type="text" class="form-control" name=request value="$2200">
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 text-center">
+				<div class="form-group row">
+					<label class="control-label col-md-12">¿Palabras adyacentes?</label>
+					<div class="col-md-12">
+						<label class="radio-inline" id="myradio"><input type="radio" name="optradio">No</label>
+						<label class="radio-inline"><input type="radio" name="optradio">Sí</label>
+					</div>
+					<div class="col-md-12 top-separation">
+						<label class="radio-inline" id="myradio"><input type="radio" name="optradio">No</label>
+						<label class="radio-inline"><input type="radio" name="optradio">Sí</label>
+					</div>
+					<div class="col-md-12 top-separation">
+						<label class="radio-inline" id="myradio"><input type="radio" name="optradio">No</label>
+						<label class="radio-inline"><input type="radio" name="optradio">Sí</label>
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
 
-	<div class="row">
-		<div class="col-md-12">
-			<span class="help-block">Escriba los aÃ±os usando 4 dÃ­gitos, ejemplo: 1718</span>
-			<span class="help-block">Utilice <b>?</b> para truncar cuando no use del/al aÃ±o)</span>
+		<div class="row">
+			<div class="col-md-12">
+				<h3>Delimitadores de búsqueda</h3>
+			</div>
+			<div class="col-md-9">
+			<div class="row">
+				<div class="col-md-4"><label for="" class="control-label">Año o período de edición:</label></div>
+				<div class="col-md-8">
+					<div>
+						<label for="fromYear" class="control-label col-md-3" style="padding-right: 0;">Del año:</label>
+						<div class="col-md-3" style="padding: 0;">
+							<input type="hidden" name="filter_code_2" value="WYR">
+							<input type="text" size="10" name="filter_request_2" value="" class="form-control" id="fromYear">		
+						</div>
+					</div>
+					<div>
+						<label for="fromYear" class="control-label col-md-3">Hasta el año:</label>
+						<div class="col-md-3" style="padding: 0;">
+							<input type="hidden" name="filter_code_3" value="WYR">
+				      <input type="text" size="10" name="filter_request_3" value="" class="form-control" id="toYear">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<span class="help-block">Escriba los años usando 4 dígitos, ejemplo: 1718. Utilice <b>?</b> para truncar cuando no use del/al año)</span>
+				</div>
+			</div>
+			</div>
+			<div class="col-md-3 text-center">
+				<input type="submit" alt="Go" class="btn btn-primary" value="Aceptar">
+				<a href="#" class="btn btn-primary">Borrar</a>
+			</div>
 		</div>
-	</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<p style="color: #7c592e;"><b>Número de registros</b></p>
+				<p>Total: <a href="#">55</a></p>
+				<span class="help-block">Presione sobre el total para ver los registros</span>
+			</div>
+		</div>
+	</div> <!-- Aquí termina el div.jumbotron -->
 </form>
-
-<br>
-<hr>
 
 <!--<include>copyrights-->
 <!-- Esto debe ir el archivo copyrights --> 
