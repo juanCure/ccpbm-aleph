@@ -89,8 +89,8 @@
 				</select>	
 			</div>
 			<div class="col-md-2 col-md-offset-6">
-				<input type="submit" alt="Go" class="btn btn-primary" value="Aceptar">
-				<a href="&server_f?func=find-b-0&clear_level=2" class="btn btn-primary">Borrar</a>
+				<input type="submit" alt="Go" class="btn mybtn" value="Aceptar">
+				<a href="&server_f?func=find-b-0&clear_level=2" class="btn mybtn">Borrar</a>
 			</div>
 		</div>	
 	</div>
@@ -104,7 +104,7 @@
 		<div class="row">
 			<div class="col-md-4">
 				<div class="form-group row">
-				  <label for="sel1" class="control-label col-md-12">Campos de búsqueda</label>
+				  <label class="control-label col-md-12">Campos de búsqueda</label>
 				  <div class="col-md-10">
 <include>find-code-include
 					</div>
@@ -116,10 +116,10 @@
 					<label class="control-label col-md-12">¿Palabras adyacentes?</label>
 					<div class="col-md-10">
 						<label class="radio-inline" id="myradio">
-							<input type="radio" name="adjacent" value="N">No
+							<input type="radio" name="adjacent" value="N" $$0400-C"N">No
 						</label>
 						<label class="radio-inline">
-							<input type="radio" name="adjacent" value="Y">Sí
+							<input type="radio" name="adjacent" value="Y" $$0400-C"Y">Sí
 						</label>
 					</div>
 				</div>
