@@ -1,16 +1,15 @@
-<!-- filename: short-2-head-ccpbm Juan Manuel RodrÃ­guez  -->
+<!-- filename: short-2-head-ccpbm Juan Manuel Rodríguez  -->
 <!DOCTYPE html>
 <html>
 <head>
-<title>&f-base - Resultados de la bÃºsqueda</title>
+<title>&f-base - Resultados de la búsqueda</title>
 <include>meta-tags
 <include>include-window
 <include>submit-form-include
 <include>short-select-include
 </head>
 <body>
-<div class="container">
 <include>head-1
-<br>
+<include>find-include-buttons
 <include>short-include-buttons 
 <include>short-include-2 
