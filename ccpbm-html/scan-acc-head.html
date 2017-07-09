@@ -79,6 +79,81 @@
 
 	<form>
 		<div class="jumbotron">
+		<div class="row">
+			<div class="col-sm-12">
+				<h3>Índices alfabéticos</h3>	
+			</div>
+		</div>
+		<div class="row" style="margin-bottom: 20px;">
+			<div class="col-sm-5">
+				<div class="col-sm-6" style="padding: 7px 0;">
+					<label>Seleccione un índice:</label>
+				</div>
+				<div class="col-sm-6" style="padding: 0;">
+					<select class="form-control" id="sel1" name=find_code>
+						<option value="WRD">Todos los campos</option> 
+					  <option value="WTI">Título</option> 
+					  <option value="WAU">Autor</option> 
+					  <option value="WSU">Tema</option> 
+					  <option value="TXT">Contenidos</option>
+					</select>	
+				</div>
+			</div>
+			<div class="col-sm-5 col-sm-offset-2">
+				<div class="col-sm-6" style="padding: 7px 0;">
+					<label>Seleccionar colección:</label>	
+				</div>
+				<div class="col-sm-6" style="padding: 0;">
+					<select class="form-control" id="sel2" name=colecciones>
+						<option value="0">Seleccionar colección</option> 
+						<option value="1">Biblioteca Nacional</option> 
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12"><label>Selecciona una letra o escribe una palabra(s) inicial(es):</label></div>
+		</div>
+		<div class="row">
+			<div class="col-sm-9" style="border-right: 5px solid #c1a37b;">
+				<ul id="alfabeto">
+					<li><a href="#">A</a></li>
+					<li><a href="#">B</a></li>
+					<li><a href="#">C</a></li>
+					<li><a href="#">D</a></li>
+					<li><a href="#">E</a></li>
+					<li><a href="#">F</a></li>
+					<li><a href="#">G</a></li>
+					<li><a href="#">H</a></li>
+					<li><a href="#">I</a></li>
+					<li><a href="#">J</a></li>
+					<li><a href="#">K</a></li>
+					<li><a href="#">L</a></li>
+					<li><a href="#">M</a></li>
+					<li><a href="#">N</a></li>
+					<li><a href="#">O</a></li>
+					<li><a href="#">P</a></li>
+					<li><a href="#">Q</a></li>
+					<li><a href="#">R</a></li>
+					<li><a href="#">S</a></li>
+					<li><a href="#">T</a></li>
+					<li><a href="#">U</a></li>
+					<li><a href="#">V</a></li>
+					<li><a href="#">W</a></li>
+					<li><a href="#">X</a></li>
+					<li><a href="#">Y</a></li>
+					<li><a href="#">Z</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-3">
+				<div class="col-sm-6" style="margin-bottom: 15px;">
+					<input type="text" name="algo" class="form-control">	
+				</div>
+				<div class="col-sm-6">
+					<input type="submit" name="aceptar" class="btn mybtn">
+				</div>	
+			</div>
+		</div>
 		<h3>Índices alfabéticos</h3>
 		<div class="row">
 			<div class="col-sm-6 form-horizontal">

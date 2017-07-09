@@ -1,25 +1,30 @@
 <!-- filename scan-include-2-ccpbm Juan Manuel Rodríguez -->
 <form method="get" name="form1" action="&server_f">
 	<div class="jumbotron">
-	<h3>Índices alfabéticos</h3>
-	<div class="row">
-		<div class="col-sm-6 form-horizontal">
-			<div class="form-group">
-				<label class="control-label col-sm-5">Seleccione un índice:</label>
-				<div class="col-sm-5">
+		<div class="row">
+			<div class="col-sm-12">
+				<h3>Índices alfabéticos</h3>	
+			</div>
+		</div>
+		<div class="row" style="margin-bottom: 20px;">
+			<div class="col-sm-5">
+				<div class="col-sm-6" style="padding: 7px 0;">
+					<label>Seleccione un índice:</label>
+				</div>
+				<div class="col-sm-6" style="padding: 0;">
 					<select class="form-control" id="sel1" name=scan_code>
 					  <option value="TIT">Título</option> 
 					  <option value="AUE">Autor</option> 
 					  <option value="SUB">Tema</option> 
 					  <option value="PLA">Lugar de publicación</option>
-					</select>		
+					</select>	
 				</div>
 			</div>
-		</div>
-		<div class="col-sm-6 form-horizontal">
-			<div class="form-group">
-				<label class="control-label col-sm-5">Seleccionar colección:</label>
-				<div class="col-sm-5">
+			<div class="col-sm-5 col-sm-offset-2">
+				<div class="col-sm-6" style="padding: 7px 0;">
+					<label>Seleccionar colección:</label>	
+				</div>
+				<div class="col-sm-6" style="padding: 0;">
 					<select class="form-control" id="sel2" name=colecciones>
 						<option value="0">Seleccionar colección</option> 
 						<option value="1">Biblioteca Nacional</option> 
@@ -27,54 +32,49 @@
 				</div>
 			</div>
 		</div>
-	</div>
-
-	<div class="row">
-		<div class="col-sm-12">
-			<ul id="alfabeto">
-				<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=A">A</a></li>
-				<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=B">B</a></li>
-				<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=C">C</a></li>
-				<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=D">D</a></li>
-				<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=E">E</a></li>
-				<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=F">F</a></li>
-				<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=G">G</a></li>
-				<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=H">H</a></li>
-				<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=I">I</a></li>
-				<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=J">J</a></li>
-				<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=K">K</a></li>
-				<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=L">L</a></li>
-				<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=M">M</a></li>
-				<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=N">N</a></li>
-				<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=O">O</a></li>
-				<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=P">P</a></li>
-				<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=Q">Q</a></li>
-				<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=R">R</a></li>
-				<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=S">S</a></li>
-				<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=T">T</a></li>
-				<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=U">U</a></li>
-				<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=V">V</a></li>
-				<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=W">W</a></li>
-				<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=X">X</a></li>
-				<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=Y">Y</a></li>
-				<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=Z">Z</a></li>
-			</ul>
+		<div class="row">
+			<div class="col-sm-12"><label>Selecciona una letra o escribe una palabra(s) inicial(es):</label></div>
 		</div>
-	</div>
-
-	<div class="row">
-		<div class="col-sm-6 form-horizontal">
-			<div class="form-group">
-				<label class="control-label col-sm-6">ó escribre palabra(s) inicial(es):</label>	
-				<div class="col-sm-6">
+		<div class="row">
+			<div class="col-sm-9" style="border-right: 5px solid #c1a37b;">
+				<ul id="alfabeto">
+					<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=A">A</a></li>
+					<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=B">B</a></li>
+					<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=C">C</a></li>
+					<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=D">D</a></li>
+					<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=E">E</a></li>
+					<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=F">F</a></li>
+					<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=G">G</a></li>
+					<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=H">H</a></li>
+					<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=I">I</a></li>
+					<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=J">J</a></li>
+					<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=K">K</a></li>
+					<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=L">L</a></li>
+					<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=M">M</a></li>
+					<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=N">N</a></li>
+					<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=O">O</a></li>
+					<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=P">P</a></li>
+					<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=Q">Q</a></li>
+					<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=R">R</a></li>
+					<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=S">S</a></li>
+					<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=T">T</a></li>
+					<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=U">U</a></li>
+					<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=V">V</a></li>
+					<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=W">W</a></li>
+					<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=X">X</a></li>
+					<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=Y">Y</a></li>
+					<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=Z">Z</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-3">
+				<div class="col-sm-6" style="margin-bottom: 15px;">
 					<input type="hidden" name="func" value="scan">
-					<input type="text" name="scan_start" class="form-control">
+					<input type="text" name="scan_start" class="form-control">	
 				</div>
+				<div class="col-sm-6">
+					<input type="submit" name="aceptar" class="btn mybtn">
+				</div>	
 			</div>
 		</div>
-		<div class="col-sm-3">
-			<input type="submit" name="aceptar" class="btn mybtn">
-		</div>
-	</div>
 	</div>		
 </form>

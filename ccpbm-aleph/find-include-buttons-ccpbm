@@ -31,6 +31,15 @@
             </div>
           </form>
         </div>
+        <div class="col-md-9" id="mySubmenu" style="top: 10px">
+          <ul class="nav navbar-nav">
+            <li><a href="&server_f?func=find-b-0&local_base=CCPBM">Búsqueda básica</a></li>
+            <li class="with-border-left"><a href="&server_f?func=find-d-0&local_base=CCPBM">Búsqueda avanzada</a></li>
+            <li class="with-border-left"><a href="&server_f?func=scan-list&local_base=CCPBM">Indices</a></li>
+            <li class="with-border-left"><a href="#">Búsquedas Anteriores</a></li>
+            <li class="with-border-left"><a href="#">Lista de resultados</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
   </div>

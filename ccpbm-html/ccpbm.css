@@ -116,7 +116,7 @@
 
   #alfabeto {
     width: auto;
-    margin: auto 8%;
+    /*margin: auto 8%;*/
     padding: 5px 10px 15px 0;
     list-style: none;
   }
