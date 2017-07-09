@@ -110,4 +110,37 @@
 
   }
 
+  /* Algunos estilos para la vista indices */
+
+  /* Estilos para el alfabeto */
+
+  #alfabeto {
+    width: auto;
+    margin: auto 8%;
+    padding: 5px 10px 15px 0;
+    list-style: none;
+  }
+
+  #alfabeto li {
+    display: inline-block;
+    margin: auto 1%;
+  }
+
+  #alfabeto li a {
+    color: #000;
+
+  }
+
+  .myjumbotron {
+    background-color: #e3e0d9;
+  }
+
+  div.withSomePadding {
+    padding: 28px 60px 0;
+  }
+
+  .table-striped>tbody>tr:nth-of-type(odd){
+    background-color: #fff;
+  }
+
 

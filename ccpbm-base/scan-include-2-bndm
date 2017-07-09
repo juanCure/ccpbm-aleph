@@ -1,0 +1,83 @@
+<!-- filename: scan-include-2-bndm Yuri -->
+<form method=get 
+      name=form1
+      action="&server_f">
+
+<input type="hidden" name="func" value="scan"> 
+<br>
+<table  border=0 width =100% style="margin-right:;" >
+  <tr>
+    <td width =30% class=td2 align="right"  valign=middle nowrap>Seleccione un &iacute;ndice:&nbsp;&nbsp;&nbsp; </td>
+    <td class=td2 valign=middle align="left">
+     <select name=scan_code>
+       <option value=TIT  $$5000-S"TIT">T&iacute;tulo</option>
+       <option value=AUE  $$5000-S"AUE">Autor</option>
+       <option value=SUB  $$5000-S"SUB">Tema</option>
+       <option value=PLA  $$5000-S"PLA">Lugar de publicaci&oacute;n</option>
+     </select>
+    </td>
+    <td width =70% ></td> 
+  </tr>
+ </table>
+ <br>
+ <div class=title>
+  Delimitadores para el Índice
+ </div>
+ <table cellspacing=2 border=0 width =100%>
+  <tr height="60">
+     <td class=td2 colspan="28" valign=middle align=center> Seleccione (una letra  o escriba una palabra inicial) y pulse en aceptar : </td>
+  </tr>
+  <tr>
+  <td width=10% >&nbsp;&nbsp;&nbsp;&nbsp;</td>
+  <td class=td2 align=center>A<br><input type="radio" name="scan_start"  value="A"/> </td>
+  <td class=td2 align=center>B<br><input type="radio" name="scan_start"  value="B"/>  </td>
+  <td class=td2 align=center>C<br><input type="radio" name="scan_start"  value="C"/> </td>
+  <td class=td2 align=center>D<br><input type="radio" name="scan_start"  value="D"/> </td>
+  <td class=td2 align=center>E<br><input type="radio" name="scan_start"  value="E"/> </td>
+  <td class=td2 align=center>F<br><input type="radio" name="scan_start"  value="F"/> </td>
+  <td class=td2 align=center>G<br><input type="radio" name="scan_start"  value="G"/> </td>
+  <td class=td2 align=center>H<br><input type="radio" name="scan_start"  value="H"/> </td>
+  <td class=td2 align=center>I<br><input type="radio" name="scan_start"  value="I"/> </td>
+  <td class=td2 align=center>J<br><input type="radio" name="scan_start"  value="J"/> </td>
+  <td class=td2 align=center>K<br><input type="radio" name="scan_start"  value="K"/> </td>
+  <td class=td2 align=center>L<br><input type="radio" name="scan_start"  value="L"/> </td>
+  <td class=td2 align=center>M<br><input type="radio" name="scan_start"  value="M"/> </td>
+  <td class=td2 align=center>N<br><input type="radio" name="scan_start"  value="N"/> </td>
+  <td class=td2 align=center>O<br><input type="radio" name="scan_start"  value="0"/> </td>
+  <td class=td2 align=center>P<br><input type="radio" name="scan_start"  value="P"/> </td>
+  <td class=td2 align=center>Q<br><input type="radio" name="scan_start"  value="Q"/> </td>
+  <td class=td2 align=center>R<br><input type="radio" name="scan_start"  value="R"/> </td>
+  <td class=td2 align=center>S<br><input type="radio" name="scan_start"  value="S"/> </td>
+  <td class=td2 align=center>T<br><input type="radio" name="scan_start"  value="T"/> </td>
+  <td class=td2 align=center>U<br><input type="radio" name="scan_start"  value="U"/> </td>
+  <td class=td2 align=center>V<br><input type="radio" name="scan_start"  value="V"/> </td>
+  <td class=td2 align=center>W<br><input type="radio" name="scan_start"  value="W"/> </td>
+  <td class=td2 align=center>X<br><input type="radio" name="scan_start"  value="X"/> </td>
+  <td class=td2 align=center>Y<br><input type="radio" name="scan_start"  value="Y"/> </td>
+  <td class=td2 align=center>Z<br><input type="radio" name="scan_start"  value="Z"/> </td>
+  <td width="20%" valing="bottom" align="left"><input size=20 name="scan_start" maxlength=100 value="$0100"><br><div align="center">Palabra inicial</div></td>
+ </tr>
+  <tr>
+    <td class=td2 colspan="27" valign="top"  align="right"> &nbsp;&nbsp;&nbsp;&nbsp; </td> 
+    <td class=td2  valign="top"  align="left"> </td>
+  </tr>
+  <tr>
+    <td class=td2 colspan="14" valign=middle>&nbsp;</td>
+    <td colspan="14" class=td2 valign=middle align=left><input type="image"
+               alt=" Go "
+               src="&icon_path/f-go.gif"
+               border=0></td>
+    <td align=center class=td2>&nbsp;</td>
+  </tr>
+ 
+ <tr>
+   <td colspan=2 valign=middle class=td2 nowrap><!--  <a href="javascript:document.form1.reset();"> 
+          <img src="&icon_path/f-clear0.gif"
+               border=0
+               alt="Clear">
+        </a> -->
+     </td>
+ </tr>
+</table>
+</form>
+

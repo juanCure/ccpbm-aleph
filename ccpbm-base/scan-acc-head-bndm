@@ -1,0 +1,35 @@
+<!-- filename: scan-acc-head-bndm Yuri -->
+<html>
+<head>
+<title>&f-base - Indices </title>
+<include>include-window
+<include>meta-tags
+
+</head>
+<body topmargin="0"
+      onLoad="window.focus();">
+<include>head-1
+<br>
+<div class=title>
+&f-base - Índices alfabéticos
+</div>
+<include>scan-include-2
+<hr style="border-width:thin">
+<table border=0 width=100%>
+ <tr>
+  <td class=title>
+    Indice: $0200
+  </td>
+  <td align=right>
+    $0300 $0400
+  </td>
+ </tr>
+</table>
+<table border=0 width=100%>
+ <tr class=tr1>
+  <!-- <th class="text3" nowrap>No. de regs.</th>
+   <th class="text3" nowrap>Regs. breves</th>
+   <th class="text3">Entrada</th>
+  -->
+ </tr>
+

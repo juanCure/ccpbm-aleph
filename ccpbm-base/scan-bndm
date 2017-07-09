@@ -1,0 +1,20 @@
+<!-- filename: scan-bndm Yuri -->
+<html>
+<head>
+<title>&f-base - &Iacute;ndices</title>
+<include>meta-tags
+</head>
+
+<body topmargin="0"
+      onload=window.document.form1.scan_start.focus()>
+
+<include>head-1 
+<br>
+<div class=title>
+&f-base - &Iacute;ndices alfab&eacute;ticos
+</div>
+
+<include>scan-include-2
+<include>copyrights
+</body>
+</html>

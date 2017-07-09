@@ -1,0 +1,271 @@
+<!-- filename: scan-acc-head-ccpbm Juan Manuel Rodríguez -->
+<!DOCTYPE html>
+<html>
+<head>
+<!--<include>meta-tags-->
+<!-- Esto debe ir el archivo meta-tags -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Bootstrap -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="./ccpbm.css">
+
+<title>Indices</title>
+</head>
+
+<body>
+<div class="container-fluid">
+	<!--<include>head-1	-->
+	<!-- Lo siguiente debe ir el archivo head-1-->
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="header">
+				<img width="100%" src="../images/banner_contenidos_01.jpg" usemap="#Map" id="image_header"/>
+			</div>
+		</div>
+	</div>
+</div> <!-- Aquí termina el div.container-fluid que contiene el banner -->
+
+<!-- Lo siguiente debe ir el archivo find-include-buttons -->
+<div class="container">
+	<div id="myMenu" class="col-sm-12">
+	  <nav class="navbar navbar-default" id="myNav">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>                        
+	      </button>
+	    </div>
+	    <div class="collapse navbar-collapse" id="myNavbar">
+	    <div class="col-sm-9" id="myMenuPrincipal">
+	    	<ul class="nav navbar-nav">
+	        <li><a href="#">INICIO</a></li>
+	        <li class="with-border-left"><a href="#">PROYECTO</a></li>
+	        <li class="with-border-left"><a href="#">COLECCIONES</a></li>
+	        <li class="with-border-left"><a href="#">BÚSQUEDAS</a></li>
+	        <li class="with-border-left"><a href="#">CONTACTO</a></li>
+	      </ul>
+	    </div>
+	    <div class="col-sm-3" id="myNavbarForm">
+	    	<form class="navbar-form navbar-right">
+	      	<div class="input-group input-group-lg">
+	      		<span style="background-color: #b8a27c;" class="input-group-addon"><span style="color: #fff;" class="glyphicon glyphicon-stats"></span></span>
+	      		<input type="text" name="algo" class="form-control" placeholder="Búsqueda">
+	      		<span class="input-group-btn">
+		          <button type="submit" class="btn btn-default"><span style="color: #b8a27c;" class="glyphicon glyphicon-search"></span></button>
+		      	</span>
+	      	</div>
+	      </form>
+	    </div>
+	    <div class="col-sm-9" id="mySubmenu" style="top: 10px">
+	    	<ul class="nav navbar-nav">
+					<li><a href="#">Búsqueda básica</a></li>
+					<li class="with-border-left"><a href="#">Búsqueda avanzada</a></li>
+					<li class="with-border-left"><a href="#">Indices</a></li>
+					<li class="with-border-left"><a href="#">Búsquedas Anteriores</a></li>
+					<li class="with-border-left"><a href="#">Lista de resultados</a></li>
+				</ul>
+	    </div>
+	    </div>
+	  </nav>
+	</div>
+</div><!-- Aquí termina el div.container que contiene el menú -->	
+
+<div class="container" style="margin-top: 20px;">
+
+	<form>
+		<div class="jumbotron">
+		<h3>Índices alfabéticos</h3>
+		<div class="row">
+			<div class="col-sm-6 form-horizontal">
+				<div class="form-group">
+					<label class="control-label col-sm-5">Seleccione un índice:</label>
+					<div class="col-sm-5">
+						<select class="form-control" id="sel1" name=find_code>
+							<option value="WRD">Todos los campos</option> 
+						  <option value="WTI">Título</option> 
+						  <option value="WAU">Autor</option> 
+						  <option value="WSU">Tema</option> 
+						  <option value="TXT">Contenidos</option>
+						</select>		
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 form-horizontal">
+				<div class="form-group">
+					<label class="control-label col-sm-5">Seleccionar colección:</label>
+					<div class="col-sm-5">
+						<select class="form-control" id="sel2" name=colecciones>
+							<option value="0">Seleccionar colección</option> 
+							<option value="1">Biblioteca Nacional</option> 
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-12">
+				<ul id="alfabeto">
+					<li><a href="#">A</a></li>
+					<li><a href="#">B</a></li>
+					<li><a href="#">C</a></li>
+					<li><a href="#">D</a></li>
+					<li><a href="#">E</a></li>
+					<li><a href="#">F</a></li>
+					<li><a href="#">G</a></li>
+					<li><a href="#">H</a></li>
+					<li><a href="#">I</a></li>
+					<li><a href="#">J</a></li>
+					<li><a href="#">K</a></li>
+					<li><a href="#">L</a></li>
+					<li><a href="#">M</a></li>
+					<li><a href="#">N</a></li>
+					<li><a href="#">Ñ</a></li>
+					<li><a href="#">O</a></li>
+					<li><a href="#">P</a></li>
+					<li><a href="#">Q</a></li>
+					<li><a href="#">R</a></li>
+					<li><a href="#">S</a></li>
+					<li><a href="#">T</a></li>
+					<li><a href="#">U</a></li>
+					<li><a href="#">V</a></li>
+					<li><a href="#">W</a></li>
+					<li><a href="#">X</a></li>
+					<li><a href="#">Y</a></li>
+					<li><a href="#">Z</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-6 form-horizontal">
+				<div class="form-group">
+					<label class="control-label col-sm-6">ó escribre palabra(s) inicial(es):</label>	
+					<div class="col-sm-6">
+						<input type="text" name="algo" class="form-control">
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<input type="submit" name="aceptar" class="btn mybtn">
+			</div>
+		</div>
+	</div>		
+	</form>
+	
+
+	<div class="myjumbotron">
+		<div class="withSomePadding">
+			<h3 style="display: inline-block;">Indice: Títulos</h3>
+			<ul class="pager" style="float: right;">
+				<li><a class="my_previous" href="#">&larr; Anterior</a></li>
+				<li><a class="my_next" href="#">Siguiente &rarr;</a></li>
+			</ul>	
+		</div>
+		<table class="table table-bordered table-striped">
+			<thead style="background-color: white;">
+				<tr>
+					<th></th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>6</td>
+					<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </td>
+				</tr>
+			</tbody>
+		</table>
+		<div style="padding-right: 60px;">
+			<ul class="pager" style="float: right;">
+				<li><a class="my_previous" href="#">&larr; Anterior</a></li>
+				<li><a class="my_next" href="#">Siguiente &rarr;</a></li>
+			</ul>	
+		</div>
+	</div>
+	<!--<include>copyrights-->
+	<!-- Esto debe ir el archivo copyrights --> 
+	<div class="row text-center" style="clear: both;">
+	  <div class="col-sm-12">
+	  	<p>Hecho en México, Universidad Nacional Autónoma de Néxico (UNAM), todos los derechos reservados, 2015. Esta pÃƒÂ¡gina puede ser reproducida con fines no lucrativos, siempre y cuando no se mutile, se cite la fuente completa y su dirección electrónica. De otra forma, se requiere permiso previo y por escrito de la institución. &copy;</p>
+	  	<p><a style="color:#4a6159; font-size:80%; text-decoration:none;" href="http://catalogo.iib.unam.mx:80/F/S582U84X638TKNCC4L4M17PSDND53T8H6V1QKXM8PRJTU1JAKY-46937?func=find-f&local_base=BNDM" class="blue">Créditos</a></p>
+	  </div>
+	</div>	
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="./js/my_functions.js"></script>
+<script type="text/javascript">
+	// Llamando a la funciÃƒÂ³n changing_header definida en el archivo my_functions.js
+	changing_header();
+</script>
+</body>
+</html>
