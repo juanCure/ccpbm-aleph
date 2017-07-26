@@ -74,3 +74,19 @@ function preparingPagerButtons(){
 		next[i].href = values.next_href;
 	}
 }
+
+/* Esta función cambia el valor el atributo href de los enlaces que componen el alfabeto*/
+
+function change_ref_link(new_opt){
+	/*console.log("Cambiando el href para el enlace");
+	console.log("Valor de la opción escogida: ", new_opt);*/
+	var alfabeto = document.getElementById("alfabeto");
+	var alfabeto_children = alfabeto.children;
+	for(var i = 0; i < alfabeto_children.length; i++){
+		console.log("child: " + i + " : " + alfabeto_children[i].children[0].href);
+		var current_href = alfabeto_children[i].children[0].href;
+		var new_href = current_href.replace(/(scan_code=).*?(&)/, '$1' + new_opt + '$2');
+		console.log("this is new_href: " + new_href);
+		alfabeto_children[i].children[0].href = new_href;
+	}	
+}

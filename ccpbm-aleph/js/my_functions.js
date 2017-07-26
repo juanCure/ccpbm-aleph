@@ -5,14 +5,15 @@ function changing_header(){
 	/*
 	var href_login = "http://catalogo.iib.unam.mx/F/15IQXSJ19QEPGKFU3KVVHTS2L4C44N5LD8CP7R2HI7JBVG96J8-34357?func=login&local_base=ccpbm";
 	var href_find_b = "http://catalogo.iib.unam.mx/F/15IQXSJ19QEPGKFU3KVVHTS2L4C44N5LD8CP7R2HI7JBVG96J8-08786?func=find-b-0&local_base=CCPBM";
-	var image_base_src = "http://catalogo.iib.unam.mx/exlibris/aleph/u23_1/alephe/www_f_spa/icon/bndm-cabeza.jpg";
-	*/
+	var image_base_src = "http://catalogo.iib.unam.mx/exlibris/aleph/u23_1/alephe/www_f_spa/icon/bndm-cabeza.jpg";*/
+	
 	var href = document.location.href;
-	var lastPathSegment = href.substr(href.lastIndexOf('/') + 1);
+
 	var matches = /func=([^&#=]*)/.exec(href);
 	var param1 = matches[1];
-
+	// var image_find_b = "../images/bndm-cabeza-find-b-0.jpg";
 	var image_header = document.getElementById("image_header");
+	// image_header.setAttribute("src", image_find_b);
 	image_header.setAttribute("src", "&icon_path/" + "bndm-cabeza-" + param1 + ".jpg");
 }
 
@@ -72,4 +73,20 @@ function preparingPagerButtons(){
 	for(var i = 0; i < next.length; i++) {
 		next[i].href = values.next_href;
 	}
+}
+
+/* Esta función cambia el valor el atributo href de los enlaces que componen el alfabeto*/
+
+function change_ref_link(new_opt){
+	/*console.log("Cambiando el href para el enlace");
+	console.log("Valor de la opción escogida: ", new_opt);*/
+	var alfabeto = document.getElementById("alfabeto");
+	var alfabeto_children = alfabeto.children;
+	for(var i = 0; i < alfabeto_children.length; i++){
+		console.log("child: " + i + " : " + alfabeto_children[i].children[0].href);
+		var current_href = alfabeto_children[i].children[0].href;
+		var new_href = current_href.replace(/(scan_code=).*?(&)/, '$1' + new_opt + '$2');
+		console.log("this is new_href: " + new_href);
+		alfabeto_children[i].children[0].href = new_href;
+	}	
 }

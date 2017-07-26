@@ -12,7 +12,7 @@
 					<label>Seleccione un índice:</label>
 				</div>
 				<div class="col-sm-6" style="padding: 0;">
-					<select class="form-control" id="sel1" name=scan_code>
+					<select class="form-control" id="select_indices" name=scan_code>
 					  <option value="TIT">Título</option> 
 					  <option value="AUE">Autor</option> 
 					  <option value="SUB">Tema</option> 
@@ -25,7 +25,7 @@
 					<label>Seleccionar colección:</label>	
 				</div>
 				<div class="col-sm-6" style="padding: 0;">
-					<select class="form-control" id="sel2" name=colecciones>
+					<select class="form-control" id="select_coleccion" name=colecciones>
 						<option value="0">Seleccionar colección</option> 
 						<option value="1">Biblioteca Nacional</option> 
 					</select>

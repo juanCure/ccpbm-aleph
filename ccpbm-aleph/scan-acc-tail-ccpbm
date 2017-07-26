@@ -16,10 +16,17 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="&server_css/my_functions_ccpbm.js"></script>
-
 <script type="text/javascript">
 	// Llamando a la función preparingPagerButtons definida en el archivo my_functions.js
 	preparingPagerButtons();
+
+	/*Asociando un listener para el evento click al elemento select_indices*/
+	var index_options = document.getElementById("select_indices");
+
+	index_options.addEventListener("click", function(){
+		var value = index_options.options[index_options.selectedIndex].value;
+		change_ref_link(value);
+	});
 </script>
 </body>
 </html>
