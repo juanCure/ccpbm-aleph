@@ -136,20 +136,34 @@
 		<div class="col-sm-3">
 			<h4 class="thick">Registros 1 - 20 de 313621</h4>
 		</div>
-		<div class="col-sm-6">
-			<form>
-				<input type="hidden" name="func" value="short-jump-text">
-				<input type="submit" class="btn mybtn" value="Ir a texto" name="action_short_jump_text" >
-				<input type="text" name="jump_text">
-			</form>
-			<form>
-				<input type="hidden" name="func" value="short-jump">
-				<input type="button" class="btn mybtn" value="Ir a #" name="action_short_jump" >
-				<input type="text" name="jump">
+		<div class="col-sm-3">
+			<form class="form-horizontal">
+				<div class="form-group">
+					<div class="col-sm-4">
+						<input type="hidden" name="func" value="short-jump-text">
+						<input type="submit" class="btn mybtn" value="Ir a texto" name="action_short_jump_text" >		
+					</div>
+					<div class="col-sm-6">
+						<input type="text" name="jump_text">	
+					</div>
+				</div>
 			</form>
 		</div>
 		<div class="col-sm-3">
-			<ul class="pager">
+			<form class="form-horizontal">
+				<div class="form-group">
+					<div class="col-sm-4">
+						<input type="hidden" name="func" value="short-jump">
+						<input type="button" class="btn mybtn" value="Ir a #" name="action_short_jump" >		
+					</div>
+					<div class="col-sm-6">
+						<input type="text" name="jump">	
+					</div>
+				</div>
+			</form>	
+		</div>
+		<div class="col-sm-3">
+			<ul class="pager mypager">
 				<li><a class="my_previous" href="#">&larr; Anterior</a></li>
 				<li><a class="my_next" href="#">Siguiente &rarr;</a></li>
 			</ul>
@@ -206,211 +220,17 @@
 			</tr>
 		</tbody>
 	</table>
-</div>
-
-<!-- Lo siguiente debe ir en el archivo short-include-2 -->
-
-<br>
-<div><h3>Lista de resultados</h3></div>
-<br>
-<div class="row text-center">
-	<div class="col-sm-12">
-		<p>Estimado usuario: el n鷐ero de registros ordenados y desplegados por el sistema CCPBM, es de 1,000 registros, m醲imo, en cada b鷖queda</p>
-	</div>
-</div>
-
-<div class="row">
-	<div class="col-sm-3">
-		<div><p>Opciones de ordenamiento</p></div>
-	</div>
-	<div class="col-sm-9">
-		<img src="../images/f-small-dot.gif"><a href="#">Autor y A駉 </a>
-		<img src="../images/f-small-dot.gif"><a href="#">A駉 y Autor </a>
-		<img src="../images/f-small-dot.gif"><a href="#">Autor y T韙ulo </a>
-		<img src="../images/f-small-dot.gif"><a href="#">T韙ulo y A駉 </a>
-		<img src="../images/f-small-dot.gif"><a href="#">A駉 y T韙ulo </a>
-	</div>
-</div>
-
-<div class="row">
-	<div class="col-sm-3">
-		<div><p>Cambiar formato de despliegue</p></div>
-	</div>
-	<div class="col-sm-9">
-		<img src="../images/f-small-dot.gif"><a href="#">Tabla</a>
-		<img src="../images/f-small-dot.gif"><a href="#">Vertical</a>
-	</div>
-</div>
-
-<div class="row">
-	<div class="col-sm-3">
-		<div><p>Para: palabras=M閤ico</p></div>
-	</div>
-	<div class="col-sm-3 col-sm-offset-6">
-		<div><p>Ordenado por: A駉 y Autor</p></div>
-	</div>
-</div>
-
-<hr>
-<div class="row">
-	<div class="col-sm-3">
-		<div><h3>Registros 1-20 de 40</h3></div>
-	</div>
-	<div class="col-sm-3">
-		<form>
-				<input type="hidden" name="func" value="short-jump-text">
-				<input type="button" class="btn btn-primary" value="Ir a texto" name="action_short_jump_text" >
-				<input type="text" name="jump_text">
-		</form>
-	</div>
-	<div class="col-sm-3">
-		<form>
-				<input type="hidden" name="func" value="short-jump">
-				<input type="button" class="btn btn-primary" value="Ir a #" name="action_short_jump" >
-				<input type="text" name="jump">
-		</form>
-	</div>
-</div>
-
-<div class="row">
-	<div class="col-sm-3 col-sm-offset-9">
-		<ul class="pager">
-			<li><a class="my_previous" href="#">&larr; Anterior</a></li>
-			<li><a class="my_next" href="#">Siguiente &rarr;</a></li>
-		</ul>
-	</div>
-</div>
-
-<!-- A continuaci贸n inicia el contenido del archivo short-a-head -->
-
-<div class="row">
-	<div class="col-sm-3 text-center">#</div>
-	<div class="col-sm-3">
-		<a href="#">Titulo</a>
-	</div>
-	<div class="col-sm-3">A駉</div>
-	<div class="col-sm-3">
-		<a href="#">Autor</a>
-	</div>
-</div>
-
-<!-- A continuaci贸n inicia el contenido del archivo short-a-body -->
-
-<div class="row">
-	<div class="col-sm-3 text-center" >
-		<div>
-			<a href="#">1</a>
-			<img src="../images/item1.jpg" width="60px" hspace="5" vspace="5" border="1" class="center-block"> 
-		</div>
-	</div>
-	<div class="col-sm-3">
-		<div>
-			<form>
-				<label for="select_row000001" >Seleccionar</label>
-				<input type="checkbox" name="chbox">
-				<p>Hippocratis coi Aphorismi versu heroico explicati</p>
-			</form>
-		</div>
-	</div>
-	<div class="col-sm-3">
-		<div>
-			<p>2010</p>
-		</div>
-	</div>
-	<div class="col-sm-3">
-		<div>
-			<p>Hip贸crates</p>
+	<div class="row">
+		<div class="col-sm-3 col-sm-push-9">
+			<ul class="pager mypager">
+				<li><a class="my_previous" href="#">&larr; Anterior</a></li>
+				<li><a class="my_next" href="#">Siguiente &rarr;</a></li>
+			</ul>
 		</div>
 	</div>
 </div>
 
-<!-- A continuaci贸n inicia el contenido del archivo short-a-body -->
-
-<div class="row">
-	<div class="col-sm-3 text-center">
-		<div>
-			<a href="#">2</a>
-			<img src="../images/item2.jpg" width="60px" hspace="5" vspace="5" border="1" class="center-block"> 
-		</div>
-	</div>
-	<div class="col-sm-3">
-		<div>
-			<form>
-				<label for="select_row000001" >Seleccionar</label>
-				<input type="checkbox" name="chbox">
-				<p>Apuntes [驴de Agust铆n de Vild贸sola?] sobre asuntos varios relacionados con la provincia de Sono</p>
-			</form>
-		</div>
-	</div>
-	<div class="col-sm-3">
-		<div>
-			<p>2010</p>
-		</div>
-	</div>
-	<div class="col-sm-3">
-		<div>
-			<p>Hip贸crates</p>
-		</div>
-	</div>
-</div>
-
-<div class="row">
-	<div class="col-sm-3 text-center">
-		<div>
-			<a href="#">3</a>
-			<img src="../images/item3.jpg" width="60px" hspace="5" vspace="5" border="1" class="center-block"> 
-		</div>
-	</div>
-	<div class="col-sm-3">
-		<div>
-			<form>
-				<label for="select_row000001" >Seleccionar</label>
-				<input type="checkbox" name="chbox">
-				<p>Hippocratis coi Aphorismi versu heroico explicati</p>
-			</form>
-		</div>
-	</div>
-	<div class="col-sm-3">
-		<div>
-			<p>2010</p>
-		</div>
-	</div>
-	<div class="col-sm-3">
-		<div>
-			<p>Hip贸crates</p>
-		</div>
-	</div>
-</div>
-
-<div class="row">
-	<div class="col-sm-3 text-center">
-		<div>
-			<a href="#">4</a>
-			<img src="../images/item4.jpg" width="60px" hspace="5" vspace="5" border="1" class="center-block"> 
-		</div>
-	</div>
-	<div class="col-sm-3">
-		<div>
-			<form>
-				<label for="select_row000001" >Seleccionar</label>
-				<input type="checkbox" name="chbox">
-				<p>Hippocratis coi Aphorismi versu heroico explicati</p>
-			</form>
-		</div>
-	</div>
-	<div class="col-sm-3">
-		<div>
-			<p>2010</p>
-		</div>
-	</div>
-	<div class="col-sm-3">
-		<div>
-			<p>Hip贸crates</p>
-		</div>
-	</div>
-</div>
-
-<!-- A continuaci贸n inicia el html para short-tail -->
+<!-- A continuaci髇n inicia el html para short-tail -->
 <hr>
 <div class="row">
 	<div class="col-sm-3 col-sm-offset-9">

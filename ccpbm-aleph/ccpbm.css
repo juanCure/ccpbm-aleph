@@ -1,3 +1,10 @@
+/* Agregando las fuentes Raleway*/
+@font-face { font-family: RalewayRegular; src: url('../fonts/Raleway-Regular.ttf'); }
+@font-face { font-family: RalewayMedium; src: url('../fonts/Raleway-Medium.ttf'); }
+  body {
+      font-family: RalewayRegular;
+    } 
+
 /* Agregando estilos para el menu de navegacion */
 
   #myMenu {
@@ -17,14 +24,14 @@
     padding: 7px;
   }
 
-  #myMenuPrincipal .navbar-nav>li>a {
+  #myMenuPrincipal .navbar-nav>li>a, .filtros .navbar-nav>li>a {
     color: #fff;
-    font-family: Raleway;
+    font-family: RalewayMedium;
     font-size: 16px;
-    font-weight: 600;
+    /*font-weight: 600;*/
   }
 
-  #myMenuPrincipal .with-border-left{
+  #myMenuPrincipal .with-border-left, .filtros .with-border-left{
     border-left: 2px solid white;
   }
 
@@ -66,7 +73,7 @@
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
   }
 
-  #myMenuPrincipal {
+  #myMenuPrincipal{
     /*background-color: #b8a27c;*/
     background-color: #a88e5f;
   }
@@ -75,12 +82,12 @@
     background-color: #e3e0d9;
   }
 
-  #mySubmenu .navbar-nav>li>a{
+  #mySubmenu .navbar-nav>li>a, #acciones .navbar-nav>li>a{
     color: #7c6a53;
     padding: 3px 15px;
   }
 
-  #mySubmenu .with-border-left{
+  #mySubmenu .with-border-left, #acciones .with-border-left{
     border-left: 2px solid #7c6a53;
   }
 
@@ -94,7 +101,7 @@
 
   /* Estilos para la búsqueda avanzada */
 
-  .mybtn {
+  .mybtn{
     color: #fff;
     background-color: #c1a37b;
     border-color: #c1a37b;
@@ -110,7 +117,7 @@
 
   }
 
-/* Algunos estilos para la vista indices */
+  /* Algunos estilos para la vista indices */
 
   /* Estilos para el alfabeto */
 
@@ -133,6 +140,8 @@
 
   .myjumbotron {
     background-color: #e3e0d9;
+    padding: 20px 10px;
+    margin-top: 20px;
   }
 
   div.withSomePadding {
@@ -141,6 +150,44 @@
 
   .table-striped>tbody>tr:nth-of-type(odd){
     background-color: #fff;
-  }  
+  }
 
+  /* Definiendo estilos para la pantalla de despliegue de resultados*/
 
+  .filtros{
+    background-color: #a88e5f;
+  }
+
+  .filtros:focus,
+  .filtros.focus,
+  .filtros:hover,
+  .filtros.hover{
+    background-color: #a88e5f;
+  }
+
+  .filtros .navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
+    background-color: #856133;
+  }
+
+  .myrow {
+    margin: 0px;
+  }
+
+  .thick{
+    font-weight: bold;
+  }
+
+  .pager > li > a {
+    color: #fff;
+    background-color: #c1a37b;
+    border-radius: 5px;
+  }
+
+  .pager > li > a:hover, .pager > li > a:focus {
+    color: #fff;
+    background-color: #856133;
+  }
+
+  .mypager{
+    margin: 0;
+  }
