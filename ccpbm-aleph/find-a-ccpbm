@@ -20,7 +20,6 @@
 
 <body>
 <include>head-1
-<include>find-include-buttons
 <div class="container-fluid" style="margin-top: 20px;">
 
 <div class="row with-padding-color">

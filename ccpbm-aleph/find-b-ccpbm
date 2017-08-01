@@ -6,17 +6,7 @@
 <include>meta-tags
 </head>
 <body>
-<!-- <include>head-1 -->
-<div class="container-fluid">
-	<div class="row">
-		<div class="col-md-12">
-			<div class="header">
-				<img width="100%" src="&icon_path/banner_contenidos_01.jpg">
-			</div>
-		</div>	
-	</div>
-</div> <!-- Aqui termina el div.container-fluid que contiene el banner -->
-<include>find-include-buttons
+<include>head-1
 <div class="container" style="margin-top: 20px;">
 <form method=get name=form1 action="&server_f" role="form">
 	<input type="hidden" name="func" value="find-b">

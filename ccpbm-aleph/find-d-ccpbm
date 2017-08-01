@@ -8,8 +8,8 @@
 </head>
 <body>
 
-<!-- <include>head-1 -->
-<div class="container-fluid">
+<include>head-1
+<!-- <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-12">
 			<div class="header">
@@ -17,10 +17,10 @@
 			</div>
 		</div>	
 	</div>
-</div> <!-- Aqui termina el div.container-fluid que contiene el banner -->
-<include>find-include-buttons
+</div>  <!Aqui termina el div.container-fluid que contiene el banner -->
+<!-- <include>find-include-buttons -->
 
-<div class="container" style="margin-top: 40px;">
+<div class="container" style="margin-top: 20px;">
 <form method=get name=form1 action="&server_f" role="form">
 	<input type="hidden" name="func" value="find-d">
 	<div class="jumbotron">
