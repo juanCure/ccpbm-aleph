@@ -1,4 +1,4 @@
-<!-- filename: login-ccpbm Juan Manuel RodrÃ­guez -->
+<!-- filename: login-ccpbm Juan Manuel Rodr�guez -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,12 +14,40 @@
 
 <title>CCPBM - Entrar</title>
 <style type="text/css">
+
+  /* xs < 768 */
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 0.9em;
+    }
+}
+
+/* sm */
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 1em;
+    }
+}
+
+/* md */
+@media screen and (min-width: 992px) {
+    body {
+        font-size: 1.2em;
+    }
+}
+
+/* lg */
+@media screen and (min-width: 1200px) {
+    body {
+        font-size: 1.3em;
+    }
+}
   /* The heart of the matter */
   .testimonial-group > .row {
     overflow-x: auto;
     white-space: nowrap;
   }
-  .testimonial-group > .row > .col-md-3 {
+  .testimonial-group > .row > .col-sm-3 {
     display: inline-block;
     float: none;
   }
@@ -55,8 +83,8 @@
   .navbar-default .navbar-nav>li>a {
     color: #fff;
     font-family: Raleway;
-    font-size: 16px;
-    font-weight: 600;
+    /*font-size: 16px;
+    font-weight: 600;*/
   }
 
   .dropdown-menu>li>a{
@@ -102,22 +130,48 @@ div::-webkit-scrollbar-thumb:window-inactive {
   background: rgba(255,0,0,0.4); 
   /*background: rgba(131, 110, 45, 1);*/
 }
+
+  /* Agregando media queries para controlar la imágen a mostrar en el header */
+  /* Para dispositivos con un width menor a 600px*/
+
+  /*@media(min-width: 400px){
+    .banner{
+      display: block;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      background: url(../images/inicio-movil.jpg) no-repeat;
+      width: 100%;
+      height: 327px;
+    }
+  }
+
+  @media(min-width: 601px){
+    .banner{
+      display: block;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      background: url(../images/inicio-desktop.jpg) no-repeat;
+      width: 100%;
+      height: 327px;
+    }
+  }*/
+
 </style>
 
-<!-- filename: head-1-nobor-ccpbm Juan Manuel Rodríguez -->
+<!-- filename: head-1-nobor-ccpbm Juan Manuel Rodr�guez -->
 <div class="container-fluid">
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-sm-12">
       <div class="header">
-        <img width="100%" src="../images/banner_home02.jpg">
+        <img class="banner" width="100%" src="../images/inicio-desktop.jpg">
       </div>
     </div>  
   </div>
 </div> <!-- Aqui termina el div.container-fluid que contiene el banner -->
 
-<!-- find-include-buttons-ccpbm Juan Manuel Rodríguez -->
+<!-- find-include-buttons-ccpbm Juan Manuel Rodr�guez -->
 <div id="myMenu" class="container">
-  <div class="col-md-12">
+  <div class="col-sm-12">
     <nav class="navbar navbar-default" id="myNav">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -127,7 +181,7 @@ div::-webkit-scrollbar-thumb:window-inactive {
         </button>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
-        <div class="col-md-9" id="myMenuPrincipal">
+        <div class="col-sm-9" id="myMenuPrincipal">
           <ul class="nav navbar-nav">
             <li><a href="&server_f?func=login&local_base=CCPBM">INICIO</a></li>
             <li class="with-border-left"><a href="&server_f?func=find-a&local_base=CCPBM">PROYECTO</a></li>
@@ -136,7 +190,7 @@ div::-webkit-scrollbar-thumb:window-inactive {
             <li class="with-border-left"><a href="#">CONTACTO</a></li>
           </ul>
         </div>
-        <div class="col-md-3" id="myNavbarForm">
+        <div class="col-sm-3" id="myNavbarForm">
           <form class="navbar-form navbar-right" method=get name=form2 action="&server_f" role="form">
             <input type="hidden" name="func" value="find-b">
             <div class="input-group input-group-lg">
@@ -152,14 +206,14 @@ div::-webkit-scrollbar-thumb:window-inactive {
     </nav>
   </div>
 </div>
-<!-- Aquí termina el div.container que contiene el menú --> 
+<!-- Aqu� termina el div.container que contiene el m�nu --> 
 <div class="container">
 <form method=post 
       name="form1"
       action="&server_f">
 <div class="container testimonial-group">
   <div class="row text-center">
-    <div class="col-md-3">
+    <div class="col-sm-3">
       <div class="thumbnail">
         <a href="&server_f?func=find-b&find_code=WBA&request=RSM&adjacent=N&local_base=BNDM">
           <img class="img-responsive" src="../images/item01.jpg" width="250" height="250"  alt="Impresos Méxicanos"/>
@@ -169,7 +223,7 @@ div::-webkit-scrollbar-thumb:window-inactive {
         </a>
       </div>
     </div>
-    <div class="col-md-3">
+    <div class="col-sm-3">
       <div class="thumbnail">
         <a href="&server_f?func=find-b&find_code=WBA&request=RLAF&adjacent=N&local_base=BNDM">
           <img class="img-responsive" src="../images/item02.jpg" width="250" height="250"  alt="Colecci&oacute;n Lafragua"/>
@@ -179,7 +233,7 @@ div::-webkit-scrollbar-thumb:window-inactive {
         </a>
       </div>
     </div>
-    <div class="col-md-3">
+    <div class="col-sm-3">
       <div class="thumbnail">
         <a href="&server_f?func=find-b&find_code=WBA&request=ABN&adjacent=N&local_base=BNDM">
           <img class="img-responsive" src="../images/item03.jpg" width="250" height="250"  alt="Archivo Biblioteca Nacional"/>
@@ -189,7 +243,7 @@ div::-webkit-scrollbar-thumb:window-inactive {
         </a>
       </div>
     </div>
-    <div class="col-md-3">
+    <div class="col-sm-3">
       <div class="thumbnail">
         <a href="&server_f?func=find-b&find_code=WBA&request=ENP&adjacent=N&local_base=BNDM">
           <img class="img-responsive" src="../images/item04.jpg" width="250" height="250"  alt="Colección ENP"/>
@@ -199,7 +253,7 @@ div::-webkit-scrollbar-thumb:window-inactive {
         </a>
       </div>
     </div>
-    <div class="col-md-3">
+    <div class="col-sm-3">
       <div class="thumbnail">
         <a href="&server_f?func=find-b&find_code=WBA&request=ENP&adjacent=N&local_base=BNDM">
           <img class="img-responsive" src="../images/item04.jpg" width="250" height="250"  alt="Colección ENP"/>
@@ -209,7 +263,7 @@ div::-webkit-scrollbar-thumb:window-inactive {
         </a>
       </div>
     </div>
-    <div class="col-md-3">
+    <div class="col-sm-3">
       <div class="thumbnail">
         <a href="&server_f?func=find-b&find_code=WBA&request=ENP&adjacent=N&local_base=BNDM">
           <img class="img-responsive" src="../images/item04.jpg" width="250" height="250"  alt="Colección ENP"/>
@@ -219,7 +273,7 @@ div::-webkit-scrollbar-thumb:window-inactive {
         </a>
       </div>
     </div>
-    <div class="col-md-3">
+    <div class="col-sm-3">
       <div class="thumbnail">
         <a href="&server_f?func=find-b&find_code=WBA&request=ENP&adjacent=N&local_base=BNDM">
           <img class="img-responsive" src="../images/item04.jpg" width="250" height="250"  alt="Colección ENP"/>
@@ -229,7 +283,7 @@ div::-webkit-scrollbar-thumb:window-inactive {
         </a>
       </div>
     </div>
-    <div class="col-md-3">
+    <div class="col-sm-3">
       <div class="thumbnail">
         <a href="&server_f?func=find-b&find_code=WBA&request=ENP&adjacent=N&local_base=BNDM">
           <img class="img-responsive" src="../images/item04.jpg" width="250" height="250"  alt="Colección ENP"/>
@@ -239,7 +293,7 @@ div::-webkit-scrollbar-thumb:window-inactive {
         </a>
       </div>
     </div>
-    <div class="col-md-3">
+    <div class="col-sm-3">
       <div class="thumbnail">
         <a href="&server_f?func=find-b&find_code=WBA&request=ENP&adjacent=N&local_base=BNDM">
           <img class="img-responsive" src="../images/item04.jpg" width="250" height="250"  alt="Colección ENP"/>
@@ -249,7 +303,7 @@ div::-webkit-scrollbar-thumb:window-inactive {
         </a>
       </div>
     </div>
-    <div class="col-md-3">
+    <div class="col-sm-3">
       <div class="thumbnail">
         <a href="&server_f?func=find-b&find_code=WBA&request=ENP&adjacent=N&local_base=BNDM">
           <img class="img-responsive" src="../images/item04.jpg" width="250" height="250"  alt="Colección ENP"/>
@@ -259,7 +313,7 @@ div::-webkit-scrollbar-thumb:window-inactive {
         </a>
       </div>
     </div>
-    <div class="col-md-3">
+    <div class="col-sm-3">
       <div class="thumbnail">
         <a href="&server_f?func=find-b&find_code=WBA&request=ENP&adjacent=N&local_base=BNDM">
           <img class="img-responsive" src="../images/item04.jpg" width="250" height="250"  alt="Colección ENP"/>
@@ -269,7 +323,7 @@ div::-webkit-scrollbar-thumb:window-inactive {
         </a>
       </div>
     </div>
-    <div class="col-md-3">
+    <div class="col-sm-3">
       <div class="thumbnail">
         <a href="&server_f?func=find-b&find_code=WBA&request=ENP&adjacent=N&local_base=BNDM">
           <img class="img-responsive" src="../images/item04.jpg" width="250" height="250"  alt="Colección ENP"/>
@@ -286,7 +340,7 @@ div::-webkit-scrollbar-thumb:window-inactive {
 <!--<include>copyrights-->
 <!-- Esto debe ir el archivo copyrights --> 
 <div class="row text-center">
-  <div class="col-md-12">
+  <div class="col-sm-12">
     <p>Hecho en México, Universidad Nacional Autónoma de México (UNAM), todos los derechos reservados, 2015. Esta página puede ser reproducida con fines no lucrativos, siempre y cuando no se mutile, se cite la fuente completa y su dirección electrónica. De otra forma, se requiere permiso previo y por escrito de la institución. &copy;</p>
     <p><a style="color:#4a6159; font-size:80%; text-decoration:none;" href="http://catalogo.iib.unam.mx:80/F/S582U84X638TKNCC4L4M17PSDND53T8H6V1QKXM8PRJTU1JAKY-46937?func=find-f&local_base=BNDM" class="blue">Créditos</a></p>
   </div>
