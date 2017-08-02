@@ -4,7 +4,33 @@
   body {
       font-family: RalewayRegular;
     } 
+/* xs < 768 */
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 0.9em;
+    }
+}
 
+/* sm */
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 1em;
+    }
+}
+
+/* md */
+@media screen and (min-width: 992px) {
+    body {
+        font-size: 1.2em;
+    }
+}
+
+/* lg */
+@media screen and (min-width: 1200px) {
+    body {
+        font-size: 1.3em;
+    }
+}
 /* Agregando estilos para el menu de navegacion */
 
   #myMenu {
@@ -27,8 +53,8 @@
   #myMenuPrincipal .navbar-nav>li>a, .filtros .navbar-nav>li>a {
     color: #fff;
     font-family: RalewayMedium;
-    font-size: 16px;
-    /*font-weight: 600;*/
+    /*font-size: 16px;
+    font-weight: 600;*/
   }
 
   #myMenuPrincipal .with-border-left, .filtros .with-border-left{

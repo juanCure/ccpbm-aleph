@@ -12,18 +12,18 @@
 	<input type="hidden" name="func" value="find-b">
 	<div class="jumbotron" style="margin-top: 20px;">
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-sm-12">
 				<h3> Búsqueda básica</h3>
 			</div>
 		</div>
 		<div class="form-group row">
-			<label class="control-label col-md-4" for="inputText">Escribir palabra(s)</label>
-			<div class="col-md-12">
+			<label class="control-label col-sm-4" for="inputText">Escribir palabra(s)</label>
+			<div class="col-sm-12">
 				<input name="request" value="$0100" type="text" class="form-control" id="inputText">	
 			</div>
 		</div>
 		<div class="form-group row">
-			<div class="col-md-4">
+			<div class="col-sm-4">
 				<select class="form-control" id="sel2" name=colecciones>
 					<option value="0">Seleccionar colección</option> 
 					<option value="1">Colección 1</option> 
@@ -32,7 +32,7 @@
 					<option value="4">Colección 4</option>
 				</select>	
 			</div>
-			<div class="col-md-2 col-md-offset-6">
+			<div class="col-sm-2 col-sm-offset-6">
 				<input type="submit" alt="Go" class="btn mybtn" value="Aceptar">
 				<a href="&server_f?func=find-b-0&clear_level=2" class="btn mybtn">Borrar</a>
 			</div>
@@ -41,24 +41,24 @@
 
 	<div class="jumbotron">
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-sm-12">
 				<h3>Delimitadores de búsqueda</h3>
 			</div>	
 		</div>
 		<div class="row">
-			<div class="col-md-4">
+			<div class="col-sm-4">
 				<div class="form-group row">
-				  <label class="control-label col-md-12">Campos de búsqueda</label>
-				  <div class="col-md-10">
+				  <label class="control-label col-sm-12">Campos de búsqueda</label>
+				  <div class="col-sm-10">
 <include>find-code-include
 					</div>
 				</div>
 			</div>
 
-			<div class="col-md-3">
+			<div class="col-sm-3">
 				<div class="form-group row">
-					<label class="control-label col-md-12">¿Palabras adyacentes?</label>
-					<div class="col-md-10">
+					<label class="control-label col-sm-12">¿Palabras adyacentes?</label>
+					<div class="col-sm-10">
 						<label class="radio-inline" id="myradio">
 							<input type="radio" name="adjacent" value="N" $$0400-C"N">No
 						</label>
