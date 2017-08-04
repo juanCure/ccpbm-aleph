@@ -10,6 +10,5 @@
 </head>
 <body>
 <include>head-1
-<include>find-include-buttons
 <include>short-include-buttons 
 <include>short-include-2 

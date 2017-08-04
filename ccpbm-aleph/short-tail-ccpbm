@@ -1,15 +1,17 @@
-<!-- filename: short-tail-ccpbm Juan Manuel RodrÃ­guez -->
+<!-- filename: short-tail-ccpbm Juan Manuel Rodríguez -->
 <div class="row">
-	<div class="col-md-3 col-md-offset-9">
-		<!--$0100&nbsp;$0200-->
-		<ul class="pager">
+	<div class="col-sm-3 col-sm-push-9">
+		<div id="hidden_pager" style="display: none;">
+			$0100&nbsp;$0200
+		</div>
+		<ul class="pager mypager">
 			<li><a class="my_previous" href="#">&larr; Anterior</a></li>
 			<li><a class="my_next" href="#">Siguiente &rarr;</a></li>
 		</ul>
 	</div>
 </div>
 <include>copyrights
-</div> <!-- AquÃ­ termina el div container -->
+</div> <!-- Aquí termina el div container -->
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -19,7 +21,7 @@
 <script src="&server_css/my_functions_ccpbm.js"></script>
 
 <script type="text/javascript">
-	// Llamando a la funciÃ³n preparingPagerButtons definida en el archivo my_functions.js
+	// Llamando a la función preparingPagerButtons definida en el archivo my_functions.js
 	preparingPagerButtons();
 </script>
 </body>

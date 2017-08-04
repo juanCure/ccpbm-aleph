@@ -1,32 +1,37 @@
-<!-- filename: short-a-body-ccpbm Juan Manuel RodrÃ­guez -->
-<div class="row">
-	<div class="col-md-3 text-center" >
-		<div>
-			<!-- <a href="#">1</a>
-			<img src="../images/item1.jpg" width="60px" hspace="5" vspace="5" border="1" class="center-block">  -->
-			$0100 $0600
+<!-- filename: short-a-body-ccpbm Juan Manuel Rodríguez -->
+<div class="row" style="margin-top: 30px;">
+	<div class="col-sm-3">
+		<div class="row">
+			<div class="col-sm-2" style="margin-top: 30px;">
+				<!-- 1 -->
+				<!-- $0100 contiene el número del registro -->
+				$0100
+			</div>
+			<div class="col-sm-2" style="margin-top: 30px;">
+				<!-- <form><input type="checkbox" name="chbox"></form> -->
+				<!-- $0200 contiene el checkbox -->
+				$0200
+			</div>
+			<div class="col-sm-8">
+				<!-- <img src="../images/item1.jpg" width="60px" hspace="5" vspace="5" border="1" class="center-block"> -->
+				<!-- $0600 contiene la imagen -->
+				$0600
+			</div>
 		</div>
 	</div>
-	<div class="col-md-3">
-		<div>
-			<!-- <form>
-				<label for="select_row000001" >Seleccionar</label>
-				<input type="checkbox" name="chbox">
-				<p>Hippocratis coi Aphorismi versu heroico explicati</p>
-			</form> -->
-			<br>$0200 $0400
-		</div>
+	<div class="col-sm-5" style="margin-top: 30px;">
+		<!-- <p>Hippocratis coi Aphorismi versu heroico explicati</p> -->
+		<!-- $0400 contiene el título -->
+		$0400
 	</div>
-	<div class="col-md-3">
-		<div>
-			<!-- <p>2010</p> -->
-			<br><br>$0500
-		</div>
+	<div class="col-sm-1" style="margin-top: 30px;">
+		<!-- <p>2010</p> -->
+		<!-- $0500 contiene el año -->
+		$0500
 	</div>
-	<div class="col-md-3">
-		<div>
-			<!-- <p>HipÃ³crates</p> -->
-			<br><br>$0300
-		</div>
+	<div class="col-sm-3" style="margin-top: 30px;">
+		<!-- <p>Hipócrates</p> -->
+		<!-- $0300 contiene el autor -->
+		$0300
 	</div>
 </div>

@@ -21,14 +21,21 @@
   }
 
   #myMenu .navbar-nav {
-    padding: 7px;
+    /*padding: 7px;*/
   }
 
   #myMenuPrincipal .navbar-nav>li>a, .filtros .navbar-nav>li>a {
     color: #fff;
     font-family: RalewayMedium;
     font-size: 16px;
-    /*font-weight: 600;*/
+    margin: 10px 0;
+  }
+
+  @media (min-width: 768px){
+    .navbar-nav>li>a {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
   }
 
   #myMenuPrincipal .with-border-left, .filtros .with-border-left{
@@ -85,6 +92,7 @@
   #mySubmenu .navbar-nav>li>a, #acciones .navbar-nav>li>a{
     color: #7c6a53;
     padding: 3px 15px;
+    margin: 5px 0;
   }
 
   #mySubmenu .with-border-left, #acciones .with-border-left{
@@ -190,4 +198,9 @@
 
   .mypager{
     margin: 0;
+  }
+
+  /* Realizando una escala sobre los checkbox para mostrarlo más grande */
+  input[type=checkbox] {
+    transform: scale(2.5);
   }

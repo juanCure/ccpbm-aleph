@@ -13,10 +13,10 @@
         <div class="col-md-9" id="myMenuPrincipal">
           <ul class="nav navbar-nav">
             <li><a href="&server_f?func=login&local_base=CCPBM">INICIO</a></li>
-            <li class="with-border-left"><a href="&server_f?func=find-a&local_base=CCPBM">PROYECTO</a></li>
-            <li class="with-border-left"><a href="#">COLECCIONES</a></li>
-            <li class="with-border-left"><a href="&server_f?func=find-b-0&local_base=CCPBM">BÚSQUEDAS</a></li>
-            <li class="with-border-left"><a href="#">CONTACTO</a></li>
+            <li><a class="with-border-left" href="&server_f?func=find-a&local_base=CCPBM">PROYECTO</a></li>
+            <li><a class="with-border-left" href="#">COLECCIONES</a></li>
+            <li><a class="with-border-left" href="&server_f?func=find-b-0&local_base=CCPBM">BÚSQUEDAS</a></li>
+            <li><a class="with-border-left" href="#">CONTACTO</a></li>
           </ul>
         </div>
         <div class="col-md-3" id="myNavbarForm">
@@ -34,10 +34,10 @@
         <div class="col-md-9" id="mySubmenu" style="top: 10px">
           <ul class="nav navbar-nav">
             <li><a href="&server_f?func=find-b-0&local_base=CCPBM">Búsqueda básica</a></li>
-            <li class="with-border-left"><a href="&server_f?func=find-d-0&local_base=CCPBM">Búsqueda avanzada</a></li>
-            <li class="with-border-left"><a href="&server_f?func=scan-list&local_base=CCPBM">Indices</a></li>
-            <li class="with-border-left"><a href="#">Búsquedas Anteriores</a></li>
-            <li class="with-border-left"><a href="#">Lista de resultados</a></li>
+            <li><a class="with-border-left" href="&server_f?func=find-d-0&local_base=CCPBM">Búsqueda avanzada</a></li>
+            <li><a class="with-border-left" href="&server_f?func=scan-list&local_base=CCPBM">Indices</a></li>
+            <li><a class="with-border-left" href="#">Búsquedas Anteriores</a></li>
+            <li><a class="with-border-left" href="#">Lista de resultados</a></li>
           </ul>
         </div>
       </div>

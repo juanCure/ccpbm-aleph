@@ -14,6 +14,12 @@
 <link rel="stylesheet" href="./ccpbm.css">
 
 <title>Biblioteca digital - Resultados de la b鷖queda</title>
+<style type="text/css">
+	/* Realizando una escala sobre los checkbox para mostrarlo m醩 grande */
+	input[type=checkbox] {
+	  transform: scale(2.5);
+	}
+</style>
 </head>
 
 <body>
@@ -23,7 +29,7 @@
 	<div class="row">
 		<div class="col-sm-12">
 			<div class="header">
-				<img width="100%" src="../images/banner_contenidos_01.jpg" usemap="#Map" id="image_header"/>
+				<img width="100%" src="../images/interior-desktop.jpg" usemap="#Map" id="image_header"/>
 			</div>
 		</div>
 	</div>
@@ -44,10 +50,10 @@
 	    <div class="col-sm-9" id="myMenuPrincipal">
 	    	<ul class="nav navbar-nav">
 	        <li><a href="#">INICIO</a></li>
-	        <li class="with-border-left"><a href="#">PROYECTO</a></li>
-	        <li class="with-border-left"><a href="#">COLECCIONES</a></li>
-	        <li class="with-border-left"><a href="#">B赟QUEDAS</a></li>
-	        <li class="with-border-left"><a href="#">CONTACTO</a></li>
+	        <li><a class="with-border-left" href="#">PROYECTO</a></li>
+	        <li><a class="with-border-left" href="#">COLECCIONES</a></li>
+	        <li><a class="with-border-left" href="#">B赟QUEDAS</a></li>
+	        <li><a class="with-border-left" href="#">CONTACTO</a></li>
 	      </ul>
 	    </div>
 	    <div class="col-sm-3" id="myNavbarForm">
@@ -64,10 +70,10 @@
 	    <div class="col-sm-9" id="mySubmenu" style="top: 10px">
 	    	<ul class="nav navbar-nav">
 					<li><a href="#">B鷖queda b醩ica</a></li>
-					<li class="with-border-left"><a href="#">B鷖queda avanzada</a></li>
-					<li class="with-border-left"><a href="#">Indices</a></li>
-					<li class="with-border-left"><a href="#">B鷖quedas Anteriores</a></li>
-					<li class="with-border-left"><a href="#">Lista de resultados</a></li>
+					<li><a class="with-border-left" href="#">B鷖queda avanzada</a></li>
+					<li><a class="with-border-left" href="#">Indices</a></li>
+					<li><a class="with-border-left" href="#">B鷖quedas Anteriores</a></li>
+					<li><a class="with-border-left" href="#">Lista de resultados</a></li>
 				</ul>
 	    </div>
 	    </div>
@@ -131,47 +137,160 @@
 	</div>
 </div>
 
-<div class="myjumbotron">
-	<div class="row myrow">
-		<div class="col-sm-3">
-			<h4 class="thick">Registros 1 - 20 de 313621</h4>
-		</div>
-		<div class="col-sm-3">
-			<form class="form-horizontal">
-				<div class="form-group">
-					<div class="col-sm-4">
-						<input type="hidden" name="func" value="short-jump-text">
-						<input type="submit" class="btn mybtn" value="Ir a texto" name="action_short_jump_text" >		
-					</div>
-					<div class="col-sm-6">
-						<input type="text" name="jump_text">	
-					</div>
+<div class="row" style="margin-top: 20px;">
+	<div class="col-sm-3">
+		<h4 class="thick">Registros 1 - 20 de 313621</h4>
+	</div>
+	<div class="col-sm-3">
+		<form class="form-horizontal">
+			<div class="form-group">
+				<div class="col-sm-4">
+					<input type="hidden" name="func" value="short-jump-text">
+					<input type="submit" class="btn mybtn" value="Ir a texto" name="action_short_jump_text" >		
 				</div>
-			</form>
-		</div>
-		<div class="col-sm-3">
-			<form class="form-horizontal">
-				<div class="form-group">
-					<div class="col-sm-4">
-						<input type="hidden" name="func" value="short-jump">
-						<input type="button" class="btn mybtn" value="Ir a #" name="action_short_jump" >		
-					</div>
-					<div class="col-sm-6">
-						<input type="text" name="jump">	
-					</div>
+				<div class="col-sm-6">
+					<input type="text" name="jump_text">	
 				</div>
-			</form>	
-		</div>
-		<div class="col-sm-3">
-			<ul class="pager mypager">
-				<li><a class="my_previous" href="#">&larr; Anterior</a></li>
-				<li><a class="my_next" href="#">Siguiente &rarr;</a></li>
-			</ul>
-		</div>
+			</div>
+		</form>
+	</div>
+	<div class="col-sm-3">
+		<form class="form-horizontal">
+			<div class="form-group">
+				<div class="col-sm-4">
+					<input type="hidden" name="func" value="short-jump">
+					<input type="button" class="btn mybtn" value="Ir a #" name="action_short_jump" >		
+				</div>
+				<div class="col-sm-6">
+					<input type="text" name="jump">	
+				</div>
+			</div>
+		</form>	
+	</div>
+	<div class="col-sm-3">
+		<ul class="pager mypager">
+			<li><a class="my_previous" href="#">&larr; Anterior</a></li>
+			<li><a class="my_next" href="#">Siguiente &rarr;</a></li>
+		</ul>
 	</div>
 </div>
 
-<div class="myjumbotron">
+<div class="row">
+	<div class="col-sm-3"><h3># &nbsp; Seleccionar</h3></div>
+	<div class="col-sm-5"><h3>T韙ulo</h3></div>
+	<div class="col-sm-1"><h3>A駉</h3></div>
+	<div class="col-sm-3"><h3>Autor</h3></div>
+</div>
+
+<div class="row" style="margin-top: 20px;">
+	<div class="col-sm-3">
+		<div class="row">
+			<div class="col-sm-2" style="margin-top: 20px;">1</div>
+			<div class="col-sm-2" style="margin-top: 20px;">
+				<form><input type="checkbox" name="chbox"></form>
+			</div>
+			<div class="col-sm-8">
+				<img src="../images/item1.jpg" width="60px" hspace="5" vspace="5" border="1" class="center-block">
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-5" style="margin-top: 20px;">
+		<p>Hippocratis coi Aphorismi versu heroico explicati</p>
+	</div>
+	<div class="col-sm-1" style="margin-top: 20px;"><p>2010</p></div>
+	<div class="col-sm-3" style="margin-top: 20px;"><p>Hip骳rates</p></div>
+</div>
+<div class="row" style="margin-top: 20px;">
+	<div class="col-sm-3">
+		<div class="row">
+			<div class="col-sm-2" style="margin-top: 30px;">1</div>
+			<div class="col-sm-2" style="margin-top: 30px;">
+				<form><input type="checkbox" name="chbox"></form>
+			</div>
+			<div class="col-sm-8">
+				<img src="../images/item1.jpg" width="60px" hspace="5" vspace="5" border="1" class="center-block">
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-5" style="margin-top: 30px;">
+		<p>Hippocratis coi Aphorismi versu heroico explicati</p>
+	</div>
+	<div class="col-sm-1" style="margin-top: 30px;"><p>2010</p></div>
+	<div class="col-sm-3" style="margin-top: 30px;"><p>Hip骳rates</p></div>
+</div>
+<div class="row" style="margin-top: 30px;">
+	<div class="col-sm-3">
+		<div class="row">
+			<div class="col-sm-2" style="margin-top: 30px;">1</div>
+			<div class="col-sm-2" style="margin-top: 30px;">
+				<form><input type="checkbox" name="chbox"></form>
+			</div>
+			<div class="col-sm-8">
+				<img src="../images/item1.jpg" width="60px" hspace="5" vspace="5" border="1" class="center-block">
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-5" style="margin-top: 30px;">
+		<p>Hippocratis coi Aphorismi versu heroico explicati</p>
+	</div>
+	<div class="col-sm-1" style="margin-top: 30px;"><p>2010</p></div>
+	<div class="col-sm-3" style="margin-top: 30px;"><p>Hip骳rates</p></div>
+</div>
+<div class="row" style="margin-top: 30px;">
+	<div class="col-sm-3">
+		<div class="row">
+			<div class="col-sm-2" style="margin-top: 30px;">1</div>
+			<div class="col-sm-2" style="margin-top: 30px;">
+				<form><input type="checkbox" name="chbox"></form>
+			</div>
+			<div class="col-sm-8">
+				<img src="../images/item1.jpg" width="60px" hspace="5" vspace="5" border="1" class="center-block">
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-5" style="margin-top: 30px;">
+		<p>Hippocratis coi Aphorismi versu heroico explicati</p>
+	</div>
+	<div class="col-sm-1" style="margin-top: 30px;"><p>2010</p></div>
+	<div class="col-sm-3" style="margin-top: 30px;"><p>Hip骳rates</p></div>
+</div>
+<!-- A continuaci髇n inicia el html para short-tail -->
+<div class="row">
+	<div class="col-sm-3 col-sm-push-9">
+		<div id="hidden_pager" style="display: none;">
+			<!-- Este es el caso cuando el bot贸n anterior esta deshabilitado y el bot贸n siguiente esta habilitado-->
+			<!--
+			<img src="http://catalogo.iib.unam.mx:80/exlibris/aleph/u23_1/alephe/www_f_spa/icon/f-prev-page-dim.gif" border="0" alt="No Previous Page"> &nbsp; 
+			<a href="http://catalogo.iib.unam.mx:80/F/NYHKXGDB8DR43AI315RDR2UM5GQ92YB9G7DS3QDNQHSARNTV63-07101?func=short-jump&amp;jump=000021" title="Next" page="">
+			<img src="http://catalogo.iib.unam.mx:80/exlibris/aleph/u23_1/alephe/www_f_spa/icon/f-next-page.gif" border="0" alt="Next Page"></a>
+			-->
+			<!-- Este es el caso cuando ambos botones est谩n habilitados -->
+			<!--
+			<a href="http://catalogo.iib.unam.mx:80/F/NYHKXGDB8DR43AI315RDR2UM5GQ92YB9G7DS3QDNQHSARNTV63-09028?func=short-jump&amp;jump=000001" title="Previous" page=""><img src="http://catalogo.iib.unam.mx:80/exlibris/aleph/u23_1/alephe/www_f_spa/icon/f-prev-page.gif" border="0" alt="Previous Page"></a> &nbsp; <a href="http://catalogo.iib.unam.mx:80/F/NYHKXGDB8DR43AI315RDR2UM5GQ92YB9G7DS3QDNQHSARNTV63-09029?func=short-jump&amp;jump=000041" title="Next" page=""><img src="http://catalogo.iib.unam.mx:80/exlibris/aleph/u23_1/alephe/www_f_spa/icon/f-next-page.gif" border="0" alt="Next Page"></a> 
+			-->
+			
+
+			<!-- Este es el caso cuando el bot贸n anterior esta habilitado y el bot贸n siguiente esta deshabilitado -->
+
+			
+			<a href="http://catalogo.iib.unam.mx:80/F/NYHKXGDB8DR43AI315RDR2UM5GQ92YB9G7DS3QDNQHSARNTV63-10895?func=short-jump&amp;jump=000021" title="Previous" page=""><img src="http://catalogo.iib.unam.mx:80/exlibris/aleph/u23_1/alephe/www_f_spa/icon/f-prev-page.gif" border="0" alt="Previous Page"></a> &nbsp; <img src="http://catalogo.iib.unam.mx:80/exlibris/aleph/u23_1/alephe/www_f_spa/icon/f-next-page-dim.gif" border="0" alt="No Next Page">
+		</div>
+		<ul class="pager">
+			<li><a class="my_previous" href="#">&larr; Anterior</a></li>
+			<li><a class="my_next" href="#">Siguiente &rarr;</a></li>
+		</ul>
+	</div>
+</div>
+<div class="row">
+	<div class="col-sm-3 col-sm-push-9">
+		<ul class="pager mypager">
+			<li><a class="my_previous" href="#">&larr; Anterior</a></li>
+			<li><a class="my_next" href="#">Siguiente &rarr;</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- <div class="myjumbotron">
 	<table class="table table-bordered table-striped">
 		<thead>
 			<tr>
@@ -219,48 +338,10 @@
 				<td><p>2010</p></td>
 			</tr>
 		</tbody>
-	</table>
-	<div class="row">
-		<div class="col-sm-3 col-sm-push-9">
-			<ul class="pager mypager">
-				<li><a class="my_previous" href="#">&larr; Anterior</a></li>
-				<li><a class="my_next" href="#">Siguiente &rarr;</a></li>
-			</ul>
-		</div>
-	</div>
-</div>
+	</table>	
+</div> -->
 
-<!-- A continuaci髇n inicia el html para short-tail -->
-<hr>
-<div class="row">
-	<div class="col-sm-3 col-sm-offset-9">
-		<div id="hidden_pager" style="display: none;">
-			<!-- Este es el caso cuando el bot贸n anterior esta deshabilitado y el bot贸n siguiente esta habilitado-->
-			<!--
-			<img src="http://catalogo.iib.unam.mx:80/exlibris/aleph/u23_1/alephe/www_f_spa/icon/f-prev-page-dim.gif" border="0" alt="No Previous Page"> &nbsp; 
-			<a href="http://catalogo.iib.unam.mx:80/F/NYHKXGDB8DR43AI315RDR2UM5GQ92YB9G7DS3QDNQHSARNTV63-07101?func=short-jump&amp;jump=000021" title="Next" page="">
-			<img src="http://catalogo.iib.unam.mx:80/exlibris/aleph/u23_1/alephe/www_f_spa/icon/f-next-page.gif" border="0" alt="Next Page"></a>
-			-->
-			<!-- Este es el caso cuando ambos botones est谩n habilitados -->
-			<!--
-			<a href="http://catalogo.iib.unam.mx:80/F/NYHKXGDB8DR43AI315RDR2UM5GQ92YB9G7DS3QDNQHSARNTV63-09028?func=short-jump&amp;jump=000001" title="Previous" page=""><img src="http://catalogo.iib.unam.mx:80/exlibris/aleph/u23_1/alephe/www_f_spa/icon/f-prev-page.gif" border="0" alt="Previous Page"></a> &nbsp; <a href="http://catalogo.iib.unam.mx:80/F/NYHKXGDB8DR43AI315RDR2UM5GQ92YB9G7DS3QDNQHSARNTV63-09029?func=short-jump&amp;jump=000041" title="Next" page=""><img src="http://catalogo.iib.unam.mx:80/exlibris/aleph/u23_1/alephe/www_f_spa/icon/f-next-page.gif" border="0" alt="Next Page"></a> 
-			-->
-			
 
-			<!-- Este es el caso cuando el bot贸n anterior esta habilitado y el bot贸n siguiente esta deshabilitado -->
-
-			
-			<a href="http://catalogo.iib.unam.mx:80/F/NYHKXGDB8DR43AI315RDR2UM5GQ92YB9G7DS3QDNQHSARNTV63-10895?func=short-jump&amp;jump=000021" title="Previous" page=""><img src="http://catalogo.iib.unam.mx:80/exlibris/aleph/u23_1/alephe/www_f_spa/icon/f-prev-page.gif" border="0" alt="Previous Page"></a> &nbsp; <img src="http://catalogo.iib.unam.mx:80/exlibris/aleph/u23_1/alephe/www_f_spa/icon/f-next-page-dim.gif" border="0" alt="No Next Page">
-			
-			
-
-		</div>
-		<ul class="pager">
-			<li><a class="my_previous" href="#">&larr; Anterior</a></li>
-			<li><a class="my_next" href="#">Siguiente &rarr;</a></li>
-		</ul>
-	</div>
-</div>
 
 <!--<include>copyrights-->
 <!-- Esto debe ir el archivo copyrights --> 

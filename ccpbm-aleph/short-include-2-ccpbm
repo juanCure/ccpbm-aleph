@@ -37,45 +37,43 @@
 	</div>
 </div> <!-- Aquí termina el div.myjumbotron -->
 
-<div class="myjumbotron">
-	<div class="row myrow">
-		<div class="col-sm-3">
-			<h4 class="thick">Registros &nbsp; $0100 -$0200 &nbsp; de &nbsp; $0300</h4>
-		</div>
-		<div class="col-sm-3">
-			<form class="form-horizontal" method="get" name="form_jumpText" action="&server_f">
-				<div class="form-group">
-					<div class="col-sm-4">
-						<input type="hidden" name="func" value="short-jump-text">
-						<input type="submit" class="btn mybtn" value="Ir a texto" name="action_short_jump_text" >		
-					</div>
-					<div class="col-sm-6">
-						<input type="text" name="jump_text">	
-					</div>
-				</div>
-			</form>
-		</div>
-		<div class="col-sm-3">
-			<form class="form-horizontal" method="get" name="form_jumpRecord" action="&server_f">
-				<div class="form-group">
-					<div class="col-sm-4">
-						<input type="hidden" name="func" value="short-jump">
-						<input type="button" class="btn mybtn" value="Ir a #" name="action_short_jump" >		
-					</div>
-					<div class="col-sm-6">
-						<input type="text" name="jump">	
-					</div>
-				</div>
-			</form>	
-		</div>
-		<div class="col-sm-3">
-			<div id="hidden_pager" style="display: none;">
-				$0900 &nbsp; $1000	
-			</div>
-			<ul class="pager mypager">
-				<li><a class="my_previous" href="#">&larr; Anterior</a></li>
-				<li><a class="my_next" href="#">Siguiente &rarr;</a></li>
-			</ul>
-		</div>
+<div class="row" style="margin-top: 20px;">
+	<div class="col-sm-3">
+		<h4 class="thick">Registros &nbsp; $0100 -$0200 &nbsp; de &nbsp; $0300</h4>
 	</div>
-</div> <!-- Aquí termina el segundo div.myjumbotron -->
+	<div class="col-sm-3">
+		<form class="form-horizontal" method="get" name="form_jumpText" action="&server_f">
+			<div class="form-group">
+				<div class="col-sm-4">
+					<input type="hidden" name="func" value="short-jump-text">
+					<input type="submit" class="btn mybtn" value="Ir a texto" name="action_short_jump_text" >		
+				</div>
+				<div class="col-sm-6">
+					<input type="text" name="jump_text">	
+				</div>
+			</div>
+		</form>
+	</div>
+	<div class="col-sm-3">
+		<form class="form-horizontal" method="get" name="form_jumpRecord" action="&server_f">
+			<div class="form-group">
+				<div class="col-sm-4">
+					<input type="hidden" name="func" value="short-jump">
+					<input type="button" class="btn mybtn" value="Ir a #" name="action_short_jump" >		
+				</div>
+				<div class="col-sm-6">
+					<input type="text" name="jump">	
+				</div>
+			</div>
+		</form>	
+	</div>
+	<div class="col-sm-3">
+		<div id="hidden_pager" style="display: none;">
+			$0900 &nbsp; $1000	
+		</div>
+		<ul class="pager mypager">
+			<li><a class="my_previous" href="#">&larr; Anterior</a></li>
+			<li><a class="my_next" href="#">Siguiente &rarr;</a></li>
+		</ul>
+	</div>
+</div>
