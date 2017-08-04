@@ -68,9 +68,9 @@
 	<!--<include>head-1	-->
 	<!-- Lo siguiente debe ir el archivo head-1-->
 	<div class="row">
-		<div class="col-md-12">
+		<div class="col-sm-12">
 			<div class="header">
-				<img width="100%" src="../images/banner_contenidos_01.jpg" usemap="#Map" id="image_header"/>
+				<img width="100%" src="../images/interior-desktop.jpg" usemap="#Map" id="image_header"/>
 			</div>
 		</div>
 	</div>
@@ -78,7 +78,7 @@
 
 <!-- Lo siguiente debe ir el archivo find-include-buttons -->
 <div class="container">
-	<div id="myMenu" class="col-md-12">
+	<div id="myMenu" class="col-sm-12">
 	  <nav class="navbar navbar-default" id="myNav">
 	    <div class="navbar-header">
 	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -88,7 +88,7 @@
 	      </button>
 	    </div>
 	    <div class="collapse navbar-collapse" id="myNavbar">
-	    <div class="col-md-9" id="myMenuPrincipal">
+	    <div class="col-sm-9" id="myMenuPrincipal">
 	    	<ul class="nav navbar-nav">
 	        <li><a href="#">INICIO</a></li>
 	        <li class="with-border-left"><a href="#">PROYECTO</a></li>
@@ -97,7 +97,7 @@
 	        <li class="with-border-left"><a href="#">CONTACTO</a></li>
 	      </ul>
 	    </div>
-	    <div class="col-md-3" id="myNavbarForm">
+	    <div class="col-sm-3" id="myNavbarForm">
 	    	<form class="navbar-form navbar-right">
 	      	<div class="input-group input-group-lg">
 	      		<span style="background-color: #b8a27c;" class="input-group-addon"><span style="color: #fff;" class="glyphicon glyphicon-stats"></span></span>
@@ -108,7 +108,7 @@
 	      	</div>
 	      </form>
 	    </div>
-	    <div class="col-md-9" id="mySubmenu" style="top: 10px">
+	    <div class="col-sm-9" id="mySubmenu" style="top: 10px">
 	    	<ul class="nav navbar-nav">
 					<li><a href="#">Búsqueda básica</a></li>
 					<li class="with-border-left"><a href="#">Búsqueda avanzada</a></li>
@@ -129,18 +129,18 @@
 		<input type="hidden" name="func" value="find-b">
 		<div class="jumbotron" style="margin-top: 20px;">
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-sm-12">
 					<h3> Búsqueda básica</h3>
 				</div>
 			</div>
 			<div class="form-group row">
-				<label class="control-label col-md-4" for="inputText">Escribir palabra(s)</label>
-				<div class="col-md-12">
+				<label class="control-label col-sm-4" for="inputText">Escribir palabra(s)</label>
+				<div class="col-sm-12">
 					<input type="text" class="form-control" id="inputText" name="request">	
 				</div>
 			</div>
 			<div class="form-group row">
-				<div class="col-md-4">
+				<div class="col-sm-4">
 					<select class="form-control" id="sel2" name=colecciones>
 					<option value="0">Seleccionar colección</option> 
 					<option value="1">Colección 1</option> 
@@ -149,7 +149,7 @@
 					<option value="4">Colección 4</option>
 				</select>	
 				</div>
-				<div class="col-md-2 col-md-offset-6">
+				<div class="col-sm-4 col-sm-push-6">
 					<input type="submit" alt="Go" class="btn mybtn" value="Aceptar">
 					<a href="#" class="btn mybtn">Borrar</a>
 				</div>
@@ -158,15 +158,15 @@
 
 		<div class="jumbotron">
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-sm-12">
 					<h3>Delimitadores de búsqueda</h3>
 				</div>	
 			</div>
 			<div class="row">
-				<div class="col-md-4">
+				<div class="col-sm-4">
 					<div class="form-group row">
-					  <label for="sel1" class="control-label col-md-12">Campos de búsqueda</label>
-					  <div class="col-md-10">
+					  <label for="sel1" class="control-label col-sm-12">Campos de búsqueda</label>
+					  <div class="col-sm-10">
 					    <select class="form-control" id="sel1" name=find_code>
 								<option value="WRD">Todos los campos</option> 
 							  <option value="WTI">Título</option> 
@@ -177,43 +177,39 @@
 					  </div>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-sm-3">
 					<div class="form-group row">
-						<label class="control-label col-md-12">¿Palabras adyacentes?</label>
-						<div class="col-md-10">
-							<label class="radio-inline" id="myradio">
-								<input type="radio" name="optradio">No
-							</label>
-							<label class="radio-inline">
-								<input type="radio" name="optradio">Sí
-							</label>
+						<label class="control-label col-sm-12">¿Palabras adyacentes?</label>
+						<div class="col-sm-10">
+							<label class="radio-inline" id="myradio">No &nbsp;</label> <input type="radio" name="optradio">
+							<label class="radio-inline">Sí &nbsp;</label> <input type="radio" name="optradio">
 						</div>
 					</div>
 				</div>
-				<div class="col-md-5">
+				<div class="col-sm-5">
 					<div class="form-group row">
-						<label class="control-label col-md-12">Año o período de edición</label>
+						<label class="control-label col-sm-12">Año o período de edición</label>
 					</div>
 					<div class="row">
-						<div class="form-horizontal col-md-6">
+						<div class="form-horizontal col-sm-6">
 							<div class="form-group row">
-								<label for="fromYear" class="control-label col-md-6">Del año:</label>
-								<div class="col-md-6">
+								<label for="fromYear" class="control-label col-sm-6">Del año:</label>
+								<div class="col-sm-6">
 									<input type="hidden" name="filter_code_2" value="WYR">
 		    					<input type="text" size="10" name="filter_request_2" value="" class="form-control" id="fromYear">		
 								</div>
 							</div>
 						</div>
-						<div class="form-horizontal col-md-6">
+						<div class="form-horizontal col-sm-6">
 							<div class="form-group row">
-								<label for="toYear" class="control-label col-md-6">Al año:</label>
-								<div class="col-md-6">
+								<label for="toYear" class="control-label col-sm-6">Al año:</label>
+								<div class="col-sm-6">
 									<input type="hidden" name="filter_code_3" value="WYR">
 			    				<input type="text" size="10" name="filter_request_3" value="" class="form-control" id="toYear">
 								</div>
 							</div>
 						</div>
-						<span class="help-block col-md-12 text-center">Escriba los años usando 4 digitos, ejemplo: 1728.</span>
+						<span class="help-block col-sm-12 text-center">Escriba los años usando 4 digitos, ejemplo: 1728.</span>
 					</div>
 				</div>
 			</div>
@@ -223,7 +219,7 @@
 	<!--<include>copyrights-->
 	<!-- Esto debe ir el archivo copyrights --> 
 	<div class="row text-center">
-	  <div class="col-md-12">
+	  <div class="col-sm-12">
 	  	<p>Hecho en México, Universidad Nacional Autónoma de Néxico (UNAM), todos los derechos reservados, 2015. Esta pÃƒÂ¡gina puede ser reproducida con fines no lucrativos, siempre y cuando no se mutile, se cite la fuente completa y su dirección electrónica. De otra forma, se requiere permiso previo y por escrito de la institución. &copy;</p>
 	  	<p><a style="color:#4a6159; font-size:80%; text-decoration:none;" href="http://catalogo.iib.unam.mx:80/F/S582U84X638TKNCC4L4M17PSDND53T8H6V1QKXM8PRJTU1JAKY-46937?func=find-f&local_base=BNDM" class="blue">Créditos</a></p>
 	  </div>

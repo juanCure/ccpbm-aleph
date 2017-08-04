@@ -201,6 +201,6 @@
   }
 
   /* Realizando una escala sobre los checkbox para mostrarlo más grande */
-  input[type=checkbox] {
+  input[type=checkbox], input[type=radio] {
     transform: scale(2.5);
   }
