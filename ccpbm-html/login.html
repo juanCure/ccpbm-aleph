@@ -11,37 +11,18 @@
 <!-- Bootstrap -->
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="./ccpbm.css">
 
 <title>CCPBM - Entrar</title>
 <style type="text/css">
 
-  /* xs < 768 */
-@media screen and (max-width: 767px) {
-    body {
-        font-size: 0.9em;
-    }
-}
+/* Agregando las fuentes Raleway*/
+@font-face { font-family: RalewayRegular; src: url('../fonts/Raleway-Regular.ttf'); }
+@font-face { font-family: RalewayMedium; src: url('../fonts/Raleway-Medium.ttf'); }
+  body {
+      font-family: RalewayRegular;
+    } 
 
-/* sm */
-@media screen and (min-width: 768px) {
-    body {
-        font-size: 1em;
-    }
-}
-
-/* md */
-@media screen and (min-width: 992px) {
-    body {
-        font-size: 1.2em;
-    }
-}
-
-/* lg */
-@media screen and (min-width: 1200px) {
-    body {
-        font-size: 1.3em;
-    }
-}
   /* The heart of the matter */
   .testimonial-group > .row {
     overflow-x: auto;
@@ -53,12 +34,19 @@
   }
 
   #myMenu {
-    /*top: -65px;*/
     position: relative;
-    top: -80px;
+    top: -75px;
+    width: 65%;
     margin-right: 0;
     padding-right: 0;
+  }
 
+  #myMenuPrincipal .navbar-nav>li>a, .filtros .navbar-nav>li>a {
+    color: #fff;
+    font-family: RalewayMedium;
+    font-size: 16px;
+    margin: 10px 0;
+    padding: 10px 5px;
   }
 
   /* Sobreescribiendo estilos de boostrap */
@@ -74,17 +62,6 @@
 
   #myNav {
     opacity: 0.8; 
-  }
-
-  .navbar-nav {
-    padding: 10px;
-  }
-
-  .navbar-default .navbar-nav>li>a {
-    color: #fff;
-    font-family: Raleway;
-    /*font-size: 16px;
-    font-weight: 600;*/
   }
 
   .dropdown-menu>li>a{
@@ -184,10 +161,10 @@ div::-webkit-scrollbar-thumb:window-inactive {
         <div class="col-sm-9" id="myMenuPrincipal">
           <ul class="nav navbar-nav">
             <li><a href="&server_f?func=login&local_base=CCPBM">INICIO</a></li>
-            <li class="with-border-left"><a href="&server_f?func=find-a&local_base=CCPBM">PROYECTO</a></li>
-            <li class="with-border-left"><a href="#">COLECCIONES</a></li>
-            <li class="with-border-left"><a href="&server_f?func=find-b-0&local_base=CCPBM">BÚSQUEDAS</a></li>
-            <li class="with-border-left"><a href="#">CONTACTO</a></li>
+            <li><a class="with-border-left" href="&server_f?func=find-a&local_base=CCPBM">PROYECTO</a></li>
+            <li><a class="with-border-left" href="#">COLECCIONES</a></li>
+            <li><a class="with-border-left" href="&server_f?func=find-b-0&local_base=CCPBM">B�SQUEDAS</a></li>
+            <li><a class="with-border-left" href="#">CONTACTO</a></li>
           </ul>
         </div>
         <div class="col-sm-3" id="myNavbarForm">
@@ -195,7 +172,7 @@ div::-webkit-scrollbar-thumb:window-inactive {
             <input type="hidden" name="func" value="find-b">
             <div class="input-group input-group-lg">
               <span style="background-color: #b8a27c;" class="input-group-addon"><span style="color: #fff;" class="glyphicon glyphicon-stats"></span></span>
-              <input type="text" name="request" class="form-control" placeholder="Búsqueda">
+              <input type="text" name="request" class="form-control" placeholder="Palabras">
               <span class="input-group-btn">
                 <button type="submit" class="btn btn-default"><span style="color: #b8a27c;" class="glyphicon glyphicon-search"></span></button>
               </span>

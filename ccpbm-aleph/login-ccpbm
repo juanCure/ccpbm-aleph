@@ -43,7 +43,19 @@
   }
 
   #myMenu {
-    top: -65px;
+    position: relative;
+    top: -75px;
+    width: 65%;
+    margin-right: 0;
+    padding-right: 0;
+  }
+
+  #myMenuPrincipal .navbar-nav>li>a, .filtros .navbar-nav>li>a {
+    color: #fff;
+    font-family: RalewayMedium;
+    font-size: 16px;
+    margin: 10px 0;
+    padding: 10px 5px;
   }
 
   /* Sobreescribiendo estilos de boostrap */
@@ -59,17 +71,6 @@
 
   #myNav {
     opacity: 0.8; 
-  }
-
-  .navbar-nav {
-    padding: 10px;
-  }
-
-  .navbar-default .navbar-nav>li>a {
-    color: #fff;
-    font-family: Raleway;
-    /*font-size: 16px;
-    font-weight: 600;*/
   }
 
   .dropdown-menu>li>a{
@@ -142,16 +143,16 @@ div::-webkit-scrollbar-thumb:window-inactive {
         <div class="col-sm-9" id="myMenuPrincipal">
           <ul class="nav navbar-nav">
             <li><a href="&server_f?func=login&local_base=CCPBM">INICIO</a></li>
-            <li class="with-border-left"><a href="&server_f?func=find-a&local_base=CCPBM">PROYECTO</a></li>
-            <li class="with-border-left"><a href="#">COLECCIONES</a></li>
-            <li class="with-border-left"><a href="&server_f?func=find-b-0&local_base=CCPBM">BÚSQUEDAS</a></li>
-            <li class="with-border-left"><a href="#">CONTACTO</a></li>
+            <li><a class="with-border-left" href="&server_f?func=find-a&local_base=CCPBM">PROYECTO</a></li>
+            <li><a class="with-border-left" href="#">COLECCIONES</a></li>
+            <li><a class="with-border-left" href="&server_f?func=find-b-0&local_base=CCPBM">BÚSQUEDAS</a></li>
+            <li><a class="with-border-left" href="#">CONTACTO</a></li>
           </ul>
         </div>
         <div class="col-sm-3" id="myNavbarForm">
           <form class="navbar-form navbar-right" method=get name=form2 action="&server_f" role="form">
             <input type="hidden" name="func" value="find-b">
-            <div class="input-group input-group-lg">
+            <div class="input-group input-group-md">
               <span style="background-color: #b8a27c;" class="input-group-addon"><span style="color: #fff;" class="glyphicon glyphicon-stats"></span></span>
               <input type="text" name="request" class="form-control" placeholder="Palabras">
               <span class="input-group-btn">
