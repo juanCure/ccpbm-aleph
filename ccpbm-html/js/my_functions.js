@@ -90,3 +90,24 @@ function change_ref_link(new_opt){
 		alfabeto_children[i].children[0].href = new_href;
 	}	
 }
+
+/* Esta función oculta el submenu en las siguientes vistas 
+ * find-a-ccpbm - Proyecto
+ * find-r-ccpbm - Colecciones
+ * find-c-ccpbm - Contacto
+ */
+ function hide_submenu(){
+ 	var proyecto_url = "http://catalogo.iib.unam.mx/F/AD7B3KI33CDAUSATNT9VD5QHFKV71528A6QS4G4LDTYC62ME53-14030?func=find-a&local_base=CCPBM";
+ 	var colecciones_url = "http://catalogo.iib.unam.mx/F/AD7B3KI33CDAUSATNT9VD5QHFKV71528A6QS4G4LDTYC62ME53-14055?func=find-r&local_base=CCPBM";
+ 	var contacto_url = "http://catalogo.iib.unam.mx/F/AD7B3KI33CDAUSATNT9VD5QHFKV71528A6QS4G4LDTYC62ME53-14105?func=find-c&local_base=CCPBM";
+ 	var basica_url = "http://catalogo.iib.unam.mx/F/AD7B3KI33CDAUSATNT9VD5QHFKV71528A6QS4G4LDTYC62ME53-14728?func=find-b-0&local_base=CCPBM";
+ 	// var href = document.location.href;
+
+	// var matches = /func=([^&#=]*)/.exec(href);
+	var matches = /func=([^&#=]*)/.exec(contacto_url);
+	var param1 = matches[1];
+	if(param1 == "find-a" || param1 == "find-r" || param1 == "find-c"){
+		var submenu = document.getElementById("mySubmenu");
+		submenu.style.display = "none";
+	}
+ }

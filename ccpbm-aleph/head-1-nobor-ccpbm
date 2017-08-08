@@ -1,7 +1,7 @@
 <!-- filename: head-1-nobor-ccpbm Juan Manuel Rodríguez -->
 <div class="container-fluid">
 	<div class="row">
-		<div class="col-md-12">
+		<div class="col-sm-12">
 			<div class="header">
 				<img width="100%" src="&icon_path/interior-desktop.jpg">
 			</div>

@@ -1,6 +1,6 @@
 <!-- find-include-buttons-ccpbm Juan Manuel Rodríguez -->
 <div class="container">
-  <div id="myMenu" class="col-md-12">
+  <div id="myMenu" class="col-sm-12">
     <nav class="navbar navbar-default" id="myNav">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -10,7 +10,7 @@
         </button>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
-        <div class="col-md-9" id="myMenuPrincipal">
+        <div class="col-sm-9" id="myMenuPrincipal">
           <ul class="nav navbar-nav">
             <li><a href="&server_f?func=login&local_base=CCPBM">INICIO</a></li>
             <li><a class="with-border-left" href="&server_f?func=find-a&local_base=CCPBM">PROYECTO</a></li>
@@ -19,7 +19,7 @@
             <li><a class="with-border-left" href="&server_f?func=find-c&local_base=CCPBM">CONTACTO</a></li>
           </ul>
         </div>
-        <div class="col-md-3" id="myNavbarForm">
+        <div class="col-sm-3" id="myNavbarForm">
           <form class="navbar-form navbar-right" method=get name=form2 action="&server_f" role="form">
             <input type="hidden" name="func" value="find-b">
             <div class="input-group input-group-lg">
@@ -31,7 +31,7 @@
             </div>
           </form>
         </div>
-        <div class="col-md-9" id="mySubmenu" style="top: 10px">
+        <div class="col-sm-9" id="mySubmenu" style="top: 10px">
           <ul class="nav navbar-nav">
             <li><a href="&server_f?func=find-b-0&local_base=CCPBM">Búsqueda básica</a></li>
             <li><a class="with-border-left" href="&server_f?func=find-d-0&local_base=CCPBM">Búsqueda avanzada</a></li>

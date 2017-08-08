@@ -26,3 +26,5 @@
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- Agregando el archivo my_functions.js el cual contiene varias funciones necesarias para las vistas de ccpbm -->
+<script src="&server_css/my_functions_ccpbm.js"></script>
