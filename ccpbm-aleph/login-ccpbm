@@ -144,9 +144,9 @@ div::-webkit-scrollbar-thumb:window-inactive {
           <ul class="nav navbar-nav">
             <li><a href="&server_f?func=login&local_base=CCPBM">INICIO</a></li>
             <li><a class="with-border-left" href="&server_f?func=find-a&local_base=CCPBM">PROYECTO</a></li>
-            <li><a class="with-border-left" href="#">COLECCIONES</a></li>
+            <li><a class="with-border-left" href="&server_f?func=find-r&local_base=CCPBM">COLECCIONES</a></li>
             <li><a class="with-border-left" href="&server_f?func=find-b-0&local_base=CCPBM">BÚSQUEDAS</a></li>
-            <li><a class="with-border-left" href="#">CONTACTO</a></li>
+            <li><a class="with-border-left" href="&server_f?func=find-c&local_base=CCPBM">CONTACTO</a></li>
           </ul>
         </div>
         <div class="col-sm-3" id="myNavbarForm">
@@ -175,41 +175,41 @@ div::-webkit-scrollbar-thumb:window-inactive {
   <div class="row text-center">
     <div class="col-md-3">
       <div class="thumbnail">
-        <a href="#">
-          <img class="img-responsive" src="&icon_path/item01.jpg" width="250" height="250"  alt="Biblioteca Naciona de Mexico"/>
-          <!-- <div class="caption">
-            <p>Lorem ipsum...</p>
-          </div> -->
+        <a href="http://www.inah.gob.mx/es/">
+          <img class="img-responsive" src="&icon_path/item01.jpg" width="250" height="250"  alt="Instituto Nacional de Antropologia e Historia"/>
+          <div class="caption">
+            <p>Biblioteca Nacional de Antropología e Historia, "Dr. Eusebio Dávalos Hurtado". INAH.</p>
+          </div>
         </a>
       </div>
     </div>
     <div class="col-md-3">
       <div class="thumbnail">
-        <a href="#">
-          <img class="img-responsive" src="&icon_path/item02.jpg" width="250" height="250"  alt="Biblioteca Ernesto de la Torre Villar"/>
-          <!-- <div class="caption">
-            <p>Lorem ipsum...</p>
-          </div> -->
+        <a href="http://www.uabjo.mx/">
+          <img class="img-responsive" src="&icon_path/item02.jpg" width="250" height="250"  alt="Biblioteca Fray Francisco de Burgoa"/>
+          <div class="caption">
+            <p>Biblioteca "Fray Francisco de Burgoa", Universidad Autónoma Benito Juárez de Oaxaca.</p>
+          </div>
         </a>
       </div>
     </div>
     <div class="col-md-3">
       <div class="thumbnail">
-        <a href="#">
-          <img class="img-responsive" src="&icon_path/item03.jpg" width="250" height="250"  alt="Biblioteca Nacional de Antropologia e Historia"/>
-          <!-- <div class="caption">
-            <p>Lorem ipsum...</p>
-          </div> -->
+        <a href="http://www.bib.uia.mx/sitio/">
+          <img class="img-responsive" src="&icon_path/item03.jpg" width="250" height="250"  alt="Biblioteca Francisco Xavier Clavijero de la Universidad Iberoamericana."/>
+          <div class="caption">
+            <p>Biblioteca "Francisco Xavier Clavijero" de la Universidad Iberoamericana.</p>
+          </div>
         </a>
       </div>
     </div>
     <div class="col-md-3">
       <div class="thumbnail">
-        <a href="#">
-          <img class="img-responsive" src="&icon_path/item04.jpg" width="250" height="250"  alt="Biblioteca Ernesto de la Torre Villar"/>
-          <!-- <div class="caption">
-            <p>Lorem ipsum...</p>
-          </div> -->
+        <a href="http://biblioteca.colmex.mx/">
+          <img class="img-responsive" src="&icon_path/item04.jpg" width="250" height="250"  alt="Biblioteca Daniel Cosío Villegas, El Colegio de México."/>
+          <div class="caption">
+            <p>Biblioteca "Daniel Cosío Villegas", El Colegio de México.</p>
+          </div>
         </a>
       </div>
     </div>

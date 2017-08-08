@@ -1,0 +1,52 @@
+<!-- filename: find-c-ccpbm Juan Manuel Rodríguez -->
+<!DOCTYPE html>
+<html>
+<head>
+<include>meta-tags
+<title>Contacto</title>
+<style type="text/css">
+  /*Este estilo se define aquí porque la variable icon_path no puede ser evaluada desde un
+  archivo css externo.*/
+
+  .with-background-image{
+    background-image: url(&icon_path/pie_de_pagina.jpg);
+    background-color: white;
+    background-repeat: no-repeat;
+    /*background-attachment: fixed;*/
+    background-position: left bottom; 
+  }
+</style>
+</head>
+
+<body>
+<include>head-1
+<div class="container-fluid" style="margin-top: 20px;">
+
+<div class="row with-padding-color">
+  <div class="col-md-12 with-background-image">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <div class="micontenido">
+          <h1>CONTACTO</h1>
+          <p>Aqui deberá de ir la información relacionada con Contacto del CCPBM.</p>
+        </div>
+      </div>
+    </div>
+
+    <br><br>
+
+<include>copyrights
+  </div>
+</div>
+
+</div> <!-- Aquí termina el div.container-fluid -->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

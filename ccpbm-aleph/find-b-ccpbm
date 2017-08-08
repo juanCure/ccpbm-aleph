@@ -75,12 +75,6 @@
 
 <include>copyrights
 </div> <!-- Aquí termina el div.container que contiene el contenido de la página -->
-
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script type="text/javascript">
         var href = document.location.href;
         console.log("this is href: ", href);
@@ -93,6 +87,5 @@
         image_header.setAttribute("src", "&icon_path/" + "bndm-cabeza-" + param1 + ".jpg");
 
 </script>
-
 </body>
 </html>

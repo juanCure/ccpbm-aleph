@@ -1,0 +1,59 @@
+<!-- history-head-ccpbm Juan Manuel Rodríguez -->
+<html>
+<head>
+<title>&f-base - Búsquedas anteriores</title>
+<include>meta-tags
+<include>submit-form-include
+</head>
+
+<body topmargin="0">
+<include>head-1
+<form method=get
+      name=form1
+      action="&server_f">
+<br>
+<div class=title>
+Búsquedas anteriores
+</p>
+
+<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+ <tr>
+  <td width="20%" align="center" nowrap>
+    &nbsp;
+  </td>
+  <td align="center" nowrap>
+      <input type="image"
+             name="action_view"
+             src="&icon_path/f-history-view.gif"
+             alt="view"
+             border="0">
+  </td>
+  <td align="center" nowrap>
+      <input type="image"
+             name="action_delete"
+             src="&icon_path/f-history-delete.gif"
+             alt="Delete"
+             border="0">
+  </td>
+  <td align="center" nowrap>
+      <input type="image"
+             name="action_cross"
+             src="&icon_path/f-history-cross.gif"
+             alt="Cross"
+             border="0">
+  </td>
+  <td width="20%" align="center" nowrap>
+    &nbsp;
+  </td>
+ </tr>
+</table>
+<br>
+<input type="hidden" name="func" value="history-action">
+<input type="hidden" name="submit_action" value="">
+<table width="100%" align="center"   border=0 cellspacing=2 cellpadding=5>
+ <tr class=tr1>
+  <th><br></th>
+  <th class="text3">Base de datos</th>
+  <th class="text3">Solicitud de búsqueda</th>
+  <th class="text3" nowrap>Núm. de registros</th>
+ </tr>

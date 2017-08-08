@@ -1,0 +1,88 @@
+<!-- filename: find-r-ccpbm Juan Manuel Rodríguez -->
+<html>
+<head>
+<title>Búsqueda en Colecciones </title>
+<include>meta-tags
+</head>
+
+<body topmargin="0"
+      onload="window.document.form1.ccl_term.focus();">
+<include>head-1
+<br>
+<div class=title>
+  Colecciones
+</div>
+<hr>
+<form name=form1
+      method=GET
+      action="&server_f">
+
+<p>Aquí deberán de ir las colecciones del Catálogo Colectivo de Patrimonio Bibliográfico Mexicano</p>
+
+<!-- <table width="100%" border="0" align="center">
+  <tr>
+    <td height="30" colspan="5" align="center" valign="middle"><a style="color:#4a6159; font-size:120%; text-decoration: none; font-weight:bold"  href="&server_f?func=find-b&find_code=WBA&request=BNDM&adjacent=N&local_base=BNDM">Ver todo</a></td>
+  </tr>
+  <tr>
+    <td width="128" align="center" bgcolor="#dee1d9" valign="middle"><a style="color:#ec6c2d; font-size:90%; text-decoration: none; " href="&server_f?func=find-b&find_code=WBA&request=RFO&adjacent=N&local_base=BNDM"><b>Fondo de Origen</b></a></td>
+    <td width="314" align="center" bgcolor="#dee1d9" valign="middle"><a  style="color:#ec6c2d; font-size:90%;text-decoration: none; " href="&server_f?func=find-b&find_code=WBA&request=R&adjacent=Y&local_base=BNDM"><b>Obras Antiguas, Raras y Curiosas</b></a></td>
+    <td width="303" align="center" bgcolor="#dee1d9" valign="middle"><a style="color:#ec6c2d; font-size:90%;text-decoration: none; " href="&server_f?func=find-b&find_code=WBA&request=A&adjacent=N&local_base=BNDM"><b>Archivos y Manuscritos</b></a></td>
+    <td width="257" align="center" bgcolor="#dee1d9" valign="middle"><a style="color:#ec6c2d; font-size:90%;text-decoration: none; " href="&server_f?func=find-b&find_code=WBA&request=E&adjacent=N&local_base=BNDM"><b>Colecciones Especiales</b></a></td>
+    <td width="82" align="center" bgcolor="#dee1d9" valign="middle"><b><a style="color:#ec6c2d; font-size:90%;text-decoration: none;" href="&server_f?func=find-b&find_code=WBA&request=ICON&adjacent=N&local_base=BNDM">Iconoteca</a></b></td>
+  </tr>
+  <tr>
+    <td align="center">&nbsp;</td>
+    <td align="center"><a style="color:#4a6159; font-size:85%; text-decoration:none;" href="&server_f?func=find-b&find_code=WBA&request=RI&adjacent=N&local_base=BNDM">Colección de Incunables</a></td>
+    <td align="center"><a style="color:#4a6159; font-size:85%; text-decoration:none;"  href="&server_f?func=find-b&find_code=WBA&request=AFRA&adjacent=N&local_base=BNDM">Archivo Franciscano</a></td>
+    <td align="center"><a style="color:#4a6159; font-size:85%; text-decoration:none;" href="&server_f?func=find-b&find_code=WBA&request=EASC&adjacent=N&local_base=BNDM">Colección Academia de San Carlos</a></td>
+    <td align="center">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="center">&nbsp;</td>
+    <td align="center"><a style="color:#4a6159; font-size:85%; text-decoration:none;" href="&server_f?func=find-b&find_code=WBA&request=RSM&adjacent=N&local_base=BNDM">Colección de Impresos Novohispanos</a></td>
+    <td align="center"><a style="color:#4a6159; font-size:85%; text-decoration:none;" href="&server_f?func=find-b&find_code=WBA&request=AMA&adjacent=N&local_base=BNDM">Archivo Francisco I. Madero</a></td>
+    <td align="center"><a style="color:#4a6159; font-size:85%; text-decoration:none;" href="&server_f?func=find-b&find_code=WBA&request=ENP&adjacent=N&local_base=BNDM">Colección Escuela Nacional Preparatoria</a></td>
+    <td align="left">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="center">&nbsp;</td>
+    <td align="center"><a style="color:#4a6159; font-size:85%; text-decoration:none;" href="&server_f?func=find-b&find_code=WBA&request=RSXIX&adjacent=N&local_base=BNDM">Colección Siglo XIX Mexicano</a></td>
+    <td align="center"><a style="color:#4a6159; font-size:85%; text-decoration:none;" href="&server_f?func=find-b&find_code=WBA&request=ABN&adjacent=N&local_base=BNDM">Archivo Historico de la Biblioteca Nacional</a></td>
+    <td align="center"><a style="color:#4a6159; font-size:85%; text-decoration:none;" href="&server_f?func=find-b&find_code=WBA&request=ERH&adjacent=N&local_base=BNDM">Fondo Rafael Heliodoro Valle</a></td>
+    <td align="left">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left">&nbsp;</td>
+    <td align="center"><a style="color:#4a6159; font-size:85%; text-decoration:none;" href="&server_f?func=find-b&find_code=WBA&request=RLAF&adjacent=N&local_base=BNDM">Colección Lafragua</a></td>
+    <td align="center"><a style="color:#4a6159; font-size:85%; text-decoration:none;" href="&server_f?func=find-b&find_code=WBA&request=MS&adjacent=N&local_base=BNDM">Colección de Manuscritos</a></td>
+    <td align="left">&nbsp;</td>
+    <td align="left">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left">&nbsp;</td>
+    <td align="center"><a style="color:#4a6159; font-size:85%; text-decoration:none;" href="&server_f?func=find-b&find_code=WBA&request=R&adjacent=N&local_base=BNDM">Colección de Libros Raros y Curiosos</a></td>
+    <td align="center"><a style="color:#4a6159; font-size:85%; text-decoration:none;" href="&server_f?func=find-b&find_code=WBA&request=AIN&adjacent=N&local_base=BNDM">Fondo Inquisición</a></td>
+    <td align="center">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left">&nbsp;</td>
+    <td align="center"><a style="color:#4a6159; font-size:85%; text-decoration:none;" href="&server_f?func=find-b&find_code=WBA&request=RC&adjacent=N&local_base=BNDM">Colección de obras de consulta</a></td>
+    <td align="center"><a style="color:#4a6159; font-size:85%; text-decoration:none;" href="&server_f?func=find-b&find_code=WBA&request=MSLC&adjacent=N&local_base=BNDM">Libros de Coro</a></td>
+    <td align="center">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left">&nbsp;</td>
+    <td align="left"></td>
+    <td align="left"><blockquote>
+      <p>&nbsp;</p>
+    </blockquote></td>
+    <td align="center">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+  </tr>
+</table> -->
+</form>
+<include>copyrights
+</body>
+</html>
