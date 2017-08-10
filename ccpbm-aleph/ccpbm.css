@@ -1,6 +1,6 @@
 /* Agregando las fuentes Raleway*/
 @font-face { font-family: RalewayRegular; src: url('./Raleway-Regular.ttf'); }
-@font-face { font-family: RalewayMedium; src: url('./fonts/Raleway-Medium.ttf'); }
+@font-face { font-family: RalewayMedium; src: url('./Raleway-Medium.ttf'); }
   body {
       font-family: RalewayRegular;
     } 

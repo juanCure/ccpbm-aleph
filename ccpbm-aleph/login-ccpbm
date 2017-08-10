@@ -5,33 +5,6 @@
 <title>CCPBM - Entrar</title>
 <include>meta-tags
 <style type="text/css">
-/* xs < 768 */
-@media screen and (max-width: 767px) {
-    body {
-        font-size: 0.9em;
-    }
-}
-
-/* sm */
-@media screen and (min-width: 768px) {
-    body {
-        font-size: 1em;
-    }
-}
-
-/* md */
-@media screen and (min-width: 992px) {
-    body {
-        font-size: 1.2em;
-    }
-}
-
-/* lg */
-@media screen and (min-width: 1200px) {
-    body {
-        font-size: 1.3em;
-    }
-}
   /* The heart of the matter */
   .testimonial-group > .row {
     overflow-x: auto;
@@ -300,11 +273,5 @@ div::-webkit-scrollbar-thumb:window-inactive {
 
 <include>copyrights
 </div> <!-- Aquí termina el div.container -->
-
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
