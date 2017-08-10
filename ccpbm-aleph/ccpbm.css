@@ -42,11 +42,17 @@
     border-left: 2px solid white;
   }
 
-  /* Estilos para las barras lateres de color mediante padding*/
-  .with-padding-color {
+  /* Estilos para la vista Proyecto*/
+  .background {
     background-color: #b8a27c;
-    padding: 0 15px;
   }
+
+  .my-container-fluid {
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: #fff;
+  }
+  
 
   /* Estilos para find-b-ccpbm */
 
@@ -202,7 +208,7 @@
 
   /* Realizando una escala sobre los checkbox para mostrarlo más grande */
   input[type=checkbox], input[type=radio] {
-    transform: scale(1.5);
+    transform: scale(2.5);
   }
 
   /* Agregando estilos para la vista Búsquedas Anteriores */

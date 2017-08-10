@@ -63,15 +63,14 @@
       </div>
     </nav>
   </div>
-</div><!-- Aquí termina el div.container que contiene el menú --> 
-<div class="container-fluid" style="margin-top: 20px;">
-<div class="row with-padding-color">
-  <div class="col-sm-12 with-background-image">
-    <div class="row">
-      <div class="col-sm-8 col-sm-offset-2">
-        <div class="micontenido">
+</div><!-- Aquí termina el div.container que contiene el menú -->
+<!-- Este es el contenido del archivo find-a-ccpbm -->
+<div class="background">
+  <div class="my-container-fluid">
+    <div class="container with-background-image">
+      <div class="row">
+        <div class="col-sm-12">
           <h1>PROYECTO</h1>
-          <p></p>
           <p>El Catálogo Colectivo del Patrimonio Bibliográfico Mexicano es un proyecto cultural de alcance nacional orientado a la descripción y localización de los fondos antiguos pertenecientes a diversas bibliotecas, públicas y privadas, en México, que por su antigüedad, rareza y valor, constituyen el patrimonio bibliográfico</p>
 
           <p> El objetivo es reunir en una base de datos los registros de los impresos antiguos desde la invención de la imprenta hasta 1821 en su primera fase, mediante la descripción y ubicación física de las obras en las bibliotecas o fondos de la República Mexicana. </p>
@@ -82,12 +81,11 @@
         </div>
       </div>
     </div>
-
-    <br><br>
-
-<include>copyrights
   </div>
 </div>
-</div> <!-- Aquí termina el div.container-fluid -->
+
+<div class="container">
+<include>copyrights
+</div> 
 </body>
 </html>
