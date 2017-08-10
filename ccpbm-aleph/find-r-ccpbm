@@ -52,7 +52,26 @@
       </div>
     </nav>
   </div>
-</div><!-- Aquí termina el div.container que contiene el menú --> 
+</div><!-- Aquí termina el div.container que contiene el menú -->
+<div class="container-fluid" style="margin-top: 20px;">
+<div class="row with-padding-color">
+  <div class="col-sm-12 with-background-image">
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+        <div class="micontenido">
+          <h1>Colecciones</h1>
+          <p>Aqui deberán de venir las colecciones</p>
+        </div>
+      </div>
+    </div>
+
+    <br><br>
+
+<include>copyrights
+  </div>
+</div>
+</div> <!-- Aquí termina el div.container-fluid -->
+<!--
 <br>
 <div class=title>
   Colecciones
@@ -64,7 +83,7 @@
 
 <p>Aquí deberán de ir las colecciones del Catálogo Colectivo de Patrimonio Bibliográfico Mexicano</p>
 
-<!-- <table width="100%" border="0" align="center">
+<table width="100%" border="0" align="center">
   <tr>
     <td height="30" colspan="5" align="center" valign="middle"><a style="color:#4a6159; font-size:120%; text-decoration: none; font-weight:bold"  href="&server_f?func=find-b&find_code=WBA&request=BNDM&adjacent=N&local_base=BNDM">Ver todo</a></td>
   </tr>
@@ -126,8 +145,8 @@
     <td align="center">&nbsp;</td>
     <td align="center">&nbsp;</td>
   </tr>
-</table> -->
+</table>
 </form>
-<include>copyrights
+<include>copyrights -->
 </body>
 </html>

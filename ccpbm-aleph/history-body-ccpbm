@@ -1,0 +1,8 @@
+ <tr>
+  <td>
+    <input type=checkbox name=set_number value=$0100>
+  </td>
+  <td>$0300</td>
+  <td>$0400</td>
+  <td>$0500</td>
+ </tr>

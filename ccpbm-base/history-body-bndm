@@ -1,0 +1,8 @@
+ <tr>
+  <td class=td1>
+    <input type=checkbox name=set_number value=$0100>
+  </td>
+  <td class=td1 nowrap>$0300</td>
+  <td class=td1>$0400</td>
+  <td class=td1 id=centered>$0500</td>
+ </tr>

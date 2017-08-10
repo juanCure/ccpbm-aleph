@@ -201,6 +201,13 @@
   }
 
   /* Realizando una escala sobre los checkbox para mostrarlo más grande */
-  input[type=checkbox] {
-    transform: scale(2.5);
+  input[type=checkbox], input[type=radio] {
+    transform: scale(1.5);
+  }
+
+  /* Agregando estilos para la vista Búsquedas Anteriores */
+
+  #busquedas_anteriores table thead{
+    background-color: #a88e5f;
+    color: #fff;
   }
