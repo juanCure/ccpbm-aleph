@@ -119,6 +119,7 @@
     color: #fff;
     background-color: #c1a37b;
     border-color: #c1a37b;
+    margin-left: 5px;
   }
 
   .mybtn:focus,
@@ -208,7 +209,7 @@
 
   /* Realizando una escala sobre los checkbox para mostrarlo más grande */
   input[type=checkbox], input[type=radio] {
-    transform: scale(2.5);
+    transform: scale(1.5);
   }
 
   /* Agregando estilos para la vista Búsquedas Anteriores */

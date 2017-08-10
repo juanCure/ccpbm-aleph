@@ -65,24 +65,21 @@
     </nav>
   </div>
 </div><!-- Aquí termina el div.container que contiene el menú --> 
-
-<div class="container-fluid" style="margin-top: 20px;">
-<div class="row with-padding-color">
-  <div class="col-sm-12 with-background-image">
-    <div class="row">
-      <div class="col-sm-8 col-sm-offset-2">
-        <div class="micontenido">
+<div class="background">
+  <div class="my-container-fluid">
+    <div class="container with-background-image">
+      <div class="row">
+        <div class="col-sm-12">
           <h1>CONTACTO</h1>
-          <p>Aqui deberá de ir la información relacionada con Contacto del CCPBM.</p>
+          <p>Aquí deberá de venir la información del contacto.</p>
         </div>
       </div>
     </div>
-
-    <br><br>
-
-<include>copyrights
   </div>
 </div>
-</div> <!-- Aquí termina el div.container-fluid -->
+
+<div class="container">
+<include>copyrights
+</div>
 </body>
 </html>
