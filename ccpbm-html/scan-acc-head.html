@@ -117,18 +117,18 @@
 		<div class="row">
 			<div class="col-sm-9" style="border-right: 5px solid #c1a37b;">
 				<ul id="alfabeto">
-					<li><a href="http://catalogo.iib.unam.mx:80/F/XQ7G495U4BTE7772TG41CL5EVNEPBII8HRV7LLD2GBB4IKAVA1-05399?func=scan&scan_code=TIT&scan_start=A">A</a></li>
-					<li><a href="http://catalogo.iib.unam.mx:80/F/XQ7G495U4BTE7772TG41CL5EVNEPBII8HRV7LLD2GBB4IKAVA1-05400?func=scan&scan_code=TIT&scan_start=B">B</a></li>
-					<li><a href="http://catalogo.iib.unam.mx:80/F/XQ7G495U4BTE7772TG41CL5EVNEPBII8HRV7LLD2GBB4IKAVA1-05400?func=scan&scan_code=TIT&scan_start=C">C</a></li>
-					<li><a href="http://catalogo.iib.unam.mx:80/F/XQ7G495U4BTE7772TG41CL5EVNEPBII8HRV7LLD2GBB4IKAVA1-05400?func=scan&scan_code=TIT&scan_start=D">D</a></li>
-					<li><a href="http://catalogo.iib.unam.mx:80/F/XQ7G495U4BTE7772TG41CL5EVNEPBII8HRV7LLD2GBB4IKAVA1-05400?func=scan&scan_code=TIT&scan_start=E">E</a></li>
-					<li><a href="http://catalogo.iib.unam.mx:80/F/XQ7G495U4BTE7772TG41CL5EVNEPBII8HRV7LLD2GBB4IKAVA1-05400?func=scan&scan_code=TIT&scan_start=F">F</a></li>
-					<li><a href="http://catalogo.iib.unam.mx:80/F/XQ7G495U4BTE7772TG41CL5EVNEPBII8HRV7LLD2GBB4IKAVA1-05400?func=scan&scan_code=TIT&scan_start=G">G</a></li>
-					<li><a href="http://catalogo.iib.unam.mx:80/F/XQ7G495U4BTE7772TG41CL5EVNEPBII8HRV7LLD2GBB4IKAVA1-05400?func=scan&scan_code=TIT&scan_start=H">H</a></li>
-					<li><a href="http://catalogo.iib.unam.mx:80/F/XQ7G495U4BTE7772TG41CL5EVNEPBII8HRV7LLD2GBB4IKAVA1-05400?func=scan&scan_code=TIT&scan_start=I">I</a></li>
-					<li><a href="http://catalogo.iib.unam.mx:80/F/XQ7G495U4BTE7772TG41CL5EVNEPBII8HRV7LLD2GBB4IKAVA1-05400?func=scan&scan_code=TIT&scan_start=J">J</a></li>
-					<li><a href="http://catalogo.iib.unam.mx:80/F/XQ7G495U4BTE7772TG41CL5EVNEPBII8HRV7LLD2GBB4IKAVA1-05400?func=scan&scan_code=TIT&scan_start=K">K</a></li>
-					<li><a href="http://catalogo.iib.unam.mx:80/F/XQ7G495U4BTE7772TG41CL5EVNEPBII8HRV7LLD2GBB4IKAVA1-05400?func=scan&scan_code=TIT&scan_start=L">L</a></li>
+					<li><a id="A" href="#">A</a></li>
+					<li><a id="B" href="#">B</a></li>
+					<li><a id="C" href="#">C</a></li>
+					<li><a id="D" href="#">D</a></li>
+					<li><a id="E" href="#">E</a></li>
+					<li><a id="F" href="#">F</a></li>
+					<li><a id="G" href="#">G</a></li>
+					<li><a id="H" href="#">H</a></li>
+					<li><a id="I" href="#">I</a></li>
+					<li><a id="J" href="#">J</a></li>
+					<li><a id="K" href="#">K</a></li>
+					<li><a id="L" href="#">L</a></li>
 					<li><a href="http://catalogo.iib.unam.mx:80/F/XQ7G495U4BTE7772TG41CL5EVNEPBII8HRV7LLD2GBB4IKAVA1-05400?func=scan&scan_code=TIT&scan_start=M">M</a></li>
 					<li><a href="http://catalogo.iib.unam.mx:80/F/XQ7G495U4BTE7772TG41CL5EVNEPBII8HRV7LLD2GBB4IKAVA1-05400?func=scan&scan_code=TIT&scan_start=N">N</a></li>
 					<li><a href="http://catalogo.iib.unam.mx:80/F/XQ7G495U4BTE7772TG41CL5EVNEPBII8HRV7LLD2GBB4IKAVA1-05400?func=scan&scan_code=TIT&scan_start=O">O</a></li>
@@ -272,6 +272,18 @@
 	index_options.addEventListener("click", function(){
 		var value = index_options.options[index_options.selectedIndex].value;
 		change_ref_link(value);
+	});
+
+	/* Asociando el evento click a los enlaces del alfabeto */
+	document.getElementById("alfabeto").addEventListener("click", function(e){
+		if(e.target && e.target.nodeName == "A"){
+			if(localStorage['selected_letter'] && localStorage['selected_letter'] != e.target.id){
+				document.getElementById(localStorage['selected_letter']).className = "";
+			}
+			e.target.className = " myactive";
+			localStorage['selected_letter'] = e.target.id
+			console.log(e.target.id + " was cliked");
+		}
 	});
 </script>
 </body>

@@ -21,6 +21,29 @@
 		var value = index_options.options[index_options.selectedIndex].value;
 		change_ref_link(value);
 	});
+
+	/* Asociando el evento DOMContenteLoaded al documento para 
+	 * guardar el índice seleccionado por el usuario
+	 */
+
+	document.addEventListener('DOMContentLoaded', function(){
+		save_index();
+		if(localStorage['selected_letter']){
+			document.getElementById(localStorage['selected_letter']).className = "myactive";
+		}
+	});
+
+	/* Asociando el evento click a los enlaces del alfabeto */
+	document.getElementById("alfabeto").addEventListener("click", function(e){
+		if(e.target && e.target.nodeName == "A"){
+			if(localStorage['selected_letter'] && localStorage['selected_letter'] != e.target.id){
+				document.getElementById(localStorage['selected_letter']).className = "";
+			}
+			// e.target.className = " myactive";
+			localStorage['selected_letter'] = e.target.id
+			console.log(e.target.id + " was cliked");
+		}
+	});
 </script>
 </body>
 </html>

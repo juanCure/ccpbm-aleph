@@ -1,6 +1,7 @@
 /* Agregando las fuentes Raleway*/
 @font-face { font-family: RalewayRegular; src: url('./Raleway-Regular.ttf'); }
 @font-face { font-family: RalewayMedium; src: url('./Raleway-Medium.ttf'); }
+@font-face { font-family: RalewayExtraBold; src: url('./Raleway-ExtraBold.ttf'); }
   body {
       font-family: RalewayRegular;
     } 
@@ -151,6 +152,11 @@
   #alfabeto li a {
     color: #000;
 
+  }
+
+  #alfabeto li a.myactive{
+    font-family: RalewayExtraBold;
+    font-size: 18px;
   }
 
   .myjumbotron {

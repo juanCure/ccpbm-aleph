@@ -105,3 +105,19 @@ function change_ref_link(new_opt){
 		submenu.style.display = "none";
 	}
  }
+
+ /* Esta función guarda el estado del índice
+  * seleccionada de la vista de Indices
+  */
+
+  function save_index(){
+  	var input = document.getElementById('select_indices');
+  	if(localStorage['indice']){
+  		input.value= localStorage['indice'];
+  		change_ref_link(localStorage['indice']);
+  	}
+
+  	input.onchange = function(){
+  		localStorage['indice'] = this.value;
+  	}
+  }

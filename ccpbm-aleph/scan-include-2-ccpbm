@@ -38,32 +38,32 @@
 		<div class="row">
 			<div class="col-sm-9" style="border-right: 5px solid #c1a37b;">
 				<ul id="alfabeto">
-					<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=A">A</a></li>
-					<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=B">B</a></li>
-					<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=C">C</a></li>
-					<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=D">D</a></li>
-					<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=E">E</a></li>
-					<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=F">F</a></li>
-					<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=G">G</a></li>
-					<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=H">H</a></li>
-					<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=I">I</a></li>
-					<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=J">J</a></li>
-					<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=K">K</a></li>
-					<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=L">L</a></li>
-					<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=M">M</a></li>
-					<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=N">N</a></li>
-					<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=O">O</a></li>
-					<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=P">P</a></li>
-					<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=Q">Q</a></li>
-					<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=R">R</a></li>
-					<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=S">S</a></li>
-					<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=T">T</a></li>
-					<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=U">U</a></li>
-					<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=V">V</a></li>
-					<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=W">W</a></li>
-					<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=X">X</a></li>
-					<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=Y">Y</a></li>
-					<li><a href="&server_f?func=scan&scan_code=TIT&scan_start=Z">Z</a></li>
+					<li><a id="A" href="&server_f?func=scan&scan_code=TIT&scan_start=A">A</a></li>
+					<li><a id="B" href="&server_f?func=scan&scan_code=TIT&scan_start=B">B</a></li>
+					<li><a id="C" href="&server_f?func=scan&scan_code=TIT&scan_start=C">C</a></li>
+					<li><a id="D" href="&server_f?func=scan&scan_code=TIT&scan_start=D">D</a></li>
+					<li><a id="E" href="&server_f?func=scan&scan_code=TIT&scan_start=E">E</a></li>
+					<li><a id="F" href="&server_f?func=scan&scan_code=TIT&scan_start=F">F</a></li>
+					<li><a id="G" href="&server_f?func=scan&scan_code=TIT&scan_start=G">G</a></li>
+					<li><a id="H" href="&server_f?func=scan&scan_code=TIT&scan_start=H">H</a></li>
+					<li><a id="I" href="&server_f?func=scan&scan_code=TIT&scan_start=I">I</a></li>
+					<li><a id="J" href="&server_f?func=scan&scan_code=TIT&scan_start=J">J</a></li>
+					<li><a id="K" href="&server_f?func=scan&scan_code=TIT&scan_start=K">K</a></li>
+					<li><a id="L" href="&server_f?func=scan&scan_code=TIT&scan_start=L">L</a></li>
+					<li><a id="M" href="&server_f?func=scan&scan_code=TIT&scan_start=M">M</a></li>
+					<li><a id="N" href="&server_f?func=scan&scan_code=TIT&scan_start=N">N</a></li>
+					<li><a id="O" href="&server_f?func=scan&scan_code=TIT&scan_start=O">O</a></li>
+					<li><a id="P" href="&server_f?func=scan&scan_code=TIT&scan_start=P">P</a></li>
+					<li><a id="Q" href="&server_f?func=scan&scan_code=TIT&scan_start=Q">Q</a></li>
+					<li><a id="R" href="&server_f?func=scan&scan_code=TIT&scan_start=R">R</a></li>
+					<li><a id="S" href="&server_f?func=scan&scan_code=TIT&scan_start=S">S</a></li>
+					<li><a id="T" href="&server_f?func=scan&scan_code=TIT&scan_start=T">T</a></li>
+					<li><a id="U" href="&server_f?func=scan&scan_code=TIT&scan_start=U">U</a></li>
+					<li><a id="V" href="&server_f?func=scan&scan_code=TIT&scan_start=V">V</a></li>
+					<li><a id="W" href="&server_f?func=scan&scan_code=TIT&scan_start=W">W</a></li>
+					<li><a id="X" href="&server_f?func=scan&scan_code=TIT&scan_start=X">X</a></li>
+					<li><a id="Y" href="&server_f?func=scan&scan_code=TIT&scan_start=Y">Y</a></li>
+					<li><a id="Z" href="&server_f?func=scan&scan_code=TIT&scan_start=Z">Z</a></li>
 				</ul>
 			</div>
 			<div class="col-sm-3">
