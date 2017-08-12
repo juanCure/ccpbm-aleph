@@ -133,6 +133,10 @@
 
   }
 
+  #total_registros, .registros_encontrados{
+  	display: none;
+  }
+
   /* Algunos estilos para la vista indices */
 
   /* Estilos para el alfabeto */

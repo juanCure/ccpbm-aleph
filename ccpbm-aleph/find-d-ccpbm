@@ -13,28 +13,34 @@
 	<input type="hidden" name="func" value="find-d">
 	<div class="jumbotron">
 		<div class="row">
-			<div class="col-sm-12">
+			<div class="col-sm-4">
 				<h3>Búsqueda Avanzada</h3>
 			</div>
-		</div>
-
-		<div class="form-group row">
-			<div class="col-sm-3">
-				<select class="form-control" id="coleciones" name=colecciones>
-					<option value="0">Seleccionar colección</option> 
-					<option value="1">Colección 1</option> 
-					<option value="2">Colección 2</option> 
-					<option value="3">Colección 3</option> 
-					<option value="4">Colección 4</option>
-				</select>	
+			<div class="col-sm-4 col-sm-push-4" id="total_registros">
+				<p style="color: #7c592e;"><b>Total de registros encontrados:</b> $5000</p>
+				<span class="help-block">Presione sobre el total para ver los registros</span>
 			</div>
 		</div>
 
 		<div class="row">
 			<div class="col-sm-3">
 				<div class="form-group">
-					<label for="select1">Campos de búsqueda</label>		
-					<select class="form-control " id="select1" name=find_code>
+					<label for="colecciones">Seleccionar colección</label>		
+					<select class="form-control " id="colecciones" name="colecciones">
+						<option value="1">Colección 1</option> 
+						<option value="2">Colección 2</option> 
+						<option value="3">Colección 3</option> 
+						<option value="4">Colección 4</option>
+					</select>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-3">
+				<div class="form-group">
+					<label for="select_indices1">Campos de búsqueda</label>		
+					<select class="form-control " id="select_indices1" name=find_code>
 						<option value="WRD">Todos los campos</option> 
 					  <option value="WTI">Título</option> 
 					  <option value="WAU">Autor</option> 
@@ -43,7 +49,7 @@
 					</select>
 				</div>
 			</div>
-			<div class="col-sm-5">
+			<div class="col-sm-3">
 				<div class="form-group">
 					<label for="input1">Escribe una palabra o frase</label>
 					<input type="text" class="form-control" name=request value="$0200" id="input1">
@@ -58,17 +64,16 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-sm-1">
-				<label>Total</label>
+			<div class="col-sm-3 registros_encontrados">
+				<label>No. de registros encontrados</label>
 				<p>$0300</p>
 			</div>
-		</div>
+			<div class="clearfix visible-ms-block"></div>
 
-		<div class="row">
 			<div class="col-sm-3">
 				<div class="form-group">
-					<label for="select2" class="visible-xs-block">Campos de búsqueda</label>		
-					<select class="form-control" id="select2" name="find_code">
+					<label for="select_indices2" class="visible-xs-block">Campos de búsqueda</label>		
+					<select class="form-control" id="select_indices2" name="find_code">
 						<option value="WRD">Todos los campos</option> 
 					  <option value="WTI">Título</option> 
 					  <option value="WAU">Autor</option> 
@@ -77,7 +82,7 @@
 					</select>
 				</div>
 			</div>
-			<div class="col-sm-5">
+			<div class="col-sm-3">
 				<div class="form-group">
 					<label for="input2" class="visible-xs-block">Escribe una palabra o frase</label>
 					<input type="text" class="form-control" name=request id="input2" value="$1200">
@@ -92,17 +97,16 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-sm-1">
-				<label class="visible-xs-block">Total</label>
+			<div class="col-sm-3 registros_encontrados">
+				<label class="visible-xs-block">No. de registros encontrados</label>
 				<p>$1300</p>
 			</div>
-		</div>
+			<div class="clearfix visible-ms-block"></div>
 
-		<div class="row">
 			<div class="col-sm-3">
 				<div class="form-group">
-					<label for="select3" class="visible-xs-block">Campos de búsqueda</label>		
-					<select class="form-control " id="select3" name=find_code>
+					<label for="select_indices3" class="visible-xs-block">Campos de búsqueda</label>		
+					<select class="form-control " id="select_indices3" name=find_code>
 						<option value="WRD">Todos los campos</option> 
 					  <option value="WTI">Título</option> 
 					  <option value="WAU">Autor</option> 
@@ -111,7 +115,7 @@
 					</select>
 				</div>
 			</div>
-			<div class="col-sm-5">
+			<div class="col-sm-3">
 				<div class="form-group">
 					<label for="input3" class="visible-xs-block">Escribe una palabra o frase</label>
 					<input type="text" class="form-control" name=request value="$2200" id="input3">
@@ -126,10 +130,11 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-sm-1">
-				<label class="visible-xs-block">Total</label>
+			<div class="col-sm-3 registros_encontrados">
+				<label class="visible-xs-block">No. de registros encontrados</label>
 				<p>$2300</p>
 			</div>
+			<div class="clearfix visible-ms-block"></div>
 		</div>
 
 		<div class="row">
@@ -169,21 +174,13 @@
 				<a href="&server_f?func=find-d-0&clear_level=2" class="btn mybtn">Borrar</a>
 			</div>
 		</div>
-
-		<div class="row">
-			<div class="col-sm-4 col-sm-push-8">
-				<p style="color: #7c592e;"><b>Número de registros</b></p>
-				<p style="float: right;">Total: &nbsp;$5000</p>
-				<span class="help-block">Presione sobre el total para ver los registros</span>
-			</div>
-		</div>
 	</div> <!-- Aquí termina el div.jumbotron -->
 </form>
 
 <include>copyrights
 </div> <!-- Aquí termina el div.container que contiene el contenido de la página -->
 <script type="text/javascript">
-        var href = document.location.href;
+        /*var href = document.location.href;
         console.log("this is href: ", href);
         var lastPathSegment = href.substr(href.lastIndexOf('/') + 1);
         var matches = /func=([^&#=]*)/.exec(href);
@@ -191,8 +188,23 @@
 
         var image_header = document.getElementById("image_header");
         console.log("src of image_header: ", image_header.getAttribute("src"));
-        image_header.setAttribute("src", "&icon_path/" + "bndm-cabeza-" + param1 + ".jpg");
+        image_header.setAttribute("src", "&icon_path/" + "bndm-cabeza-" + param1 + ".jpg");*/
 
+        /* Obteniendo el total de registros encontrados, para saber si debo mostrar el resultado 
+         * o mantenerlo oculto hasta que haya algo que mostrar
+         */
+        var anchor = document.getElementById("total_registros").getElementsByTagName('A')[0];
+        if(anchor != null) {
+        	console.log("anchor content is: " + anchor.innerHTML);
+        	document.getElementById("total_registros").style.display = "block";
+        	var registros_encontrados = [];
+        	registros_encontrados = document.getElementsByClassName("registros_encontrados");
+        	for(var i = 0; i < registros_encontrados.length; i++){
+        		registros_encontrados[i].style.display = "block";
+        	}
+        } else {
+        	console.log("anchor doesn't exist");
+        }
 </script>
 </body>
 </html>

@@ -14,6 +14,11 @@
 <link rel="stylesheet" href="./ccpbm.css">
 
 <title>Búsqueda Avanzada</title>
+<style type="text/css">
+	#total_registros, .numero_registros {
+		display: none;
+	}
+</style>
 </head>
 
 <body>
@@ -82,20 +87,26 @@
 <form>
 	<div class="jumbotron">
 		<div class="row">
-			<div class="col-sm-12">
+			<div class="col-sm-4">
 				<h3>Búsqueda Avanzada</h3>
+			</div>
+			<div class="col-sm-4 col-sm-push-4" id="total_registros">
+				<p style="color: #7c592e;"><b>Total de registros encontrados:</b> <a href="#">55</a></p>
+				<span class="help-block">Presione sobre el total para ver los registros</span>
 			</div>
 		</div>
 
-		<div class="form-group row">
+		<div class="row">
 			<div class="col-sm-3">
-				<select class="form-control">
-					<option value="0">Seleccionar colección</option> 
-					<option value="1">Colección 1</option> 
-					<option value="2">Colección 2</option> 
-					<option value="3">Colección 3</option> 
-					<option value="4">Colección 4</option>
-				</select>	
+				<div class="form-group">
+					<label for="select1">Seleccionar colección</label>		
+					<select class="form-control " id="select1">
+						<option value="1">Colección 1</option> 
+						<option value="2">Colección 2</option> 
+						<option value="3">Colección 3</option> 
+						<option value="4">Colección 4</option>
+					</select>
+				</div>
 			</div>
 		</div>
 
@@ -103,7 +114,7 @@
 			<div class="col-sm-3">
 				<div class="form-group">
 					<label for="select1">Campos de búsqueda</label>		
-					<select class="form-control " id="select1">
+					<select class="form-control " id="select2">
 						<option value="WRD">Todos los campos</option> 
 					  <option value="WTI">Título</option> 
 					  <option value="WAU">Autor</option> 
@@ -112,7 +123,7 @@
 					</select>
 				</div>
 			</div>
-			<div class="col-sm-5">
+			<div class="col-sm-3">
 				<div class="form-group">
 					<label for="input1">Escribe una palabra o frase</label>
 					<input type="text" class="form-control" name=request id="input1">
@@ -127,13 +138,12 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-sm-1">
-				<label>Total</label>
+			<div class="col-sm-3 numero_registros">
+				<label>No. de registros encontrados</label>
 				<p>45</p>
 			</div>
-		</div>
+			<div class="clearfix visible-ms-block"></div>
 
-		<div class="row">
 			<div class="col-sm-3">
 				<div class="form-group">
 					<label for="select1" class="visible-xs-block">Campos de búsqueda</label>		
@@ -146,7 +156,7 @@
 					</select>
 				</div>
 			</div>
-			<div class="col-sm-5">
+			<div class="col-sm-3">
 				<div class="form-group">
 					<label for="input1" class="visible-xs-block">Escribe una palabra o frase</label>
 					<input type="text" class="form-control" name=request id="input1">
@@ -161,17 +171,16 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-sm-1">
-				<label class="visible-xs-block">Total</label>
+			<div class="col-sm-3 numero_registros">
+				<label class="visible-xs-block">No. de registros encontrados</label>
 				<p>45</p>
 			</div>
-		</div>
+			<div class="clearfix visible-ms-block"></div>
 
-		<div class="row">
 			<div class="col-sm-3">
 				<div class="form-group">
 					<label for="select1" class="visible-xs-block">Campos de búsqueda</label>		
-					<select class="form-control " id="select1">
+					<select class="form-control" id="select1">
 						<option value="WRD">Todos los campos</option> 
 					  <option value="WTI">Título</option> 
 					  <option value="WAU">Autor</option> 
@@ -180,7 +189,7 @@
 					</select>
 				</div>
 			</div>
-			<div class="col-sm-5">
+			<div class="col-sm-3">
 				<div class="form-group">
 					<label for="input1" class="visible-xs-block">Escribe una palabra o frase</label>
 					<input type="text" class="form-control" name=request id="input1">
@@ -195,10 +204,11 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-sm-1">
-				<label class="visible-xs-block">Total</label>
+			<div class="col-sm-3 numero_registros">
+				<label class="visible-xs-block">No. de registros encontrados</label>
 				<p>45</p>
 			</div>
+			<div class="clearfix visible-ms-block"></div>
 		</div>
 
 		<div class="row">
@@ -238,14 +248,6 @@
 				<a href="#" class="btn mybtn">Borrar</a>
 			</div>
 		</div>
-
-		<div class="row">
-			<div class="col-sm-4 col-sm-push-8">
-				<p style="color: #7c592e;"><b>Número de registros</b></p>
-				<p style="float: right;">Total: <a href="#">55</a></p>
-				<span class="help-block">Presione sobre el total para ver los registros</span>
-			</div>
-		</div>
 	</div> <!-- Aquí termina el div.jumbotron -->
 </form>
 
@@ -283,6 +285,16 @@
 	image_header.setAttribute("src", image_find_b);*/
 	
 	//image_header.setAttribute("src", "&icon_path/" + "bndm-cabeza-" + param1 + ".jpg");
+
+	/* Obteniendo el total de registros encontrados, para saber si debo mostrar el resultado 
+	 * o mantenerlo oculto hasta que haya algo que mostrar
+	 */
+	var anchor = document.getElementById("total_registros").getElementsByTagName('A')[0];
+	if(anchor != null) {
+		console.log("anchor content is: " + anchor.innerHTML);
+	} else {
+		console.log("anchor doesn't exist");
+	}
 
 </script>
 </body>
