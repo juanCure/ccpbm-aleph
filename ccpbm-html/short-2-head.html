@@ -12,12 +12,53 @@
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="./ccpbm.css">
+<link rel="stylesheet" href="./icomoon.css">
+<!-- <link rel="stylesheet" href="./demo.css"> -->
 
 <title>Biblioteca digital - Resultados de la búsqueda</title>
 <style type="text/css">
-	/* Realizando una escala sobre los checkbox para mostrarlo más grande */
-	input[type=checkbox] {
-	  transform: scale(2.5);
+
+	#opciones_ordenamiento {
+		padding: 0;
+		margin-top: 20px;
+	}
+
+	/*#opciones_ordenamiento li {
+		display: inline;
+	}*/
+
+	.fs0 {
+  font-size: 16px;
+}
+	.fs1 {
+	  font-size: 62px;
+	}
+
+	.wit-bottom-border{
+		border-bottom: 2px solid red;
+	}
+
+	.my_nested_columns{
+		padding: 0;
+	}
+
+	/* Clase para fijar en el top las herramientas que se pueden aplciar a los registros*/
+	.fixed-tools {
+		position: fixed;
+		top: 0px;
+		right: 0px;
+		z-index: 1000;
+		margin: 0;
+		border-radius: 15px;
+	}
+
+	.list-inline li a {
+		text-decoration: underline;
+		color: #7c592e;
+	}
+
+	.coloured-text {
+		color: #7c592e;
 	}
 </style>
 </head>
@@ -83,55 +124,37 @@
 
 <div class="container" style="margin-top: 20px;">
 <!-- Lo siguiente debe ir en el archivo short-include-buttons -->
-<div class="myjumbotron">
-	<h3><b>Lista de resultados</b></h3>
-	<div class="row myrow">
-		<div class="col-sm-12" style="background-color: #f8f8f8;" id="acciones">
-			<ul class="nav navbar-nav">
-				<li><a href="#">Ver selección</a></li>
-				<li class="with-border-left"><a href="#">Guardar/Enviar a correo</a></li>
-				<li class="with-border-left"><a href="#">Agregar a mi bibliografía</a></li>
-				<li class="with-border-left"><a href="#">Seleccionar todo</a></li>
-				<li class="with-border-left"><a href="#">Borrar selección</a></li>
-				<li class="with-border-left"><a href="#">Filtrar resultados</a></li>
-				<li class="with-border-left"><a href="#">Rango</a></li>
-				<li class="with-border-left"><a href="#">Refinar búsqueda</a></li>	
-			</ul>
-		</div>	
+
+<div class="row">
+	<div class="col-sm-5 myjumbotron">
+		<h3>Lista de resultados</h3>		
 	</div>
-	<br>
-	<div class="row">
-		<div class="col-sm-8">
-			<div class="row">
-				<div class="col-sm-12 text-center">
-					<label>Opciones de ordenamiento</label>
-				</div>
+</div>
+
+<div class="row wit-bottom-border">
+	<div class="col-sm-4">
+		<div class="row">
+			<div class="col-sm-2">
+				<span class="icon-Filtrar fs1"></span>
 			</div>
-			<div class="row myrow">
-				<div class="col-sm-12 text-center filtros">
-					<ul class="nav navbar-nav">
-						<li><a href="#">Autor y Año</a></li>
-						<li class="with-border-left"><a href="#">Año y Autor</a></li>
-						<li class="with-border-left"><a href="#">Autor y Título</a></li>
-						<li class="with-border-left"><a href="#">Título y Año</a></li>
-						<li class="with-border-left"><a href="#">Año y Título</a></li>
-					</ul>	
-				</div>
+			<div class="col-sm-10 coloured-text" style="margin-top: 30px;">
+				<span>Filtrar resultados</span>
 			</div>
 		</div>
-		<div class="col-sm-4">
-			<div class="row">
-				<div class="col-sm-12 text-center">
-					<label>Opciones de formato</label>
-				</div>
+	</div>
+	<div class="col-sm-8 col-sm-push-1">
+		<div class="row">
+			<div class="col-sm-2">
+				<span class="icon-ordenar-por fs1"></span>
 			</div>
-			<div class="row myrow">
-				<div class="col-sm-12 text-center filtros">
-					<ul class="nav navbar-nav">
-						<li><a href="#">Tabla</a></li>
-						<li class="with-border-left"><a href="#">Listado</a></li>
-					</ul>
-				</div>
+			<div class="col-sm-10">
+				<ul id="opciones_ordenamiento" class="list-inline">
+					<li><a href="#">Autor y Año</a></li>
+					<li class="with-border-left"><a href="#">Año y Autor</a></li>
+					<li class="with-border-left"><a href="#">Autor y Título</a></li>
+					<li class="with-border-left"><a href="#">Título y Año</a></li>
+					<li class="with-border-left"><a href="#">Año y Título</a></li>
+				</ul>
 			</div>
 		</div>
 	</div>
@@ -139,35 +162,22 @@
 
 <div class="row" style="margin-top: 20px;">
 	<div class="col-sm-3">
-		<h4 class="thick">Registros 1 - 20 de 313621</h4>
+		<h4 class="thick coloured-text">Registros 1 - 20 de 313621</h4>
 	</div>
-	<div class="col-sm-3">
+	<div class="col-sm-3 col-sm-push-3">
 		<form class="form-horizontal">
 			<div class="form-group">
-				<div class="col-sm-4">
-					<input type="hidden" name="func" value="short-jump-text">
-					<input type="submit" class="btn mybtn" value="Ir a texto" name="action_short_jump_text" >		
-				</div>
-				<div class="col-sm-6">
-					<input type="text" name="jump_text">	
-				</div>
-			</div>
-		</form>
-	</div>
-	<div class="col-sm-3">
-		<form class="form-horizontal">
-			<div class="form-group">
-				<div class="col-sm-4">
+				<div class="col-sm-6 col-xs-3">
 					<input type="hidden" name="func" value="short-jump">
-					<input type="button" class="btn mybtn" value="Ir a #" name="action_short_jump" >		
+					<input type="button" class="btn mybtn" value="Ir a número" name="action_short_jump" >		
 				</div>
-				<div class="col-sm-6">
+				<div class="col-sm-6 col-xs-3">
 					<input type="text" name="jump">	
 				</div>
 			</div>
 		</form>	
 	</div>
-	<div class="col-sm-3">
+	<div class="col-sm-3 col-sm-push-3">
 		<ul class="pager mypager">
 			<li><a class="my_previous" href="#">&larr; Anterior</a></li>
 			<li><a class="my_next" href="#">Siguiente &rarr;</a></li>
@@ -175,7 +185,61 @@
 	</div>
 </div>
 
-<div class="row">
+<div class="row myjumbotron" id="tools_wrapper">
+	<div class="col-sm-8 col-sm-push-4">
+		<div class="row">
+			<div class="col-sm-3">
+				<div class="row">
+					<div class="col-sm-6">
+						<span class="coloured-text">Seleccionar</span>
+					</div>
+					<div class="col-sm-6">
+						<div class="row">
+							<div class="col-sm-12">
+								<input type="checkbox" name="chbox">
+							</div>
+							<div class="col-sm-12">
+								<span class="coloured-text">Todo</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="row">
+					<div class="col-sm-6">
+						<span class="icon-Guardar-y-enviar fs1"></span>
+					</div>
+					<div class="col-sm-6">
+						<span class="coloured-text">Guardar/enviar por correo</span>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="row">
+					<div class="col-sm-6">
+						<span class="icon-ver fs1"></span>
+					</div>
+					<div class="col-sm-6" style="margin-top: 40px;">
+						<span class="coloured-text">Ver</span>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="row">
+					<div class="col-sm-6">
+						<span class="icon-Agregar-a-mi-biblioteca fs1"></span>
+					</div>
+					<div class="col-sm-6">
+						<span class="coloured-text">Agregar a mi bibliografía</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row hidden-xs">
 	<div class="col-sm-3"><h3># &nbsp; Seleccionar</h3></div>
 	<div class="col-sm-5"><h3>Título</h3></div>
 	<div class="col-sm-1"><h3>Año</h3></div>
@@ -184,9 +248,10 @@
 
 <div class="row" style="margin-top: 20px;">
 	<div class="col-sm-3">
+		<h3 class="visible-xs-block"># &nbsp; Seleccionar</h3>
 		<div class="row">
-			<div class="col-sm-2" style="margin-top: 20px;">1</div>
-			<div class="col-sm-2" style="margin-top: 20px;">
+			<div class="col-sm-2" style="margin-top: 30px;">1</div>
+			<div class="col-sm-2" style="margin-top: 30px;">
 				<form><input type="checkbox" name="chbox"></form>
 			</div>
 			<div class="col-sm-8">
@@ -194,16 +259,24 @@
 			</div>
 		</div>
 	</div>
-	<div class="col-sm-5" style="margin-top: 20px;">
+	<div class="col-sm-5" style="margin-top: 30px;">
+		<h3 class="visible-xs-block">Título</h3>
 		<p>Hippocratis coi Aphorismi versu heroico explicati</p>
 	</div>
-	<div class="col-sm-1" style="margin-top: 20px;"><p>2010</p></div>
-	<div class="col-sm-3" style="margin-top: 20px;"><p>Hipócrates</p></div>
+	<div class="col-sm-1" style="margin-top: 30px;">
+		<h3 class="visible-xs-block">Año</h3>
+		<p>2010</p>
+	</div>
+	<div class="col-sm-3" style="margin-top: 30px;">
+		<h3 class="visible-xs-block">Autor</h3>
+		<p>Hipócrates</p>
+	</div>
 </div>
 <div class="row" style="margin-top: 20px;">
 	<div class="col-sm-3">
+		<h3 class="visible-xs-block"># &nbsp; Seleccionar</h3>
 		<div class="row">
-			<div class="col-sm-2" style="margin-top: 30px;">1</div>
+			<div class="col-sm-2" style="margin-top: 30px;">2</div>
 			<div class="col-sm-2" style="margin-top: 30px;">
 				<form><input type="checkbox" name="chbox"></form>
 			</div>
@@ -213,15 +286,23 @@
 		</div>
 	</div>
 	<div class="col-sm-5" style="margin-top: 30px;">
+		<h3 class="visible-xs-block">Título</h3>
 		<p>Hippocratis coi Aphorismi versu heroico explicati</p>
 	</div>
-	<div class="col-sm-1" style="margin-top: 30px;"><p>2010</p></div>
-	<div class="col-sm-3" style="margin-top: 30px;"><p>Hipócrates</p></div>
+	<div class="col-sm-1" style="margin-top: 30px;">
+		<h3 class="visible-xs-block">Año</h3>
+		<p>2010</p>
+	</div>
+	<div class="col-sm-3" style="margin-top: 30px;">
+		<h3 class="visible-xs-block">Autor</h3>
+		<p>Hipócrates</p>
+	</div>
 </div>
-<div class="row" style="margin-top: 30px;">
+<div class="row" style="margin-top: 20px;">
 	<div class="col-sm-3">
+		<h3 class="visible-xs-block"># &nbsp; Seleccionar</h3>
 		<div class="row">
-			<div class="col-sm-2" style="margin-top: 30px;">1</div>
+			<div class="col-sm-2" style="margin-top: 30px;">3</div>
 			<div class="col-sm-2" style="margin-top: 30px;">
 				<form><input type="checkbox" name="chbox"></form>
 			</div>
@@ -231,15 +312,23 @@
 		</div>
 	</div>
 	<div class="col-sm-5" style="margin-top: 30px;">
+		<h3 class="visible-xs-block">Título</h3>
 		<p>Hippocratis coi Aphorismi versu heroico explicati</p>
 	</div>
-	<div class="col-sm-1" style="margin-top: 30px;"><p>2010</p></div>
-	<div class="col-sm-3" style="margin-top: 30px;"><p>Hipócrates</p></div>
+	<div class="col-sm-1" style="margin-top: 30px;">
+		<h3 class="visible-xs-block">Año</h3>
+		<p>2010</p>
+	</div>
+	<div class="col-sm-3" style="margin-top: 30px;">
+		<h3 class="visible-xs-block">Autor</h3>
+		<p>Hipócrates</p>
+	</div>
 </div>
-<div class="row" style="margin-top: 30px;">
+<div class="row" style="margin-top: 20px;">
 	<div class="col-sm-3">
+		<h3 class="visible-xs-block"># &nbsp; Seleccionar</h3>
 		<div class="row">
-			<div class="col-sm-2" style="margin-top: 30px;">1</div>
+			<div class="col-sm-2" style="margin-top: 30px;">4</div>
 			<div class="col-sm-2" style="margin-top: 30px;">
 				<form><input type="checkbox" name="chbox"></form>
 			</div>
@@ -249,10 +338,178 @@
 		</div>
 	</div>
 	<div class="col-sm-5" style="margin-top: 30px;">
+		<h3 class="visible-xs-block">Título</h3>
 		<p>Hippocratis coi Aphorismi versu heroico explicati</p>
 	</div>
-	<div class="col-sm-1" style="margin-top: 30px;"><p>2010</p></div>
-	<div class="col-sm-3" style="margin-top: 30px;"><p>Hipócrates</p></div>
+	<div class="col-sm-1" style="margin-top: 30px;">
+		<h3 class="visible-xs-block">Año</h3>
+		<p>2010</p>
+	</div>
+	<div class="col-sm-3" style="margin-top: 30px;">
+		<h3 class="visible-xs-block">Autor</h3>
+		<p>Hipócrates</p>
+	</div>
+</div>
+<div class="row" style="margin-top: 20px;">
+	<div class="col-sm-3">
+		<h3 class="visible-xs-block"># &nbsp; Seleccionar</h3>
+		<div class="row">
+			<div class="col-sm-2" style="margin-top: 30px;">5</div>
+			<div class="col-sm-2" style="margin-top: 30px;">
+				<form><input type="checkbox" name="chbox"></form>
+			</div>
+			<div class="col-sm-8">
+				<img src="../images/item1.jpg" width="60px" hspace="5" vspace="5" border="1" class="center-block">
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-5" style="margin-top: 30px;">
+		<h3 class="visible-xs-block">Título</h3>
+		<p>Hippocratis coi Aphorismi versu heroico explicati</p>
+	</div>
+	<div class="col-sm-1" style="margin-top: 30px;">
+		<h3 class="visible-xs-block">Año</h3>
+		<p>2010</p>
+	</div>
+	<div class="col-sm-3" style="margin-top: 30px;">
+		<h3 class="visible-xs-block">Autor</h3>
+		<p>Hipócrates</p>
+	</div>
+</div>
+
+<div class="row" style="margin-top: 20px;">
+	<div class="col-sm-3">
+		<h3 class="visible-xs-block"># &nbsp; Seleccionar</h3>
+		<div class="row">
+			<div class="col-sm-2" style="margin-top: 30px;">6</div>
+			<div class="col-sm-2" style="margin-top: 30px;">
+				<form><input type="checkbox" name="chbox"></form>
+			</div>
+			<div class="col-sm-8">
+				<img src="../images/item1.jpg" width="60px" hspace="5" vspace="5" border="1" class="center-block">
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-5" style="margin-top: 30px;">
+		<h3 class="visible-xs-block">Título</h3>
+		<p>Hippocratis coi Aphorismi versu heroico explicati</p>
+	</div>
+	<div class="col-sm-1" style="margin-top: 30px;">
+		<h3 class="visible-xs-block">Año</h3>
+		<p>2010</p>
+	</div>
+	<div class="col-sm-3" style="margin-top: 30px;">
+		<h3 class="visible-xs-block">Autor</h3>
+		<p>Hipócrates</p>
+	</div>
+</div>
+
+<div class="row" style="margin-top: 20px;">
+	<div class="col-sm-3">
+		<h3 class="visible-xs-block"># &nbsp; Seleccionar</h3>
+		<div class="row">
+			<div class="col-sm-2" style="margin-top: 30px;">7</div>
+			<div class="col-sm-2" style="margin-top: 30px;">
+				<form><input type="checkbox" name="chbox"></form>
+			</div>
+			<div class="col-sm-8">
+				<img src="../images/item1.jpg" width="60px" hspace="5" vspace="5" border="1" class="center-block">
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-5" style="margin-top: 30px;">
+		<h3 class="visible-xs-block">Título</h3>
+		<p>Hippocratis coi Aphorismi versu heroico explicati</p>
+	</div>
+	<div class="col-sm-1" style="margin-top: 30px;">
+		<h3 class="visible-xs-block">Año</h3>
+		<p>2010</p>
+	</div>
+	<div class="col-sm-3" style="margin-top: 30px;">
+		<h3 class="visible-xs-block">Autor</h3>
+		<p>Hipócrates</p>
+	</div>
+</div>
+
+<div class="row" style="margin-top: 20px;">
+	<div class="col-sm-3">
+		<h3 class="visible-xs-block"># &nbsp; Seleccionar</h3>
+		<div class="row">
+			<div class="col-sm-2" style="margin-top: 30px;">8</div>
+			<div class="col-sm-2" style="margin-top: 30px;">
+				<form><input type="checkbox" name="chbox"></form>
+			</div>
+			<div class="col-sm-8">
+				<img src="../images/item1.jpg" width="60px" hspace="5" vspace="5" border="1" class="center-block">
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-5" style="margin-top: 30px;">
+		<h3 class="visible-xs-block">Título</h3>
+		<p>Hippocratis coi Aphorismi versu heroico explicati</p>
+	</div>
+	<div class="col-sm-1" style="margin-top: 30px;">
+		<h3 class="visible-xs-block">Año</h3>
+		<p>2010</p>
+	</div>
+	<div class="col-sm-3" style="margin-top: 30px;">
+		<h3 class="visible-xs-block">Autor</h3>
+		<p>Hipócrates</p>
+	</div>
+</div>
+
+<div class="row" style="margin-top: 20px;">
+	<div class="col-sm-3">
+		<h3 class="visible-xs-block"># &nbsp; Seleccionar</h3>
+		<div class="row">
+			<div class="col-sm-2" style="margin-top: 30px;">9</div>
+			<div class="col-sm-2" style="margin-top: 30px;">
+				<form><input type="checkbox" name="chbox"></form>
+			</div>
+			<div class="col-sm-8">
+				<img src="../images/item1.jpg" width="60px" hspace="5" vspace="5" border="1" class="center-block">
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-5" style="margin-top: 30px;">
+		<h3 class="visible-xs-block">Título</h3>
+		<p>Hippocratis coi Aphorismi versu heroico explicati</p>
+	</div>
+	<div class="col-sm-1" style="margin-top: 30px;">
+		<h3 class="visible-xs-block">Año</h3>
+		<p>2010</p>
+	</div>
+	<div class="col-sm-3" style="margin-top: 30px;">
+		<h3 class="visible-xs-block">Autor</h3>
+		<p>Hipócrates</p>
+	</div>
+</div>
+
+<div class="row" style="margin-top: 20px;">
+	<div class="col-sm-3">
+		<h3 class="visible-xs-block"># &nbsp; Seleccionar</h3>
+		<div class="row">
+			<div class="col-sm-2" style="margin-top: 30px;">10</div>
+			<div class="col-sm-2" style="margin-top: 30px;">
+				<form><input type="checkbox" name="chbox"></form>
+			</div>
+			<div class="col-sm-8">
+				<img src="../images/item1.jpg" width="60px" hspace="5" vspace="5" border="1" class="center-block">
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-5" style="margin-top: 30px;">
+		<h3 class="visible-xs-block">Título</h3>
+		<p>Hippocratis coi Aphorismi versu heroico explicati</p>
+	</div>
+	<div class="col-sm-1" style="margin-top: 30px;">
+		<h3 class="visible-xs-block">Año</h3>
+		<p>2010</p>
+	</div>
+	<div class="col-sm-3" style="margin-top: 30px;">
+		<h3 class="visible-xs-block">Autor</h3>
+		<p>Hipócrates</p>
+	</div>
 </div>
 <!-- A continuaciónn inicia el html para short-tail -->
 <div class="row">
@@ -275,73 +532,12 @@
 			
 			<a href="http://catalogo.iib.unam.mx:80/F/NYHKXGDB8DR43AI315RDR2UM5GQ92YB9G7DS3QDNQHSARNTV63-10895?func=short-jump&amp;jump=000021" title="Previous" page=""><img src="http://catalogo.iib.unam.mx:80/exlibris/aleph/u23_1/alephe/www_f_spa/icon/f-prev-page.gif" border="0" alt="Previous Page"></a> &nbsp; <img src="http://catalogo.iib.unam.mx:80/exlibris/aleph/u23_1/alephe/www_f_spa/icon/f-next-page-dim.gif" border="0" alt="No Next Page">
 		</div>
-		<ul class="pager">
-			<li><a class="my_previous" href="#">&larr; Anterior</a></li>
-			<li><a class="my_next" href="#">Siguiente &rarr;</a></li>
-		</ul>
-	</div>
-</div>
-<div class="row">
-	<div class="col-sm-3 col-sm-push-9">
 		<ul class="pager mypager">
 			<li><a class="my_previous" href="#">&larr; Anterior</a></li>
 			<li><a class="my_next" href="#">Siguiente &rarr;</a></li>
 		</ul>
 	</div>
 </div>
-
-<!-- <div class="myjumbotron">
-	<table class="table table-bordered table-striped">
-		<thead>
-			<tr>
-				<th>#</th>
-				<th>Imagen</th>
-				<th>Autor</th>
-				<th>Título</th>
-				<th>Año</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>1</td>
-				<td><img src="../images/item1.jpg" width="60px" hspace="5" vspace="5" border="1" class="center-block"></td>
-				<td><p>Hipócrates</p></td>
-				<td><p>Hippocratis coi Aphorismi versu heroico explicati</p></td>
-				<td><p>2010</p></td>
-			</tr>
-			<tr>
-				<td>1</td>
-				<td><img src="../images/item1.jpg" width="60px" hspace="5" vspace="5" border="1" class="center-block"></td>
-				<td><p>Hipócrates</p></td>
-				<td><p>Hippocratis coi Aphorismi versu heroico explicati</p></td>
-				<td><p>2010</p></td>
-			</tr>
-			<tr>
-				<td>1</td>
-				<td><img src="../images/item1.jpg" width="60px" hspace="5" vspace="5" border="1" class="center-block"></td>
-				<td><p>Hipócrates</p></td>
-				<td><p>Hippocratis coi Aphorismi versu heroico explicati</p></td>
-				<td><p>2010</p></td>
-			</tr>
-			<tr>
-				<td>1</td>
-				<td><img src="../images/item1.jpg" width="60px" hspace="5" vspace="5" border="1" class="center-block"></td>
-				<td><p>Hipócrates</p></td>
-				<td><p>Hippocratis coi Aphorismi versu heroico explicati</p></td>
-				<td><p>2010</p></td>
-			</tr>
-			<tr>
-				<td>1</td>
-				<td><img src="../images/item1.jpg" width="60px" hspace="5" vspace="5" border="1" class="center-block"></td>
-				<td><p>Hipócrates</p></td>
-				<td><p>Hippocratis coi Aphorismi versu heroico explicati</p></td>
-				<td><p>2010</p></td>
-			</tr>
-		</tbody>
-	</table>	
-</div> -->
-
-
 
 <!--<include>copyrights-->
 <!-- Esto debe ir el archivo copyrights --> 
@@ -351,7 +547,7 @@
   	<p><a style="color:#4a6159; font-size:80%; text-decoration:none;" href="http://catalogo.iib.unam.mx:80/F/S582U84X638TKNCC4L4M17PSDND53T8H6V1QKXM8PRJTU1JAKY-46937?func=find-f&local_base=BNDM" class="blue">CrÃ©ditos</a></p>
   </div>
 </div>
-</div> <!-- AquÃ­ termina el div container -->
+</div> <!-- Aquí termina el div container -->
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -363,6 +559,22 @@
 <script type="text/javascript">
 	// Llamando a la función	 preparingPagerButtons definida en el archivo my_functions.js
 	preparingPagerButtons();
+
+	/* Agregnado un evento scroll sobre tools_wrapper para agregar o quitar la clase fixed-tools*/
+
+	var wrapper = document.getElementById("tools_wrapper");
+	var classes_before = wrapper.className;
+	window.onscroll =function(){
+		make_top_fixed_tools_wrapper();
+	}
+	
+	function make_top_fixed_tools_wrapper(){
+		if(document.body.scrollTop > 600){
+			wrapper.className = classes_before + " fixed-tools";
+		} else {
+			wrapper.className = classes_before;
+		}
+	}
 </script>
 </body>
 </html>
