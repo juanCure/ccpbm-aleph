@@ -16,5 +16,12 @@
 			</ul>
 		</div>	
 	</div>
-<!-- la etiqueta </div> que cierra al div.myjumbotron se encuentra en el archivo short-include-2-ccpbm -->	
+<!-- la etiqueta </div> que cierra al div.myjumbotron se encuentra en el archivo short-include-2-ccpbm -->
+<div class="container" style="margin-top: 20px;">
+	<div class="row">
+		<div class="col-sm-5 myjumbotron">
+			<h3>Lista de resultados</h3>		
+		</div>
+	</div>
+<!-- La etiqueta </div> que cierra el container se encuentra en el archivo short-tail-ccpbm -->	
 	

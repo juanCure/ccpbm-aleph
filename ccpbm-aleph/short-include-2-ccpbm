@@ -1,73 +1,52 @@
 <!-- short-include-2-ccpbm Juan Manuel Rodríguez -->
-<br>
-	<div class="row">
-		<div class="col-sm-8">
-			<div class="row">
-				<div class="col-sm-12 text-center">
-					<label>Opciones de ordenamiento</label>
-				</div>
+<!-- Agregando estilo nuevo -->
+<div class="row wit-bottom-border">
+	<div class="col-sm-4">
+		<div class="row">
+			<div class="col-sm-2">
+				<span class="icon-Filtrar fs1"></span>
 			</div>
-			<div class="row myrow">
-				<div class="col-sm-12 text-center filtros">
-					<ul class="nav navbar-nav">
-						<li><a href="#">Autor y Año</a></li>
-						<li class="with-border-left"><a href="#">Año y Autor</a></li>
-						<li class="with-border-left"><a href="#">Autor y Título</a></li>
-						<li class="with-border-left"><a href="#">Título y Año</a></li>
-						<li class="with-border-left"><a href="#">Año y Título</a></li>
-					</ul>	
-				</div>
-			</div>
-		</div>
-		<div class="col-sm-4">
-			<div class="row">
-				<div class="col-sm-12 text-center">
-					<label>Opciones de formato</label>
-				</div>
-			</div>
-			<div class="row myrow">
-				<div class="col-sm-12 text-center filtros">
-					<ul class="nav navbar-nav">
-						<li><a href="#">Tabla</a></li>
-						<li class="with-border-left"><a href="#">Listado</a></li>
-					</ul>
-				</div>
+			<div class="col-sm-10 coloured-text" style="margin-top: 30px;">
+				<span>Filtrar resultados</span>
 			</div>
 		</div>
 	</div>
-</div> <!-- Aquí termina el div.myjumbotron -->
+	<div class="col-sm-8 col-sm-push-1">
+		<div class="row">
+			<div class="col-sm-2">
+				<span class="icon-ordenar-por fs1"></span>
+			</div>
+			<div class="col-sm-10">
+				<ul id="opciones_ordenamiento" class="list-inline">
+					<li><a href="#">Autor y Año</a></li>
+					<li class="with-border-left"><a href="#">Año y Autor</a></li>
+					<li class="with-border-left"><a href="#">Autor y Título</a></li>
+					<li class="with-border-left"><a href="#">Título y Año</a></li>
+					<li class="with-border-left"><a href="#">Año y Título</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
 
 <div class="row" style="margin-top: 20px;">
 	<div class="col-sm-3">
-		<h4 class="thick">Registros &nbsp; $0100 -$0200 &nbsp; de &nbsp; $0300</h4>
+		<h4 class="thick coloured-text">Registros &nbsp; $0100 -$0200 &nbsp; de &nbsp; $0300</h4>
 	</div>
-	<div class="col-sm-3">
-		<form class="form-horizontal" method="get" name="form_jumpText" action="&server_f">
-			<div class="form-group">
-				<div class="col-sm-4">
-					<input type="hidden" name="func" value="short-jump-text">
-					<input type="submit" class="btn mybtn" value="Ir a texto" name="action_short_jump_text" >		
-				</div>
-				<div class="col-sm-6">
-					<input type="text" name="jump_text">	
-				</div>
-			</div>
-		</form>
-	</div>
-	<div class="col-sm-3">
+	<div class="col-sm-3 col-sm-push-3">
 		<form class="form-horizontal" method="get" name="form_jumpRecord" action="&server_f">
 			<div class="form-group">
-				<div class="col-sm-4">
+				<div class="col-sm-6 col-xs-3">
 					<input type="hidden" name="func" value="short-jump">
-					<input type="button" class="btn mybtn" value="Ir a #" name="action_short_jump" >		
+					<input type="button" class="btn mybtn" value="Ir a número" name="action_short_jump" >		
 				</div>
-				<div class="col-sm-6">
+				<div class="col-sm-6 col-xs-3">
 					<input type="text" name="jump">	
 				</div>
 			</div>
 		</form>	
 	</div>
-	<div class="col-sm-3">
+	<div class="col-sm-3 col-sm-push-3">
 		<div id="hidden_pager" style="display: none;">
 			$0900 &nbsp; $1000	
 		</div>
@@ -75,5 +54,59 @@
 			<li><a class="my_previous" href="#">&larr; Anterior</a></li>
 			<li><a class="my_next" href="#">Siguiente &rarr;</a></li>
 		</ul>
+	</div>
+</div>
+
+<div class="row myjumbotron" id="tools_wrapper">
+	<div class="col-sm-8 col-sm-push-4">
+		<div class="row">
+			<div class="col-sm-3">
+				<div class="row">
+					<div class="col-sm-6">
+						<span class="coloured-text">Seleccionar</span>
+					</div>
+					<div class="col-sm-6">
+						<div class="row">
+							<div class="col-sm-12">
+								<input type="checkbox" name="chbox">
+							</div>
+							<div class="col-sm-12">
+								<span class="coloured-text">Todo</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="row">
+					<div class="col-sm-6">
+						<span class="icon-Guardar-y-enviar fs1"></span>
+					</div>
+					<div class="col-sm-6">
+						<span><a class="coloured-text" href="&server_f?func=short-mail-0" title="Guardar/Enviar a correo">Guardar/enviar por correo</a></span>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="row">
+					<div class="col-sm-6">
+						<span class="icon-ver fs1"></span>
+					</div>
+					<div class="col-sm-6" style="margin-top: 40px;">
+						<span><a class="coloured-text" href="&server_f?func=full-set-selected" title="Ver selección">Ver</a></span>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="row">
+					<div class="col-sm-6">
+						<span class="icon-Agregar-a-mi-biblioteca fs1"></span>
+					</div>
+					<div class="col-sm-6">
+						<span><a class="coloured-text" href="&server_f?func=myshelf-add-sel-1" title="Agregar a mi bibliografía">Agregar a mi bibliografía</a></span>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>

@@ -13,8 +13,24 @@
 <include>copyrights
 </div> <!-- Aquí termina el div container -->
 <script type="text/javascript">
-	// Llamando a la función preparingPagerButtons definida en el archivo my_functions.js
+	// Llamando a la función	 preparingPagerButtons definida en el archivo my_functions.js
 	preparingPagerButtons();
+
+	/* Agregnado un evento scroll sobre tools_wrapper para agregar o quitar la clase fixed-tools*/
+
+	var wrapper = document.getElementById("tools_wrapper");
+	var classes_before = wrapper.className;
+	window.onscroll =function(){
+		make_top_fixed_tools_wrapper();
+	}
+	
+	function make_top_fixed_tools_wrapper(){
+		if(document.body.scrollTop > 600){
+			wrapper.className = classes_before + " fixed-tools";
+		} else {
+			wrapper.className = classes_before;
+		}
+	}
 </script>
 </body>
 </html>

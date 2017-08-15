@@ -1,5 +1,5 @@
 <!-- filename: short-a-head-ccpbm Juan Manuel Rodríguez -->
-<div class="row">
+<div class="row hidden-xs">
 	<div class="col-sm-3"><h3># &nbsp; Seleccionar</h3></div>
 	<div class="col-sm-5"><h3>$0400</h3></div>
 	<div class="col-sm-1"><h3>$0500</h3></div>
