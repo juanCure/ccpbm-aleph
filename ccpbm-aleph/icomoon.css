@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../../fonts/icomoon/icomoon.eot?6w9jkv');
+  src:  url('../../fonts/icomoon/icomoon.eot?6w9jkv#iefix') format('embedded-opentype'),
+    url('../../fonts/icomoon/icomoon.ttf?6w9jkv') format('truetype'),
+    url('../../fonts/icomoon/icomoon.woff?6w9jkv') format('woff'),
+    url('../../fonts/icomoon/icomoon.svg?6w9jkv#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Borrar:before {
+  content: "\e901";
+  color: #906d3d;
+}
+.icon-combinar:before {
+  content: "\e902";
+  color: #906d3d;
+}
+.icon-Filtrar:before {
+  content: "\e903";
+  color: #906d3d;
+}
+.icon-Guardar-y-enviar:before {
+  content: "\e904";
+  color: #906d3d;
+}
+.icon-ordenar-por:before {
+  content: "\e905";
+  color: #906d3d;
+}
+.icon-ver:before {
+  content: "\e906";
+  color: #906d3d;
+}
+.icon-Agregar-a-mi-biblioteca:before {
+  content: "\e900";
+  color: #906d3d;
+}
