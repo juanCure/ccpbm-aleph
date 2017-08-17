@@ -1,23 +1,5 @@
 <!-- short-include-buttons-ccpbm Juan Manuel Rodríguez -->
 <div class="container" style="margin-top: 20px;">
-<div class="myjumbotron">
-	<h3><b>Lista de resultados</b></h3>
-	<div class="row myrow">
-		<div class="col-sm-12" style="background-color: #f8f8f8;" id="acciones">
-			<ul class="nav navbar-nav">
-				<li><a href="&server_f?func=full-set-selected" title="Ver selección">Ver selección</a></li>
-				<li class="with-border-left"><a href="&server_f?func=short-mail-0" title="Guardar/Enviar a correo">Guardar/Enviar a correo</a></li>
-				<li class="with-border-left"><a href="&server_f?func=myshelf-add-sel-1" title="Agregar a mi bibliografía">Agregar a mi bibliografía</a></li>
-				<li class="with-border-left"><a href="&server_f?func=short-select-all" title="Seleccionar todo">Seleccionar todo</a></li>
-				<li class="with-border-left"><a href="&server_f?func=short-deselect-all" title="Borrar selección">Borrar selección</a></li>
-				<li class="with-border-left"><a href="&server_f?func=short-filter" title="Filtrar resultados">Filtrar resultados</a></li>
-				<li class="with-border-left"><a href="&server_f?func=short-rank" title="Rango">Rango</a></li>
-				<li class="with-border-left"><a href="&server_f?func=short-refine" title="Refinar búsqueda">Refinar búsqueda</a></li>
-			</ul>
-		</div>	
-	</div>
-<!-- la etiqueta </div> que cierra al div.myjumbotron se encuentra en el archivo short-include-2-ccpbm -->
-<div class="container" style="margin-top: 20px;">
 	<div class="row">
 		<div class="col-sm-5 myjumbotron">
 			<h3>Lista de resultados</h3>		

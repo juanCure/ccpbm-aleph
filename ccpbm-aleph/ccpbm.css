@@ -222,6 +222,51 @@
     transform: scale(1.5);
   }
 
+  /* Nuevos estilos para la vista de Lista de Resultados */
+
+  #opciones_ordenamiento {
+    padding: 0;
+    margin-top: 20px;
+  }
+
+  /*#opciones_ordenamiento li {
+    display: inline;
+  }*/
+
+  .fs0 {
+  font-size: 16px;
+}
+  .fs1 {
+    font-size: 62px;
+  }
+
+  .wit-bottom-border{
+    border-bottom: 2px solid red;
+  }
+
+  .my_nested_columns{
+    padding: 0;
+  }
+
+  /* Clase para fijar en el top las herramientas que se pueden aplciar a los registros*/
+  .fixed-tools {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 1000;
+    margin: 0;
+    border-radius: 15px;
+  }
+
+  .list-inline li a {
+    text-decoration: underline;
+    color: #7c592e;
+  }
+
+  .coloured-text {
+    color: #7c592e;
+  }
+
   /* Agregando estilos para la vista Búsquedas Anteriores */
 
   #busquedas_anteriores table thead{
