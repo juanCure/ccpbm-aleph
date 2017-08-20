@@ -19,9 +19,109 @@
 /* Agregando las fuentes Raleway*/
 @font-face { font-family: RalewayRegular; src: url('../fonts/Raleway-Regular.ttf'); }
 @font-face { font-family: RalewayMedium; src: url('../fonts/Raleway-Medium.ttf'); }
+@font-face { font-family: RalewayExtraBold; src: url('../fonts/Raleway-ExtraBold.ttf'); }
+@font-face { font-family: RalewayBold; src: url('../fonts/Raleway-Bold.ttf'); }
   body {
       font-family: RalewayRegular;
-    } 
+    }
+
+  /*** HEADER ****/
+
+  #header {
+  	position: fixed;
+  	top: 0;
+  	margin: 0;
+  	z-index: 20;
+  	width: 100%;
+  	background-color: #fff;
+  	padding: 10px 0;
+  	height: auto;
+  	max-height: 110px;
+  	border-bottom: 5px solid #00349a;
+  }
+
+  #container-logos {
+  	background: transparent;
+  	width: auto;
+  	height: auto;
+  	display: inline-block;
+  	float: left;
+  }
+
+  #logo-unam, #logo-unam img {
+  	width: auto;
+  	height: 95px;
+  }
+
+  #logo-unam,  #texto-unam, #logo-biblioteca {
+  	display: inline-block;
+  	vertical-align: top;
+  }
+
+  #texto-unam, #texto-unam img{
+  	width: auto;
+  	height: 110px;
+  	margin-top: -8px;
+  }
+
+  #logo-biblioteca, #logo-biblioteca img{
+  	width: auto;
+  	height: 95px;
+  }
+
+  #container-buscador {
+  	width: 55%;
+  	background: transparent;
+  	height: auto;
+  	display: inline-block;
+  	float: right;
+  	margin-top: 20px;
+  }
+
+  #buscador {
+  	display: block;
+  	width: 90%;
+  	float: left;
+  }
+
+  /***** Banner *****/
+   .container-banner {
+   	position: relative;
+   	display: block;
+   	margin-top: 110px;
+   	width: 100%;
+   	padding: 0;
+   }
+
+   .container-banner img {
+   	width: 100%;
+   	display: block;
+   	height: auto;
+   	max-width: 100%;
+   	position: relative;
+   }
+
+   #banner-texto {
+   	display: inline-block;
+   	background-color: #b8a27c;
+   	padding: 20px;
+   	width: 25%;
+   	position: absolute;
+   	left: 10%;
+   	top: 0;
+   	z-index:10;
+   }
+
+   #texto1 {
+   	font-family: RalewayBold;
+   	color: #fff;
+   }
+
+   #texto2, #texto3 {
+   	font-family: RalewayMedium;
+   	color: #fff;
+   	margin-top: -10px;
+   }
 
   /* The heart of the matter */
   .testimonial-group > .row {
@@ -35,8 +135,8 @@
 
   #myMenu {
     position: relative;
-    top: -75px;
-    width: 65%;
+    width: 100%;
+    max-width: 100%;
     margin-right: 0;
     padding-right: 0;
   }
@@ -55,23 +155,20 @@
     padding-left: 0px;
   }
 
-  /* Agregando estilos para el menÃº de navegaciÃ³n */
-  #myNav, .navbar-nav>li>.dropdown-menu {
-    background-color: #a88e5f;
-  }
+  /******* Menú de navegación ****/
 
-  #myNav {
-    opacity: 0.8; 
-  }
+  @media screen and (min-width: 768px){
+  	.navbar-nav {
+	  	float: none;
+	  	margin: 0 auto;
+	  	display: table;
+	  	table-layout: fixed;
+	  }
 
-  .dropdown-menu>li>a{
-    color: #fff;
-    font-family: Raleway;
-  }
-
-  .with-border-left{
-    border-left: 2px solid white;
-  }
+	  .with-border-left{
+	    border-left: 2px solid white;
+	  }
+  }  
 </style>
 </head>
 
@@ -136,14 +233,52 @@ div::-webkit-scrollbar-thumb:window-inactive {
 </style>
 
 <!-- filename: head-1-nobor-ccpbm Juan Manuel Rodríguez -->
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-sm-12">
-      <div class="header">
-        <img class="banner" width="100%" src="../images/inicio-desktop.jpg">
-      </div>
-    </div>  
-  </div>
+<div id="header" class="container-fluid">
+	<div id="container-logos">
+		<div id="logo-unam">
+			<a href="#">
+				<img src="../images/logo-unam.jpg" alt="UNAM">
+			</a>
+		</div>
+		<div id="texto-unam">
+			<a href="#">
+				<img src="../images/texto-unam.jpg" alt="UNAM">
+			</a>
+		</div>
+		<div id="logo-biblioteca">
+			<a href="#">
+				<img src="../images/logo-biblioteca.png" alt="BIBLIOTECA">
+			</a>
+		</div>
+	</div>
+	<div id="container-buscador">
+		<div id="buscador">
+			<form class="navbar-form navbar-right" method=get name=form2 action="&server_f" role="form">
+		    <input type="hidden" name="func" value="find-b">
+		    <div class="input-group">
+		      <span style="background-color: #00349a;" class="input-group-addon"><span style="color: #fff;" class="glyphicon glyphicon-stats"></span></span>
+		      <input type="text" name="request" class="form-control" placeholder="Palabras">
+		      <span class="input-group-btn">
+		        <button type="submit" class="btn btn-default"><span style="color: #00349a;" class="glyphicon glyphicon-search"></span></button>
+		      </span>
+		    </div>
+		  </form>
+		</div>
+	</div>
+</div>
+<div class="container-fluid container-banner">
+	<img class="banner" src="../images/principal_5000x1500.jpg">
+	<div id="banner-texto">
+		<div id="texto1">
+			<h1>CATÁLOGO COLECTIVO</h1>
+		</div>
+		<div id="texto2">
+			<h2> del patrimonio bibiógrafico de</h2>
+		</div>
+		<div id="texto3">
+			<h2>México</h2>
+		</div>
+	</div>
 </div> <!-- Aqui termina el div.container-fluid que contiene el banner -->
 
 <!-- find-include-buttons-ccpbm Juan Manuel Rodríguez -->
@@ -158,7 +293,7 @@ div::-webkit-scrollbar-thumb:window-inactive {
         </button>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
-        <div class="col-sm-9" id="myMenuPrincipal">
+        <div class="col-sm-12" id="myMenuPrincipal">
           <ul class="nav navbar-nav">
             <li><a href="&server_f?func=login&local_base=CCPBM">INICIO</a></li>
             <li><a class="with-border-left" href="&server_f?func=find-a&local_base=CCPBM">PROYECTO</a></li>
@@ -167,146 +302,104 @@ div::-webkit-scrollbar-thumb:window-inactive {
             <li><a class="with-border-left" href="#">CONTACTO</a></li>
           </ul>
         </div>
-        <div class="col-sm-3" id="myNavbarForm">
-          <form class="navbar-form navbar-right" method=get name=form2 action="&server_f" role="form">
-            <input type="hidden" name="func" value="find-b">
-            <div class="input-group input-group-lg">
-              <span style="background-color: #b8a27c;" class="input-group-addon"><span style="color: #fff;" class="glyphicon glyphicon-stats"></span></span>
-              <input type="text" name="request" class="form-control" placeholder="Palabras">
-              <span class="input-group-btn">
-                <button type="submit" class="btn btn-default"><span style="color: #b8a27c;" class="glyphicon glyphicon-search"></span></button>
-              </span>
-            </div>
-          </form>
-        </div>
       </div>
     </nav>
   </div>
 </div>
 <!-- Aquí termina el div.container que contiene el ménu --> 
-<div class="container">
+<div class="container" style="clear: both; margin-top: 20px;">
 <form method=post 
       name="form1"
       action="&server_f">
-<div class="container testimonial-group">
-  <div class="row text-center">
-    <div class="col-sm-3">
-      <div class="thumbnail">
-        <a href="&server_f?func=find-b&find_code=WBA&request=RSM&adjacent=N&local_base=BNDM">
-          <img class="img-responsive" src="../images/item01.jpg" width="250" height="250"  alt="Impresos MÃ©xicanos"/>
-          <!-- <div class="caption">
+<div class="testimonial-group">
+  <div class="row">
+    <div class="col-sm-3 col-xs-6">
+      <div class="thumbnail text-center">
+        <a href="&server_f?func=find-b&find_code=WBA&request=RLAF&adjacent=N&local_base=BNDM">
+          <img class="img-responsive" src="../images/item01.jpg" width="250" height="250"  alt="Colecci&oacute;n Lafragua"/>
+          <div class="caption">
             <p>Lorem ipsum...</p>
-          </div> -->
+          </div>
         </a>
       </div>
     </div>
-    <div class="col-sm-3">
-      <div class="thumbnail">
+    <div class="col-sm-3 col-xs-6">
+      <div class="thumbnail text-center">
         <a href="&server_f?func=find-b&find_code=WBA&request=RLAF&adjacent=N&local_base=BNDM">
           <img class="img-responsive" src="../images/item02.jpg" width="250" height="250"  alt="Colecci&oacute;n Lafragua"/>
-          <!-- <div class="caption">
+          <div class="caption">
             <p>Lorem ipsum...</p>
-          </div> -->
+          </div>
         </a>
       </div>
     </div>
-    <div class="col-sm-3">
-      <div class="thumbnail">
+    <div class="col-sm-3 col-xs-6">
+      <div class="thumbnail text-center">
         <a href="&server_f?func=find-b&find_code=WBA&request=ABN&adjacent=N&local_base=BNDM">
           <img class="img-responsive" src="../images/item03.jpg" width="250" height="250"  alt="Archivo Biblioteca Nacional"/>
-          <!-- <div class="caption">
+          <div class="caption">
             <p>Lorem ipsum...</p>
-          </div> -->
+          </div>
         </a>
       </div>
     </div>
-    <div class="col-sm-3">
-      <div class="thumbnail">
+    <div class="col-sm-3 col-xs-6">
+      <div class="thumbnail text-center">
         <a href="&server_f?func=find-b&find_code=WBA&request=ENP&adjacent=N&local_base=BNDM">
           <img class="img-responsive" src="../images/item04.jpg" width="250" height="250"  alt="ColecciÃ³n ENP"/>
-          <!-- <div class="caption">
+          <div class="caption">
             <p>Lorem ipsum...</p>
-          </div> -->
+          </div>
         </a>
       </div>
     </div>
-    <div class="col-sm-3">
-      <div class="thumbnail">
+    <div class="col-sm-3 col-xs-6">
+      <div class="thumbnail text-center">
         <a href="&server_f?func=find-b&find_code=WBA&request=ENP&adjacent=N&local_base=BNDM">
           <img class="img-responsive" src="../images/item04.jpg" width="250" height="250"  alt="ColecciÃ³n ENP"/>
-          <!-- <div class="caption">
+          <div class="caption">
             <p>Lorem ipsum...</p>
-          </div> -->
+          </div>
         </a>
       </div>
     </div>
-    <div class="col-sm-3">
-      <div class="thumbnail">
+    <div class="col-sm-3 col-xs-6">
+      <div class="thumbnail text-center">
         <a href="&server_f?func=find-b&find_code=WBA&request=ENP&adjacent=N&local_base=BNDM">
           <img class="img-responsive" src="../images/item04.jpg" width="250" height="250"  alt="ColecciÃ³n ENP"/>
-          <!-- <div class="caption">
+          <div class="caption">
             <p>Lorem ipsum...</p>
-          </div> -->
+          </div>
         </a>
       </div>
     </div>
-    <div class="col-sm-3">
-      <div class="thumbnail">
+    <div class="col-sm-3 col-xs-6">
+      <div class="thumbnail text-center">
         <a href="&server_f?func=find-b&find_code=WBA&request=ENP&adjacent=N&local_base=BNDM">
           <img class="img-responsive" src="../images/item04.jpg" width="250" height="250"  alt="ColecciÃ³n ENP"/>
-          <!-- <div class="caption">
+          <div class="caption">
             <p>Lorem ipsum...</p>
-          </div> -->
+          </div>
         </a>
       </div>
     </div>
-    <div class="col-sm-3">
-      <div class="thumbnail">
+    <div class="col-sm-3 col-xs-6">
+      <div class="thumbnail text-center">
         <a href="&server_f?func=find-b&find_code=WBA&request=ENP&adjacent=N&local_base=BNDM">
           <img class="img-responsive" src="../images/item04.jpg" width="250" height="250"  alt="ColecciÃ³n ENP"/>
-          <!-- <div class="caption">
+          <div class="caption">
             <p>Lorem ipsum...</p>
-          </div> -->
+          </div>
         </a>
       </div>
     </div>
-    <div class="col-sm-3">
-      <div class="thumbnail">
+   <div class="col-sm-3 col-xs-6">
+      <div class="thumbnail text-center">
         <a href="&server_f?func=find-b&find_code=WBA&request=ENP&adjacent=N&local_base=BNDM">
           <img class="img-responsive" src="../images/item04.jpg" width="250" height="250"  alt="ColecciÃ³n ENP"/>
-          <!-- <div class="caption">
+          <div class="caption">
             <p>Lorem ipsum...</p>
-          </div> -->
-        </a>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <div class="thumbnail">
-        <a href="&server_f?func=find-b&find_code=WBA&request=ENP&adjacent=N&local_base=BNDM">
-          <img class="img-responsive" src="../images/item04.jpg" width="250" height="250"  alt="ColecciÃ³n ENP"/>
-          <!-- <div class="caption">
-            <p>Lorem ipsum...</p>
-          </div> -->
-        </a>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <div class="thumbnail">
-        <a href="&server_f?func=find-b&find_code=WBA&request=ENP&adjacent=N&local_base=BNDM">
-          <img class="img-responsive" src="../images/item04.jpg" width="250" height="250"  alt="ColecciÃ³n ENP"/>
-          <!-- <div class="caption">
-            <p>Lorem ipsum...</p>
-          </div> -->
-        </a>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <div class="thumbnail">
-        <a href="&server_f?func=find-b&find_code=WBA&request=ENP&adjacent=N&local_base=BNDM">
-          <img class="img-responsive" src="../images/item04.jpg" width="250" height="250"  alt="ColecciÃ³n ENP"/>
-          <!-- <div class="caption">
-            <p>Lorem ipsum...</p>
-          </div> -->
+          </div>
         </a>
       </div>
     </div>

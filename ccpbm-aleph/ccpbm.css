@@ -2,6 +2,7 @@
 @font-face { font-family: RalewayRegular; src: url('./Raleway-Regular.ttf'); }
 @font-face { font-family: RalewayMedium; src: url('./Raleway-Medium.ttf'); }
 @font-face { font-family: RalewayExtraBold; src: url('./Raleway-ExtraBold.ttf'); }
+@font-face { font-family: RalewayBold; src: url('./Raleway-Bold.ttf'); }
   body {
       font-family: RalewayRegular;
     } 
