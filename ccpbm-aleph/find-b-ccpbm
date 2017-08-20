@@ -73,7 +73,7 @@
 
 <include>copyrights
 </div> <!-- Aquí termina el div.container que contiene el contenido de la página -->
-<script type="text/javascript">
+<!-- <script type="text/javascript">
         var href = document.location.href;
         console.log("this is href: ", href);
         var lastPathSegment = href.substr(href.lastIndexOf('/') + 1);
@@ -84,6 +84,6 @@
         console.log("src of image_header: ", image_header.getAttribute("src"));
         image_header.setAttribute("src", "&icon_path/" + "bndm-cabeza-" + param1 + ".jpg");
 
-</script>
+</script> -->
 </body>
 </html>

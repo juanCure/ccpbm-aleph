@@ -5,7 +5,106 @@
 @font-face { font-family: RalewayBold; src: url('../fonts/Raleway-Bold.ttf'); }
   body {
       font-family: RalewayRegular;
-    } 
+    }
+
+/*** HEADER ****/
+
+  #header {
+    position: fixed;
+    top: 0;
+    margin: 0;
+    z-index: 20;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 0;
+    height: auto;
+    max-height: 110px;
+    border-bottom: 5px solid #00349a;
+  }
+
+  #container-logos {
+    background: transparent;
+    width: auto;
+    height: auto;
+    display: inline-block;
+    float: left;
+  }
+
+  #logo-unam, #logo-unam img {
+    width: auto;
+    height: 95px;
+  }
+
+  #logo-unam,  #texto-unam, #logo-biblioteca {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  #texto-unam, #texto-unam img{
+    width: auto;
+    height: 110px;
+    margin-top: -8px;
+  }
+
+  #logo-biblioteca, #logo-biblioteca img{
+    width: auto;
+    height: 95px;
+  }
+
+  #container-buscador {
+    width: 55%;
+    background: transparent;
+    height: auto;
+    display: inline-block;
+    float: right;
+    margin-top: 20px;
+  }
+
+  #buscador {
+    display: block;
+    width: 90%;
+    float: left;
+  }
+
+  /***** Banner *****/
+   .container-banner {
+    position: relative;
+    display: block;
+    margin-top: 110px;
+    width: 100%;
+    padding: 0;
+   }
+
+   .container-banner img {
+    width: 100%;
+    display: block;
+    height: auto;
+    max-width: 100%;
+    position: relative;
+   }
+
+   #texto-banner {
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    color: #fff;
+    bottom: 10%;
+    left: 33%;
+    z-index: 10;
+   }
+
+   #texto1 {
+    font-family: RalewayBold;
+    color: #fff;
+    font-size: 50px;
+   }
+
+   #texto2, #texto3 {
+    font-family: RalewayMedium;
+    color: #fff;
+    margin-top: -10px;
+    font-size: 30px;
+   } 
 
 /* Agregando estilos para el menu de navegacion */
 

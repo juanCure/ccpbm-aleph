@@ -19,18 +19,6 @@
             <li><a class="with-border-left" href="&server_f?func=find-c&local_base=CCPBM">CONTACTO</a></li>
           </ul>
         </div>
-        <div class="col-sm-3" id="myNavbarForm">
-          <form class="navbar-form navbar-right" method=get name=form2 action="&server_f" role="form">
-            <input type="hidden" name="func" value="find-b">
-            <div class="input-group input-group-lg">
-              <span style="background-color: #b8a27c;" class="input-group-addon"><span style="color: #fff;" class="glyphicon glyphicon-stats"></span></span>
-              <input type="text" name="request" class="form-control" placeholder="Palabras">
-              <span class="input-group-btn">
-                <button type="submit" class="btn btn-default"><span style="color: #b8a27c;" class="glyphicon glyphicon-search"></span></button>
-              </span>
-            </div>
-          </form>
-        </div>
         <div class="col-sm-9" id="mySubmenu" style="top: 10px">
           <ul class="nav navbar-nav">
             <li><a href="&server_f?func=find-b-0&local_base=CCPBM">Búsqueda básica</a></li>

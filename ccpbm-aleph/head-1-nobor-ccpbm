@@ -1,12 +1,52 @@
 <!-- filename: head-1-nobor-ccpbm Juan Manuel Rodríguez -->
-<div class="container-fluid">
-	<div class="row">
-		<div class="col-sm-12">
-			<div class="header">
-				<img width="100%" src="&icon_path/interior-desktop.jpg">
-			</div>
-		</div>	
+<!-- HEADER -->
+<div id="header" class="container-fluid">
+  <div id="container-logos">
+    <div id="logo-unam">
+      <a href="http://www.unam.mx">
+        <img src="&icon_path/ccpbm-images/logo-unam.jpg" alt="UNAM">
+      </a>
+    </div>
+    <div id="texto-unam">
+      <a href="http://www.unam.mx">
+        <img src="&icon_path/ccpbm-images/texto-unam.jpg" alt="UNAM">
+      </a>
+    </div>
+    <div id="logo-biblioteca">
+      <a href="http://www.bnm.unam.mx">
+        <img src="&icon_path/ccpbm-images/logo-biblioteca.png" alt="BIBLIOTECA">
+      </a>
+    </div>
+  </div>
+  <div id="container-buscador">
+    <div id="buscador">
+      <form class="navbar-form navbar-right" method=get name=form2 action="&server_f" role="form">
+        <input type="hidden" name="func" value="find-b">
+        <div class="input-group">
+          <span style="background-color: #00349a;" class="input-group-addon"><span style="color: #fff;" class="glyphicon glyphicon-stats"></span></span>
+          <input type="text" name="request" class="form-control" placeholder="Palabras">
+          <span class="input-group-btn">
+            <button type="submit" class="btn btn-default"><span style="color: #00349a;" class="glyphicon glyphicon-search"></span></button>
+          </span>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- BANNER -->
+<div class="container-fluid container-banner">
+	<!--<include>head-1	-->
+	<!-- Lo siguiente debe ir el archivo head-1-->
+	<img width="100%" src="&icon_path/ccpbm-images/5000x750.jpg" id="image_header"/>
+	<div id="texto-banner">
+		<div id="texto1">
+			CATÁLOGO COLECTIVO
+		</div>
+		<div id="texto2">
+			del patrimonio bibliográfico de México
+		</div>
 	</div>
-</div> <!-- Aqui termina el div.container-fluid que contiene el banner -->
+</div> <!-- Aquí termina el div.container-fluid que contiene el banner -->
 <include>find-include-buttons
 	
