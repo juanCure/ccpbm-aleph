@@ -161,7 +161,7 @@ div::-webkit-scrollbar-thumb:window-inactive {
 </div>
 <!-- Aquí termina el div.container que contiene el ménu --> 
 <!-- Aquí empieza el contenido de la vista -->
-<div class="container">
+<div class="container" style="clear: both; margin-top: 20px;">
 <form method=post 
       name="form1"
       action="&server_f">
