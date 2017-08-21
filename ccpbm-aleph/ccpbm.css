@@ -83,7 +83,7 @@
     position: relative;
    }
 
-   #texto-banner {;
+   #banner-texto {
     position: absolute;
     color: #fff;
     bottom: 10%;
@@ -104,7 +104,32 @@
     font-size: 30px;
    }  
 
-/* Agregando estilos para el menu de navegacion */
+  /* Agregando estilos para el menu de navegacion */
+  
+  /******* Menú de navegación ****/
+
+  @media screen and (min-width: 768px){
+
+    .navbar-nav>li>a {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+
+    .navbar-nav {
+      float: none;
+      margin: 0 auto;
+      display: table;
+      table-layout: fixed;
+    }
+
+    #myMenuPrincipal .with-border-left, .filtros .with-border-left{
+      border-left: 2px solid white;
+    }
+
+    #mySubmenu .with-border-left, #acciones .with-border-left{
+      border-left: 2px solid #7c6a53;
+    }
+  }
 
   #myMenu {
     top: 20px;
@@ -115,14 +140,6 @@
     background-color: #fff;
   }
 
-  #myNav {
-    /*opacity: 0.8; */
-  }
-
-  #myMenu .navbar-nav {
-    /*padding: 7px;*/
-  }
-
   #myMenuPrincipal .navbar-nav>li>a, .filtros .navbar-nav>li>a {
     color: #fff;
     font-family: RalewayMedium;
@@ -130,16 +147,6 @@
     margin: 10px 0;
   }
 
-  @media (min-width: 768px){
-    .navbar-nav>li>a {
-      padding-top: 5px;
-      padding-bottom: 5px;
-    }
-  }
-
-  #myMenuPrincipal .with-border-left, .filtros .with-border-left{
-    border-left: 2px solid white;
-  }
 
   /* Estilos para la vista Proyecto*/
   .background {
@@ -186,8 +193,7 @@
   }
 
   #myMenuPrincipal{
-    /*background-color: #b8a27c;*/
-    background-color: #a88e5f;
+    background-color: #ad9d78
   }
 
   #mySubmenu{
@@ -198,10 +204,6 @@
     color: #7c6a53;
     padding: 3px 15px;
     margin: 5px 0;
-  }
-
-  #mySubmenu .with-border-left, #acciones .with-border-left{
-    border-left: 2px solid #7c6a53;
   }
 
   #myNav.navbar-default {

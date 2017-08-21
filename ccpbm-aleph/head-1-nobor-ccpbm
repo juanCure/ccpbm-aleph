@@ -39,7 +39,7 @@
 	<!--<include>head-1	-->
 	<!-- Lo siguiente debe ir el archivo head-1-->
 	<img width="100%" src="&icon_path/ccpbm-images/5000x750.jpg" id="image_header"/>
-	<div id="texto-banner">
+	<div id="banner-texto">
 		<div id="texto1">
 			CATÁLOGO COLECTIVO
 		</div>
