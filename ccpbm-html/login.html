@@ -34,7 +34,7 @@
     padding-right: 0;
   }
 
-  #banner-texto {
+  /*#banner-texto {
     display: inline-block;
     background-color: #b8a27c;
     padding: 20px;
@@ -43,7 +43,20 @@
     left: 10%;
     top: 0;
     z-index:10;
-   }
+   }*/
+
+   /**** BANNER *****/
+
+   .container-banner .caption {
+    position: absolute;
+    top: 0;
+    left: 20%;
+    width: 20%;
+    height: 100%;
+    background-color: #b8a27c;
+    opacity: 0.9;
+    padding: 50px 10px 10px !important;
+  }
 
    /**** COLECCIONES *****/
 	.caption {
@@ -158,7 +171,7 @@ div::-webkit-scrollbar-thumb:window-inactive {
 		</div>
 	</div>
 </div>
-<div class="container-fluid container-banner">
+<!-- <div class="container-fluid container-banner">
 	<img class="banner" src="../images/principal_5000x1500.jpg">
 	<div id="banner-texto">
 		<div id="texto1">
@@ -171,8 +184,17 @@ div::-webkit-scrollbar-thumb:window-inactive {
 			<h2>México</h2>
 		</div>
 	</div>
-</div> <!-- Aqui termina el div.container-fluid que contiene el banner -->
-
+</div> --> 
+<!-- Aqui termina el div.container-fluid que contiene el banner -->
+<div class="row container-banner">
+  <div class="thumbnail text-center">
+      <img src="../images/principal_5000x1100.jpg" alt="" class="img-responsive">
+      <div class="caption">
+          <p id="texto1">CATÁLOGO COLECTIVO</p>
+          <p id="texto2">del patrimonio bibliográfico de México</p>
+      </div>
+  </div>
+</div>
 <!-- find-include-buttons-ccpbm Juan Manuel Rodríguez -->
 <div id="myMenu" class="container">
   <div class="col-sm-12">

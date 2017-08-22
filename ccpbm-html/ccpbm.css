@@ -67,7 +67,7 @@
   }
 
   /***** Banner *****/
-   .container-banner {
+   /*.container-banner {
     position: relative;
     display: block;
     margin-top: 110px;
@@ -102,7 +102,37 @@
     color: #fff;
     margin-top: -10px;
     font-size: 30px;
-   } 
+   }*/
+   .container-banner {
+    position: relative;
+    margin-top: 110px;
+   }
+   .container-banner .thumbnail {
+    position: relative;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .container-banner .caption {
+    position: absolute;
+    top: 35%;
+    left: 0;
+    width: 100%;
+  }
+
+  .container-banner .caption p {
+    font-size: 30px;
+    color: #fff;
+  }
+
+  #texto1 {
+    font-family: RalewayBold;
+  }
+
+  #texto2 {
+    font-family: RalewayMedium;
+    margin-top: -20px;
+  } 
 
   /* Agregando estilos para el menu de navegacion */
   

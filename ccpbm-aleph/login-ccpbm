@@ -120,7 +120,7 @@ div::-webkit-scrollbar-thumb:window-inactive {
 </div>
 
 <div class="container-fluid container-banner">
-  <img class="banner" src="&icon_path/ccpbm-images/principal_5000x1500.jpg">
+  <img class="banner" src="&icon_path/ccpbm-images/principal_5000x1100.jpg">
   <div id="banner-texto">
     <div id="texto1">
       <h1>CATÁLOGO COLECTIVO</h1>
@@ -161,7 +161,7 @@ div::-webkit-scrollbar-thumb:window-inactive {
 </div>
 <!-- Aquí termina el div.container que contiene el ménu --> 
 <!-- Aquí empieza el contenido de la vista -->
-<div class="container" style="clear: both; margin-top: 20px;">
+<div class="container" style="margin-top: 20px;">
 <form method=post 
       name="form1"
       action="&server_f">
