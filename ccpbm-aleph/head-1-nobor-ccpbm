@@ -35,18 +35,15 @@
 </div>
 
 <!-- BANNER -->
-<div class="container-fluid container-banner">
-	<!--<include>head-1	-->
-	<!-- Lo siguiente debe ir el archivo head-1-->
-	<img width="100%" src="&icon_path/ccpbm-images/5000x750.jpg" id="image_header"/>
-	<div id="banner-texto">
-		<div id="texto1">
-			CATÁLOGO COLECTIVO
-		</div>
-		<div id="texto2">
-			del patrimonio bibliográfico de México
-		</div>
-	</div>
-</div> <!-- Aquí termina el div.container-fluid que contiene el banner -->
+<div class="row container-banner">
+  <div class="thumbnail text-center">
+    <img src="&icon_path/ccpbm-images/5000x600.jpg" alt="" class="img-responsive">
+    <div class="caption">
+      <p id="texto1">CATÁLOGO COLECTIVO</p>
+      <p id="texto2">del patrimonio bibliográfico de México</p>
+    </div>
+  </div>
+</div>
+ <!-- Aquí termina el div que contiene el banner -->
 <include>find-include-buttons
 	

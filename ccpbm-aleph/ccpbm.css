@@ -69,40 +69,22 @@
   /***** Banner *****/
    .container-banner {
     position: relative;
-    display: block;
     margin-top: 110px;
-    width: 100%;
-    padding: 0;
+    margin-right: 0;
+    margin-left: 0;
    }
-
-   .container-banner img {
-    width: 100%;
-    display: block;
-    height: auto;
-    max-width: 100%;
+   .container-banner .thumbnail {
     position: relative;
-   }
-
-   #banner-texto {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .container-banner .caption {
     position: absolute;
-    color: #fff;
-    bottom: 10%;
-    left: 33%;
-    z-index: 10;
-   }
-
-   #texto1 {
-    font-family: RalewayBold;
-    color: #fff;
-    font-size: 50px;
-   }
-
-   #texto2, #texto3 {
-    font-family: RalewayMedium;
-    color: #fff;
-    margin-top: -10px;
-    font-size: 30px;
-   }  
+    top: 35%;
+    left: 0;
+    width: 100%;
+  }  
 
   /* Agregando estilos para el menu de navegacion */
   
@@ -131,8 +113,91 @@
     }
   }
 
+  /*--------------------------------------- Desktop ---------------------------------------*/
+
+  @media screen and (min-width: 1200px){
+    .container-banner .caption p {
+      font-size: 30px;
+      color: #fff;
+    }
+
+    #texto1 {
+      font-family: RalewayBold;
+      font-size: 30px;
+    }
+
+    #texto2 {
+      font-family: RalewayMedium;
+      margin-top: -20px;
+      font-family: 25px;
+    }
+  }
+
+  /*--------------------------------------- Laptop ---------------------------------------*/
+  @media screen and (min-width: 992px) and (max-width: 1199px){
+    .container-banner .caption p {
+      font-size: 30px;
+      color: #fff;
+    }
+
+    #texto1 {
+      font-family: RalewayBold;
+      font-size: 25px;
+    }
+
+    #texto2 {
+      font-family: RalewayMedium;
+      margin-top: -20px;
+      font-size: 20px;
+    }
+  }
+
+  /*--------------------------------------- Tablet ---------------------------------------*/
+
+  @media screen and (min-width: 768px) and (max-width: 991px){
+    .container-banner .caption p {
+      font-size: 30px;
+      color: #fff;
+    }
+
+    #texto1 {
+      font-family: RalewayBold;
+      font-size: 20px;
+    }
+
+    #texto2 {
+      font-family: RalewayMedium;
+      margin-top: -20px;
+      font-size: 15px;
+    }
+  }
+
+  /*--------------------------------------- Phone ---------------------------------------*/  
+
+  @media screen and (max-width: 767px){
+    .container-banner .caption p {
+      font-size: 30px;
+      color: #fff;
+    }
+
+    #texto1 {
+      font-family: RalewayBold;
+      font-size: 15px;
+    }
+
+    #texto2 {
+      font-family: RalewayMedium;
+      margin-top: -20px;
+      font-size: 10px;
+    }
+  }  
+
   #myMenu {
     top: 20px;
+    padding: 0;
+  }
+
+  #myMenu .container-menu{
     padding: 0;
   }
 
