@@ -1,0 +1,20 @@
+<!-- filename: short-empty-bndm Yuri -->
+<html>
+<head>    
+  <title>&f-base - Conjunto vacío</title>
+<include>meta-tags
+</head>
+
+<body topmargin="0">
+<include>head-1
+<br>
+<div class="title">
+  &f-base - Lista de registros encontrados 
+</div>
+<br>
+<div style="margin-left:55; margin-right:55;"  class=text3>
+El conjunto de registros no existe, por lo tanto no puede desplegarse. Verifique si ha hecho una búsqueda, de lo contrario ejecute una consulta para ver los resultados.
+</div>
+<include>copyrights
+</body>
+</html>

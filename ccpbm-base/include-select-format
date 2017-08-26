@@ -1,0 +1,10 @@
+   <select name=format>
+          <option value=037 $$FXX-S"037">Tarjeta catalográfica</option>
+          <option value=001 $$FXX-S"001">Etiquetas MARC</option>
+          <option value=002 $$FXX-S"002">Nombre de etiquetas</option>
+          <option value=039 $$FXX-S"039">Colunmas listado</option>  
+          <!-- option value=997 $$FXX-S"997">Formato MARC</option>
+          <option value=998 $$FXX-S"998">ALEPH Sequential</option>
+          <option value=999 $$FXX-S"999">Formato OPAC</option>
+          <option value=777 $$FXX-S"777">Formato de salida ISI ResearchSoft Tagged </option -->
+   </select>

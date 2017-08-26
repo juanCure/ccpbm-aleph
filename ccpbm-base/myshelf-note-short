@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- filename: myshelf-note-short-->
+<html>
+<head>
+  <title>&f-base - Nota para Mi estante electrónico</title>
+<include>meta-tags
+</head>
+
+<body topmargin="0"
+      onload="window.document.form1.NOTE.focus()">
+<include>head-1
+
+<form method=get 
+      name=form1
+      action="&server_f">
+
+<input type=hidden name=func value="myshelf-add-selected">
+<input type=hidden name=doc_library value=$0100>
+<input type=hidden name=doc_number value=$0200>
+<input type=hidden name=format value=$0400>
+<input type=hidden name=source_func value=$0500>
+
+<p class=text3>
+  Ingrese una nota para el registro en Mi estante electrónico
+</p>
+<table width=60%>
+ <tr>
+  <td class=td2>
+      <input size=30 maxlength=200
+             name=NOTE value="$0300">
+  </td>
+ </tr>
+ <tr>
+  <td class=td2>
+      <br> <input type="image" 
+                  alt="Ir" 
+                  src="&icon_path/f-go.gif" 
+                  border=0>             
+  </td>
+ </tr>
+</table>
+</form>
+<include>copyrights
+</body>
+</html>

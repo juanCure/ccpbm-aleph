@@ -1,0 +1,7 @@
+<!-- filename: include-select-format-ccpbm Juan Manuel Rodríguez -->
+<select class="form-control" name="format">
+	<option value="037">Tarjeta catalográfica</option>
+	<option value="001">Etiquetas MARC</option>
+	<option value="002">Nombres de etiquetas</option>
+	<option value="039">Columnas listado</option>
+</select>
