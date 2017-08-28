@@ -1,0 +1,18 @@
+<!-- filename: myshelf-short-body -->
+
+ <tr>
+  <td class=td1 id=centered width="1%" valign=top>$0100<br>$0200</td>
+  <td class=td1 id=centered width="1%" valign=top>$0300</td>
+  <td class=td1 id=centered width="1%" valign=top>$0400</td>
+  <td class=td1 id=centered width="1%" valign=top>$1600</td>
+  <td class=td1 $2300 width="15%" valign=top>$0500</td>
+  <td class=td1 $2500 width="21%" valign=top>$0600</td>
+  <td class=td1 $2500 width="7%" valign=top>$0700</td>
+  <td class=td1 $2600 width="5%" valign=top>$0800</td>
+  <td class=td1 $2700 width="15%" valign=top>$0900</td>
+  <td class=td1 $2800 width="7%" valign=top>$1000</td>
+  <td class=td1 $2900 width="15%" valign=top>$1100</td>
+  <td class=td1 $3100 width="10%" valign=top>$1200</td>
+  <td class=td1 $3200 width="10%" valign=top>$1300</td>
+  <td class=td1 $3200 width="10%" valign=top>$1400</td>
+ </tr>

@@ -1,0 +1,71 @@
+<!-- filename: myshelf-short-head-ccpbm Juan Manuel Rodriguez -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>&f-base - Mi bibliografía - lista corta</title>
+<include>meta-tags
+<include>myshelf-short-select-include
+<include>include-window
+</head>
+<body>
+<include>head-1
+<!-- CONTENT -->
+
+<div class="container" style="margin-top: 20px;">
+	<div class="jumbotron">
+		<div class="row">
+			<div class="col-sm-4">
+				<h3>Registros en mi bibliografía</h3>
+			</div>	
+			<div class="col-sm-8 container-tools">
+				<div class="tools-item">
+					<div><label>Seleccionar</label></div>
+					<div class="tools-item">
+						<input type="checkbox" name="chbox">
+						<label>Todo</label>
+					</div>
+					<div class="tools-item">
+						<input type="checkbox" name="chbox">
+						<label>Nada</label>
+					</div>
+				</div>
+				<div class="tools-item">
+					<div>
+						<a href="&server_f?func=myshelf-mail-0&folder_key=$2000&folder=$1500">
+						<span class="icon-Guardar-y-enviar fs1"></span>
+						<label>Guardar/enviar por correo</label></a>
+					</div>
+				</div>
+				<div class="tools-item">
+					<div>
+					<a href="&server_f?func=myshelf-delete&folder_key=$2000&folder=$1500">
+						<span class="icon-Borrar fs1"></span>
+						<label>Borrar de la bibliografía</label>
+					</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row" id="registros_bibliografia">
+			<div class="col-sm-12 table-responsive">
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th></th>
+							<th>No.</th>
+							<th>Autor</th>
+							<th>Titulo</th>
+							<th>Año</th>
+							<th>Pie imprenta</th>
+							<th>No. Sistema</th>
+							<th>Biblioteca</th>
+							<th>Clasificación</th>
+						</tr>
+					</thead>
+					<tbody>
+
+<include>copyrights
+</div> <!-- Aquí termina el div.container que contiene el contenido de la página -->
+</body>
+</html>

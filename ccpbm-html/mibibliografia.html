@@ -1,0 +1,212 @@
+<!-- filename: myshelf-short-head-ccpbm Juan Manuel Rodríguez -->
+<!DOCTYPE html>
+<html>
+<head>
+<!--<include>meta-tags-->
+<!-- Esto debe ir el archivo meta-tags -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Bootstrap -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="./ccpbm.css">
+<link rel="stylesheet" href="./icomoon.css">
+
+<title>Mi bibliografía</title>
+<style type="text/css">
+	.tools-item{
+		width: 30%;
+		display: inline-block;
+	}
+
+	.container-tools{
+		background-color: white;
+		border-radius: 5px;
+	}
+
+	#registros_bibliografia{
+		margin-top: 20px;
+	}
+</style>
+
+
+</head>
+
+<body>
+<!-- HEADER-->
+<div id="header" class="container-fluid">
+	<div id="container-logos">
+		<div id="logo-unam">
+			<a href="#">
+				<img src="../images/logo-unam.jpg" alt="UNAM">
+			</a>
+		</div>
+		<div id="texto-unam">
+			<a href="#">
+				<img src="../images/texto-unam.jpg" alt="UNAM">
+			</a>
+		</div>
+		<div id="logo-biblioteca">
+			<a href="#">
+				<img src="../images/logo-biblioteca.png" alt="BIBLIOTECA">
+			</a>
+		</div>
+	</div>
+	<div id="container-buscador">
+		<div id="buscador">
+			<form class="navbar-form navbar-right" method=get name=form2 action="&server_f" role="form">
+		    <input type="hidden" name="func" value="find-b">
+		    <div class="input-group">
+		      <span style="background-color: #00349a;" class="input-group-addon"><span style="color: #fff;" class="glyphicon glyphicon-stats"></span></span>
+		      <input type="text" name="request" class="form-control" placeholder="Palabras">
+		      <span class="input-group-btn">
+		        <button type="submit" class="btn btn-default"><span style="color: #00349a;" class="glyphicon glyphicon-search"></span></button>
+		      </span>
+		    </div>
+		  </form>
+		</div>
+	</div>
+</div>
+
+<!-- BANNER -->
+<div class="row container-banner">
+  <div class="thumbnail text-center">
+    <img src="../images/5000x600.jpg" alt="" class="img-responsive">
+    <div class="caption">
+      <p id="texto1">CATÁLOGO COLECTIVO</p>
+      <p id="texto2">del patrimonio bibliográfico de México</p>
+    </div>
+  </div>
+</div>
+
+<!-- MENU -->
+<div id="myMenu" class="container">
+  <div class="col-sm-12 container-menu">
+    <nav class="navbar navbar-default" id="myNav">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <div class="col-sm-12" id="myMenuPrincipal">
+          <ul class="nav navbar-nav">
+            <li><a href="&server_f?func=login&local_base=CCPBM">INICIO</a></li>
+            <li><a class="with-border-left" href="&server_f?func=find-a&local_base=CCPBM">PROYECTO</a></li>
+            <li><a class="with-border-left" href="#">COLECCIONES</a></li>
+            <li><a class="with-border-left" href="&server_f?func=find-b-0&local_base=CCPBM">BÚSQUEDAS</a></li>
+            <li><a class="with-border-left" href="#">CONTACTO</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+<!-- Aquí termina el div.container que contiene el menú -->	
+
+<!-- CONTENT -->
+
+<div class="container" style="margin-top: 20px;">
+		<div class="jumbotron">
+			<div class="row">
+				<div class="col-sm-4">
+					<h3>Registros en mi bibliografía</h3>
+				</div>	
+				<div class="col-sm-8 container-tools">
+					<div class="tools-item">
+						<div><label>Seleccionar</label></div>
+						<div class="tools-item">
+							<input type="checkbox" name="chbox">
+							<label>Todo</label>
+						</div>
+						<div class="tools-item">
+							<input type="checkbox" name="chbox">
+							<label>Nada</label>
+						</div>
+					</div>
+					<div class="tools-item">
+						<div>
+							<span class="icon-Guardar-y-enviar fs1"></span>
+							<label>Guardar/enviar por correo</label>
+						</div>
+					</div>
+					<div class="tools-item">
+						<div><span class="icon-Borrar fs1"></span></div>
+						<label>Borrar de la bibliografía</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="row" id="registros_bibliografia">
+				<div class="col-sm-12 table-responsive">
+					<table class="table table-striped">
+						<thead>
+							<tr>
+								<th></th>
+								<th>No.</th>
+								<th>Autor</th>
+								<th>Titulo</th>
+								<th>Año</th>
+								<th>Pie imprenta</th>
+								<th>No. Sistema</th>
+								<th>Biblioteca</th>
+								<th>Clasificación</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><input type="checkbox" value=""></td>
+								<td>1</td>
+								<td>Carlos Fuentes</td>
+								<td>[Observaciones a la iniciativa de arancel propuesto por la junta de los C. C. Guillermo Prieto, F</td>
+								<td>1999</td>
+								<td>[México, s.a.]</td>
+								<td>000533715</td>
+								<td>Obras Antiguas, Raras (BN-FR)( 1/ 0)</td>
+								<td>RLAF LAF 44</td>
+							</tr>
+
+							<tr>
+								<td><input type="checkbox" value=""></td>
+								<td>2</td>
+								<td>Carlos Fuentes</td>
+								<td>[Observaciones a la iniciativa de arancel propuesto por la junta de los C. C. Guillermo Prieto, F</td>
+								<td>1999</td>
+								<td>[México, s.a.]</td>
+								<td>000533715</td>
+								<td>Obras Antiguas, Raras (BN-FR)( 1/ 0)</td>
+								<td>RLAF LAF 44</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			
+		</div>
+
+	<!--<include>copyrights-->
+	<!-- Esto debe ir el archivo copyrights --> 
+	<div class="row text-center">
+	  <div class="col-sm-12">
+	  	<p>Hecho en México, Universidad Nacional Autónoma de Néxico (UNAM), todos los derechos reservados, 2015. Esta pÃƒÂ¡gina puede ser reproducida con fines no lucrativos, siempre y cuando no se mutile, se cite la fuente completa y su dirección electrónica. De otra forma, se requiere permiso previo y por escrito de la institución. &copy;</p>
+	  	<p><a style="color:#4a6159; font-size:80%; text-decoration:none;" href="http://catalogo.iib.unam.mx:80/F/S582U84X638TKNCC4L4M17PSDND53T8H6V1QKXM8PRJTU1JAKY-46937?func=find-f&local_base=BNDM" class="blue">Créditos</a></p>
+	  </div>
+	</div>
+</div> <!-- Aquí termina el div.container que contiene el contenido de la página -->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="./js/my_functions.js"></script>
+<script type="text/javascript">
+	// Llamando a la funciÃƒÂ³n changing_header definida en el archivo my_functions.js
+	changing_header();
+</script>
+</body>
+</html>

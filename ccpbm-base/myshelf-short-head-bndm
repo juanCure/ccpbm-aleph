@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- filename: myshelf-short-head-bndm Yuri -->
+<html>
+<head>
+  <title>&f-base - Mi estante electrónico - Lista corta </title>
+<include>meta-tags
+<include>myshelf-short-select-include
+<include>include-window
+<script language="JavaScript">
+<!--
+function setFolder(val)
+{
+  var loc = "&server_f?func=myshelf-short&folder=" + val;
+  window.location.href=loc;
+}
+// -->
+</script>
+</head>
+<body topmargin="0">
+<include>head-1
+<br>
+<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+ <tr height="35" >

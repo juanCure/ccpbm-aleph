@@ -429,7 +429,7 @@
 
   /* Agregando estilos para la vista Búsquedas Anteriores */
 
-  #busquedas_anteriores table thead{
+  #busquedas_anteriores table thead, #registros_bibliografia table thead{
     background-color: #a88e5f;
     color: #fff;
   }

@@ -1,0 +1,54 @@
+<!-- filename: myshelf-short-head-2-no-course-bndm Yuri -->
+  </td>
+  <td class="topbar" align="center" width="50%">
+         <a class="blue" style="color:#4a6159; font-size:100%; text-decoration:none;"  href="&server_f?func=myshelf-mail-0&folder_key=$2000&folder=$1500"
+               title="Enviar por correo electrónico" 
+	       class="blue">
+               &nbsp;Enviar por correo electrónico -  Mi bibliografía</a>
+  </td>
+  <td class="topbar" align="center" width="50%">
+     <a class="blue" style="color:#4a6159; font-size:100%; text-decoration:none;" href="&server_f?func=myshelf-delete&folder_key=$2000&folder=$1500"
+               title="Borrar" 
+	       class="blue">
+               Borrar -  Mi bibliografía</a>
+  </td>
+</tr>
+</table>
+<table align=right  width=20%  border="0" cellspacing="0" cellpadding="0" >
+<tr class="topbar" height="30">
+  <td  align="center">
+      <a class="blue" style="color:#4a6159; font-size:70%; text-decoration:none;" href="&server_f?func=myshelf-check-all&folder_key=$2000&folder=$1500"
+         title="Seleccionar todo" class="blue">
+         Seleccionar todo</a>
+  </td>
+  <td  align="center">
+      <a class="blue" style="color:#4a6159; font-size:70%; text-decoration:none;" href="&server_f?func=myshelf-uncheck-all&folder_key=$2000&folder=$1500"
+         title="Borrar selección" class="blue">
+         Borrar selección</a>
+  </td>
+ </tr>
+</table>
+<br>
+<div class=title>
+  Registros en Mi bibliografía &nbsp;&nbsp;
+<img src="&icon_path/f-check-mark-1.gif"
+border=0 alt="Submitted a hold request">
+&nbsp;&nbsp; seleccionar </div>
+<br>
+<table border=0 cellpadding=3 cellspacing=2 width=100% style="margin-left:55; margin-right:55;"  >
+ <tr class=tr1>
+  <th class="text3">$0100</th>
+  <th class="text3">$0200</th>
+  <th class="text3">$0300</th>
+  <th class="text3">$1600</th>
+  <th class="text3">$0400</th>
+  <th class="text3">$0500</th>
+  <td class="text3">$0600</td>
+  <th class="text3">$0700</th>
+  <th class="text3">$0800</th>
+  <th class="text3">$0900</th>
+  <th class="text3">$1000</th>
+  <th class="text3" nowrap>$1100</th>
+  <th class="text3" nowrap>$1200</th>
+  <th class="text3">$1300</th>
+ </tr> 
