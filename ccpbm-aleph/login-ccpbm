@@ -121,7 +121,7 @@ div::-webkit-scrollbar-thumb:window-inactive {
 
 <div class="row container-banner">
   <div class="thumbnail text-center">
-      <img src="&icon_path/ccpbm-images/principal_5000x1100.jpg" alt="" class="img-responsive">
+      <img src="&icon_path/ccpbm-images/banner_login.jpg" alt="" class="img-responsive">
       <div class="caption">
           <p id="texto1">CATÁLOGO COLECTIVO</p>
           <p id="texto2">del patrimonio bibliográfico de México</p>

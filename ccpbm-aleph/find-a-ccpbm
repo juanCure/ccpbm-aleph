@@ -14,22 +14,67 @@
     /*background-attachment: fixed;*/
     background-position: left bottom; 
   }
+
+  #myMenu {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin-right: 0;
+    padding-right: 0;
+  }
 </style>
 </head>
 
 <body>
-<!-- <include>head-1 -->
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-sm-12">
-      <div class="header">
-        <img width="100%" src="&icon_path/interior-desktop.jpg">
-      </div>
-    </div>  
+<!-- HEADER -->
+<div id="header" class="container-fluid">
+  <div id="container-logos">
+    <div id="logo-unam">
+      <a href="http://www.unam.mx">
+        <img src="&icon_path/ccpbm-images/logo-unam.jpg" alt="UNAM">
+      </a>
+    </div>
+    <div id="texto-unam">
+      <a href="http://www.unam.mx">
+        <img src="&icon_path/ccpbm-images/texto-unam.jpg" alt="UNAM">
+      </a>
+    </div>
+    <div id="logo-biblioteca">
+      <a href="http://www.bnm.unam.mx">
+        <img src="&icon_path/ccpbm-images/logo-biblioteca.png" alt="BIBLIOTECA">
+      </a>
+    </div>
   </div>
-</div> <!-- Aqui termina el div.container-fluid que contiene el banner -->
-<div class="container">
-  <div id="myMenu" class="col-sm-12">
+  <div id="container-buscador">
+    <div id="buscador">
+      <form class="navbar-form navbar-right" method=get name=form2 action="&server_f" role="form">
+        <input type="hidden" name="func" value="find-b">
+        <div class="input-group">
+          <span style="background-color: #00349a;" class="input-group-addon"><span style="color: #fff;" class="glyphicon glyphicon-stats"></span></span>
+          <input type="text" name="request" class="form-control" placeholder="Palabras">
+          <span class="input-group-btn">
+            <button type="submit" class="btn btn-default"><span style="color: #00349a;" class="glyphicon glyphicon-search"></span></button>
+          </span>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- BANNER -->
+<div class="row container-banner">
+  <div class="thumbnail text-center">
+    <img src="&icon_path/ccpbm-images/banner_find_a.jpg" alt="" class="img-responsive">
+    <div class="caption">
+      <p id="texto1">CATÁLOGO COLECTIVO</p>
+      <p id="texto2">del patrimonio bibliográfico de México</p>
+    </div>
+  </div>
+</div>
+ <!-- Aquí termina el div que contiene el banner -->
+<!-- MENU -->
+<div id="myMenu" class="container">
+  <div class="col-sm-12 container-menu">
     <nav class="navbar navbar-default" id="myNav">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -39,7 +84,7 @@
         </button>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
-        <div class="col-sm-9" id="myMenuPrincipal">
+        <div class="col-sm-12" id="myMenuPrincipal">
           <ul class="nav navbar-nav">
             <li><a href="&server_f?func=login&local_base=CCPBM">INICIO</a></li>
             <li><a class="with-border-left" href="&server_f?func=find-a&local_base=CCPBM">PROYECTO</a></li>
@@ -48,23 +93,12 @@
             <li><a class="with-border-left" href="&server_f?func=find-c&local_base=CCPBM">CONTACTO</a></li>
           </ul>
         </div>
-        <div class="col-sm-3" id="myNavbarForm">
-          <form class="navbar-form navbar-right" method=get name=form2 action="&server_f" role="form">
-            <input type="hidden" name="func" value="find-b">
-            <div class="input-group input-group-lg">
-              <span style="background-color: #b8a27c;" class="input-group-addon"><span style="color: #fff;" class="glyphicon glyphicon-stats"></span></span>
-              <input type="text" name="request" class="form-control" placeholder="Palabras">
-              <span class="input-group-btn">
-                <button type="submit" class="btn btn-default"><span style="color: #b8a27c;" class="glyphicon glyphicon-search"></span></button>
-              </span>
-            </div>
-          </form>
-        </div>
       </div>
     </nav>
   </div>
-</div><!-- Aquí termina el div.container que contiene el menú -->
-<!-- Este es el contenido del archivo find-a-ccpbm -->
+</div>
+<!-- Aquí termina el div.container que contiene el MENÚ -->
+<!-- CONTENT -->
 <div class="background">
   <div class="my-container-fluid">
     <div class="container with-background-image">

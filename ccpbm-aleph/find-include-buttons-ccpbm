@@ -26,6 +26,7 @@
             <li><a class="with-border-left" href="&server_f?func=scan-list&local_base=CCPBM">Indices</a></li>
             <li><a class="with-border-left" href="&server_f?func=history&local_base=CCPBM">Búsquedas Anteriores</a></li>
             <li><a class="with-border-left" href="&server_f?func=short&local_base=CCPBM">Lista de resultados</a></li>
+            <li><a class="with-border-left" href="&server_f?func=myshelf-short&local_base=CCPBM">Mi bibliografia</a></li>
           </ul>
         </div>
       </div>
