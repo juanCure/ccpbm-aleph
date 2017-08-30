@@ -1,0 +1,58 @@
+<!-- filename: myshelf-short-head-2-no-course-ccpbm Juan Manuel Rodriguez -->
+<div class="myjumbotron">
+<div class="row">
+	<div class="col-sm-4">
+		<h3>Registros en mi bibliografía</h3>
+	</div>	
+	<div class="col-sm-8 container-tools">
+		<div class="tools-item">
+			<div><label>Seleccionar</label></div>
+			<div class="tools-item">
+				<input type="checkbox" name="chbox">
+				<label>Todo</label>
+			</div>
+			<div class="tools-item">
+				<input type="checkbox" name="chbox">
+				<label>Nada</label>
+			</div>
+		</div>
+		<div class="tools-item">
+			<div>
+				<a href="&server_f?func=myshelf-mail-0&folder_key=$2000&folder=$1500">
+				<span class="icon-Guardar-y-enviar fs1"></span>
+				<label>Guardar/enviar por correo</label></a>
+			</div>
+		</div>
+		<div class="tools-item">
+			<div>
+			<a href="&server_f?func=myshelf-delete&folder_key=$2000&folder=$1500">
+				<span class="icon-Borrar fs1"></span>
+				<label>Borrar de la bibliografía</label>
+			</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row" id="registros_bibliografia">
+	<div class="col-sm-12 table-responsive">
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>$0100</th>
+				  <th>$0200</th>
+				  <th>$0300</th>
+				  <th>$1600</th>
+				  <th>$0400</th>
+				  <th>$0500</th>
+				  <th>$0600</th>
+				  <th>$0700</th>
+				  <th>$0800</th>
+				  <th>$0900</th>
+				  <th>$1000</th>
+				  <th>$1100</th>
+				  <th>$1200</th>
+				  <th>$1300</th>
+				</tr>
+			</thead>
+			<tbody>
