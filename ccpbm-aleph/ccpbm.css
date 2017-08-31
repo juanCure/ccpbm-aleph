@@ -195,6 +195,11 @@
   #myMenu {
     top: 20px;
     padding: 0;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    /*margin-right: 0;
+    padding-right: 0;*/
   }
 
   #myMenu .container-menu{
@@ -391,18 +396,14 @@
 
   #opciones_ordenamiento {
     padding: 0;
-    margin-top: 20px;
+    margin-bottom: 20px;
   }
-
-  /*#opciones_ordenamiento li {
-    display: inline;
-  }*/
 
   .fs0 {
   font-size: 16px;
-}
+  }
   .fs1 {
-    font-size: 62px;
+    font-size: 42px;
   }
 
   .wit-bottom-border{
@@ -416,20 +417,26 @@
   /* Clase para fijar en el top las herramientas que se pueden aplciar a los registros*/
   .fixed-tools {
     position: fixed;
-    top: 0px;
+    top: 110px;
     right: 0px;
     z-index: 1000;
     margin: 0;
     border-radius: 15px;
   }
 
-  .list-inline li a {
+  #opciones_ordenamiento a {
     text-decoration: underline;
     color: #7c592e;
+    font-size: 16px;
   }
 
   .coloured-text {
     color: #7c592e;
+  }
+
+  .mycolumn_without_padding {
+    padding-left: 0;
+    padding-right: 0;
   }
 
   /* Agregando estilos para la vista Búsquedas Anteriores */

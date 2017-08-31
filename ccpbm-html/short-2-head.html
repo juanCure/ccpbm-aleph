@@ -11,30 +11,34 @@
 <!-- Bootstrap -->
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="./ccpbm.css">
 <link rel="stylesheet" href="./icomoon.css">
-<!-- <link rel="stylesheet" href="./demo.css"> -->
+<link rel="stylesheet" href="./ccpbm.css">
+
 
 <title>Biblioteca digital - Resultados de la búsqueda</title>
 <style type="text/css">
+
+	/*#myMenu {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin-right: 0;
+    padding-right: 0;
+  }
 
 	#opciones_ordenamiento {
 		padding: 0;
 		margin-top: 20px;
 	}
 
-	/*#opciones_ordenamiento li {
-		display: inline;
-	}*/
-
 	.fs0 {
   font-size: 16px;
 }
 	.fs1 {
-	  font-size: 62px;
+	  font-size: 42px;
 	}
 
-	.wit-bottom-border{
+	.with-bottom-border{
 		border-bottom: 2px solid red;
 	}
 
@@ -42,10 +46,10 @@
 		padding: 0;
 	}
 
-	/* Clase para fijar en el top las herramientas que se pueden aplciar a los registros*/
+	 Clase para fijar en el top las herramientas que se pueden aplciar a los registros
 	.fixed-tools {
 		position: fixed;
-		top: 0px;
+		top: 110px;
 		right: 0px;
 		z-index: 1000;
 		margin: 0;
@@ -60,77 +64,106 @@
 	.coloured-text {
 		color: #7c592e;
 	}
+
+	.mycolumn_without_padding {
+		padding-left: 0;
+		padding-right: 0;
+	}*/
 </style>
 </head>
 
 <body>
-<div class="container-fluid">
-	<!--<include>head-1	-->
-	<!-- Lo siguiente debe ir el archivo head-1-->
-	<div class="row">
-		<div class="col-sm-12">
-			<div class="header">
-				<img width="100%" src="../images/interior-desktop.jpg" usemap="#Map" id="image_header"/>
-			</div>
+<!-- HEADER -->
+<div id="header" class="container-fluid">
+	<div id="container-logos">
+		<div id="logo-unam">
+			<a href="#">
+				<img src="../images/logo-unam.jpg" alt="UNAM">
+			</a>
+		</div>
+		<div id="texto-unam">
+			<a href="#">
+				<img src="../images/texto-unam.jpg" alt="UNAM">
+			</a>
+		</div>
+		<div id="logo-biblioteca">
+			<a href="#">
+				<img src="../images/logo-biblioteca.png" alt="BIBLIOTECA">
+			</a>
 		</div>
 	</div>
-</div> <!-- AquÃ­ termina el div.container-fluid que contiene el banner -->
-
-<!-- Lo siguiente debe ir el archivo find-include-buttons -->
-<div class="container">
-	<div id="myMenu" class="col-sm-12">
-	  <nav class="navbar navbar-default" id="myNav">
-	    <div class="navbar-header">
-	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>                        
-	      </button>
-	    </div>
-	    <div class="collapse navbar-collapse" id="myNavbar">
-	    <div class="col-sm-9" id="myMenuPrincipal">
-	    	<ul class="nav navbar-nav">
-	        <li><a href="#">INICIO</a></li>
-	        <li><a class="with-border-left" href="#">PROYECTO</a></li>
-	        <li><a class="with-border-left" href="#">COLECCIONES</a></li>
-	        <li><a class="with-border-left" href="#">BÚSQUEDAS</a></li>
-	        <li><a class="with-border-left" href="#">CONTACTO</a></li>
-	      </ul>
-	    </div>
-	    <div class="col-sm-3" id="myNavbarForm">
-	    	<form class="navbar-form navbar-right">
-	      	<div class="input-group input-group-lg">
-	      		<span style="background-color: #b8a27c;" class="input-group-addon"><span style="color: #fff;" class="glyphicon glyphicon-stats"></span></span>
-	      		<input type="text" name="request" class="form-control" placeholder="Búsqueda">
-	      		<span class="input-group-btn">
-		          <button type="submit" class="btn btn-default"><span style="color: #b8a27c;" class="glyphicon glyphicon-search"></span></button>
-		      	</span>
-	      	</div>
-	      </form>
-	    </div>
-	    <div class="col-sm-9" id="mySubmenu" style="top: 10px">
-	    	<ul class="nav navbar-nav">
-					<li><a href="#">Búsqueda básica</a></li>
-					<li><a class="with-border-left" href="#">Búsqueda avanzada</a></li>
-					<li><a class="with-border-left" href="#">Indices</a></li>
-					<li><a class="with-border-left" href="#">Búsquedas Anteriores</a></li>
-					<li><a class="with-border-left" href="#">Lista de resultados</a></li>
-				</ul>
-	    </div>
-	    </div>
-	  </nav>
+	<div id="container-buscador">
+		<div id="buscador">
+			<form class="navbar-form navbar-right" method=get name=form2 action="&server_f" role="form">
+		    <input type="hidden" name="func" value="find-b">
+		    <div class="input-group">
+		      <span style="background-color: #00349a;" class="input-group-addon"><span style="color: #fff;" class="glyphicon glyphicon-stats"></span></span>
+		      <input type="text" name="request" class="form-control" placeholder="Palabras">
+		      <span class="input-group-btn">
+		        <button type="submit" class="btn btn-default"><span style="color: #00349a;" class="glyphicon glyphicon-search"></span></button>
+		      </span>
+		    </div>
+		  </form>
+		</div>
 	</div>
-</div><!-- Aquí termina el div.container que contiene el menú -->	
+</div>
 
+<!-- BANNER -->
+<div class="row container-banner">
+  <div class="thumbnail text-center">
+    <img src="../images/banner_find_b_0.jpg" alt="" class="img-responsive">
+    <div class="caption">
+      <p id="texto1">CATÁLOGO COLECTIVO</p>
+      <p id="texto2">del patrimonio bibliográfico de México</p>
+    </div>
+  </div>
+</div>
+
+<div id="myMenu" class="container">
+  <div class="col-sm-12 container-menu">
+    <nav class="navbar navbar-default" id="myNav">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <div class="col-sm-12" id="myMenuPrincipal">
+          <ul class="nav navbar-nav">
+            <li><a href="&server_f?func=login&local_base=CCPBM">INICIO</a></li>
+            <li><a class="with-border-left" href="&server_f?func=find-a&local_base=CCPBM">PROYECTO</a></li>
+            <li><a class="with-border-left" href="&server_f?func=find-r&local_base=CCPBM">COLECCIONES</a></li>
+            <li><a class="with-border-left" href="&server_f?func=find-b-0&local_base=CCPBM">BÚSQUEDAS</a></li>
+            <li><a class="with-border-left" href="&server_f?func=find-c&local_base=CCPBM">CONTACTO</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-12" id="mySubmenu" style="top: 10px">
+          <ul class="nav navbar-nav">
+            <li><a href="&server_f?func=find-b-0&local_base=CCPBM">Búsqueda básica</a></li>
+            <li><a class="with-border-left" href="&server_f?func=find-d-0&local_base=CCPBM">Búsqueda avanzada</a></li>
+            <li><a class="with-border-left" href="&server_f?func=scan-list&local_base=CCPBM">Indices</a></li>
+            <li><a class="with-border-left" href="&server_f?func=history&local_base=CCPBM">Búsquedas Anteriores</a></li>
+            <li><a class="with-border-left" href="&server_f?func=short&local_base=CCPBM">Lista de resultados</a></li>
+            <li><a class="with-border-left" href="&server_f?func=myshelf-short&local_base=CCPBM">Mi bibliografia</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div><!-- Aquí termina el div.container que contiene el menú --> 		
+
+<!-- CONTENT -->
 <!-- Lo siguiente debe ir en el archivo short-include-buttons -->
-<div class="container" style="margin-top: 20px;">
+<div class="container" style="clear: both; margin-top: 20px;">
 <div class="row">
-	<div class="col-sm-5 myjumbotron">
+	<div class="col-sm-12 myjumbotron">
 		<h3>Lista de resultados</h3>		
 	</div>
 </div>
 
-<div class="row wit-bottom-border">
+<div class="row with-bottom-border">
 	<div class="col-sm-4">
 		<div class="row">
 			<div class="col-sm-2">
@@ -141,7 +174,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="col-sm-8 col-sm-push-1">
+	<div class="col-sm-7 col-sm-push-1">
 		<div class="row">
 			<div class="col-sm-2">
 				<span class="icon-ordenar-por fs1"></span>
@@ -159,81 +192,42 @@
 	</div>
 </div>
 
-<div class="row" style="margin-top: 20px;">
-	<div class="col-sm-3">
-		<h4 class="thick coloured-text">Registros 1 - 20 de 313621</h4>
-	</div>
-	<div class="col-sm-3 col-sm-push-3">
-		<form class="form-horizontal">
-			<div class="form-group">
-				<div class="col-sm-6 col-xs-3">
-					<input type="hidden" name="func" value="short-jump">
-					<input type="button" class="btn mybtn" value="Ir a número" name="action_short_jump" >		
-				</div>
-				<div class="col-sm-6 col-xs-3">
-					<input type="text" name="jump">	
-				</div>
-			</div>
-		</form>	
-	</div>
-	<div class="col-sm-3 col-sm-push-3">
-		<ul class="pager mypager">
-			<li><a class="my_previous" href="#">&larr; Anterior</a></li>
-			<li><a class="my_next" href="#">Siguiente &rarr;</a></li>
-		</ul>
-	</div>
-</div>
-
 <div class="row myjumbotron" id="tools_wrapper">
-	<div class="col-sm-8 col-sm-push-4">
-		<div class="row">
-			<div class="col-sm-3">
-				<div class="row">
-					<div class="col-sm-6">
-						<span class="coloured-text">Seleccionar</span>
-					</div>
-					<div class="col-sm-6">
-						<div class="row">
-							<div class="col-sm-12">
-								<input type="checkbox" name="chbox">
-							</div>
-							<div class="col-sm-12">
-								<span class="coloured-text">Todo</span>
-							</div>
-						</div>
-					</div>
+	<div class="col-sm-12">
+		<div class="col-sm-3 mycolumn_without_padding">
+			<h4 class="thick coloured-text">Registros 1 - 20 de 313621</h4>	
+		</div>
+		<div class="col-sm-1 col-xs-6 mycolumn_without_padding">
+			<span class="coloured-text">Seleccionar</span>
+			<a href="#">Todo</a>
+			<a href="#">Nada</a>
+		</div>
+		<div  class="col-sm-1 col-xs-6 mycolumn_without_padding">
+			<span class="icon-Guardar-y-enviar fs1"></span>
+			<span><a class="coloured-text" href="&server_f?func=short-mail-0" title="Guardar/Enviar a correo">Guardar/enviar por correo</a></span>
+		</div>
+		<div class="col-sm-1 col-xs-6 mycolumn_without_padding">
+			<span class="icon-ver fs1"></span>
+      <span class="coloured-text">Ver</span>
+		</div>
+		<div class="col-sm-1 col-xs-6 mycolumn_without_padding">
+			<span class="icon-Agregar-a-mi-biblioteca fs1"></span>
+			<span class="coloured-text">Agregar a mi bibliografía</span>
+		</div>
+		<div class="col-sm-2 col-xs-6">
+			<form class="form-inline">
+				<div class="form-group">
+					<input type="hidden" name="func" value="short-jump">
+					<input type="submit" class="btn mybtn col-sm-4" value="Ir a #" name="action_short_jump" >
+					<input type="text" name="jump" class="col-sm-6" style="margin-left: 10px;">
 				</div>
-			</div>
-			<div class="col-sm-3">
-				<div class="row">
-					<div class="col-sm-6">
-						<span class="icon-Guardar-y-enviar fs1"></span>
-					</div>
-					<div class="col-sm-6">
-						<span><a class="coloured-text" href="&server_f?func=short-mail-0" title="Guardar/Enviar a correo">Guardar/enviar por correo</a></span>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-3">
-				<div class="row">
-					<div class="col-sm-6">
-						<span class="icon-ver fs1"></span>
-					</div>
-					<div class="col-sm-6" style="margin-top: 40px;">
-						<span class="coloured-text">Ver</span>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-3">
-				<div class="row">
-					<div class="col-sm-6">
-						<span class="icon-Agregar-a-mi-biblioteca fs1"></span>
-					</div>
-					<div class="col-sm-6">
-						<span class="coloured-text">Agregar a mi bibliografía</span>
-					</div>
-				</div>
-			</div>
+			</form>	
+		</div>
+		<div class="col-sm-3 col-xs-6">
+			<ul class="pager mypager">
+				<li><a class="my_previous" href="#">&larr; Anterior</a></li>
+				<li><a class="my_next" href="#">Siguiente &rarr;</a></li>
+			</ul>
 		</div>
 	</div>
 </div>
