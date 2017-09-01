@@ -6,30 +6,28 @@
 	</div>	
 	<div class="col-sm-8 container-tools">
 		<div class="tools-item">
-			<div><label>Seleccionar</label></div>
-			<div class="tools-item">
-				<input type="checkbox" name="chbox">
-				<label>Todo</label>
-			</div>
-			<div class="tools-item">
-				<input type="checkbox" name="chbox">
-				<label>Nada</label>
-			</div>
+			<div><label>Seleccionar:</label></div>
+			<a class="coloured-text" href="&server_f?func=myshelf-check-all&folder_key=$2000&folder=$1500">Todo</a>
+			<a class="coloured-text" href="&server_f?func=myshelf-uncheck-all&folder_key=$2000&folder=$1500">Nada</a>
 		</div>
 		<div class="tools-item">
-			<div>
-				<a href="&server_f?func=myshelf-mail-0&folder_key=$2000&folder=$1500">
+			<span class="icon-Guardar-y-enviar fs1"></span>
+			<span><a class="coloured-text" href="&server_f?func=short-mail-0&folder_key=$2000&folder=$1500" title="Guardar/Enviar a correo">Guardar/enviar por correo</a></span>
+			<!-- <div>
+				<a class="coloured-text" href="&server_f?func=myshelf-mail-0&folder_key=$2000&folder=$1500">
 				<span class="icon-Guardar-y-enviar fs1"></span>
 				<label>Guardar/enviar por correo</label></a>
-			</div>
+			</div> -->
 		</div>
 		<div class="tools-item">
-			<div>
-			<a href="&server_f?func=myshelf-delete&folder_key=$2000&folder=$1500">
+			<span class="icon-Borrar fs1"></span>
+			<span><a class="coloured-text" href="&server_f?func=myshelf-delete&folder_key=$2000&folder=$1500">Borrar de mi bibliografía</a></span>
+			<!-- <div>
+			<a class="coloured-text" href="&server_f?func=myshelf-delete&folder_key=$2000&folder=$1500">
 				<span class="icon-Borrar fs1"></span>
 				<label>Borrar de la bibliografía</label>
 			</a>
-			</div>
+			</div> -->
 		</div>
 	</div>
 </div>

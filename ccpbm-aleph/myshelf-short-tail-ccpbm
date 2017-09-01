@@ -4,6 +4,8 @@
 </div>
 </div>
 </div>
+<img name="dummy_image" src="&icon_path/empty.gif" alt="" width=0 height=0 borde
+r=0>
 <include>copyrights
 </div> <!-- Aquí termina el div.container que contiene el contenido de la página -->
 </body>
