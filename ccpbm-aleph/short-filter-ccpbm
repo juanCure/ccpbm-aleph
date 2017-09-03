@@ -1,0 +1,60 @@
+<!-- filename: short-filter-ccpbm Juan Manuel Rodríguez Martínez -->
+<html>
+<head>
+     <title>&f-base - Filtro </title>
+<include>meta-tags
+</head>
+
+<body> 
+<include>head-1
+<!-- CONTENT -->
+<div class="container" style="margin-top: 20px;">
+	<div class="myjumbotron">
+		<div class="row">
+			<div class="col-sm-offset-1 col-sm-10">
+				<div class="row">
+					<div class="col-sm-12">
+						<h3>Filtrar un conjunto de registros - &nbsp;$0200</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<p>Seleccione un filtro para ver un subconjunto de la Lista de registros.</p>
+						<p>Defina sus propias opciones de filtro seleccionando alguna de las siguientes:</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<ul>
+							<li><a href="&server_f?func=short-filter-r&func_option=on">Rango de información</a></li>
+							<li><a href="&server_f?func=short-filter-s&func_option=on">Texto</a></li>
+							<li><a href="&server_f?func=short-filter-y&func_option=on">Año</a></li>
+							<li><a href="&server_f?func=short-filter-a&func_option=on">Creados después de la fecha</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<p>Seleccione alguna de las opciones de filtro predefinidas:</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<ul>
+							<li><a href="&server_f?func=short-filter-a&start_date=&DATE-D007">Nuevos registros</a></li>
+							<li><a href="&server_f?func=short-filter-3&start_date=&DATE-D007">Registros disponibles</a></li>
+							<li><a href="&server_f?func=short-filter-y&from_date=1980&to_date=2000">1980-2000</a></li>
+							<li><a href="&server_f?func=find-c&CCL_TERM=wrd=ab?%20and%20SET=$0100">Refinar ab</a></li>
+							<li><a href="&server_f?func=find-c&CCL_TERM=SET=$0100%20and%20wln=heb">Filtrar heb</a></li>
+							<li><a href="&server_f?func=find-c&CCL_TERM=wyr=1980->2000%20and%20SET=$0100">wyr-1980 a 2000</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>			
+	</div>
+	<br>
+<include>copyrights
+</div> <!-- Aquí termina CONTENT -->
+</body>
+</html>

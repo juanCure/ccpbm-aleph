@@ -1,0 +1,56 @@
+<!-- filename: short-filter-y-ccpbm Juan Manuel Rodríguez -->
+<html>
+<head>
+  <title>&f-base - Filtrar registros por año</title>
+<include>meta-tags
+</head>
+
+<body> 
+<include>head-1
+<!-- CONTENT -->
+<div class="container" style="margin-top: 10px;">
+	<form method="get" name="form1" action="&server_f" role="form">
+		<input type="hidden" name="func" value="short-filter-y">
+		<div class="myjumbotron">
+			<div class="row">
+				<div class="col-sm-offset-1 col-sm-10">
+					<div class="row">
+						<div class="col-sm-12">
+							<h3>Filtrar registros por año - &nbsp;$0200</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<p>Ejemplo: <em>1992</em> &nbsp; a <em>1995</em> incluirá todos los registros de la lista <br>publicados desde 1992 hasta finales de 1995.</p>
+						</div>
+					</div>
+					<div class="form-horizontal">
+					  <div class="form-group">
+					    <label for="text_from" class="col-sm-2 control-label">Registros publicados desde:</label>
+					    <div class="col-sm-3">
+					      <input type="text" class="form-control" id="text_from" name="start_date" value="$0500">
+					    </div>
+					  </div>
+					  <div class="form-group">
+					    <label for="text_to" class="col-sm-2 control-label">hasta:</label>
+					    <div class="col-sm-3">
+					      <input type="text" class="form-control" id="text_to" name="end_date" value="$0600">
+					    </div>
+					  </div>
+					  <div class="form-group">
+					  	<div class="col-sm-offset-2 col-sm-10">
+					  		<input type="submit" class="btn mybtn" name="aceptar" value="Aceptar">
+					  		<a href="javascript:document.form1.reset();" class="btn mybtn">Borrar</a>
+					  	</div>
+					  </div>
+					</div>
+				</div>	
+			</div>			
+		</div>
+		
+	</form>
+	<br>
+<include>copyrights
+</div>
+</body>
+</html>

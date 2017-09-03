@@ -1,0 +1,65 @@
+<!-- filename: short-filter -->
+<html>
+<head>
+     <title>&f-base - Filtro </title>
+<include>meta-tags
+</head>
+
+<body topmargin="0"> 
+<include>head-1
+
+<p  align=left class=title>
+  Filtrar un conjunto de registros - &nbsp;$0200
+</p>
+
+<p class=text3>
+Seleccione un filtro para ver un subconjunto de la Lista de registros.
+</p>
+
+<div class=indent1>
+<span class=tr1 id=bold>
+Defina sus propias opciones de filtro seleccionando alguna de las siguientes:
+</span>
+<div class=text9>
+<ul>
+<li><a href="&server_f?func=short-filter-r&func_option=on">
+Rango de información</a>
+
+<li><a href="&server_f?func=short-filter-s&func_option=on">
+Texto</a>
+
+<li><a href="&server_f?func=short-filter-y&func_option=on">
+Año</a>
+
+<li><a href="&server_f?func=short-filter-a&func_option=on">
+Creados después de la fecha</a>
+</ul>
+</div>
+<span class=tr1 id=bold>
+Seleccione alguna de las opciones de filtro predefinidas:
+</span>
+<div class=text9>
+<ul>
+<li><a href="&server_f?func=short-filter-a&start_date=&DATE-D007">
+Nuevos registros</a>
+
+<li><a href="&server_f?func=short-filter-3&start_date=&DATE-D007">
+Registros disponibles</a>
+
+<li><a href="&server_f?func=short-filter-y&from_date=1980&to_date=2000">
+1980-2000</a>
+
+<li><a href="&server_f?func=find-c&CCL_TERM=wrd=ab?%20and%20SET=$0100">
+Refinar ab</a>
+
+<li><a href="&server_f?func=find-c&CCL_TERM=SET=$0100%20and%20wln=heb"> 
+Filtrar - heb</a>
+<li><a href="&server_f?func=find-c&CCL_TERM=wyr=1980->2000%20and%20SET=$0100">
+wyr=1980 to 2000</a>
+
+</ul>
+</div>
+<include>copyrights
+</body>
+</html>
+

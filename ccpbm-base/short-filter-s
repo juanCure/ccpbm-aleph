@@ -1,0 +1,61 @@
+<!-- filename: short-filter-s-->
+<html>
+<head>
+     <title>&f-base -Filtro de texto</title>
+<include>meta-tags
+</head>
+<body topmargin="0" 
+      onload="window.document.form1.text_from.focus()">
+<include>head-1
+<p class=title>
+  Filtro de texto - &nbsp;$0200 
+</p>
+<p class=text9>
+Ejemplo: campo Título y <em>poemas</em> en el texto
+mostrará todos los registros de la lista que tienen la palabra <em>poemas</em>
+en el título.
+</p>
+
+<form name=form1 
+      method=GET 
+      action="&server_f">
+<input type=hidden name=func value="short-filter-s">
+<table border=0 cellspacing=2 width="70%">
+ <tr>
+  <td class=td2>Campo:</td>
+  <td class=td2>
+      <select name=field_code>
+         <option value=245 $$0500-S"245">Título</option>
+         <option value=100 $$0500-S"100">Autor</option>
+         <option value=110 $$0500-S"110">Autor corporativo</option>
+         <option value=111 $$0500-S"111">Conferencia</option>
+         <option value=260 $$0500-S"260">Pie de imprenta</option>
+         <option value=008 $$0500-S"008">Idioma (008)</option>
+         <option value=041 $$0500-S"041">Idioma (041)</option>
+      </select>
+  </td>
+</tr>
+<tr>
+  <td class=td2> Escriba el texto: </td>
+  <td class=td2>
+     <input size=30 name="text_from" value="$0600">
+  </td>
+</tr>
+<tr>
+  <td class=td2 id=bold colspan=2>
+     <input type="image" 
+            src="&icon_path/f-go.gif" 
+            border=0    
+            value="Go">
+
+      <a href="javascript:document.form1.reset();">
+        <img src="&icon_path/f-clear0.gif" 
+             border=0 
+             alt="Limpiar"></a>
+  </td>
+ </tr>
+</table>
+</form>
+<include>copyrights
+</body>
+</html>

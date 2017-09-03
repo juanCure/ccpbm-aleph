@@ -1,0 +1,43 @@
+<!-- filename: short-filter-a -->
+<html>
+<head>
+    <title>&f-base - Filtrar registros por fecha </title>
+<include>meta-tags
+</head>
+<body topmargin="0"
+      onload="window.document.form1.start_date.focus()">
+<include>head-1
+<p class="title">
+  Filtrar registros por fecha - &nbsp;$0200 
+</p>
+
+<form name=form1 
+      method=GET 
+      action="&server_f">
+<input type=hidden name=func value="short-filter-a">
+<table border=0 cellspacing=2 width=70%>
+<tr>
+  <td class=td2 id=bold>Registros creados desde:</td>
+  <td class=td2>
+      <input size=8 name="start_date" value="$0500"> (aaaammdd)
+  </td>
+</tr>
+<tr>
+  <td class=td2 id=bold colspan=2>   
+    <br>
+    <input type="image" 
+           src="&icon_path/f-go.gif" 
+           border=0 
+           alt="Enviar"
+           value="Go">
+    <a href="javascript:document.form1.reset();">
+      <img src="&icon_path/f-clear0.gif" 
+              border=0 
+              alt="Limpiar"></a>
+  </td>
+ </tr>
+</table> 
+</form>
+<include>copyrights
+</body>
+</html>

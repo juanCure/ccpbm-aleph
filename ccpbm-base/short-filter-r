@@ -1,0 +1,64 @@
+<!-- filename: short-filter-r -->
+<html>
+<head>
+  <title>&f-base - Filtrar por rango </title>
+<include>meta-tags
+</head>
+
+<body topmargin="0" 
+      onload="window.document.form1.text_from.focus()">
+<include>head-1
+<p class="title">
+  Filtro por rango - &nbsp;$0200 
+</p>
+<p class=text3>Ejemplo: campo Título, desde <em>a</em> hasta
+<em>b</em>, mostrará todos los títulos de la lista que comienzan con  <em>a</em> 
+hasta los títulos que comienzan con <em>b</em>.
+</p>
+
+<form name=form1 
+      method=GET 
+      action="&server_f">
+<input type=hidden name=func value="short-filter-r"> 
+<p>
+<table cellspacing=2 width="70%">
+ <tr>
+  <td class=td2>Campo:</td>
+  <td class=td2>
+     <select name=field_code>
+         <option value="245__a" $$0500-S"245__a">Título</option>
+         <option value="100" $$0500-S"100">Autor </option>
+         <option value="110" $$0500-S"110">Autor corporativo</option>
+         <option value="111" $$0500-S"111">Conferencia</option>
+         <option value="260__a" $$0500-S"260__a">Lugar de publicación</option>
+         <option value="260__b" $$0500-S"260__b">Editor</option>
+      </select>
+  </td>
+ </tr>
+ <tr>
+  <td class=td2>Texto desde:</td>
+  <td class=td2>
+     <input size=20 name="text_from" value=$0600>
+  </td>
+ </tr>
+ <tr>
+  <td class=td2>hasta:</td>
+  <td class=td2>
+     <input size=20 name="text_to" value=$0700>
+  </td>
+ </tr>
+</table>
+<br>
+<input type="image" 
+       src="&icon_path/f-go.gif" 
+       border=0 
+       value=" Go ">
+<a href="javascript:document.form1.reset();">
+  <img src="&icon_path/f-clear0.gif" 
+       border=0 
+       alt="Limpiar"></a>
+</form>
+<include>copyrights
+</body>
+</html>
+
