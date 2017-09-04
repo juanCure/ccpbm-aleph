@@ -242,10 +242,7 @@
     -moz-border-radius: 12px; 
     
     /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
-    border-radius: 12px; 
-    -webkit-box-shadow: 5px 5px 5px grey;
-    -moz-box-shadow: 5px 5px 5px grey;
-    box-shadow: 5px 5px 5px grey;
+    border-radius: 12px;
   }
 
   h3 {

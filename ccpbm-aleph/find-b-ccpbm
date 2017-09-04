@@ -10,7 +10,7 @@
 <div class="container" style="margin-top: 20px;">
 <form method=get name=form1 action="&server_f" role="form">
 	<input type="hidden" name="func" value="find-b">
-	<div class="jumbotron" style="margin-top: 20px;">
+	<div class="jumbotron">
 		<div class="row">
 			<div class="col-sm-12">
 				<h3> Búsqueda básica</h3>
@@ -36,10 +36,8 @@
 				<a href="#" class="btn mybtn pull-right">Borrar</a>
 				<input type="submit" alt="Go" class="btn mybtn pull-right" value="Aceptar">
 			</div>
-		</div>	
-	</div>
+		</div>
 
-	<div class="jumbotron">
 		<div class="row">
 			<div class="col-sm-12">
 				<h3>Delimitadores de búsqueda</h3>
@@ -67,8 +65,10 @@
 				</div>
 			</div>
 <include>find-include-filter
-		</div>
+		</div>	
 	</div>
+	<!-- <div class="jumbotron">
+	</div> -->
 </form>
 
 <include>copyrights
