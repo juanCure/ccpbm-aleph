@@ -197,6 +197,33 @@
       margin-top: -20px;
       font-size: 10px;
     }
+
+    /***** HEADER *****/
+    #logo-unam, #logo-unam img {
+      width: auto;
+      height: 65px;
+    }
+
+    #texto-unam, #texto-unam img{
+      width: 0 !important;
+      height: 0 !important;
+      overflow: hidden !important;
+    }
+
+    #logo-biblioteca, #logo-biblioteca img{
+      width: auto;
+      height: 65px;
+      margin-left: 0;
+    }
+
+    #container-buscador {
+      margin-top: 0;
+    }
+
+    /***** Banner *****/
+    .container-banner {
+      margin-top: 97px;
+    }
   }  
 
   #myMenu {
