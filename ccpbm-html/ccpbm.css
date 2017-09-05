@@ -471,3 +471,10 @@
     background-color: #a88e5f;
     color: #fff;
   }
+
+  /* FOOTER */
+  
+  .with-border-top {
+    border-top: 2px solid orange;
+    padding-top: 20px;
+  }
