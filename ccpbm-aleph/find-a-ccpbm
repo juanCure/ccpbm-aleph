@@ -101,10 +101,10 @@
 <!-- CONTENT -->
 <div class="background">
   <div class="my-container-fluid">
-    <div class="container with-background-image">
+    <div class="container">
       <div class="row">
-        <div class="col-sm-12">
-          <h1>PROYECTO</h1>
+        <div class="col-sm-offset-1 col-sm-10">
+          <h3>PROYECTO</h3>
           <p>El Catálogo Colectivo del Patrimonio Bibliográfico Mexicano es un proyecto cultural de alcance nacional orientado a la descripción y localización de los fondos antiguos pertenecientes a diversas bibliotecas, públicas y privadas, en México, que por su antigüedad, rareza y valor, constituyen el patrimonio bibliográfico</p>
 
           <p> El objetivo es reunir en una base de datos los registros de los impresos antiguos desde la invención de la imprenta hasta 1821 en su primera fase, mediante la descripción y ubicación física de las obras en las bibliotecas o fondos de la República Mexicana. </p>
@@ -114,12 +114,9 @@
           <p>El Catálogo Colectivo del Patrimonio Bibliográfico mexicano es un proyecto en proceso de desarrollo.</p>
         </div>
       </div>
-    </div>
-  </div>
-</div>
-
-<div class="container">
 <include>copyrights
+</div>
+</div>
 </div> 
 </body>
 </html>
