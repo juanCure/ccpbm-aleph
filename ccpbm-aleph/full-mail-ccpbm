@@ -1,4 +1,4 @@
-<!-- filename: short-mail-ccpbm Juan Manuel Rodríguez -->
+<!-- filename: full-mail-ccpbm Juan Manuel Rodríguez -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -125,35 +125,26 @@
 
 <div class="container" style="margin-top: 10px;">
 	<form method=get name=form1 action="&server_f" onSubmit="return my_replace_1();" role="form">
-		<input type="hidden" name="func" value="short-mail">
+		<!-- <input type="hidden" name="func" value="short-mail"> -->
+		<input type="hidden" name="func" value="full-mail">
+		<input type="hidden" name="doc_library" value="$0100">
+		<input type="hidden" name="doc_number" value="$0200">
+		<input type="hidden" name="option_type" value="$0800">
 		<div class="myjumbotron">
 			<div class="row">
 				<div class="col-sm-offset-1 col-sm-10">
 					<div class="row">
-						<div class="col-sm-6">
-							<h3>Guardar los registros seleccionados</h3>
+						<div class="col-sm-12">
+							<h3>Guardar o Enviar por correo un documento</h3>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-sm-12">
 							<p>Usted cuenta con 2 opciones:</p>
-							<p>Enviar por correo electrónico los registros seleccionados (ingresando una dirección electrónica), o </p>
-							<p>Guardar los registros seleccionados en su PC (dejando vacío el campo e-mail)</p> 
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm-12">
-							<h4>Regitros</h4>
-							<label class="radio-inline">
-								<input type="radio" name="records" value="ALL">Todos
-							</label>
-							<label class="radio-inline">
-								<input type="radio" name="records" value="SELECT">Selección
-							</label>
-							<label class="radio-inline">
-								<input type="radio" name="records" value="RANGE">Rango
-								<input type="text" name="range" value="$0900">
-							</label>
+							<ul>
+								<li>Enviar por correo electrónico los registros seleccionados (ingresando una dirección electrónica), o </li>
+								<li>Guardar el registro en su PC (dejando vacío el campo E-mail)</li>
+							</ul>
 						</div>
 					</div>
 					<div class="row">

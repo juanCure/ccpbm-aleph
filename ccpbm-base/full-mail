@@ -1,0 +1,176 @@
+<!-- filename: full-mail -->
+<html>
+<head>
+  <title>&f-base - Guardar o Enviar por correo</title>
+<include>replace-textarea-js
+<include>include-replace-hash
+<include>replace-textarea-hash-js
+<include>meta-tags
+</head>
+
+<body topmargin="0"
+      onload="window.document.form1.format.focus()">
+<include>head-1
+
+<div class=title>
+ Guardar o Enviar por correo un documento
+</div>
+ 
+<form method=GET 
+      name=form1
+      action="&server_f"
+      onSubmit="return my_replace_1();">
+
+<input type=hidden name=func value=full-mail>
+<input type=hidden name=doc_library value=$0100>
+<input type=hidden name=doc_number value=$0200>
+<input type=hidden name=option_type value=$0800>
+<p class=text3 id=normal>
+  Usted tiene 2 opciones:
+<br> 
+ - Enviar el registro por correo electrónico (ingresando una dirección electronica), o
+<br> 
+ - Guardar el registro en su PC (dejando vacío el campo E-mail)
+<br> Los registros se entregarán en el formato de su elección.
+</p>
+
+<table width="100%" border=0 cellspacing=2 cellpadding=0>
+ <tr>
+  <td class=td2 colspan=8>
+    Formato de los registros
+  </td>
+ </tr>
+ <tr>
+  <td class=td2 id=small width=20% nowrap>
+      Seleccione un formato predefinido:
+  </td>
+  <td class=td2 id=small colspan=7>
+<include>include-select-format\FXX\0300\
+  </td>
+ </tr>
+  <tr>
+    <td class=td2 colspan=8>
+      O 
+    </td>
+  </tr>
+  <tr>
+    <td class=td2 id=small width=20% nowrap>
+      Cree su propio formato:
+    </td>
+    <td class=td2 id=small >
+      <input type="checkbox"
+             name="own_format"
+             value="1%23%23%23%23"
+             $1000-C"1%23%23%23%23">Autor 
+    </td>
+    <td class=td2 id=small >
+      <input type="checkbox"
+             name="own_format"
+             value="245%23%23"
+             $1000-C"245%23%23">Título 
+    </td>
+    <td class=td2 id=small >
+      <input type="checkbox"
+             name="own_format"
+             value="300"
+             $1000-C"300">Páginas
+    </td>
+    <td class=td2 id=small >
+      <input type="checkbox"
+             name="own_format"
+             value="50%23%23%23"
+             $1000-C"50%23%23%23">Notas
+    </td>
+    <td class=td2 id=small >
+      <input type="checkbox"
+             name="own_format"
+             value="6%23%23%23%23"
+             $1000-C"6%23%23%23%23">Materia 
+    </td>
+    <td class=td2 id=small >
+      <input type="checkbox"
+             name="own_format"
+             value="SYS"
+             $1000-C"SYS">Número de sistema
+    </td>
+    <td class=td2 id=small >
+      <input type="checkbox"
+             name="own_format"
+             value="260%23%23"
+             $1000-C"260%23%23">Pie de imprenta
+    </td>
+  </tr>
+</table>
+<hr>
+<table width="90%" border=0 cellspacing=2 cellpadding=0>
+  <tr>
+    <td class=td2 colspan=4>
+      Codificación:
+    </td>
+  </tr>
+  <tr>
+    <td class=td2 id=small >
+      <input type="radio"
+             name="encoding"
+             value="UTF_TO_WEB_MAIL_ASCI"
+             $$1100-C"UTF_TO_WEB_MAIL_ASCI">ASCII (recomendado/por omisión)
+    </td>
+    <td class=td2 id=small >
+      <input type="radio"
+             name="encoding"
+             value="NONE                "
+             $$1100-C"NONE                ">Unicode / UTF-8 (conjunto de caracteres no romanos)
+    </td>
+    <td class=td2 id=small >
+      <input type="radio"
+             name="encoding"
+             value="UTF_TO_WEB_MAIL     "
+             $$1100-C"UTF_TO_WEB_MAIL     ">ISO 8859-1 (conjunto de caracteres romanos)
+    </td>
+  </tr>
+</table>
+<hr>
+<table width="90%" border=0 cellspacing=2 cellpadding=0>
+ <tr>
+  <td class=td2 id=bold>Asunto</td>
+  <td class=td2> 
+     <input size=30 name="SUBJECT" value=$0400>
+  </td>
+ </tr>
+ <tr>
+  <td class=td2 id=bold>Nombre</td>
+  <td class=td2> 
+     <input size=30 name="NAME" value=$0500>
+  </td>
+ </tr>
+ <tr>
+  <td class=td2 id=bold>E-mail</td>
+  <td class=td2> 
+     <input size=30 name="EMAIL" value=$0600>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top class=td2 id=bold>Texto
+     <br>(optional)
+  </td>
+  <td class=td2>
+     <textarea name="text" cols=30 rows=4>$0700</textarea>
+  </td>
+ </tr>
+ <tr>
+  <td class=td2 colspan=2>
+      <br>
+      <input type=image src="&icon_path/f-go.gif" 
+       border=0 
+       alt="Enviar formato"></a>
+       <a href="javascript:document.form1.reset();">
+       <img src="&icon_path/f-clear0.gif" 
+       border=0 
+       alt="Limpiar formato"></a>
+  </td>
+ </tr>
+</table>
+</form>
+<include>copyrights
+</body>
+</html>
