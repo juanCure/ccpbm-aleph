@@ -11,6 +11,7 @@
 <!-- Bootstrap -->
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="./icomoon.css">
 <link rel="stylesheet" href="./ccpbm.css">
 
@@ -157,79 +158,62 @@
 <!-- CONTENT -->
 <!-- Lo siguiente debe ir en el archivo short-include-buttons -->
 <div class="container" style="clear: both; margin-top: 20px;">
-<div class="row">
-	<div class="col-sm-12 myjumbotron">
-		<h3>Lista de resultados</h3>		
-	</div>
-</div>
-
-<div class="row with-bottom-border">
-	<div class="col-sm-4">
-		<div class="row">
-			<div class="col-sm-2">
-				<span class="icon-Filtrar fs1"></span>
-			</div>
-			<div class="col-sm-10 coloured-text" style="margin-top: 30px;">
-				<span>Filtrar resultados</span>
-			</div>
+<div class="myjumbotron">
+	<div class="row">
+		<div class="col-sm-12">
+			<h3>Lista de resultados</h3>		
 		</div>
 	</div>
-	<div class="col-sm-7 col-sm-push-1">
-		<div class="row">
-			<div class="col-sm-2">
-				<span class="icon-ordenar-por fs1"></span>
-			</div>
-			<div class="col-sm-10">
-				<ul id="opciones_ordenamiento" class="list-inline">
-					<li><a href="#">Autor y Año</a></li>
-					<li class="with-border-left"><a href="#">Año y Autor</a></li>
-					<li class="with-border-left"><a href="#">Autor y Título</a></li>
-					<li class="with-border-left"><a href="#">Título y Año</a></li>
-					<li class="with-border-left"><a href="#">Año y Título</a></li>
-				</ul>
-			</div>
+	<div class="row">
+		<div class="col-sm-3">
+			<p><span class="icon-Filtrar fs1"></span><a href="#" class="coloured-text">Filtar resultados</a></p>
 		</div>
-	</div>
-</div>
-
-<div class="row myjumbotron" id="tools_wrapper">
-	<div class="col-sm-12">
-		<div class="col-sm-3 mycolumn_without_padding">
-			<h4 class="thick coloured-text">Registros 1 - 20 de 313621</h4>	
-		</div>
-		<div class="col-sm-1 col-xs-6 mycolumn_without_padding">
-			<span class="coloured-text">Seleccionar</span>
-			<a href="#">Todo</a>
-			<a href="#">Nada</a>
-		</div>
-		<div  class="col-sm-1 col-xs-6 mycolumn_without_padding">
-			<span class="icon-Guardar-y-enviar fs1"></span>
-			<span><a class="coloured-text" href="&server_f?func=short-mail-0" title="Guardar/Enviar a correo">Guardar/enviar por correo</a></span>
-		</div>
-		<div class="col-sm-1 col-xs-6 mycolumn_without_padding">
-			<span class="icon-ver fs1"></span>
-      <span class="coloured-text">Ver</span>
-		</div>
-		<div class="col-sm-1 col-xs-6 mycolumn_without_padding">
-			<span class="icon-Agregar-a-mi-biblioteca fs1"></span>
-			<span class="coloured-text">Agregar a mi bibliografía</span>
-		</div>
-		<div class="col-sm-2 col-xs-6">
-			<form class="form-inline">
-				<div class="form-group">
-					<input type="hidden" name="func" value="short-jump">
-					<input type="submit" class="btn mybtn col-sm-4" value="Ir a #" name="action_short_jump" >
-					<input type="text" name="jump" class="col-sm-6" style="margin-left: 10px;">
-				</div>
-			</form>	
-		</div>
-		<div class="col-sm-3 col-xs-6">
-			<ul class="pager mypager">
-				<li><a class="my_previous" href="#">&larr; Anterior</a></li>
-				<li><a class="my_next" href="#">Siguiente &rarr;</a></li>
+		<div class="col-sm-8 col-sm-push-1">
+			<ul id="opciones_ordenamiento" class="list-inline">
+				<li><span class="icon-ordenar-por fs1"></span></li>
+				<li><a href="#">Autor y Año</a></li>
+				<li class="with-border-left"><a href="#">Año y Autor</a></li>
+				<li class="with-border-left"><a href="#">Autor y Título</a></li>
+				<li class="with-border-left"><a href="#">Título y Año</a></li>
+				<li class="with-border-left"><a href="#">Año y Título</a></li>
 			</ul>
 		</div>
 	</div>
+	<div class="row" id="tools_wrapper">
+		<div class="col-sm-12">
+			<h4 class="thick coloured-text">Registros 1 - 20 de 313621</h4>
+		</div>
+		<div class="col-sm-12">
+			<div class="col-sm-2">
+				<p>Seleccionar</p>
+				<p><span class="fa fa-check-square" style="font-size:24px;color:#7c592e"></span>&nbsp; <a class="coloured-text" href="#">Todo</a> <i class="fa fa-square-o" style="font-size:24px;color:#7c592e"></i>&nbsp;<a class="coloured-text" href="#">Nada</a></p>
+			</div>
+			<div class="col-sm-2">
+				<p><span class="icon-Guardar-y-enviar fs1"></span>&nbsp;<a class="coloured-text" href="#">Guardar/enviar <br>por correo</a></p>
+			</div>
+			<div class="col-sm-1">
+				<p><span class="icon-ver fs1"></span>&nbsp;<a class="coloured-text" href="#">Ver</a></p>	
+			</div>
+			<div class="col-sm-2">
+				<p><span class="icon-Agregar-a-mi-biblioteca fs1"></span>&nbsp;<a class="coloured-text" href="#">Agregar a mi <br>bibliografía</a></p>
+			</div>
+			<div class="col-sm-2">
+				<form class="form-inline">
+					<div class="form-group">
+						<input type="hidden" name="func" value="short-jump">
+						<input type="submit" class="btn mybtn col-sm-4" value="Ir a #" name="action_short_jump" >
+						<input type="text" name="jump" class="col-sm-6" style="margin-left: 10px;">
+					</div>
+				</form>
+			</div>
+			<div class="col-sm-3">
+				<ul class="pager mypager">
+					<li><a class="my_previous" href="#">&larr; Anterior</a></li>
+					<li><a class="my_next" href="#">Siguiente &rarr;</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>	
 </div>
 
 <div class="row hidden-xs">
@@ -265,6 +249,7 @@
 		<p>Hipócrates</p>
 	</div>
 </div>
+
 <div class="row" style="margin-top: 20px;">
 	<div class="col-sm-3">
 		<h3 class="visible-xs-block"># &nbsp; Seleccionar</h3>

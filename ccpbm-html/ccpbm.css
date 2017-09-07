@@ -221,6 +221,13 @@
     }
   }
 
+  /*---------------------------------------------------- PHONE ----------------------------------------------------------*/
+  /*****LANDSCAPE:H****/
+  /*@media screen and (min-width: 481px) and (max-width: 767px) {}*/
+
+  /*****PORTRAIT:V****/
+  /*@media screen and (max-width: 480px) {}*/
+
   #myMenu {
     top: 20px;
     padding: 0;
@@ -258,22 +265,20 @@
   }
   
 
+  
   /* Estilos para find-b-ccpbm */
 
   .container .jumbotron,
   .container-fluid .jumbotron{
     background-color: #e3e0d9;
     /* Safari 3-4, iOS 1-3.2, Android 1.6- */
-    -webkit-border-radius: 12px; 
+    -webkit-border-radius: 0; 
 
     /* Firefox 1-3.6 */
-    -moz-border-radius: 12px; 
+    -moz-border-radius: 0; 
     
     /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
-    border-radius: 12px; 
-    -webkit-box-shadow: 5px 5px 5px grey;
-    -moz-box-shadow: 5px 5px 5px grey;
-    box-shadow: 5px 5px 5px grey;
+    border-radius: 0;
   }
 
   h3 {
@@ -419,7 +424,7 @@
 
   #opciones_ordenamiento {
     padding: 0;
-    margin-top: 20px;
+    /*margin-top: 20px;*/
   }
 
   /*#opciones_ordenamiento li {
@@ -430,7 +435,7 @@
   font-size: 16px;
 }
   .fs1 {
-    font-size: 42px;
+    font-size: 32px;
   }
 
   .wit-bottom-border{
@@ -449,6 +454,7 @@
     z-index: 1000;
     margin: 0;
     border-radius: 15px;
+    background-color: #e3e0d9;
   }
 
   .list-inline li a {
