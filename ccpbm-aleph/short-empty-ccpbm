@@ -1,0 +1,26 @@
+<!-- filename: short-empty-ccpbm Juan Manuel Rodríguez -->
+<html>
+<head>    
+  <title>&f-base - Conjunto vacío</title>
+<include>meta-tags
+</head>
+
+<body>
+<include>head-1
+<!-- CONTENT -->
+<div class="container" style="clear: both; margin-top: 20px;">
+<div class="jumbotron">
+	<div class="row">
+		<div class="col-sm-12">
+			<h3>Lista de resultados</h3>		
+		</div>
+		<div class="col-sm-12">
+			<h4>El conjunto de registros no existe, por lo tanto no puede desplegarse. Verifique si ha hecho una búsqueda, de lo contrario ejecute una consulta para ver los resultados.</h4>
+		</div>
+	</div>
+</div>
+<include>copyrights
+</div>
+<!-- Aquí termina el div.container que contiene el contenido de la página -->
+</body>
+</html>
