@@ -1,0 +1,53 @@
+<!-- filename: history-cross -->
+
+<html>
+<head>
+<title>&f-base - Cruzar conjuntos</title>
+<include>meta-tags
+</head>
+
+<body topmargin="0"> 
+<include>head-1
+
+<form method=get 
+      name=form1
+      action="&server_f">
+
+<input type="hidden" name="func" value="history-cross">
+<input type="hidden" name=set_number value="$0100">
+
+<div class=title>Cruzar conjuntos</div>
+
+<p class=text3>
+Seleccione una operación lógica entre los conjuntos:
+</p>
+<p>
+<input type="radio" name="OP" $$0100-C"AND" value="AND">
+      <span class=text3> Y</span>
+<br>
+<input TYPE="radio" NAME="OP" $$0100-C"OR" VALUE="OR">
+      <span class=text3> OR</span>
+<br>
+<input TYPE="radio" NAME="OP" $$0100-C"NOT1" VALUE="NOT1">
+      <span class=text3> Primer conjunto, no segundo</span>
+<br>
+<input TYPE="radio" NAME="OP" $$0100-C"NOT2" VALUE="NOT2">
+      <span class=text3> Segundo conjunto, no primero</span>
+
+<br>
+</p>
+<input type="image"
+       src="&icon_path/f-go.gif"
+       border=0
+       alt="Cruzar"></a>
+
+<p>
+<table border=0
+       cellspacing=2
+       cellpadding=5>
+ <tr class=tr1>
+  <th class="text3" nowrap>No.</th>
+  <th class="text3">Solicitud de búsqueda</th>
+  <th class="text3" nowrap>No. de registros</th>
+ </tr>
+
