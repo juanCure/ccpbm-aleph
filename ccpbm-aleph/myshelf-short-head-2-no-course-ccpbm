@@ -1,33 +1,24 @@
 <!-- filename: myshelf-short-head-2-no-course-ccpbm Juan Manuel Rodriguez -->
-<div class="myjumbotron">
+<div class="jumbotron">
 <div class="row">
 	<div class="col-sm-4">
 		<h3>Registros en mi bibliografía</h3>
-	</div>	
-	<div class="col-sm-8 container-tools">
-		<div class="tools-item">
-			<div><label>Seleccionar:</label></div>
-			<a class="coloured-text" href="&server_f?func=myshelf-check-all&folder_key=$2000&folder=$1500">Todo</a>
-			<a class="coloured-text" href="&server_f?func=myshelf-uncheck-all&folder_key=$2000&folder=$1500">Nada</a>
+	</div>
+	<div class="col-sm-8">
+		<div class="col-sm-3 col-xs-4">
+			<div><label>Seleccionar</label></div>
+			<div class="col-sm-5 col-xs-6">
+				<a class="coloured-text" href="&server_f?func=myshelf-check-all&folder_key=$2000&folder=$1500"><span class="fa fa-check-square" style="font-size:24px;color:#7c592e"></span><span class="texto">Todo</span></a>
+			</div>
+			<div class="col-sm-5 col-xs-6">
+				<a class="coloured-text" href="&server_f?func=myshelf-uncheck-all&folder_key=$2000&folder=$1500"><i class="fa fa-square-o" style="font-size:24px;color:#7c592e"></i><span class="texto">Nada</span></a>
+			</div>
 		</div>
-		<div class="tools-item">
-			<span class="icon-Guardar-y-enviar fs1"></span>
-			<span><a class="coloured-text" href="&server_f?func=short-mail-0&folder_key=$2000&folder=$1500" title="Guardar/Enviar a correo">Guardar/enviar por correo</a></span>
-			<!-- <div>
-				<a class="coloured-text" href="&server_f?func=myshelf-mail-0&folder_key=$2000&folder=$1500">
-				<span class="icon-Guardar-y-enviar fs1"></span>
-				<label>Guardar/enviar por correo</label></a>
-			</div> -->
+		<div class="col-sm-3 col-xs-4">
+			<a class="coloured-text" href="&server_f?func=short-mail-0&folder_key=$2000&folder=$1500"><span class="icon-Guardar-y-enviar fs1"></span><span class="texto">Guardar/enviar por correo</span></a>
 		</div>
-		<div class="tools-item">
-			<span class="icon-Borrar fs1"></span>
-			<span><a class="coloured-text" href="&server_f?func=myshelf-delete&folder_key=$2000&folder=$1500">Borrar de mi bibliografía</a></span>
-			<!-- <div>
-			<a class="coloured-text" href="&server_f?func=myshelf-delete&folder_key=$2000&folder=$1500">
-				<span class="icon-Borrar fs1"></span>
-				<label>Borrar de la bibliografía</label>
-			</a>
-			</div> -->
+		<div class="col-sm-3 col-xs-4">
+			<a class="coloured-text" href="&server_f?func=myshelf-delete&folder_key=$2000&folder=$1500"><span class="icon-Borrar fs1"></span><span class="texto">Borrar de mí bibliografía</span></a>
 		</div>
 	</div>
 </div>

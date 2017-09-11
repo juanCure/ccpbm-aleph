@@ -6,21 +6,6 @@
 <include>meta-tags
 <include>myshelf-short-select-include
 <include>include-window
-<style type="text/css">
-	.tools-item{
-		width: 30%;
-		display: inline-block;
-	}
-
-	.container-tools{
-		background-color: white;
-		border-radius: 5px;
-	}
-
-	#registros_bibliografia{
-		margin-top: 20px;
-	}
-</style>
 <script language="JavaScript">
 function setFolder(val) {
   var loc = "&server_f?func=myshelf-short&folder=" + val;

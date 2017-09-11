@@ -11,27 +11,11 @@
 <!-- Bootstrap -->
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="./ccpbm.css">
 <link rel="stylesheet" href="./icomoon.css">
 
 <title>Mi bibliografía</title>
-<style type="text/css">
-	.tools-item{
-		width: 30%;
-		display: inline-block;
-	}
-
-	.container-tools{
-		background-color: white;
-		border-radius: 5px;
-	}
-
-	#registros_bibliografia{
-		margin-top: 20px;
-	}
-</style>
-
-
 </head>
 
 <body>
@@ -116,27 +100,21 @@
 			<div class="col-sm-4">
 				<h3>Registros en mi bibliografía</h3>
 			</div>	
-			<div class="col-sm-8 container-tools">
-				<div class="tools-item">
+			<div class="col-sm-8">
+				<div class="col-sm-3 col-xs-4">
 					<div><label>Seleccionar</label></div>
-					<div class="tools-item">
-						<input type="checkbox" name="chbox">
-						<label>Todo</label>
+					<div class="col-sm-5 col-xs-6">
+						<a class="coloured-text" href="#"><span class="fa fa-check-square" style="font-size:24px;color:#7c592e"></span><span class="texto">Todo</span></a>
 					</div>
-					<div class="tools-item">
-						<input type="checkbox" name="chbox">
-						<label>Nada</label>
+					<div class="col-sm-5 col-xs-6">
+						<a class="coloured-text" href="#"><i class="fa fa-square-o" style="font-size:24px;color:#7c592e"></i><span class="texto">Nada</span></a>
 					</div>
 				</div>
-				<div class="tools-item">
-					<div>
-						<span class="icon-Guardar-y-enviar fs1"></span>
-						<label>Guardar/enviar por correo</label>
-					</div>
+				<div class="col-sm-3 col-xs-4">
+					<a class="coloured-text" href="#"><span class="icon-Guardar-y-enviar fs1"></span><span class="texto">Guardar/enviar por correo</span></a>
 				</div>
-				<div class="tools-item">
-					<div><span class="icon-Borrar fs1"></span></div>
-					<label>Borrar de la bibliografía</label>
+				<div class="col-sm-3 col-xs-4">
+					<a class="coloured-text" href="#"><span class="icon-Borrar fs1"></span><span class="texto">Borrar de mí bibliografía</span></a>
 				</div>
 			</div>
 		</div>

@@ -434,7 +434,7 @@
   font-size: 16px;
   }
   .fs1 {
-    font-size: 42px;
+    font-size: 32px;
   }
 
   .wit-bottom-border{
@@ -470,11 +470,16 @@
     padding-right: 0;
   }
 
-  /* Agregando estilos para la vista Búsquedas Anteriores */
+  /* Agregando estilos para la vista Búsquedas Anteriores y 
+  Mi bibliografía */
 
-  #busquedas_anteriores table thead, #registros_bibliografia table thead {
+  #busquedas_anteriores table thead, #registros_bibliografia table thead{
     background-color: #a88e5f;
     color: #fff;
+  }
+
+  #registros_bibliografia{
+    margin-top: 20px;
   }
 
   /* FOOTER */

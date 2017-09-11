@@ -19,6 +19,8 @@
 <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
 <!-- Agregando Boostrap CSS localmente -->
 <link rel="stylesheet" href="&server_css/bootstrap3/css/bootstrap.min.css" type="text/css">
+<!-- Agregando Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- En este archivo se encuentran mis override de algunas reglas de bootstrap -->
 <link rel="stylesheet" href="&server_css/ccpbm.css" type="text/css">
 
