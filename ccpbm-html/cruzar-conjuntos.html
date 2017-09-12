@@ -1,0 +1,231 @@
+<!-- filename: short-mail Juan Manuel Rodríguez -->
+<!DOCTYPE html>
+<html>
+<head>
+<!--<include>meta-tags-->
+<!-- Esto debe ir el archivo meta-tags -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Bootstrap -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="./ccpbm.css">
+<style type="text/css">
+
+	#myMenu {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin-right: 0;
+    padding-right: 0;
+  }
+
+	.caption {
+        width:100%;
+        bottom: .3rem;
+        position: absolute;
+        background:#553200;
+        background: -webkit-linear-gradient(bottom, #553200 40%, rgba(0, 0, 0, 0) 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+        background: -moz-linear-gradient(bottom, #553200 40%, rgba(0, 0, 0, 0) 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+        background: -o-linear-gradient(bottom, #553200 40%, rgba(0, 0, 0, 0) 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+        background: linear-gradient(to top, #553200 40%, rgba(0, 0, 0, 0) 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    }
+
+    .thumbnail {
+        border: 0 none;
+        box-shadow: none;
+        margin:0;
+        padding:0;
+    }
+
+    .caption h4 {
+        color: #fff;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    .with-border-bottom {
+    	border-bottom: 2px solid orange;
+    }
+
+    /* Radio inline */
+
+    .form-inline div {
+    	display: inline-block;
+    }
+
+</style>
+
+<title>Cruzar Conjuntos</title>
+</head>
+
+<body>
+
+<!--<include>head-1	-->
+<!-- Lo siguiente debe ir el archivo head-1-->
+<div id="header" class="container-fluid">
+	<div id="container-logos">
+		<div id="logo-unam">
+			<a href="#">
+				<img src="../images/logo-unam.jpg" alt="UNAM">
+			</a>
+		</div>
+		<div id="texto-unam">
+			<a href="#">
+				<img src="../images/texto-unam.jpg" alt="UNAM">
+			</a>
+		</div>
+		<div id="logo-biblioteca">
+			<a href="#">
+				<img src="../images/logo-biblioteca.png" alt="BIBLIOTECA">
+			</a>
+		</div>
+	</div>
+	<div id="container-buscador">
+		<div id="buscador">
+			<form class="navbar-form navbar-right" method=get name=form2 action="&server_f" role="form">
+		    <input type="hidden" name="func" value="find-b">
+		    <div class="input-group">
+		      <span style="background-color: #00349a;" class="input-group-addon"><span style="color: #fff;" class="glyphicon glyphicon-stats"></span></span>
+		      <input type="text" name="request" class="form-control" placeholder="Palabras">
+		      <span class="input-group-btn">
+		        <button type="submit" class="btn btn-default"><span style="color: #00349a;" class="glyphicon glyphicon-search"></span></button>
+		      </span>
+		    </div>
+		  </form>
+		</div>
+	</div>
+</div>
+
+<!-- Aquí termina el div.container-fluid que contiene el banner -->
+<div class="row container-banner">
+  <div class="thumbnail text-center">
+    <img src="../images/5000x600.jpg" alt="" class="img-responsive">
+    <div class="caption">
+      <p id="texto1">CATÁLOGO COLECTIVO</p>
+      <p id="texto2">del patrimonio bibliográfico de México</p>
+    </div>
+  </div>
+</div>
+
+<!-- Lo siguiente debe ir el archivo find-include-buttons -->
+<div id="myMenu" class="container">
+  <div class="col-sm-12 container-menu">
+    <nav class="navbar navbar-default" id="myNav">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <div class="col-sm-12" id="myMenuPrincipal">
+          <ul class="nav navbar-nav">
+            <li><a href="&server_f?func=login&local_base=CCPBM">INICIO</a></li>
+            <li><a class="with-border-left" href="&server_f?func=find-a&local_base=CCPBM">PROYECTO</a></li>
+            <li><a class="with-border-left" href="#">COLECCIONES</a></li>
+            <li><a class="with-border-left" href="&server_f?func=find-b-0&local_base=CCPBM">BÚSQUEDAS</a></li>
+            <li><a class="with-border-left" href="#">CONTACTO</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+<!-- Aquí termina el div.container que contiene el menú -->	
+
+<!-- Contenido de la vista colecciones -->
+
+<div class="container" style="margin-top: 10px;">
+	<form method=get name=form1 action="&server_f" role="form">
+		<input type="hidden" name="func" value="history-cross">
+		<input type="hidden" name=set_number value="$0100">
+
+		<div class="myjumbotron">
+			<div class="row">
+				<div class="col-sm-offset-1 col-sm-10">
+					<div class="row">
+						<div class="col-sm-12">
+							<h3>Cruzar conjuntos</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<p>Seleccione una operación lógica entre los conjuntos:</p>
+						</div>
+					</div>
+					<div class="form-inline">
+						<label class="radio-inline"><input type="radio" name="OP" value="AND">&nbsp;Y</label>
+						<label class="radio-inline"><input type="radio" name="OP" value="OR">&nbsp;OR</label>		
+						<label class="radio-inline"><input type="radio" name="OP" value="NOT1">&nbsp;Primer conjunto, no segundo</label>
+						<label class="radio-inline"><input type="radio" name="OP" value="NOT2">&nbsp;Segundo conjunto, no primero</label>
+						<input type="submit" class="btn mybtn" name="aceptar" value="Aceptar">
+					</div>					
+
+					<div class="row" id="busquedas_anteriores">
+						<div class="col-sm-12">
+							<table class="table table-striped">
+								<thead>
+									<tr>
+										<th>#</th>
+										<th>Solicitud de búsqueda</th>
+										<th>No. de registros</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>palabras=historia</td>
+										<td>59876</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>palabras=México</td>
+										<td>1000</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>palabras=Luis</td>
+										<td>59876</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>palabras=Perez</td>
+										<td>59876</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					
+				</div>	
+			</div>			
+		</div>
+		
+	</form>
+	<br>
+
+	<!--<include>copyrights-->
+	<!-- Esto debe ir el archivo copyrights --> 
+	<div class="row text-center with-border-top">
+	  <div class="col-sm-offset-1 col-sm-10">
+	  	<p>Hecho en México, Universidad Nacional Autónoma de Néxico (UNAM), todos los derechos reservados, 2015. Esta pÃƒÂ¡gina puede ser reproducida con fines no lucrativos, siempre y cuando no se mutile, se cite la fuente completa y su dirección electrónica. De otra forma, se requiere permiso previo y por escrito de la institución. &copy;</p>
+	  	<p><a style="color:#4a6159; font-size:80%; text-decoration:none;" href="http://catalogo.iib.unam.mx:80/F/S582U84X638TKNCC4L4M17PSDND53T8H6V1QKXM8PRJTU1JAKY-46937?func=find-f&local_base=BNDM" class="blue">Créditos</a></p>
+	  </div>
+	</div>
+</div> <!-- Aquí termina el div.container que contiene el contenido de la página -->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="./js/my_functions.js"></script>
+<script type="text/javascript">
+	// Llamando a la funciÃƒÂ³n changing_header definida en el archivo my_functions.js
+	/*changing_header();*/
+</script>
+</body>
+</html>
