@@ -494,6 +494,21 @@
     padding-top: 20px;
   }
 
+  /* Vista completa de registro */
+
+  /* Lista de formatos */
+  #formatos {
+    display: inline;
+  }
+
+  .detail-content {
+    border: 1px solid #b8a27c;
+    border-radius: 10px;
+    margin: 10px 0 20px;
+    padding: 20px;
+    color: #514011;
+  }
+
   /*---------------------------------------------------- PHONE ----------------------------------------------------------*/
   /*****LANDSCAPE:H****/
   @media screen and (min-width: 481px) and (max-width: 767px) {

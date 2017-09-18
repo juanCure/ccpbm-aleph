@@ -1,30 +1,17 @@
 <!-- filename: full-set-tail-ccpbm Juan Manuel Rodríguez -->
 
-</div> <!-- Aquí termina el div id="detalle_registro" -->
-</div> <!-- Aquí termina el div class="row" -->
+</div> <!-- Aquí termina el div detalle-registro -->
+</div> <!-- Aquí termina el div.row -->
+</div> <!-- Aquí termina el el div detail-content -->
 <div class="row">
-	<div class="col-md-3 col-md-offset-9">
+	<div id="hidden_pager" style="display: none;">
+		$0300 &nbsp; $0400
+	</div>
+	<div class="col-sm-5 col-sm-push-7">
 		<ul class="pager">
 			<li><a class="my_previous" href="#">&larr; Anterior</a></li>
 			<li><a class="my_next" href="#">Siguiente &rarr;</a></li>
 		</ul>
-	</div>
-</div>
-<hr>
-<div class="row">
-	<div class="col-md-3 text-center">
-		<h4><small>Seleccione formato de despliegue</small></h4>
-	</div>
-	<div class="col-md-9">
-		<nav class="navbar navbar-default">
-			<ul class="nav navbar-nav">
-				<li><a href="&server_f?func=full-set-set&set_number=$0800&set_entry=$0500&format=999">Estándar</a></li>
-				<li><a href="&server_f?func=full-set-set&set_number=$0800&set_entry=$0500&format=037">Ficha catalográfica</a></li>
-				<li><a href="&server_f?func=full-set-set&set_number=$0800&set_entry=$0500&format=040">Cita bibliográfica</a></li>
-				<li><a href="&server_f?func=full-set-set&set_number=$0800&set_entry=$0500&format=002">Nombres de etiquetas</a></li>
-				<li><a href="&server_f?func=full-set-set&set_number=$0800&set_entry=$0500&format=001">Etiquetas MARC</a></li>
-			</ul>
-		</nav>
 	</div>
 </div>
 <include>copyrights

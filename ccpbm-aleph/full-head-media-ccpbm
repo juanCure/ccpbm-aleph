@@ -1,5 +1,5 @@
 <!-- filename: full-head-media-ccpbm Juan Manuel Rodríguez -->
-<div class="col-md-3 sidenav text-center">
+<div class="col-sm-3 sidenav text-center">
 		$0100
 </div>
-<div id="detalle_registro" class="col-md-9">
+<div id="detalle_registro" class="col-sm-9">

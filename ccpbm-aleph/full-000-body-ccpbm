@@ -1,9 +1,9 @@
 <!-- filename: full-000-body-ccpbm Juan Manuel Rodríguez -->
 <div class="row">
-	<div class="col-md-3">
+	<div class="col-sm-3">
 		<p>$0100 &nbsp;</p>
 	</div>
-	<div class="col-md-9">
+	<div class="col-sm-9">
 		$0200
 	</div>
 </div>
