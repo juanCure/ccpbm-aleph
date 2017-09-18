@@ -121,3 +121,23 @@ function change_ref_link(new_opt){
   		localStorage['indice'] = this.value;
   	}
   }
+
+  /* La siguiente función agrega y elimina la clase que mantiene 
+  * fija la caja de herramientas en el top de la pantalla 
+  */
+function fixed_tools() {
+	var header = $("#header");
+	var wrapper = $("#tools_wrapper");
+	var startPosition = wrapper.offset().top;
+
+	$(document).scroll(function(){
+		var y = $(this).scrollTop();
+		if(y > startPosition) {
+			header.hide();
+			wrapper.addClass("fixed-tools");
+		} else {
+			header.show();
+			wrapper.removeClass("fixed-tools");
+		}
+	});
+}

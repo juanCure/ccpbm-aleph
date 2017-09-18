@@ -1,10 +1,11 @@
 <!-- short-include-buttons-ccpbm Juan Manuel Rodríguez -->
 <!-- CONTENT -->
-<div class="container" style="clear: both; margin-top: 20px;">
-<div class="row">
-	<div class="col-sm-12 myjumbotron">
-		<h3>Lista de resultados</h3>		
+<div class="container" style="clear: both;">
+<div class="myjumbotron">
+	<div class="row">
+		<div class="col-sm-12">
+			<h3>Lista de resultados</h3>
+		</div>
 	</div>
-</div>
 <!-- La etiqueta </div> que cierra el container se encuentra en el archivo short-tail-ccpbm -->	
 	

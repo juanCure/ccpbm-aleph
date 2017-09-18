@@ -17,60 +17,6 @@
 
 
 <title>Biblioteca digital - Resultados de la búsqueda</title>
-<style type="text/css">
-
-	/*#myMenu {
-    position: relative;
-    width: 100%;
-    max-width: 100%;
-    margin-right: 0;
-    padding-right: 0;
-  }
-
-	#opciones_ordenamiento {
-		padding: 0;
-		margin-top: 20px;
-	}
-
-	.fs0 {
-  font-size: 16px;
-}
-	.fs1 {
-	  font-size: 42px;
-	}
-
-	.with-bottom-border{
-		border-bottom: 2px solid red;
-	}
-
-	.my_nested_columns{
-		padding: 0;
-	}
-
-	 Clase para fijar en el top las herramientas que se pueden aplciar a los registros
-	.fixed-tools {
-		position: fixed;
-		top: 110px;
-		right: 0px;
-		z-index: 1000;
-		margin: 0;
-		border-radius: 15px;
-	}
-
-	.list-inline li a {
-		text-decoration: underline;
-		color: #7c592e;
-	}
-
-	.coloured-text {
-		color: #7c592e;
-	}
-
-	.mycolumn_without_padding {
-		padding-left: 0;
-		padding-right: 0;
-	}*/
-</style>
 </head>
 
 <body>
@@ -157,7 +103,7 @@
 
 <!-- CONTENT -->
 <!-- Lo siguiente debe ir en el archivo short-include-buttons -->
-<div class="container" style="clear: both; margin-top: 20px;">
+<div class="container">
 <div class="myjumbotron">
 	<div class="row">
 		<div class="col-sm-12">
@@ -184,29 +130,56 @@
 			<h4 class="thick coloured-text">Registros 1 - 20 de 313621</h4>
 		</div>
 		<div class="col-sm-12">
-			<div class="col-sm-2">
-				<p>Seleccionar</p>
-				<p><span class="fa fa-check-square" style="font-size:24px;color:#7c592e"></span>&nbsp; <a class="coloured-text" href="#">Todo</a> <i class="fa fa-square-o" style="font-size:24px;color:#7c592e"></i>&nbsp;<a class="coloured-text" href="#">Nada</a></p>
+			<div class="col-sm-2 col-xs-3 mycolumn_without_padding">
+				<p class="texto hidden-xs">Seleccionar</p>
+				<p class="texto texto-pequenio visible-xs-block">Seleccionar</p>
+				<div style="display: inline-block;">
+					<a class="coloured-text" href="#">
+						<span class="fa fa-check-square" style="font-size:24px;color:#7c592e"></span>
+						<span class="texto hidden-xs">&nbsp;Todo</span>
+						<span class="texto-pequenio visible-xs-inline">&nbsp;Todo</span>
+					</a>
+				</div>
+				<div style="display: inline-block;">
+					<a class="coloured-text" href="#">
+						<span class="fa fa-square-o" style="font-size:24px;color:#7c592e"></span>
+						<span class="texto hidden-xs">&nbsp;Nada</span>
+						<span class="texto-pequenio visible-xs-inline">&nbsp;Nada</span>
+					</a>
+				</div>
 			</div>
-			<div class="col-sm-2">
-				<p><span class="icon-Guardar-y-enviar fs1"></span>&nbsp;<a class="coloured-text" href="#">Guardar/enviar <br>por correo</a></p>
+			<div class="col-sm-2 col-xs-3">
+				<a class="coloured-text" href="#">
+					<span class="icon-Guardar-y-enviar fs1"></span>
+					<span class="texto hidden-xs">Guardar/enviar por correo</span>
+					<span class="texto-pequenio visible-xs-block">Guardar</span>
+				</a>
 			</div>
-			<div class="col-sm-1">
-				<p><span class="icon-ver fs1"></span>&nbsp;<a class="coloured-text" href="#">Ver</a></p>	
+			<div class="col-sm-1 col-xs-3">
+				<a class="coloured-text" href="#">
+					<span class="icon-ver fs1"></span>
+					<span class="texto hidden-xs">&nbsp;Ver</span>
+					<span class="texto-pequenio visible-xs-inline">&nbsp;Ver</span>
+				</a>
 			</div>
-			<div class="col-sm-2">
-				<p><span class="icon-Agregar-a-mi-biblioteca fs1"></span>&nbsp;<a class="coloured-text" href="#">Agregar a mi <br>bibliografía</a></p>
+			<div class="col-sm-2 col-xs-3">
+				<a class="coloured-text" href="#">
+					<span class="icon-Agregar-a-mi-biblioteca fs1"></span>
+					<span class="texto hidden-xs">Agregar a mi bibliografía</span>
+					<span class="texto-pequenio visible-xs-inline">Agregar...</span>
+				</a>
 			</div>
-			<div class="col-sm-2">
+			<div class="clearfix visible-xs-block"></div>
+			<div class="col-sm-2 col-xs-6 mycolumn_without_padding">
 				<form class="form-inline">
 					<div class="form-group">
 						<input type="hidden" name="func" value="short-jump">
-						<input type="submit" class="btn mybtn col-sm-4" value="Ir a #" name="action_short_jump" >
-						<input type="text" name="jump" class="col-sm-6" style="margin-left: 10px;">
+						<input type="submit" class="btn mybtn col-sm-4 col-xs-3" value="Ir a #" name="action_short_jump" >
+						<input type="text" name="jump" class="col-sm-6 col-xs-6" style="margin-left: 10px;">
 					</div>
 				</form>
 			</div>
-			<div class="col-sm-3">
+			<div class="col-sm-3 col-xs-6 mycolumn_without_padding">
 				<ul class="pager mypager">
 					<li><a class="my_previous" href="#">&larr; Anterior</a></li>
 					<li><a class="my_next" href="#">Siguiente &rarr;</a></li>
@@ -538,21 +511,8 @@
 	// Llamando a la función	 preparingPagerButtons definida en el archivo my_functions.js
 	preparingPagerButtons();
 
-	/* Agregnado un evento scroll sobre tools_wrapper para agregar o quitar la clase fixed-tools*/
-
-	var wrapper = document.getElementById("tools_wrapper");
-	var classes_before = wrapper.className;
-	window.onscroll =function(){
-		make_top_fixed_tools_wrapper();
-	}
-	
-	function make_top_fixed_tools_wrapper(){
-		if(document.body.scrollTop > 600){
-			wrapper.className = classes_before + " fixed-tools";
-		} else {
-			wrapper.className = classes_before;
-		}
-	}
+	/* Agregando un evento scroll sobre tools_wrapper para agregar o quitar la clase fixed-tools*/
+	fixed_tools();
 </script>
 </body>
 </html>

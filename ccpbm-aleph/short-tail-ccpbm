@@ -16,21 +16,8 @@
 	// Llamando a la función	 preparingPagerButtons definida en el archivo my_functions.js
 	preparingPagerButtons();
 
-	/* Agregnado un evento scroll sobre tools_wrapper para agregar o quitar la clase fixed-tools*/
-
-	var wrapper = document.getElementById("tools_wrapper");
-	var classes_before = wrapper.className;
-	window.onscroll =function(){
-		make_top_fixed_tools_wrapper();
-	}
-	
-	function make_top_fixed_tools_wrapper(){
-		if(document.body.scrollTop > 600){
-			wrapper.className = classes_before + " fixed-tools";
-		} else {
-			wrapper.className = classes_before;
-		}
-	}
+	/* Agregando un evento scroll sobre tools_wrapper para agregar o quitar la clase fixed-tools*/
+	fixed_tools();
 </script>
 </body>
 </html>

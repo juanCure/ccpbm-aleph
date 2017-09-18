@@ -223,10 +223,12 @@
 
   /*---------------------------------------------------- PHONE ----------------------------------------------------------*/
   /*****LANDSCAPE:H****/
-  /*@media screen and (min-width: 481px) and (max-width: 767px) {}*/
+  @media screen and (min-width: 481px) and (max-width: 767px) {
+
+  }
 
   /*****PORTRAIT:V****/
-  /*@media screen and (max-width: 480px) {}*/
+  @media screen and (max-width: 480px) {}
 
   #myMenu {
     top: 20px;
@@ -446,14 +448,14 @@
     padding: 0;
   }
 
-  /* Clase para fijar en el top las herramientas que se pueden aplciar a los registros*/
+  /* Clase para fijar en el top las herramientas de la vista lista de resultados*/
   .fixed-tools {
     position: fixed;
-    top: 110px;
+    top: 0px;
     right: 0px;
     z-index: 1000;
     margin: 0;
-    border-radius: 15px;
+    width: 100%;
     background-color: #e3e0d9;
   }
 
@@ -462,13 +464,18 @@
     color: #7c592e;
   }
 
-  .coloured-text {
+  .coloured-text, a.coloured-text:hover {
     color: #7c592e;
+    text-decoration: none;
   }
 
   .mycolumn_without_padding {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .texto-pequenio {
+    font-size: 10px;
   }
 
   /* Agregando estilos para la vista Búsquedas Anteriores y 
@@ -488,4 +495,22 @@
   .with-border-top {
     border-top: 2px solid orange;
     padding-top: 20px;
+  }
+
+  /*---------------------------------------------------- PHONE ----------------------------------------------------------*/
+  /*****LANDSCAPE:H****/
+  @media screen and (min-width: 481px) and (max-width: 767px) {
+
+  }
+
+  /*****PORTRAIT:V****/
+  @media screen and (max-width: 480px) {
+
+    .mypager a, #tools_wrapper input[type="submit"] {
+      font-size: 10px !important;
+    }
+
+    #tools_wrapper .pager li>a {
+      padding: 5px;
+    }
   }
