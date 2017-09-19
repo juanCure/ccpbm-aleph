@@ -1,0 +1,39 @@
+<!-- filename: find-b-list-head-bndm Yuri -->
+<html>
+<head>
+<title>&f-base - No hubo resultados </title>
+<include>meta-tags
+<script language="Javascript">
+<!--
+  function my_reset()
+  {
+    for (var i = 0; i< document.form1.elements.length; i++) {
+      if (document.form1.elements[i].name == "request") {
+         document.form1.elements[i].value = "";
+      }
+    }
+  }
+// -->
+</script>
+</head>
+<body topmargin="0">
+<include>head-1
+<br>
+<div style="color:#ec6c2d; font-size:120%; text-decoration:blink" >
+  Búsqueda  - SIN RESULTADOS 
+</div>
+<form method=get 
+      name=form1
+      action="&server_f">
+ <input type="hidden" name="func" value="find-b">
+</form>
+<div style="color:#4a6159; font-size:100%; font-weight:bold"> Estimado usuario su búsqueda no arrojo resultados, le sugerimos las siguientes opciones para realizar una nueva consulta </div>
+<hr>
+<table border=1 cellpadding=3 width=50% style="margin-left:75; margin-right:75;" align=center >
+ <tr class=tr1 style="background-color:#dee1d9; color:#4a6159; font-weight:bold">
+  <th width=7% nowrap>No. of Regs </th>
+  <th align="center">
+    Otras alternativas:
+  </th>
+ </tr>
+

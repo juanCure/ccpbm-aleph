@@ -1,0 +1,31 @@
+<!-- filename: find-b-list-head-ccpbm Juan Manuel Rodríguez -->
+<html>
+<head>
+<title>&f-base - No hubo resultados </title>
+<include>meta-tags
+</head>
+<body>
+<include>head-1
+<!-- CONTENT -->
+<div class="container" style="margin-top: 20px;">
+	<div class="jumbotron">
+		<div class="row">
+			<div class="col-sm-12">
+				<h3>Búsqueda - SIN RESULTADOS</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<h3><small>Estimado usuario su búsqueda no arrojo resultados, le sugerimos las siguientes opciones para realizar una nueva consulta </small></h3>
+			</div>
+		</div>
+		<div class="row" id="alternativas-busqueda">
+			<div class="col-sm-12 table-responsive">
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th>No. de Registros</th>
+							<th>Otras alternativas</th>
+						</tr>
+					</thead>
+					<tbody>

@@ -1,0 +1,82 @@
+<!-- filename: find-b-list-head -->
+<html>
+<head>
+<title>&f-base - Búsqueda básica - Resultados </title>
+<include>meta-tags
+<script language="Javascript">
+<!--
+  function my_reset()
+  {
+    for (var i = 0; i< document.form1.elements.length; i++) {
+      if (document.form1.elements[i].name == "request") {
+         document.form1.elements[i].value = "";
+      }
+    }
+  }
+// -->
+</script>
+</head>
+<body topmargin="0">
+<include>head-1
+<include>find-include-buttons
+<div class="title">
+  Búsqueda básica
+</div>
+<form method=get 
+      name=form1
+      action="&server_f">
+ <input type="hidden" name="func" value="find-b">
+<table cellspacing=2 border=0 cellpadding="0" width="100%">
+ <tr>
+  <td class="td2" width="20%" nowrap>
+    Escriba una palabra o frase
+  </td>
+  <td class="td2"  id="small">
+    <input size=40 name="request" value="$0100">
+  </td>
+ </tr>
+ <tr>
+  <td class="td2" valign=top nowrap>Campo de búsqueda
+  </td>
+  <td class="td2" id="small">
+<include>find-code-include\FXX\0200\
+  </td>
+ </tr>
+ <tr>
+  <td class="td2" width="20%" nowrap>
+    Base de búsqueda
+  </td>
+  <td class="td2" id="small">
+<include>base-list-include\FXX\9000\
+  </td>
+ </tr>
+ <tr>
+  <td class="td2">
+    Palabras adyacentes?
+  </td>
+  <td class="td2">
+    <input Type="radio" name="adjacent" $$1000-C"N" value="N"> No
+    <input type="radio" name="adjacent" $$1000-C"Y" value="Y"> Si 
+  </td>
+ </tr>
+ <tr>
+  <td class="td2" colspan="2" valign=middle align="left" nowrap>
+        <input type="image"
+               alt=" Enviar "
+               src="&icon_path/f-go.gif"
+               border=0>
+
+         <a href="javascript:my_reset();">
+           <img src="&icon_path/f-clear0.gif" border=0 alt="Limpiar"></a>
+  </td>
+ </tr>
+</table>
+</form>
+<table border=1 cellpadding=3 width=100%>
+ <tr class=tr1>
+  <th width=7% nowrap>No. of Regs </th>
+  <th align="center">
+    Entrada
+  </th>
+ </tr>
+
