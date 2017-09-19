@@ -131,3 +131,44 @@ function fixed_tools() {
 		}
 	});
 }
+
+/* Función para verificar en que vista se esta mostrando extrayendo el valor
+ * del primer parametro dentro de la URL 
+ */
+ 
+function verify_view() {
+	var basica_url = "http://catalogo.iib.unam.mx/F/9S8EYHP51TN88U9PHIJLDTQKNN1P3ETCRI1KBYTYLCLMT48V68-33484?func=find-b-0&local_base=CCPBM";
+	var avanzada_url = "http://catalogo.iib.unam.mx/F/9S8EYHP51TN88U9PHIJLDTQKNN1P3ETCRI1KBYTYLCLMT48V68-33499?func=find-d-0&local_base=CCPBM";
+	var indices_url = "http://catalogo.iib.unam.mx/F/9S8EYHP51TN88U9PHIJLDTQKNN1P3ETCRI1KBYTYLCLMT48V68-33526?func=scan-list&local_base=CCPBM";
+	var anteriores_url = "http://catalogo.iib.unam.mx/F/9S8EYHP51TN88U9PHIJLDTQKNN1P3ETCRI1KBYTYLCLMT48V68-33542?func=history&local_base=CCPBM";
+	var resultados_url = "http://catalogo.iib.unam.mx/F/9S8EYHP51TN88U9PHIJLDTQKNN1P3ETCRI1KBYTYLCLMT48V68-33654?func=short&local_base=CCPBM";
+	var bibliografia_url = "http://catalogo.iib.unam.mx/F/9S8EYHP51TN88U9PHIJLDTQKNN1P3ETCRI1KBYTYLCLMT48V68-33724?func=myshelf-short&local_base=CCPBM";
+
+	/*var href = document.location.href;
+	var matches = /func=([^&#=]*)/.exec(href);*/
+	var matches = /func=([^&#=]*)/.exec(resultados_url);
+	var param1 = matches[1];
+	return matches[1];
+}
+
+/* La siguiente función verifica que vista se esta mostrando y establece la clase
+ * activo en la pestaña correspondiente del submenú
+ */
+
+function set_activo_submenu_nav() {
+	var param1 = verify_view();
+	if(param1 == "find-b-0"){
+		$("#basica").addClass("activo");
+	} else if(param1 == "find-d-0") {
+		$("#avanzada").addClass("activo");
+	} else if(param1 == "scan-list") {
+		$("#indices").addClass("activo");
+	} else if(param1 == "history") {
+		$("#anteriores").addClass("activo");
+	} else if(param1 == "short") {
+		$("#resultados").addClass("activo");
+	} else if(param1 == "myshelf-short") {
+		$("#bibliografia").addClass("activo");
+	}	
+}
+

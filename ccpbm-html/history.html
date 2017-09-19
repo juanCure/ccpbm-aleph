@@ -65,64 +65,86 @@
 </head>
 
 <body>
-<div class="container-fluid">
-	<!--<include>head-1	-->
-	<!-- Lo siguiente debe ir el archivo head-1-->
-	<div class="row">
-		<div class="col-sm-12">
-			<div class="header">
-				<img width="100%" src="../images/interior-desktop.jpg" usemap="#Map" id="image_header"/>
-			</div>
+<!-- HEADER -->
+<div id="header" class="container-fluid">
+	<div id="container-logos">
+		<div id="logo-unam">
+			<a href="#">
+				<img src="../images/logo-unam.jpg" alt="UNAM">
+			</a>
+		</div>
+		<div id="texto-unam">
+			<a href="#">
+				<img src="../images/texto-unam.jpg" alt="UNAM">
+			</a>
+		</div>
+		<div id="logo-biblioteca">
+			<a href="#">
+				<img src="../images/logo-biblioteca.png" alt="BIBLIOTECA">
+			</a>
 		</div>
 	</div>
-</div> <!-- Aquí termina el div.container-fluid que contiene el banner -->
-
-<!-- Lo siguiente debe ir el archivo find-include-buttons -->
-<div class="container">
-	<div id="myMenu" class="col-sm-12">
-	  <nav class="navbar navbar-default" id="myNav">
-	    <div class="navbar-header">
-	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>                        
-	      </button>
-	    </div>
-	    <div class="collapse navbar-collapse" id="myNavbar">
-	    <div class="col-sm-9" id="myMenuPrincipal">
-	    	<ul class="nav navbar-nav">
-	        <li><a href="#">INICIO</a></li>
-	        <li class="with-border-left"><a href="#">PROYECTO</a></li>
-	        <li class="with-border-left"><a href="#">COLECCIONES</a></li>
-	        <li class="with-border-left"><a href="#">BÚSQUEDAS</a></li>
-	        <li class="with-border-left"><a href="#">CONTACTO</a></li>
-	      </ul>
-	    </div>
-	    <div class="col-sm-3" id="myNavbarForm">
-	    	<form class="navbar-form navbar-right">
-	      	<div class="input-group input-group-lg">
-	      		<span style="background-color: #b8a27c;" class="input-group-addon"><span style="color: #fff;" class="glyphicon glyphicon-stats"></span></span>
-	      		<input type="text" name="algo" class="form-control" placeholder="Búsqueda">
-	      		<span class="input-group-btn">
-		          <button type="submit" class="btn btn-default"><span style="color: #b8a27c;" class="glyphicon glyphicon-search"></span></button>
-		      	</span>
-	      	</div>
-	      </form>
-	    </div>
-	    <div class="col-sm-9" id="mySubmenu" style="top: 10px">
-	    	<ul class="nav navbar-nav">
-					<li><a href="#">Búsqueda básica</a></li>
-					<li class="with-border-left"><a href="#">Búsqueda avanzada</a></li>
-					<li class="with-border-left"><a href="#">Indices</a></li>
-					<li class="with-border-left"><a href="#">Búsquedas Anteriores</a></li>
-					<li class="with-border-left"><a href="#">Lista de resultados</a></li>
-				</ul>
-	    </div>
-	    </div>
-	  </nav>
+	<div id="container-buscador">
+		<div id="buscador">
+			<form class="navbar-form navbar-right" method=get name=form2 action="&server_f" role="form">
+		    <input type="hidden" name="func" value="find-b">
+		    <div class="input-group">
+		      <span style="background-color: #00349a;" class="input-group-addon"><span style="color: #fff;" class="glyphicon glyphicon-stats"></span></span>
+		      <input type="text" name="request" class="form-control" placeholder="Palabras">
+		      <span class="input-group-btn">
+		        <button type="submit" class="btn btn-default"><span style="color: #00349a;" class="glyphicon glyphicon-search"></span></button>
+		      </span>
+		    </div>
+		  </form>
+		</div>
 	</div>
-</div><!-- Aquí termina el div.container que contiene el menú -->	
+</div>
 
+<!-- BANNER -->
+<div class="row container-banner">
+  <div class="thumbnail text-center">
+    <img src="../images/banner_find_b_0.jpg" alt="" class="img-responsive">
+    <div class="caption">
+      <p id="texto1">CATÁLOGO COLECTIVO</p>
+      <p id="texto2">del patrimonio bibliográfico de México</p>
+    </div>
+  </div>
+</div>
+
+<div id="myMenu" class="container">
+  <div class="col-sm-12 container-menu">
+    <nav class="navbar navbar-default" id="myNav">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <div class="col-sm-12" id="myMenuPrincipal">
+          <ul class="nav navbar-nav">
+            <li><a href="&server_f?func=login&local_base=CCPBM">INICIO</a></li>
+            <li><a class="with-border-left" href="&server_f?func=find-a&local_base=CCPBM">PROYECTO</a></li>
+            <li><a class="with-border-left" href="&server_f?func=find-r&local_base=CCPBM">COLECCIONES</a></li>
+            <li><a class="with-border-left" href="&server_f?func=find-b-0&local_base=CCPBM">BÚSQUEDAS</a></li>
+            <li><a class="with-border-left" href="&server_f?func=find-c&local_base=CCPBM">CONTACTO</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-12" id="mySubmenu" style="top: 10px">
+          <ul class="nav navbar-nav">
+            <li><a id="basica" href="&server_f?func=find-b-0&local_base=CCPBM">Búsqueda básica</a></li>
+            <li><a id="avanzada" class="with-border-left" href="&server_f?func=find-d-0&local_base=CCPBM">Búsqueda avanzada</a></li>
+            <li><a id="indices" class="with-border-left" href="&server_f?func=scan-list&local_base=CCPBM">Indices</a></li>
+            <li><a id="anteriores" class="with-border-left" href="&server_f?func=history&local_base=CCPBM">Búsquedas Anteriores</a></li>
+            <li><a id="resultados" class="with-border-left" href="&server_f?func=short&local_base=CCPBM">Lista de resultados</a></li>
+            <li><a id="bibliografia" class="with-border-left" href="&server_f?func=myshelf-short&local_base=CCPBM">Mi bibliografia</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div><!-- Aquí termina el div.container que contiene el menú --> 		
 <!-- Este es el contenido del archivo find-b -->
 
 <div class="container" style="margin-top: 20px;">
@@ -243,7 +265,8 @@
 <script src="./js/my_functions.js"></script>
 <script type="text/javascript">
 	// Llamando a la funciÃƒÂ³n changing_header definida en el archivo my_functions.js
-	changing_header();
+	// changing_header();
+	set_activo_submenu_nav();
 </script>
 </body>
 </html>

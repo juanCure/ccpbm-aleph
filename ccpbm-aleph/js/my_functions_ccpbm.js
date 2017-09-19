@@ -141,3 +141,34 @@ function fixed_tools() {
 		}
 	});
 }
+
+/* Función para verificar en que vista se esta mostrando extrayendo el valor
+ * del primer parametro dentro de la URL 
+ */
+ 
+function verify_view() {
+	var href = document.location.href;
+	var matches = /func=([^&#=]*)/.exec(href);
+	return matches[1];
+}
+
+/* La siguiente función verifica que vista se esta mostrando y establece la clase
+ * activo en la pestaña correspondiente del submenú
+ */
+
+function set_activo_submenu_nav() {
+	var param1 = verify_view();
+	if(param1 == "find-b-0"){
+		$("#basica").addClass("activo");
+	} else if(param1 == "find-d-0" || param1 == "find-d") {
+		$("#avanzada").addClass("activo");
+	} else if(param1 == "scan-list" || param1 == "scan") {
+		$("#indices").addClass("activo");
+	} else if(param1 == "history") {
+		$("#anteriores").addClass("activo");
+	} else if(param1 == "short" || param1 == "find-b" || param1 == "short-0" || param1 == "history-action") {
+		$("#resultados").addClass("activo");
+	} else if(param1 == "myshelf-short") {
+		$("#bibliografia").addClass("activo");
+	}	
+}

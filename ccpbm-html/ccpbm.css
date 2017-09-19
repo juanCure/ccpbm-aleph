@@ -529,3 +529,14 @@
       padding: 5px;
     }
   }
+
+  /* Estilo para marca una opción del submenu como activa */
+
+  .activo, 
+  .activo:focus,
+  .activo.focus,
+  .activo:hover,
+  .activo.hover {
+    background-color: #87693e;
+    color: #fff !important; 
+  }
