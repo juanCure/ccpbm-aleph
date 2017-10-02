@@ -99,24 +99,22 @@
 </div>
 <!-- Aquí termina el div.container que contiene el MENÚ -->
 <!-- CONTENT -->
-<div class="background">
-  <div class="my-container-fluid">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-offset-1 col-sm-10">
-          <h3>PROYECTO</h3>
-          <p>El Catálogo Colectivo del Patrimonio Bibliográfico Mexicano es un proyecto cultural de alcance nacional orientado a la descripción y localización de los fondos antiguos pertenecientes a diversas bibliotecas, públicas y privadas, en México, que por su antigüedad, rareza y valor, constituyen el patrimonio bibliográfico</p>
 
-          <p> El objetivo es reunir en una base de datos los registros de los impresos antiguos desde la invención de la imprenta hasta 1821 en su primera fase, mediante la descripción y ubicación física de las obras en las bibliotecas o fondos de la República Mexicana. </p>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-offset-1 col-sm-10">
+      <h3>Proyecto</h3>
+      <p>El Catálogo Colectivo del Patrimonio Bibliográfico Mexicano es un proyecto cultural de alcance nacional orientado a la descripción y localización de los fondos antiguos pertenecientes a diversas bibliotecas, públicas y privadas, en México, que por su antigüedad, rareza y valor, constituyen el patrimonio bibliográfico</p>
 
-          <p>La conformación de un catálogo de esta naturaleza ha sido de especial interés para la Biblioteca Nacional de México, que extiende una invitación permanente a todas aquellas instituciones que resguardan fondos antiguos para sumarse a este esfuerzo</p>    
-          
-          <p>El Catálogo Colectivo del Patrimonio Bibliográfico mexicano es un proyecto en proceso de desarrollo.</p>
-        </div>
-      </div>
+      <p> El objetivo es reunir en una base de datos los registros de los impresos antiguos desde la invención de la imprenta hasta 1821 en su primera fase, mediante la descripción y ubicación física de las obras en las bibliotecas o fondos de la República Mexicana. </p>
+
+      <p>La conformación de un catálogo de esta naturaleza ha sido de especial interés para la Biblioteca Nacional de México, que extiende una invitación permanente a todas aquellas instituciones que resguardan fondos antiguos para sumarse a este esfuerzo</p>    
+      
+      <p>El Catálogo Colectivo del Patrimonio Bibliográfico mexicano es un proyecto en proceso de desarrollo.</p>
+    </div>
+  </div>
+  <br>
 <include>copyrights
-</div>
-</div>
-</div> 
+</div> <!-- Aquí termina el div.container -->
 </body>
 </html>

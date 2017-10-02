@@ -16,8 +16,8 @@
 	</div>
 	<div class="col-sm-12">
 		<div class="col-sm-2 col-xs-3 mycolumn_without_padding">
-			<p class="texto hidden-xs">Seleccionar</p>
-			<p class="texto texto-pequenio visible-xs-block">Seleccionar</p>
+			<p class="texto coloured-text hidden-xs">Seleccionar</p>
+			<p class="texto coloured-text texto-pequenio visible-xs-block">Seleccionar</p>
 			<div style="display: inline-block;">
 				<a class="coloured-text" href="&server_f?func=short-select-all">
 					<span class="fa fa-check-square" style="font-size:24px;color:#7c592e"></span>

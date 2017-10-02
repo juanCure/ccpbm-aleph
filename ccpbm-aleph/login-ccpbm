@@ -32,8 +32,8 @@
     left: 20%;
     width: 20%;
     height: 100%;
-    background-color: #b8a27c;
-    opacity: 0.9;
+    /*background-color: #b8a27c;*/
+    background: url(&icon_path/ccpbm-images/cuadro.png) no-repeat center center;
     padding: 50px 10px 10px !important;
   }
 

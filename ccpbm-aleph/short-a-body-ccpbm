@@ -1,7 +1,7 @@
 <!-- filename: short-a-body-ccpbm Juan Manuel Rodríguez -->
 <div class="row" style="margin-top: 20px;">
 	<div class="col-sm-3">
-		<h3 class="visible-xs-block"># &nbsp; Seleccionar</h3>
+		<label class="my_heading visible-xs-block"># &nbsp; Seleccionar</label>
 		<div class="row">
 			<div class="col-sm-2" style="margin-top: 30px;">
 				<!-- 1 -->
@@ -21,19 +21,19 @@
 		</div>
 	</div>
 	<div class="col-sm-5" style="margin-top: 30px;">
-		<h3 class="visible-xs-block">Título</h3>
+		<label class="my_heading visible-xs-block">Título</label>
 		<!-- <p>Hippocratis coi Aphorismi versu heroico explicati</p> -->
 		<!-- $0400 contiene el título -->
 		$0400
 	</div>
 	<div class="col-sm-1" style="margin-top: 30px;">
-		<h3 class="visible-xs-block">Año</h3>
+		<label class="my_heading visible-xs-block">Año</label>
 		<!-- <p>2010</p> -->
 		<!-- $0500 contiene el año -->
 		$0500
 	</div>
 	<div class="col-sm-3" style="margin-top: 30px;">
-		<h3 class="visible-xs-block">Autor</h3>
+		<label class="my_heading visible-xs-block">Autor</label>
 		<!-- <p>Hipócrates</p> -->
 		<!-- $0300 contiene el autor -->
 		$0300

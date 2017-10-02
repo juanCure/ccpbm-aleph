@@ -464,7 +464,7 @@
     color: #7c592e;
   }
 
-  .coloured-text, a.coloured-text:hover {
+  .coloured-text, a.coloured-text:hover, .my_heading a, .my_heading {
     color: #7c592e;
     text-decoration: none;
   }
