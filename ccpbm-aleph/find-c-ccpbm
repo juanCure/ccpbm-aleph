@@ -3,27 +3,7 @@
 <html>
 <head>
 <include>meta-tags
-<title>Contacto</title>
-<style type="text/css">
-  /*Este estilo se define aquí porque la variable icon_path no puede ser evaluada desde un
-  archivo css externo.*/
-
-  .with-background-image{
-    background-image: url(&icon_path/pie_de_pagina.jpg);
-    background-color: white;
-    background-repeat: no-repeat;
-    /*background-attachment: fixed;*/
-    background-position: left bottom; 
-  }
-
-  #myMenu {
-    position: relative;
-    width: 100%;
-    max-width: 100%;
-    margin-right: 0;
-    padding-right: 0;
-  }
-</style>
+<title>&f-base - Contacto</title>
 </head>
 
 <body>
@@ -100,15 +80,84 @@
 </div>
 <!-- Aquí termina el div.container que contiene el MENÚ -->
 <!-- CONTENT -->
-<div class="container">
+<div class="container" style="margin-top: 20px;">
   <div class="row">
     <div class="col-sm-offset-1 col-sm-10">
-      <h3>Contacto</h3>
-      <p>Aquí deberá de venir la información del contacto.</p>
+      <div class="row text-center">
+        <div class="col-sm-12">
+          <h3>Créditos</h3>
+        </div>
+        <div class="col-sm-12">
+          <p class="thick" style="margin: 0;">UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO</p>
+          <p class="thick" style="margin: 0;">INSTITUTO DE INVESTIGACIONES BIBLIOGRÁFICAS</p>
+          <p class="thick" style="margin: 0;">BIBLIOTECA NACIONAL - HEMEROTECA NACIONAL</p>
+        </div>
+      </div>
+      <div class="row text-center" style="margin-top: 20px;">
+        <div class="col-sm-12">
+          <label>Pablo Mora Pérez-Tejada</label>
+          <p><span>Director</span></p>  
+        </div>
+      </div>
+      <div class="row text-center" style="margin-top: 20px;">
+        <div class="col-sm-4">
+          <label>Miguel Ángel Castro Medina</label>
+          <p><span>Secretario acádemico</span></p>
+          <p><span>IIB</span></p>
+        </div>
+        <div class="col-sm-4">
+          <label>Silvia Salgado Ruelas</label>
+          <p><span>Coordinadora</span></p>
+          <p><span>BNM</span></p>
+        </div>
+        <div class="col-sm-4">
+          <label>Dalmacio Rodríguez Hernández</label>
+          <p><span>Coordinador</span></p>
+          <p><span>HNM</span></p>
+        </div>
+      </div>
+      <div class="row text-center" style="margin-top: 20px;">
+        <div class="col-sm-4">
+          <label>Isabel Galina Russell</label>
+          <p><span>Coordinadora <br> Estrategia e Inovación <br> Digital del IIB</span></p>
+        </div>
+        <div class="col-sm-4">
+          <label>Gabriela Carbajal Nava</label>
+          <p><span>Editora de registros</span></p>
+        </div>
+        <div class="col-sm-4"></div>
+      </div>
+      <div class="row text-center" style="margin-top: 20px;">
+        <div class="col-sm-4">
+          <label>Ana Yuri Ramirez Molina</label>
+          <p><span>Jefa <br> Departamento de Informática <br> y Telecomunicaciones</span></p>
+        </div>
+        <div class="col-sm-4">
+          <label>Karina Fernández Santana</label>
+          <p><span>Diseño del sitio</span></p>
+        </div>
+        <div class="col-sm-4"></div>
+      </div>
+      <div class="row text-center" style="margin-top: 20px;">
+        <div class="col-sm-4">
+          <label>Antonio Salazar Carmona</label>
+          <p><span>Programación</span></p>
+        </div>
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4"></div>
+      </div>
+      <div class="row text-center">
+        <div class="col-sm-4">
+          <label>Juan Manuel Rodríguez Martínez</label>
+          <p><span>Programación</span></p>
+        </div>
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4"></div>
+      </div>
+      <br>
     </div>
-  </div>
-</div>
-<br>
+  </div>    
+  <br>
 <include>copyrights
 </div>
 </body>
