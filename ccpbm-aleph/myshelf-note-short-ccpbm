@@ -1,4 +1,4 @@
-<!-- filename: find-r-ccpbm Juan Manuel Rodríguez -->
+<!-- filename: myshelf-note-short-ccpbm Juan Manuel Rodríguez -->
 <html>
 <head>
 <title>&f-base - Nota para Mi estante electrónico</title>
@@ -126,7 +126,7 @@
     <input type="hidden" name="format" value="$0400">
     <input type="hidden" name="source_func" value="$0500">
 
-    <div class="row with-border-bottom">
+    <div class="row">
       <div class="col-sm-offset-1 col-sm-10">
         <div class="row">
           <div class="col-sm-6">

@@ -27,10 +27,7 @@
 				<div class="form-group">
 					<label for="colecciones">Seleccionar colección</label>		
 					<select class="form-control " id="colecciones" name="colecciones">
-						<option value="1">Colección 1</option> 
-						<option value="2">Colección 2</option> 
-						<option value="3">Colección 3</option> 
-						<option value="4">Colección 4</option>
+						<option value="1" selected="selected">BNM</option>
 					</select>
 				</div>
 			</div>

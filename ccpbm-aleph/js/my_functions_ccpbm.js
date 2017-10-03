@@ -166,7 +166,9 @@ function set_activo_submenu_nav() {
 		$("#indices").addClass("activo");
 	} else if(param1 == "history") {
 		$("#anteriores").addClass("activo");
-	} else if(param1 == "short" || param1 == "find-b" || param1 == "short-0" || param1 == "history-action") {
+	} else if(param1 == "short" || param1 == "find-b" || param1 == "short-0" 
+		|| param1 == "history-action" || param1 == "short-jump" || param1 == "short-sort"
+		|| param1 == "myshelf-add-selected") {
 		$("#resultados").addClass("activo");
 	} else if(param1 == "myshelf-short") {
 		$("#bibliografia").addClass("activo");
