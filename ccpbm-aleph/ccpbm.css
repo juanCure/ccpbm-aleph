@@ -434,7 +434,7 @@
   font-size: 16px;
   }
   .fs1 {
-    font-size: 32px;
+    font-size: 22px;
   }
 
   .wit-bottom-border{
@@ -473,6 +473,10 @@
 
   .texto-pequenio {
     font-size: 10px;
+  }
+
+  .myjumbotron .texto {
+    font-size: 12px;
   }
 
   /* Agregando estilos para la vista Búsquedas Anteriores y 

@@ -2,14 +2,15 @@
 
 <div class="row">
 	<div class="col-sm-3">
-		<p><span class="icon-Filtrar fs1"></span><a href="&server_f?func=short-filter" class="coloured-text">Filtar resultados</a></p>		
+		<p><span class="icon-Filtrar fs1"></span><a href="&server_f?func=short-filter" class="coloured-text texto">Filtrar resultados</a></p>		
 	</div>
 	<div class="col-sm-8 col-sm-push-1" id="opciones_ordenamiento">
 		<span class="icon-ordenar-por fs1"></span>
 		$2200
 	</div>
 </div>
-
+</div> <!-- Aquí termina el primer myjumbotron -->
+<div class="myjumbotron" style="margin-top: 2px;">
 <div class="row" id="tools_wrapper">
 	<div class="col-sm-12">
 		<h4 class="thick coloured-text">Registros &nbsp; $0100 -$0200 &nbsp; de &nbsp; $0300</h4>
@@ -20,38 +21,38 @@
 			<p class="texto coloured-text texto-pequenio visible-xs-block">Seleccionar</p>
 			<div style="display: inline-block;">
 				<a class="coloured-text" href="&server_f?func=short-select-all">
-					<span class="fa fa-check-square" style="font-size:24px;color:#7c592e"></span>
+					<span class="fa fa-check-square" style="font-size:18px;color:#7c592e"></span>
 					<span class="texto hidden-xs">&nbsp;Todo</span>
 					<span class="texto-pequenio visible-xs-inline">&nbsp;Todo</span>
 				</a>
 			</div>
 			<div style="display: inline-block;">
 				<a class="coloured-text" href="&server_f?func=short-deselect-all">
-					<span class="fa fa-square-o" style="font-size:24px;color:#7c592e"></span>
+					<span class="fa fa-square-o" style="font-size:18px;color:#7c592e"></span>
 					<span class="texto hidden-xs">&nbsp;Nada</span>
 					<span class="texto-pequenio visible-xs-inline">&nbsp;Nada</span>
 				</a>
 			</div>
 		</div>
-		<div class="col-sm-2 col-xs-3">
+		<div class="col-sm-2 col-xs-3 text-center">
 			<a class="coloured-text" href="&server_f?func=short-mail-0">
-				<span class="icon-Guardar-y-enviar fs1"></span>
-				<span class="texto hidden-xs">Guardar/enviar por correo</span>
-				<span class="texto-pequenio visible-xs-block">Guardar</span>
+				<span class="icon-Guardar-y-enviar fs1" style="display: block;"></span>
+				<span class="texto hidden-xs" style="display: block;">Guardar/enviar por correo</span>
+				<span class="texto-pequenio visible-xs-block" style="display: block;">Guardar</span>
 			</a>
 		</div>
-		<div class="col-sm-1 col-xs-3">
+		<div class="col-sm-1 col-xs-3 text-center">
 			<a class="coloured-text" href="&server_f?func=full-set-selected">
-				<span class="icon-ver fs1"></span>
-				<span class="texto hidden-xs">&nbsp;Ver</span>
-				<span class="texto-pequenio visible-xs-inline">&nbsp;Ver</span>
+				<span class="icon-ver fs1" style="display: block;"></span>
+				<span class="texto hidden-xs" style="display: block;">&nbsp;Ver</span>
+				<span class="texto-pequenio visible-xs-inline" style="display: block;">&nbsp;Ver</span>
 			</a>
 		</div>
-		<div class="col-sm-2 col-xs-3">
+		<div class="col-sm-2 col-xs-3 text-center">
 			<a class="coloured-text" href="&server_f?func=myshelf-add-sel-1">
-				<span class="icon-Agregar-a-mi-biblioteca fs1"></span>
-				<span class="texto hidden-xs">Agregar a mi bibliografía</span>
-				<span class="texto-pequenio visible-xs-inline">Agregar...</span>
+				<span class="icon-Agregar-a-mi-biblioteca fs1" style="display: block;"></span>
+				<span class="texto hidden-xs" style="display: block;">Agregar a mi bibliografía</span>
+				<span class="texto-pequenio visible-xs-inline" style="display: block;">Agregar...</span>
 			</a>
 		</div>
 		<div class="clearfix visible-xs-block"></div>
