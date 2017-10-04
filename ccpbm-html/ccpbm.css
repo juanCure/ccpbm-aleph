@@ -149,7 +149,7 @@
 
     #texto2 {
       font-family: RalewayMedium;
-      margin-top: -20px;
+      margin-top: -15px;
       font-size: 20px;
     }
   }
@@ -169,7 +169,7 @@
 
     #texto2 {
       font-family: RalewayMedium;
-      margin-top: -20px;
+      margin-top: -10px;
       font-size: 15px;
     }
   }
@@ -519,7 +519,19 @@
   /*---------------------------------------------------- PHONE ----------------------------------------------------------*/
   /*****LANDSCAPE:H****/
   @media screen and (min-width: 481px) and (max-width: 767px) {
+    .container-banner .caption {
+      padding: 0 !important;
+      top: 25%;
+    } 
 
+    #texto1 {
+      font-size: 14px;
+    }
+
+    #texto2 {
+      font-size: 10px;
+      margin-top: -10px;
+    }
   }
 
   /*****PORTRAIT:V****/
@@ -531,6 +543,18 @@
 
     #tools_wrapper .pager li>a {
       padding: 5px;
+    }
+
+    .container-banner .caption {
+      padding: 0 !important;
+      top: 10%;
+    }
+    #texto1 {
+      font-size: 10px;
+    }
+    #texto2 {
+      font-size: 8px;
+      margin-top: -10px;
     }
   }
 
