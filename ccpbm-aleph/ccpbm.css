@@ -224,6 +224,15 @@
     .container-banner {
       margin-top: 97px;
     }
+
+    /** Contacto **/
+    .text-xs-center {
+      text-align: center;
+     }
+
+     .with_xs_margin_top {
+      margin-top: 20px;
+     }
   }  
 
   #myMenu {
@@ -568,4 +577,15 @@
   .activo.hover {
     background-color: #87693e !important;
     color: #fff !important; 
+  }
+
+  /** Contacto **/
+
+  p.creditos {
+    font-style: italic;
+    margin: 0;
+  }
+    
+  .with_margin_top {
+    margin-top: 20px;
   }
