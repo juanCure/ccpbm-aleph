@@ -86,11 +86,11 @@
       <div class="collapse navbar-collapse" id="myNavbar">
         <div class="col-sm-12" id="myMenuPrincipal">
           <ul class="nav navbar-nav">
-            <li><a href="&server_f?func=login&local_base=CCPBM">INICIO</a></li>
-            <li><a class="with-border-left" href="&server_f?func=find-a&local_base=CCPBM">PROYECTO</a></li>
-            <li><a class="with-border-left" href="&server_f?func=find-r&local_base=CCPBM">COLECCIONES</a></li>
-            <li><a class="with-border-left" href="&server_f?func=find-b-0&local_base=CCPBM">BÚSQUEDAS</a></li>
-            <li><a class="with-border-left" href="&server_f?func=find-c&local_base=CCPBM">CONTACTO</a></li>
+            <li><a id="inicio" href="&server_f?func=login&local_base=CCPBM">INICIO</a></li>
+            <li><a id="proyecto" class="with-border-left" href="&server_f?func=find-a&local_base=CCPBM">PROYECTO</a></li>
+            <li><a id="colecciones" class="with-border-left" href="&server_f?func=find-r&local_base=CCPBM">COLECCIONES</a></li>
+            <li><a id="busquedas" class="with-border-left" href="&server_f?func=find-b-0&local_base=CCPBM">BÚSQUEDAS</a></li>
+            <li><a id="contacto" class="with-border-left" href="&server_f?func=find-c&local_base=CCPBM">CONTACTO</a></li>
           </ul>
         </div>
       </div>

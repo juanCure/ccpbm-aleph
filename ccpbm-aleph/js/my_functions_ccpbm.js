@@ -174,3 +174,26 @@ function set_activo_submenu_nav() {
 		$("#bibliografia").addClass("activo");
 	}	
 }
+
+function set_activo_menu_nav(){
+	var param1 = verify_view();
+	switch (param1){
+		case "login" : 
+			$("#inicio").addClass("activo");
+			break;
+		case "find-a" :
+			$("#proyecto").addClass("activo");
+			break;
+		case "find-r":
+			$("#colecciones").addClass("activo");
+			break;
+		case "find-b-0" :
+			$("#busquedas").addClass("activo");
+			break;
+		case "find-c":
+			$("#contacto").addClass("activo");
+			break;
+		default:
+			$("#busquedas").addClass("activo");
+	}
+}

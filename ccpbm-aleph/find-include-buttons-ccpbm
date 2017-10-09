@@ -12,11 +12,11 @@
       <div class="collapse navbar-collapse" id="myNavbar">
         <div class="col-sm-12" id="myMenuPrincipal">
           <ul class="nav navbar-nav">
-            <li><a href="&server_f?func=login&local_base=CCPBM">INICIO</a></li>
-            <li><a class="with-border-left" href="&server_f?func=find-a&local_base=CCPBM">PROYECTO</a></li>
-            <li><a class="with-border-left" href="&server_f?func=find-r&local_base=CCPBM">COLECCIONES</a></li>
-            <li><a class="with-border-left" href="&server_f?func=find-b-0&local_base=CCPBM">BÚSQUEDAS</a></li>
-            <li><a class="with-border-left" href="&server_f?func=find-c&local_base=CCPBM">CONTACTO</a></li>
+            <li><a id="inicio" href="&server_f?func=login&local_base=CCPBM">INICIO</a></li>
+            <li><a id="proyecto" class="with-border-left" href="&server_f?func=find-a&local_base=CCPBM">PROYECTO</a></li>
+            <li><a id="colecciones" class="with-border-left" href="&server_f?func=find-r&local_base=CCPBM">COLECCIONES</a></li>
+            <li><a id="busquedas" class="with-border-left" href="&server_f?func=find-b-0&local_base=CCPBM">BÚSQUEDAS</a></li>
+            <li><a id="contacto" class="with-border-left" href="&server_f?func=find-c&local_base=CCPBM">CONTACTO</a></li>
           </ul>
         </div>
         <div class="col-sm-12" id="mySubmenu" style="top: 10px">
@@ -24,9 +24,9 @@
             <li><a id="basica" href="&server_f?func=find-b-0&local_base=CCPBM">Búsqueda básica</a></li>
             <li><a id="avanzada" class="with-border-left" href="&server_f?func=find-d-0&local_base=CCPBM">Búsqueda avanzada</a></li>
             <li><a id="indices" class="with-border-left" href="&server_f?func=scan-list&local_base=CCPBM">Indices</a></li>
-            <li><a id="anteriores" class="with-border-left" href="&server_f?func=history&local_base=CCPBM">Búsquedas Anteriores</a></li>
+            <li><a id="anteriores" class="with-border-left" href="&server_f?func=history&local_base=CCPBM">Búsquedas anteriores</a></li>
             <li><a id="resultados" class="with-border-left" href="&server_f?func=short&local_base=CCPBM">Lista de resultados</a></li>
-            <li><a id="bibliografia" class="with-border-left" href="&server_f?func=myshelf-short&local_base=CCPBM">Mi bibliografia</a></li>
+            <li><a id="bibliografia" class="with-border-left" href="&server_f?func=myshelf-short&local_base=CCPBM">Mi bibliografía</a></li>
           </ul>
         </div>
       </div>
