@@ -1,7 +1,7 @@
 <!-- filename: find-r-ccpbm Juan Manuel Rodríguez -->
 <html>
 <head>
-<title>Búsqueda en Colecciones </title>
+<title>&f-base - Colecciones </title>
 <include>meta-tags
 <style type="text/css">
 
@@ -55,8 +55,7 @@
 </style>
 </head>
 
-<body topmargin="0"
-      onload="window.document.form1.ccl_term.focus();">
+<body>
 
 <!-- HEADER -->
 <div id="header" class="container-fluid">

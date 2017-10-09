@@ -25,10 +25,8 @@
 		<div class="row">
 			<div class="col-sm-3">
 				<div class="form-group">
-					<label for="colecciones">Seleccionar colección</label>		
-					<select class="form-control " id="colecciones" name="colecciones">
-						<option value="1" selected="selected">BNM</option>
-					</select>
+					<label for="colecciones">Seleccionar colección</label>
+<include>base-list-include
 				</div>
 			</div>
 		</div>

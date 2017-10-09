@@ -44,9 +44,9 @@
 							<li><a href="&server_f?func=short-filter-a&start_date=&DATE-D007">Nuevos registros</a></li>
 							<li><a href="&server_f?func=short-filter-3&start_date=&DATE-D007">Registros disponibles</a></li>
 							<li><a href="&server_f?func=short-filter-y&from_date=1980&to_date=2000">1980-2000</a></li>
-							<li><a href="&server_f?func=find-c&CCL_TERM=wrd=ab?%20and%20SET=$0100">Refinar ab</a></li>
+							<!-- <li><a href="&server_f?func=find-c&CCL_TERM=wrd=ab?%20and%20SET=$0100">Refinar ab</a></li>
 							<li><a href="&server_f?func=find-c&CCL_TERM=SET=$0100%20and%20wln=heb">Filtrar heb</a></li>
-							<li><a href="&server_f?func=find-c&CCL_TERM=wyr=1980->2000%20and%20SET=$0100">wyr-1980 a 2000</a></li>
+							<li><a href="&server_f?func=find-c&CCL_TERM=wyr=1980->2000%20and%20SET=$0100">wyr-1980 a 2000</a></li> -->
 						</ul>
 					</div>
 				</div>

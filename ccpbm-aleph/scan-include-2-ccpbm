@@ -25,10 +25,7 @@
 					<label>Seleccionar colección:</label>	
 				</div>
 				<div class="col-sm-6" style="padding: 0;">
-					<select class="form-control" id="select_coleccion" name=colecciones>
-						<option value="0">Seleccionar colección</option> 
-						<option value="1">Biblioteca Nacional</option> 
-					</select>
+<include>base-list-include
 				</div>
 			</div>
 		</div>

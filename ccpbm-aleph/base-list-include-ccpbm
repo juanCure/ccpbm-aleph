@@ -1,0 +1,7 @@
+<!-- filename: base-list-include-ccpbm Juan Manuel Rodríguez -->
+<select name="local_base" class="form-control">
+	<option value="BNM01" $$FXX-S"BNM01">Todo el catálogo</option>
+	<option value="CCPBM" $$FXX-S"BIBLIOTECA" selected="selected">Biblioteca Nacional</option>
+	<!--<option value="HEMEROTECA" $$FXX-S"HEMEROTECA">Hemeroteca Nacional</option> 
+	<option value="CFA01" $$FXX-S"CFA01">Catálogo colectivo</option>-->
+</select>

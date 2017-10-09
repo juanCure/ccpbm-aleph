@@ -16,6 +16,14 @@
 				<h3> Búsqueda básica</h3>
 			</div>
 		</div>
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="form-group">
+					<label class="control-label" for="local_base">Seleccionar colección</label>
+<include>base-list-include
+				</div>
+			</div>
+		</div>
 		<div class="form-group row">
 			<label class="control-label col-sm-4" for="inputText">Escribir palabra(s)</label>
 			<div class="col-sm-12">
@@ -23,13 +31,7 @@
 			</div>
 		</div>
 		<div class="form-group row">
-			<div class="col-sm-4">
-				<select class="form-control" id="sel2" name=colecciones>
-					<option value="0">Seleccionar colección</option> 
-					<option value="1" selected="selected">BNM</option>
-				</select>	
-			</div>
-			<div class="col-sm-4 col-sm-push-4">
+			<div class="col-sm-4 col-sm-push-8">
 				<a href="#" class="btn mybtn pull-right">Borrar</a>
 				<input type="submit" alt="Go" class="btn mybtn pull-right" value="Aceptar">
 			</div>
@@ -64,8 +66,6 @@
 <include>find-include-filter
 		</div>	
 	</div>
-	<!-- <div class="jumbotron">
-	</div> -->
 </form>
 
 <include>copyrights
