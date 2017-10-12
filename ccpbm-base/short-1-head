@@ -1,0 +1,49 @@
+<!-- filename: short-1-head -->
+<html>
+<head>    
+<title>&f-base - Lista de registros</title>
+<include>submit-form-include
+<include>meta-tags
+<include>include-window
+<include>short-select-include
+</head>
+
+<body topmargin="0" 
+      onLoad="window.focus();">
+<include>head-1
+<include>short-include-buttons
+<br>
+<p>
+<table border=0> 
+ <tr>
+  <td class=td2 rowspan=3>
+     $1600
+  </td>
+  <td class=td2>
+     Anterior 
+  </td>
+  <td class=td2>
+     $1400
+  </td>
+ </tr>
+ <tr>
+  <td class=tr1>
+     Actual 
+  </td>
+  <td class=tr1 id="bold">
+     $0400$0500$0600$0700$0800
+  </td>
+ </tr>
+ <tr>
+  <td class=td2>
+     Siguiente
+  </td>
+  <td class=td2>
+     $1500
+  </td>
+ </tr>
+</table>
+
+
+<include>short-include-2
+

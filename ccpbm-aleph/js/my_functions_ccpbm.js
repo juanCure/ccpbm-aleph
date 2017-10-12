@@ -40,6 +40,15 @@ function preparingPagerButtons(){
 			values.next_href = children[1].href;
 		}
 
+		// El caso cuando ambos son img's
+
+		if(children[0].tagName == "IMG" && children[1].tagName == "IMG") {
+			values.previous = false;
+			values.next = false;
+			values.previous_href = "#";
+			values.next_href = "#";
+		}
+
 		// El caso cuando es anchor y img
 
 		if(children[0].tagName == "A" && children[1].tagName == "IMG"){
@@ -168,7 +177,7 @@ function set_activo_submenu_nav() {
 		$("#anteriores").addClass("activo");
 	} else if(param1 == "short" || param1 == "find-b" || param1 == "short-0" 
 		|| param1 == "history-action" || param1 == "short-jump" || param1 == "short-sort"
-		|| param1 == "myshelf-add-selected") {
+		|| param1 == "myshelf-add-selected" || param1 == "find-acc") {
 		$("#resultados").addClass("activo");
 	} else if(param1 == "myshelf-short") {
 		$("#bibliografia").addClass("activo");

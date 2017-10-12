@@ -7,7 +7,6 @@
 </head>
 <body>
 <include>head-1
-<div class="container" style="margin-top: 20px;">
 <include>scan-include-2
 <div class="myjumbotron">
 	<div class="withSomePadding">

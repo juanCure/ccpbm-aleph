@@ -7,7 +7,6 @@
 </head>
 <body>
 <include>head-1
-<div class="container" style="margin-top: 20px;">
 <include>scan-include-2
 <include>copyrights
 </div><!-- Aquí termina el div.container el cual contiene el contenido de la página -->

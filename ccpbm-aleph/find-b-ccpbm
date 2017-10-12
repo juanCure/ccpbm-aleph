@@ -7,7 +7,6 @@
 </head>
 <body>
 <include>head-1
-<div class="container" style="margin-top: 20px;">
 <form method=get name=form1 action="&server_f" role="form">
 	<input type="hidden" name="func" value="find-b">
 	<div class="jumbotron">

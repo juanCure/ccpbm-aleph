@@ -8,7 +8,6 @@
 
 <body topmargin="0">
 <include>head-1
-<div class="container" style="margin-top: 20px;">
   <form method=get name=form1 action="&server_f">
     <div class="jumbotron">
       <div class="row">

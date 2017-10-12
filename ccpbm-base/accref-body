@@ -1,0 +1,7 @@
+<!--filename: accref-body-->
+ <tr>
+  <!--reference-->
+  <td class=td1 id="bold" width=20%">$0100</td>
+  <!--contents-->
+  <td class=td1>&nbsp;$0200</td>
+ </tr>

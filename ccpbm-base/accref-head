@@ -1,0 +1,19 @@
+<!--filename: accref-head -->
+<html>
+<head>
+<title>&f-base - Referencia - Lista</title>
+<include>meta-tags
+</head>
+<body topmargin="0" onload="window.focus();">
+<include>head-1
+<div class=title>
+    Referencias cruzadas - $0100 - $0200
+</div>
+<br><br>
+<div class="text9">
+Presione sobre la etiqueta de la columna izquierda para ir a este encabezamiento en el Indice. 
+<p>Presione sobre el encabezamiento subrayado para crear un conjunto de registros relacionados a este.
+<p>Presione el botón Atrás del navegador para regresar a su lugar en el Indice.
+</div>
+<br><br>
+<table cellspacing=2 border=0 width="90%">

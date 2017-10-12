@@ -16,5 +16,3 @@ function setFolder(val) {
 <body>
 <include>head-1
 <!-- CONTENT -->
-
-<div class="container" style="margin-top: 20px;">

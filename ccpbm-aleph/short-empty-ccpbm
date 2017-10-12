@@ -8,7 +8,6 @@
 <body>
 <include>head-1
 <!-- CONTENT -->
-<div class="container" style="clear: both; margin-top: 20px;">
 <div class="jumbotron">
 	<div class="row">
 		<div class="col-sm-12">
