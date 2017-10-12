@@ -143,8 +143,8 @@
         <div class="row">
           <div class="col-xs-3">
             <div class="col-xs-12 thumbnail text-center">
-              <a href="http://www.adabi.org.mx/">
-                <img src="&icon_path/ccpbm-images/colecciones1.jpg" class="img-responsive">
+              <a href="http://www.adabi.org.mx/" target="_blank">
+                <img src="&icon_path/ccpbm-images/adabi_02.jpg" class="img-responsive">
                 <div class="caption item">
                   <h4>ADABI</h4>
                 </div>
@@ -153,8 +153,8 @@
           </div>
           <div class="col-xs-3">
             <div class="col-xs-12 thumbnail text-center">
-              <a href="http://www.dgbiblio.unam.mx/">
-                <img src="&icon_path/ccpbm-images/colecciones2.jpg" class="img-responsive">
+              <a href="http://www.dgbiblio.unam.mx/" target="_blank">
+                <img src="&icon_path/ccpbm-images/dgb_02.jpg" class="img-responsive">
                 <div class="caption item">
                   <h4>DGB</h4>
                 </div>
@@ -163,17 +163,17 @@
           </div>
           <div class="col-xs-3">
             <div class="col-xs-12 thumbnail text-center">
-              <a href="http://www.iib.unam.mx/">
+              <a href="http://www.iib.unam.mx/" target="_blank">
                 <img src="&icon_path/ccpbm-images/colecciones3.jpg" class="img-responsive">
                 <div class="caption item">
-                  <h4>IIB</h4>
+                  <h4>BNM</h4>
                 </div>
               </a>
             </div>
           </div>
           <div class="col-xs-3">
             <div class="col-xs-12 thumbnail text-center">
-              <a href="http://biblioteca.colmex.mx/">
+              <a href="http://biblioteca.colmex.mx/" target="_blank">
                 <img src="&icon_path/ccpbm-images/colecciones4.jpg" class="img-responsive">
                 <div class="caption item">
                   <h4>Colmex</h4>
@@ -186,7 +186,7 @@
         <div class="row">
           <div class="col-xs-3">
             <div class="col-xs-12 thumbnail text-center">
-              <a href="http://www.inah.gob.mx/es/">
+              <a href="http://www.inah.gob.mx/es/" target="_blank">
                 <img src="&icon_path/ccpbm-images/colecciones1.jpg" class="img-responsive">
                 <div class="caption item">
                   <h4>INAH</h4>
@@ -196,7 +196,7 @@
           </div>
           <div class="col-xs-3">
             <div class="col-xs-12 thumbnail text-center">
-              <a href="http://www.uabjo.mx/">
+              <a href="http://www.uabjo.mx/" target="_blank">
                 <img src="&icon_path/ccpbm-images/colecciones2.jpg" class="img-responsive">
                 <div class="caption item">
                   <h4>UABJO</h4>
@@ -206,20 +206,10 @@
           </div>
           <div class="col-xs-3">
             <div class="col-xs-12 thumbnail text-center">
-              <a href="http://www.bib.uia.mx/sitio/">
+              <a href="http://www.bib.uia.mx/sitio/" target="_blank">
                 <img src="&icon_path/ccpbm-images/colecciones3.jpg" class="img-responsive">
                 <div class="caption item">
                   <h4>Biblioteca UIA</h4>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-xs-3">
-            <div class="col-xs-12 thumbnail text-center">
-              <a href="http://biblioteca.colmex.mx/">
-                <img src="&icon_path/ccpbm-images/colecciones4.jpg" class="img-responsive">
-                <div class="caption item">
-                  <h4>Colmex</h4>
                 </div>
               </a>
             </div>
