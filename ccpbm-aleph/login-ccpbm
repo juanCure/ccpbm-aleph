@@ -208,7 +208,7 @@ div::-webkit-scrollbar-thumb:window-inactive {
     </div>
     <div class="col-sm-4 col-xs-6">
       <div class="thumbnail text-center">
-        <a href="http://www.dgbiblio.unam.mx/" target="_blank">
+        <a href="http://bibliotecas.unam.mx/" target="_blank">
           <img class="img-responsive" src="&icon_path/ccpbm-images/dgb_01.jpg" width="250" height="250"  alt="Biblioteca Fray Francisco de Burgoa"/>
           <div class="caption">
             <h4>DGB</h4>

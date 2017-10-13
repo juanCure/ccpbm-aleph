@@ -31,7 +31,7 @@
 		</div>
 		<div class="form-group row">
 			<div class="col-sm-4 col-sm-push-8">
-				<a href="#" class="btn mybtn pull-right">Borrar</a>
+				<a href="&server_f?func=find-b-0&clear_level=2" class="btn mybtn pull-right">Borrar</a>
 				<input type="submit" alt="Go" class="btn mybtn pull-right" value="Aceptar">
 			</div>
 		</div>
