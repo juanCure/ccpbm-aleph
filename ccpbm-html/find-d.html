@@ -15,8 +15,8 @@
 
 <title>Búsqueda Avanzada</title>
 <style type="text/css">
-	#total_registros, .numero_registros {
-		display: none;
+	#container_registros, .numero_registros {
+		display: block;
 	}
 </style>
 </head>
@@ -83,15 +83,18 @@
 
 <!-- Aqui empieza el contenido del archivo find-d -->
 <div class="container" style="margin-top: 40px;">
-
+	<div class="alert alert-danger hidden" id="empty_alert">
+    <strong>No se encontraron registros!</strong>
+  </div>
 <form>
 	<div class="jumbotron">
 		<div class="row">
 			<div class="col-sm-4">
 				<h3>Búsqueda Avanzada</h3>
 			</div>
-			<div class="col-sm-4 col-sm-push-4" id="total_registros">
-				<p style="color: #7c592e;"><b>Total de registros encontrados:</b> <a href="#">55</a></p>
+			<div class="col-sm-6 col-sm-push-2 hidden" id="container_registros">
+				<!-- <a href="#">55</a> -->
+				<p style="color: #7c592e;">Total de registros encontrados: <span id="total_registros"><a href="#">55</a></span></p>
 				<span class="help-block">Presione sobre el total para ver los registros</span>
 			</div>
 		</div>
@@ -139,7 +142,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-sm-3 numero_registros">
+			<div class="col-sm-3 hidden registros_encontrados">
 				<label>No. de registros encontrados</label>
 				<p>45</p>
 			</div>
@@ -172,7 +175,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-sm-3 numero_registros">
+			<div class="col-sm-3 hidden registros_encontrados">
 				<label class="visible-xs-block">No. de registros encontrados</label>
 				<p>45</p>
 			</div>
@@ -205,7 +208,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-sm-3 numero_registros">
+			<div class="col-sm-3 hidden registros_encontrados">
 				<label class="visible-xs-block">No. de registros encontrados</label>
 				<p>45</p>
 			</div>
@@ -290,11 +293,21 @@
 	/* Obteniendo el total de registros encontrados, para saber si debo mostrar el resultado 
 	 * o mantenerlo oculto hasta que haya algo que mostrar
 	 */
-	var anchor = document.getElementById("total_registros").getElementsByTagName('A')[0];
-	if(anchor != null) {
-		console.log("anchor content is: " + anchor.innerHTML);
-	} else {
-		console.log("anchor doesn't exist");
+	var total_registros = document.getElementById("total_registros");
+	if(total_registros.firstChild != null) {
+		var elemento = total_registros.firstChild.nodeName;
+		if(elemento == "A") {
+			console.log("Elemento es un anchor");
+			document.getElementById("container_registros").classList.toggle("hidden");
+			var registros_encontrados = [];
+	  	registros_encontrados = document.getElementsByClassName("registros_encontrados");
+	  	for(var i = 0; i < registros_encontrados.length; i++){
+	  		registros_encontrados[i].classList.toggle("hidden");
+	  	}
+		} else if(elemento == "#text") {
+			console.log("Elemento es texto");
+			document.getElementById("empty_alert").classList.toggle("hidden");
+		}
 	}
 
 </script>

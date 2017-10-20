@@ -9,7 +9,7 @@
 		<div class="row" style="margin-bottom: 20px;">
 			<div class="col-sm-5">
 				<div class="col-sm-6" style="padding: 7px 0;">
-					<label>Seleccione un índice:</label>
+					<label>Seleccionar un índice:</label>
 				</div>
 				<div class="col-sm-6" style="padding: 0;">
 					<select class="form-control" id="select_indices" name=scan_code>
@@ -30,7 +30,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-sm-12"><label>Selecciona una letra o escribe una palabra(s) inicial(es):</label></div>
+			<div class="col-sm-12"><label>Seleccionar una letra o escribir una palabra(s) inicial(es):</label></div>
 		</div>
 		<div class="row">
 			<div class="col-sm-9" style="border-right: 5px solid #c1a37b;">
@@ -69,7 +69,7 @@
 					<input type="text" name="scan_start" class="form-control">	
 				</div>
 				<div class="col-sm-6">
-					<input type="submit" name="aceptar" class="btn mybtn">
+					<input type="submit" name="aceptar" class="btn mybtn" value="Aceptar">
 				</div>	
 			</div>
 		</div>

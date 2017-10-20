@@ -341,11 +341,7 @@
     background-color: #856133;
     border-color: #856133;
 
-  }
-
-  #total_registros, .registros_encontrados{
-  	display: none;
-  }
+  }  
 
   /* Algunos estilos para la vista indices */
 

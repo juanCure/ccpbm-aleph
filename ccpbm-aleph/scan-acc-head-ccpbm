@@ -10,7 +10,7 @@
 <include>scan-include-2
 <div class="myjumbotron">
 	<div class="withSomePadding">
-		<h3 style="display: inline-block;">Indice: $0200</h3>
+		<h3 style="display: inline-block;">Índice: $0200</h3>
 		<div id="hidden_pager" style="display: none;">
 			$0300 &nbsp; $0400
 		</div>

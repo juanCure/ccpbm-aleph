@@ -8,6 +8,9 @@
 </head>
 <body>
 <include>head-1
+<div class="alert alert-danger hidden" id="empty_alert">
+  <strong>No se encontraron registros!</strong>
+</div>
 <form method=get name=form1 action="&server_f" role="form">
 	<input type="hidden" name="func" value="find-d">
 	<div class="jumbotron">
@@ -15,8 +18,8 @@
 			<div class="col-sm-4">
 				<h3>Búsqueda avanzada</h3>
 			</div>
-			<div class="col-sm-4 col-sm-push-4" id="total_registros">
-				<p style="color: #7c592e;"><b>Total de registros encontrados:</b> $5000</p>
+			<div class="col-sm-6 col-sm-push-2 hidden" id="container_registros">
+				<p style="color: #7c592e;">Total de registros encontrados: <span id="total_registros">$5000</span></p>
 				<span class="help-block">Presione sobre el total para ver los registros</span>
 			</div>
 		</div>
@@ -58,7 +61,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-sm-3 registros_encontrados">
+			<div class="col-sm-3 hidden registros_encontrados">
 				<label>No. de registros encontrados</label>
 				<p>$0300</p>
 			</div>
@@ -91,7 +94,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-sm-3 registros_encontrados">
+			<div class="col-sm-3 hidden registros_encontrados">
 				<label class="visible-xs-block">No. de registros encontrados</label>
 				<p>$1300</p>
 			</div>
@@ -124,7 +127,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-sm-3 registros_encontrados">
+			<div class="col-sm-3 hidden registros_encontrados">
 				<label class="visible-xs-block">No. de registros encontrados</label>
 				<p>$2300</p>
 			</div>
@@ -174,31 +177,25 @@
 <include>copyrights
 </div> <!-- Aquí termina el div.container que contiene el contenido de la página -->
 <script type="text/javascript">
-        /*var href = document.location.href;
-        console.log("this is href: ", href);
-        var lastPathSegment = href.substr(href.lastIndexOf('/') + 1);
-        var matches = /func=([^&#=]*)/.exec(href);
-        var param1 = matches[1];
 
-        var image_header = document.getElementById("image_header");
-        console.log("src of image_header: ", image_header.getAttribute("src"));
-        image_header.setAttribute("src", "&icon_path/" + "bndm-cabeza-" + param1 + ".jpg");*/
-
-        /* Obteniendo el total de registros encontrados, para saber si debo mostrar el resultado 
-         * o mantenerlo oculto hasta que haya algo que mostrar
-         */
-        var anchor = document.getElementById("total_registros").getElementsByTagName('A')[0];
-        if(anchor != null) {
-        	console.log("anchor content is: " + anchor.innerHTML);
-        	document.getElementById("total_registros").style.display = "block";
-        	var registros_encontrados = [];
-        	registros_encontrados = document.getElementsByClassName("registros_encontrados");
-        	for(var i = 0; i < registros_encontrados.length; i++){
-        		registros_encontrados[i].style.display = "block";
-        	}
-        } else {
-        	console.log("anchor doesn't exist");
-        }
+  /* Obteniendo el total de registros encontrados, para saber si debo mostrar un mensaje de Registros
+  no encontrados */
+  var total_registros = document.getElementById("total_registros");
+	if(total_registros.firstChild != null) {
+		var elemento = total_registros.firstChild.nodeName;
+		if(elemento == "A") {
+			console.log("Elemento es un anchor");
+			document.getElementById("container_registros").classList.toggle("hidden");
+			var registros_encontrados = [];
+	  	registros_encontrados = document.getElementsByClassName("registros_encontrados");
+	  	for(var i = 0; i < registros_encontrados.length; i++){
+	  		registros_encontrados[i].classList.toggle("hidden");
+	  	}
+		} else if(elemento == "#text") {
+			console.log("Elemento es texto");
+			document.getElementById("empty_alert").classList.toggle("hidden");
+		}
+	}
 </script>
 </body>
 </html>

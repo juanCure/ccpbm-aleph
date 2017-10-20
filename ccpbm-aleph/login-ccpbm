@@ -218,7 +218,7 @@ div::-webkit-scrollbar-thumb:window-inactive {
     </div>
     <div class="col-sm-4 col-xs-6">
       <div class="thumbnail text-center">
-        <a href="http://www.iib.unam.mx/" target="_blank">
+        <a href="http://www.bnm.unam.mx/" target="_blank">
           <img class="img-responsive" src="&icon_path/ccpbm-images/item03.jpg" width="250" height="250"  alt="Biblioteca Francisco Xavier Clavijero de la Universidad Iberoamericana."/>
           <div class="caption">
             <h4>BNM</h4>
