@@ -12,140 +12,139 @@
 <body>
 <include>head-1
 <!-- Contenido de la vista Guardar / enviar por correo que es accedida desde la vista completa de registro -->
-<div class="container" style="margin-top: 10px;">
-	<form method=get name=form1 action="&server_f" onSubmit="return my_replace_1();" role="form">
-		<input type="hidden" name="func" value="full-mail">
-		<input type="hidden" name="doc_library" value="$0100">
-		<input type="hidden" name="doc_number" value="$0200">
-		<input type="hidden" name="option_type" value="$0800">
-		<div class="myjumbotron">
-			<div class="row">
-				<div class="col-sm-offset-1 col-sm-10">
-					<div class="row">
-						<div class="col-sm-12">
-							<h3>Guardar o Enviar por correo un documento</h3>
-						</div>
+<form method=get name=form1 action="&server_f" onSubmit="return my_replace_1();" role="form">
+	<input type="hidden" name="func" value="full-mail">
+	<input type="hidden" name="doc_library" value="$0100">
+	<input type="hidden" name="doc_number" value="$0200">
+	<input type="hidden" name="option_type" value="$0800">
+	<div class="myjumbotron">
+		<div class="row">
+			<div class="col-sm-offset-1 col-sm-10">
+				<div class="row">
+					<div class="col-sm-12">
+						<h3>Guardar o Enviar por correo un documento</h3>
 					</div>
-					<div class="row">
-						<div class="col-sm-12">
-							<p>Usted cuenta con 2 opciones:</p>
-							<ul>
-								<li>Enviar por correo electrónico los registros seleccionados (ingresando una dirección electrónica), o </li>
-								<li>Guardar el registro en su PC (dejando vacío el campo E-mail)</li>
-							</ul>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm-12">
-							<h4>Formato</h4>
-							<div class="form-group">
-								<label class="col-sm-4 control-label">Seleccione un formato predeterminado:</label>
-								<div class="col-sm-4">
-<include>include-select-format
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row" style="margin-top: 20px;">
-						<div class="col-sm-12">
-							<div class="form-group">
-								<label class="col-sm-4 control-label">Cree su propio formato</label>
-								<div class="col-sm-8">
-									<div class="row">
-										<div class="col-sm-12">
-											<label class="checkbox-inline">
-											  <input type="checkbox" id="inlineCheckbox1" name="own_format" value="1%23%23%23%23">Autor
-											</label>
-											<label class="checkbox-inline">
-											  <input type="checkbox" id="inlineCheckbox2" name="own_format" value="245%23%23">Título
-											</label>
-											<label class="checkbox-inline">
-											  <input type="checkbox" id="inlineCheckbox3" name="own_format" value="300">Páginas
-											</label>
-											<label class="checkbox-inline">
-											  <input type="checkbox" id="inlineCheckbox4" name="own_format" value="50%23%23%23">Notas
-											</label>
-										</div>
-									</div>
-									<div class="row" style="margin-top: 10px;">
-										<div class="col-sm-12">
-											<label class="checkbox-inline">
-											  <input type="checkbox" id="inlineCheckbox5" name="own_format" value="6%23%23%23%23">Materia
-											</label>
-											<label class="checkbox-inline">
-											  <input type="checkbox" id="inlineCheckbox6" name="own_format" value="SYS"># de Sistema
-											</label>
-											<label class="checkbox-inline">
-											  <input type="checkbox" id="inlineCheckbox7" name="own_format" value="260%23%23">Pie de imprenta
-											</label>
-											<label class="checkbox-inline">
-											  <input type="checkbox" id="inlineCheckbox8" name="own_format" value="08%23%23%23">Clasificación
-											</label>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm-12">
-							<h4>Codificación</h4>
-						</div>
-						<div class="col-sm-4">
-							<label class="radio-inline">
-							  <input type="radio" name="encoding" id="inlineRadio1" value="UTF_TO_WEB_MAIL_ASCI">ASCII (recomendado/por omisión)
-							</label>
-						</div>
-						<div class="col-sm-4">
-							<label class="radio-inline">
-							  <input type="radio" name="encoding" id="inlineRadio2" value="NONE">Unicode / UTF-8 (conjunto de caracteres no romanos)
-							</label>
-						</div>
-						<div class="col-sm-4">
-							<label class="radio-inline">
-							  <input type="radio" name="encoding" id="inlineRadio3" value="UTF_TO_WEB_MAIL">ISO 8859-1 (Conjunto de caracteres romanos)
-							</label>
-						</div>
-					</div>
-					<div class="form-horizontal">
-						<div class="form-group">
-					    <label for="inputAsunto" class="col-sm-2 control-label">Asunto:</label>
-					    <div class="col-sm-3">
-					      <input type="text" class="form-control" id="inputAsunto" name="SUBJECT" placeholder="Asunto">
-					    </div>
-					  </div>
-					  <div class="form-group">
-					    <label for="inputNombre" class="col-sm-2 control-label">Nombre:</label>
-					    <div class="col-sm-3">
-					      <input type="text" class="form-control" id="inputNombre" name="NAME" placeholder="Nombre">
-					    </div>
-					  </div>
-					  <div class="form-group">
-					    <label for="inputEmail" class="col-sm-2 control-label">Email:</label>
-					    <div class="col-sm-3">
-					      <input type="text" class="form-control" id="inputEmail" name="EMAIL" placeholder="Email">
-					    </div>
-					  </div>
-					  <div class="form-group">
-					    <label for="inputTexto" class="col-sm-2 control-label">Texto:</label>
-					    <div class="col-sm-3">
-					      <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
-					    </div>
-					  </div>
-					  <div class="form-group">
-					  	<div class="col-sm-6 col-sm-push-3">
-					  		<input class="btn mybtn" type="submit" value="Aceptar">
-					  		<a class="btn mybtn" href="javascript:document.form1.reset();">Borrar</a>
-					  	</div>
-					  </div>
-					</div>
-
-					<br>
 				</div>
-			</div>			
-		</div>
-	</form>
-	<br>
+				<div class="row">
+					<div class="col-sm-12">
+						<p>Usted cuenta con 2 opciones:</p>
+						<ul>
+							<li>Enviar por correo electrónico los registros seleccionados (ingresando una dirección electrónica), o </li>
+							<li>Guardar el registro en su PC (dejando vacío el campo E-mail)</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<h4>Formato</h4>
+						<div class="form-group">
+							<label class="col-sm-4 control-label">Seleccione un formato predeterminado:</label>
+							<div class="col-sm-4">
+<include>include-select-format
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row" style="margin-top: 20px;">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label class="col-sm-4 control-label">Cree su propio formato</label>
+							<div class="col-sm-8">
+								<div class="row">
+									<div class="col-sm-12">
+										<label class="checkbox-inline">
+										  <input type="checkbox" id="inlineCheckbox1" name="own_format" value="1%23%23%23%23">Autor
+										</label>
+										<label class="checkbox-inline">
+										  <input type="checkbox" id="inlineCheckbox2" name="own_format" value="245%23%23">Título
+										</label>
+										<label class="checkbox-inline">
+										  <input type="checkbox" id="inlineCheckbox3" name="own_format" value="300">Páginas
+										</label>
+										<label class="checkbox-inline">
+										  <input type="checkbox" id="inlineCheckbox4" name="own_format" value="50%23%23%23">Notas
+										</label>
+									</div>
+								</div>
+								<div class="row" style="margin-top: 10px;">
+									<div class="col-sm-12">
+										<label class="checkbox-inline">
+										  <input type="checkbox" id="inlineCheckbox5" name="own_format" value="6%23%23%23%23">Materia
+										</label>
+										<label class="checkbox-inline">
+										  <input type="checkbox" id="inlineCheckbox6" name="own_format" value="SYS"># de Sistema
+										</label>
+										<label class="checkbox-inline">
+										  <input type="checkbox" id="inlineCheckbox7" name="own_format" value="260%23%23">Pie de imprenta
+										</label>
+										<label class="checkbox-inline">
+										  <input type="checkbox" id="inlineCheckbox8" name="own_format" value="08%23%23%23">Clasificación
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<h4>Codificación</h4>
+					</div>
+					<div class="col-sm-4">
+						<label class="radio-inline">
+						  <input type="radio" name="encoding" id="inlineRadio1" value="UTF_TO_WEB_MAIL_ASCI" $$1100-C"UTF_TO_WEB_MAIL_ASCI">ASCII (recomendado/por omisión)
+						</label>
+					</div>
+					<div class="col-sm-4">
+						<label class="radio-inline">
+						  <input type="radio" name="encoding" id="inlineRadio2" value="NONE" $$1100-C"NONE">Unicode / UTF-8 (conjunto de caracteres no romanos)
+						</label>
+					</div>
+					<div class="col-sm-4">
+						<label class="radio-inline">
+						  <input type="radio" name="encoding" id="inlineRadio3" value="UTF_TO_WEB_MAIL" $$1100-C"UTF_TO_WEB_MAIL">ISO 8859-1 (Conjunto de caracteres romanos)
+						</label>
+					</div>
+				</div>
+				<div class="form-horizontal">
+					<div class="form-group">
+				    <label for="inputAsunto" class="col-sm-2 control-label">Asunto:</label>
+				    <div class="col-sm-3">
+				      <input type="text" class="form-control" id="inputAsunto" name="SUBJECT" value=$0400 placeholder="Asunto">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label for="inputNombre" class="col-sm-2 control-label">Nombre:</label>
+				    <div class="col-sm-3">
+				      <input type="text" class="form-control" id="inputNombre" name="NAME" value=$0500 placeholder="Nombre">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label for="inputEmail" class="col-sm-2 control-label">Email:</label>
+				    <div class="col-sm-3">
+				      <input type="text" class="form-control" id="inputEmail" name="EMAIL" value=$0600 placeholder="Email">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label for="inputTexto" class="col-sm-2 control-label">Texto:</label>
+				    <div class="col-sm-3">
+				      <textarea class="form-control" rows="5" id="comment" name="text">$0700</textarea>
+				    </div>
+				  </div>
+				  <div class="form-group">
+				  	<div class="col-sm-6 col-sm-push-3">
+				  		<input class="btn mybtn" type="submit" value="Aceptar">
+				  		<a class="btn mybtn" href="javascript:document.form1.reset();">Borrar</a>
+				  	</div>
+				  </div>
+				</div>
+
+				<br>
+			</div>
+		</div>			
+	</div>
+</form>
+<br>
 <include>copyrights
 </div> <!-- Aquí termina el div.container que contiene el contenido de la página -->
 </body>
