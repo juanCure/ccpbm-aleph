@@ -1,0 +1,30 @@
+<!-- filename: short-4-head-ccpbm Juan Manuel Rodríguez -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>&f-base - Lista de registros </title>
+<include>submit-form-include
+<include>meta-tags
+<include>include-window
+<include>short-select-include
+</head>
+<body>
+<include>head-1
+<include>short-include-buttons
+<div class="row">
+	<div class="col-sm-12 coloured-text">
+		<div class="col-sm-3">
+			<label>Búsqueda por:&nbsp;</label><span>$1600</span>
+		</div>
+		<div class="col-sm-2">
+			<label>Anterior:&nbsp;</label><span>$1400</span>
+		</div>
+		<div class="col-sm-2">
+			<label>Actual:&nbsp;</label><span>$0400</span>
+		</div>
+		<div class="col-sm-2">
+			<label>Siguiente:&nbsp;</label><span>$1500</span>
+		</div>
+	</div>
+</div>
+<include>short-include-2
