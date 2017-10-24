@@ -210,6 +210,16 @@ function set_activo_menu_nav(){
 function clear_fields_form(){
 	document.getElementsByName("form1")[0].reset();
 }
+
+/* Función para limpiar los valores de los formularios */
+function my_reset(){
+	for (var i = 0; i< document.form1.elements.length; i++) {
+    if (document.form1.elements[i].name == "request" ||
+        document.form1.elements[i].name == "REQUEST") {
+       document.form1.elements[i].value = "";
+    }
+  }
+}
 /* Función para mostrar el mensaje de error cuando los filtros no encuentran registros */
 
 function show_no_found_from_filters() {

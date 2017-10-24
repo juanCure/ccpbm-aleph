@@ -1,0 +1,81 @@
+<!-- filename: find-b-permute-head-ccpbm Juan Manuel Rodriguez -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>&f-base - Búsqueda básica</title>
+<include>meta-tags
+</head>
+<body>
+<include>head-1
+<div class="alert alert-danger" id="empty_alert">
+  <strong>Estimado usuario su búsqueda no arrojo resultados; le sugerimos intente con otros parámetros.</strong>
+</div>
+<form method=get name=form1 action="&server_f" role="form">
+	<input type="hidden" name="func" value="find-b">
+	<div class="jumbotron">
+		<div class="row">
+			<div class="col-sm-12">
+				<h3>Búsqueda básica</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="form-group">
+					<label class="control-label" for="local_base">Seleccionar colección</label>
+<include>base-list-include
+				</div>
+			</div>
+		</div>
+		<div class="form-group row">
+			<label class="control-label col-sm-4" for="inputText">Escribir palabra(s)</label>
+			<div class="col-sm-12">
+				<input name="request" value="$0100" type="text" class="form-control" id="inputText">	
+			</div>
+		</div>
+		<div class="form-group row">
+			<div class="col-sm-4 col-sm-push-8">
+				<a href="javascript:my_reset();" class="btn mybtn pull-right">Borrar</a>
+				<input type="submit" alt="Go" class="btn mybtn pull-right" value="Aceptar">
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-12">
+				<h3>Delimitadores de búsqueda</h3>
+			</div>	
+		</div>
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="form-group row">
+				  <label class="control-label col-sm-12">Campos de búsqueda</label>
+				  <div class="col-sm-10">
+<include>find-code-include
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-3">
+				<div class="form-group row">
+					<label class="control-label col-sm-12">¿Palabras adyacentes?</label>
+					<div class="col-sm-10">
+						<label class="radio-inline" id="myradio"><input type="radio" name="adjacent" value="N" $$0400-C"N">No
+						</label>
+						<label class="radio-inline"><input type="radio" name="adjacent" value="Y" $$0400-C"Y">Sí
+						</label>
+					</div>
+				</div>
+			</div>
+<include>find-include-filter
+		</div>
+
+		<div class="row" id="alternativas-busqueda">
+			<h3>Resultados parecidos</h3>
+			<div class="col-sm-12 table-responsive">
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th>No. de Registros</th>
+							<th>Entrada</th>
+						</tr>
+					</thead>
+					<tbody>
