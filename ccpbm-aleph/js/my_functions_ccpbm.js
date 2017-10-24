@@ -206,3 +206,19 @@ function set_activo_menu_nav(){
 			$("#busquedas").addClass("activo");
 	}
 }
+
+function clear_fields_form(){
+	document.getElementsByName("form1")[0].reset();
+}
+/* Función para mostrar el mensaje de error cuando los filtros no encuentran registros */
+
+function show_no_found_from_filters() {
+	var empty_alert = document.getElementById("empty_alert");
+	if(empty_alert.children != null) {
+		var firstChild = empty_alert.children[0];
+		console.log("firstChild: ", firstChild);
+		if(firstChild.tagName == "IMG") {
+			document.getElementById("empty_alert").classList.toggle("hidden");
+		} 
+	}
+}

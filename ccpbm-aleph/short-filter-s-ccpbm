@@ -8,57 +8,62 @@
 <body> 
 <include>head-1
 <!-- CONTENT -->
-<div class="container" style="margin-top: 10px;">
-	<form method="get" name="form1" action="&server_f" role="form">
-		<input type="hidden" name="func" value="short-filter-s">
-		<div class="myjumbotron">
-			<div class="row">
-				<div class="col-sm-offset-1 col-sm-10">
-					<div class="row">
-						<div class="col-sm-12">
-							<h3>Filtro de texto - &nbsp;$0200</h3>
-						</div>
+<div class="alert alert-danger hidden" id="empty_alert">
+  $8100&nbsp;$8000
+</div>
+<form method="get" name="form1" action="&server_f" role="form">
+	<input type="hidden" name="func" value="short-filter-s">
+	<div class="myjumbotron">
+		<div class="row">
+			<div class="col-sm-offset-1 col-sm-10">
+				<div class="row">
+					<div class="col-sm-12">
+						<h3>Filtro de texto - &nbsp;$0200</h3>
 					</div>
-					<div class="row">
-						<div class="col-sm-12">
-							<p>Ejemplo: campo Título y <em>poemas</em> en el texto mostrará todos los registros de la lista que tienen la palabra <em>poemas</em> en el título.</p>
-						</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<p>Ejemplo: campo Título y <em>poemas</em> en el texto mostrará todos los registros de la lista que tienen la palabra <em>poemas</em> en el título.</p>
 					</div>
-					<div class="form-horizontal">
-						<div class="form-group">
-					    <label for="inputAsunto" class="col-sm-2 control-label">Campo:</label>
-					    <div class="col-sm-3">
-					      <select class="form-control" name="field_code">
-					      	<option value=245 $$0500-S"245">Título</option>
-									<option value=100 $$0500-S"100">Autor</option>
-									<option value=110 $$0500-S"110">Autor corporativo</option>
-									<option value=111 $$0500-S"111">Conferencia</option>
-									<option value=260 $$0500-S"260">Pie de imprenta</option>
-									<option value=008 $$0500-S"008">Idioma (008)</option>
-									<option value=041 $$0500-S"041">Idioma (041)</option>
-					      </select>
-					    </div>
-					  </div>
-					  <div class="form-group">
-					    <label for="text_from" class="col-sm-2 control-label">Escriba el texto:</label>
-					    <div class="col-sm-3">
-					      <input type="text" class="form-control" id="text_from" name="text_from" value=$0600>
-					    </div>
-					  </div>
-					  <div class="form-group">
-					  	<div class="col-sm-offset-2 col-sm-10">
-					  		<input type="submit" class="btn mybtn" name="aceptar" value="Aceptar">
-					  		<a href="javascript:document.form1.reset();" class="btn mybtn">Borrar</a>
-					  	</div>
-					  </div>
-					</div>
-				</div>	
-			</div>			
-		</div>
-		
-	</form>
-	<br>
+				</div>
+				<div class="form-horizontal">
+					<div class="form-group">
+				    <label for="inputAsunto" class="col-sm-2 control-label">Campo:</label>
+				    <div class="col-sm-3">
+				      <select class="form-control" name="field_code">
+				      	<option value=245 $$0500-S"245">Título</option>
+								<option value=100 $$0500-S"100">Autor</option>
+								<option value=110 $$0500-S"110">Autor corporativo</option>
+								<option value=111 $$0500-S"111">Conferencia</option>
+								<option value=260 $$0500-S"260">Pie de imprenta</option>
+								<option value=008 $$0500-S"008">Idioma (008)</option>
+								<option value=041 $$0500-S"041">Idioma (041)</option>
+				      </select>
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label for="text_from" class="col-sm-2 control-label">Escriba el texto:</label>
+				    <div class="col-sm-3">
+				      <input type="text" class="form-control" id="text_from" name="text_from" value=$0600>
+				    </div>
+				  </div>
+				  <div class="form-group">
+				  	<div class="col-sm-offset-2 col-sm-10">
+				  		<input type="submit" class="btn mybtn" name="aceptar" value="Aceptar">
+				  		<a href="javascript:my_reset();" class="btn mybtn">Borrar</a>
+				  	</div>
+				  </div>
+				</div>
+			</div>	
+		</div>			
+	</div>
+	
+</form>
+<br>
 <include>copyrights
 </div>
+<script type="text/javascript">
+	show_no_found_from_filters();
+</script>
 </body>
 </html>
