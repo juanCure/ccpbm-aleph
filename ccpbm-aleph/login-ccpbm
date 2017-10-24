@@ -154,7 +154,7 @@ div::-webkit-scrollbar-thumb:window-inactive {
 
 <div class="row container-banner">
   <div class="thumbnail text-center">
-      <img src="&icon_path/ccpbm-images/banner_login.jpg" alt="" class="img-responsive">
+      <img src="&icon_path/ccpbm-images/banner_principal_01.jpg" alt="" class="img-responsive">
       <div class="caption">
           <p id="texto1">CATÁLOGO COLECTIVO</p>
           <p id="texto2">del patrimonio bibliográfico de México</p>
@@ -199,7 +199,7 @@ div::-webkit-scrollbar-thumb:window-inactive {
     <div class="col-sm-4 col-xs-6">
       <div class="thumbnail text-center">
         <a href="http://www.adabi.org.mx/" target="_blank">
-          <img class="img-responsive" src="&icon_path/ccpbm-images/adabi_01.jpg" width="250" height="250"  alt="Instituto Nacional de Antropologia e Historia"/>
+          <img class="img-responsive" src="&icon_path/ccpbm-images/adabi_01.jpg" width="250" height="250"  alt="ADABI"/>
           <div class="caption">
             <h4>ADABI</h4>
           </div>
@@ -209,7 +209,7 @@ div::-webkit-scrollbar-thumb:window-inactive {
     <div class="col-sm-4 col-xs-6">
       <div class="thumbnail text-center">
         <a href="http://bibliotecas.unam.mx/" target="_blank">
-          <img class="img-responsive" src="&icon_path/ccpbm-images/dgb_01.jpg" width="250" height="250"  alt="Biblioteca Fray Francisco de Burgoa"/>
+          <img class="img-responsive" src="&icon_path/ccpbm-images/dgb_01.jpg" width="250" height="250"  alt="DGB"/>
           <div class="caption">
             <h4>DGB</h4>
           </div>
@@ -219,7 +219,7 @@ div::-webkit-scrollbar-thumb:window-inactive {
     <div class="col-sm-4 col-xs-6">
       <div class="thumbnail text-center">
         <a href="http://www.bnm.unam.mx/" target="_blank">
-          <img class="img-responsive" src="&icon_path/ccpbm-images/item03.jpg" width="250" height="250"  alt="Biblioteca Francisco Xavier Clavijero de la Universidad Iberoamericana."/>
+          <img class="img-responsive" src="&icon_path/ccpbm-images/bnm_01.jpg" width="250" height="250"  alt="BNM"/>
           <div class="caption">
             <h4>BNM</h4>
           </div>
@@ -229,7 +229,7 @@ div::-webkit-scrollbar-thumb:window-inactive {
     <div class="col-sm-4 col-xs-6">
       <div class="thumbnail text-center">
         <a href="http://biblioteca.colmex.mx/" target="_blank">
-          <img class="img-responsive" src="&icon_path/ccpbm-images/item04.jpg" width="250" height="250"  alt="Biblioteca Daniel Cosío Villegas, El Colegio de México."/>
+          <img class="img-responsive" src="&icon_path/ccpbm-images/item04.jpg" width="250" height="250"  alt="COLMEX"/>
           <div class="caption">
             <h4>Colmex</h4>
           </div>
@@ -239,7 +239,7 @@ div::-webkit-scrollbar-thumb:window-inactive {
     <div class="col-sm-4 col-xs-6">
       <div class="thumbnail text-center">
         <a href="http://www.inah.gob.mx/es/" target="_blank">
-          <img class="img-responsive" src="&icon_path/ccpbm-images/item01.jpg" width="250" height="250"  alt="Instituto Nacional de Antropologia e Historia"/>
+          <img class="img-responsive" src="&icon_path/ccpbm-images/inah_01.jpg" width="250" height="250"  alt="INAH"/>
           <div class="caption">
             <h4>INAH</h4>
           </div>
@@ -249,7 +249,7 @@ div::-webkit-scrollbar-thumb:window-inactive {
     <div class="col-sm-4 col-xs-6">
       <div class="thumbnail text-center">
         <a href="http://www.uabjo.mx/" target="_blank">
-          <img class="img-responsive" src="&icon_path/ccpbm-images/item02.jpg" width="250" height="250"  alt="Biblioteca Fray Francisco de Burgoa"/>
+          <img class="img-responsive" src="&icon_path/ccpbm-images/uabjo_01.jpg" width="250" height="250"  alt="UABJO"/>
           <div class="caption">
             <h4>UABJO</h4>
           </div>
@@ -259,7 +259,7 @@ div::-webkit-scrollbar-thumb:window-inactive {
     <div class="col-sm-4 col-xs-6">
       <div class="thumbnail text-center">
         <a href="http://www.bib.uia.mx/sitio/" target="_blank">
-          <img class="img-responsive" src="&icon_path/ccpbm-images/item03.jpg" width="250" height="250"  alt="Biblioteca Francisco Xavier Clavijero de la Universidad Iberoamericana."/>
+          <img class="img-responsive" src="&icon_path/ccpbm-images/uia_01.jpg" width="250" height="250"  alt="UIA"/>
           <div class="caption">
             <h4>Biblioteca UIA</h4>
           </div>
