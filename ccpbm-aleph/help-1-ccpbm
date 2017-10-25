@@ -3,7 +3,7 @@
 <html>
 <head>
 <include>meta-tags
-<title>&f-base - Contacto</title>
+<title>&f-base - Créditos</title>
 </head>
 
 <body>
@@ -45,7 +45,7 @@
 <!-- BANNER -->
 <div class="row container-banner">
   <div class="thumbnail text-center">
-    <img src="&icon_path/ccpbm-images/banner_contacto.jpg" alt="" class="img-responsive">
+    <img src="&icon_path/ccpbm-images/banner_find_c.jpg" alt="" class="img-responsive">
     <div class="caption">
       <p id="texto1">CATÁLOGO COLECTIVO</p>
       <p id="texto2">del patrimonio bibliográfico de México</p>
@@ -85,31 +85,100 @@
     <div class="col-sm-offset-1 col-sm-10">
       <div class="row text-center">
         <div class="col-sm-12">
-          <h3>Contacto</h3>
+          <h3>Créditos</h3>
         </div>
         <div class="col-sm-12">
           <p class="thick" style="margin: 0;">UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO</p>
           <p class="thick" style="margin: 0;">INSTITUTO DE INVESTIGACIONES BIBLIOGRÁFICAS</p>
           <p class="thick" style="margin: 0;">BIBLIOTECA NACIONAL - HEMEROTECA NACIONAL</p>
         </div>
-      </div>  
+      </div>
       <div class="row text-center with_margin_top">
         <div class="col-sm-12">
+          <label>Pablo Mora Pérez-Tejada</label>
+          <p class="creditos"><span>Director</span></p> 
+        </div>
+      </div>
+      <div class="row text-center with_margin_top">
+        <div class="col-sm-10 col-sm-offset-2">
+          <div class="col-sm-3 mycolumn_without_padding">
+            <label>Miguel Ángel Castro Medina</label>
+            <p class="creditos"><span>Secretario académico</span></p>
+            <p class="creditos"><span>IIB</span></p>
+          </div>
+          <div class="col-sm-3 mycolumn_without_padding with_xs_margin_top" style="margin-left: -10px;">
+            <label><span class="hidden-xs">/&emsp;</span>Silvia Salgado Ruelas</label>
+            <p class="creditos"><span>Coordinadora</span></p>
+            <p class="creditos"><span>BNM</span></p>
+          </div>
+          <div class="col-sm-4 mycolumn_without_padding with_xs_margin_top" style="margin-left: -10px;">
+            <label><span class="hidden-xs">/&emsp;</span>Dalmacio Rodríguez Hernández</label>
+            <p class="creditos"><span>Coordinador</span></p>
+            <p class="creditos"><span>HNM</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="row text-xs-center with_margin_top">
+        <div class="col-sm-10 col-sm-offset-2">
+          <div class="col-sm-4 mycolumn_without_padding">
+            <label>Isabel Galina Russell</label>
+            <p class="creditos"><span>Coordinadora <br> Estrategia e Inovación <br> Digital del IIB</span></p>
+          </div>
+          <div class="col-sm-4 mycolumn_without_padding with_xs_margin_top">
+            <label>Evelia Santana Chavarria</label>
+            <p class="creditos"><span>Jefe del Departamento de Catalogación BNM</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="row with_margin_top">
+        <div class="col-sm-10 col-sm-offset-2">
           <p class="text-center thick">Catálogo Colectivo del Patrimonio Bibliográfico de México (CCPBM)</p>
           <p>El proyecto CCPBM ha sido financiado por la asociación Apoyo al Desarrollo de Archivos y Bibliotecas de México (ADABI de México A.C.)</p>
         </div>
       </div>
-      <div class="row text-center text-xs-center with_margin_top">
-        <div class="col-sm-12">
-          <label>Dra. Silvia Salgado Ruelas</label>
-          <p class="creditos">Coordinación Biblioteca Nacional de México</p>
-          <p class="creditos"><a href="mailto:silsal@iib.unam.mx">silsal@iib.unam.mx</a></p>
-          <p class="creditos"><a href="mailto:bnmex@iib.unam.mx">bnmex@iib.unam.mx</a></p>
-          <p class="creditos">Tel. (01-55) 5622-6801</p>
+      <div class="row text-xs-center with_margin_top">
+        <div class="col-sm-10 col-sm-offset-2">
+          <div class="col-sm-4 mycolumn_without_padding">
+            <label>Silvia Salgado Ruelas</label>
+            <p class="creditos">Coordinadora académica del <br>proyecto</p>
+          </div>
+        </div>
+      </div>
+      <div class="row text-xs-center with_margin_top">
+        <div class="col-sm-10 col-sm-offset-2">
+          <div class="col-sm-4 mycolumn_without_padding">
+            <label>Ana Yuri Ramírez Molina</label>
+            <p class="creditos"><span>Coordinación técnica del proyecto. Análisis y diseño de arquitectura del sitio</span></p>
+          </div>
+          <div class="col-sm-4 mycolumn_without_padding with_xs_margin_top">
+            <label>Karina Fernández Santana</label>
+            <p class="creditos"><span>Diseño gráfico del sitio</span></p>
+          </div>
+          <div class="col-sm-4 mycolumn_without_padding with_xs_margin_top">
+            <label>Juan Manuel Rodríguez Martínez</label>
+            <p class="creditos"><span>Desarrollo del sitio web</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="row text-xs-center with_margin_top">
+        <div class="col-sm-10 col-sm-offset-2">
+          <div class="col-sm-4 mycolumn_without_padding">
+            <label>Antonio Salazar Carmona</label>
+            <p class="creditos"><span>Administrador de Aleph</span></p>
+          </div>
+          <div class="col-sm-4 mycolumn_without_padding with_xs_margin_top">
+            <label>Gabriela Carbajal Nava</label>
+            <p class="creditos">Editora de registros</p>
+          </div>
+          <div class="col-sm-4 mycolumn_without_padding with_xs_margin_top">
+            <label>Carolina Silva Bretón</label>
+            <p class="creditos"><span>Apoyo en diseño web</span></p>
+          </div>
         </div>
       </div>
     </div>
-  </div><br>
+  </div>    
+  <br>
 <include>copyrights
 </div>
 </body>

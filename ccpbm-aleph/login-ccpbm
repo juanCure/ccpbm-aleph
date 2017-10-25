@@ -229,7 +229,7 @@ div::-webkit-scrollbar-thumb:window-inactive {
     <div class="col-sm-4 col-xs-6">
       <div class="thumbnail text-center">
         <a href="http://biblioteca.colmex.mx/" target="_blank">
-          <img class="img-responsive" src="&icon_path/ccpbm-images/item04.jpg" width="250" height="250"  alt="COLMEX"/>
+          <img class="img-responsive" src="&icon_path/ccpbm-images/colmex_01.jpg" width="250" height="250"  alt="COLMEX"/>
           <div class="caption">
             <h4>Colmex</h4>
           </div>
