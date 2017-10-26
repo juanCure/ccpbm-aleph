@@ -14,6 +14,11 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="./ccpbm.css">
 <link rel="stylesheet" href="./icomoon.css">
+<style type="text/css">
+	.myjumbotron .texto {
+		font-size: 12px;
+	}
+</style>
 
 <title>Mi bibliografía</title>
 </head>
@@ -95,13 +100,44 @@
 <!-- CONTENT -->
 
 <div class="container" style="margin-top: 20px;">
-	<div class="jumbotron">
+	<div class="myjumbotron">
 		<div class="row">
 			<div class="col-sm-4">
 				<h3>Registros en mi bibliografía</h3>
 			</div>	
 			<div class="col-sm-8">
-				<div class="col-sm-3 col-xs-4">
+				<div class="col-sm-4 col-md-3 col-xs-4 mycolumn_without_padding">
+					<span class="texto coloured-text" style="padding-top: 10px; float: left;">Seleccionar:</span>
+					<div class="text-center" style="width: 20%; float: left; margin-right: 10px;">
+						<a class="coloured-text" href="#">
+							<span class="fa fa-check-square" style="font-size:18px;color:#7c592e;display: block;"></span>
+							<span class="texto hidden-xs">&nbsp;Todo</span>
+							<span class="texto-pequenio visible-xs-inline">&nbsp;Todo</span>
+						</a>
+					</div>
+					<div class="text-center" style="width: 20%; float: left;">
+						<a class="coloured-text" href="#">
+							<span class="fa fa-square-o" style="font-size:18px;color:#7c592e;display: block;"></span>
+							<span class="texto hidden-xs">&nbsp;Nada</span>
+							<span class="texto-pequenio visible-xs-inline">&nbsp;Nada</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-sm-3 col-xs-2 text-center mycolumn_without_padding">
+					<a class="coloured-text" href="#">
+						<span class="icon-Guardar-y-enviar fs1" style="display: block;"></span>
+						<span class="texto hidden-xs" style="display: block;">Guardar/enviar por correo</span>
+						<span class="texto-pequenio visible-xs-block" style="display: block;">Guardar</span>
+					</a>
+				</div>
+				<div class="col-sm-3 col-xs-2 text-center mycolumn_without_padding">
+					<a class="coloured-text" href="#">
+						<span class="icon-Borrar fs1" style="display: block;"></span>
+						<span class="texto hidden-xs" style="display: block;">Borrar de mí bibliografía</span>
+						<span class="texto-pequenio visible-xs-block" style="display: block;">Borrar</span>
+					</a>
+				</div>
+				<!-- <div class="col-sm-3 col-xs-4">
 					<div><label>Seleccionar</label></div>
 					<div class="col-sm-5 col-xs-6">
 						<a class="coloured-text" href="#"><span class="fa fa-check-square" style="font-size:24px;color:#7c592e"></span><span class="texto">Todo</span></a>
@@ -109,13 +145,13 @@
 					<div class="col-sm-5 col-xs-6">
 						<a class="coloured-text" href="#"><i class="fa fa-square-o" style="font-size:24px;color:#7c592e"></i><span class="texto">Nada</span></a>
 					</div>
-				</div>
-				<div class="col-sm-3 col-xs-4">
+				</div> -->
+				<!-- <div class="col-sm-3 col-xs-4">
 					<a class="coloured-text" href="#"><span class="icon-Guardar-y-enviar fs1"></span><span class="texto">Guardar/enviar por correo</span></a>
 				</div>
 				<div class="col-sm-3 col-xs-4">
 					<a class="coloured-text" href="#"><span class="icon-Borrar fs1"></span><span class="texto">Borrar de mí bibliografía</span></a>
-				</div>
+				</div> -->
 			</div>
 		</div>
 
