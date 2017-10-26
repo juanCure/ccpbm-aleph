@@ -23,7 +23,7 @@
           <ul class="nav navbar-nav">
             <li><a id="basica" href="&server_f?func=find-b-0&local_base=CCPBM">Búsqueda básica</a></li>
             <li><a id="avanzada" class="with-border-left" href="&server_f?func=find-d-0&local_base=CCPBM">Búsqueda avanzada</a></li>
-            <li><a id="indices" class="with-border-left" href="&server_f?func=scan-list&local_base=CCPBM">Indices</a></li>
+            <li><a id="indices" class="with-border-left" href="&server_f?func=scan-list&local_base=CCPBM">Índices</a></li>
             <li><a id="anteriores" class="with-border-left" href="&server_f?func=history&local_base=CCPBM">Búsquedas anteriores</a></li>
             <li><a id="resultados" class="with-border-left" href="&server_f?func=short&local_base=CCPBM">Lista de resultados</a></li>
             <li><a id="bibliografia" class="with-border-left" href="&server_f?func=myshelf-short&local_base=CCPBM">Mi bibliografía</a></li>
