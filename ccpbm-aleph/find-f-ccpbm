@@ -1,4 +1,4 @@
-<!-- filename: find-c-ccpbm Juan Manuel Rodríguez -->
+<!-- filename: find-f-ccpbm Juan Manuel Rodríguez -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -45,7 +45,7 @@
 <!-- BANNER -->
 <div class="row container-banner">
   <div class="thumbnail text-center">
-    <img src="&icon_path/ccpbm-images/banner_find_c.jpg" alt="" class="img-responsive">
+    <img src="&icon_path/ccpbm-images/banner_creditos.jpg" alt="" class="img-responsive">
     <div class="caption">
       <p id="texto1">CATÁLOGO COLECTIVO</p>
       <p id="texto2">del patrimonio bibliográfico de México</p>

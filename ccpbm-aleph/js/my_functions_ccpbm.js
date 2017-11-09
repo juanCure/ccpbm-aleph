@@ -202,8 +202,6 @@ function set_activo_menu_nav(){
 		case "find-c":
 			$("#contacto").addClass("activo");
 			break;
-		default:
-			$("#busquedas").addClass("activo");
 	}
 }
 

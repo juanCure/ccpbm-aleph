@@ -1,0 +1,338 @@
+<!-- filename: find-f-bndm -->
+<html>
+<head>
+<title>&f-base - Créditos</title>
+<include>meta-tags
+</head>
+
+<body topmargin="0"
+      onload="window.document.form1.request.focus();">
+<include>head-1
+
+<div class=title>
+  
+</div>
+<form name=form1 
+      method=GET 
+      action="&server_f">
+
+<input type="hidden" name="func" value="find-f">
+
+<table width="641" height="2963" border="0" align="center">
+  <tr>
+    <th width="20" height="36" scope="col">&nbsp;</th>
+    <th width="582" scope="col"><strong>CRÉDITOS UNAM</strong></th>
+    <th width="25" scope="col">&nbsp;</th>
+  </tr>
+  <tr>
+    <td height="50">&nbsp;</td>
+    <td><p align="center">Enrique Graue Wiechers<br />
+    RECTOR</p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="54">&nbsp;</td>
+    <td><p align="center">Dr. Leonardo Lomelí Vanegas<br />
+     SECRETARIO GENERAL</p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="48">&nbsp;</td>
+    <td align="center"><p align="center">Ing. Leopoldo Silva Gutiérrez<br />
+    SECRETARIO ADMINISTRATIVO</p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="59">&nbsp;</td>
+    <td><p align="center">Dr. Alberto Ken Oyama Nakagawa<br />
+SECRETARIO DE DESARROLLO INSTITUCIONAL</p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="50">&nbsp;</td>
+    <td><p align="center">Dra. Mónica González Contró<br />
+ABOGADO GENERAL</p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="44">&nbsp;</td>
+    <td><p align="center"><strong>COORDINACIÓN DE HUMANIDADES</strong></p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="60">&nbsp;</td>
+    <td><p align="center">Alberto Vital Díaz<br />
+COORDINADOR DE HUMANIDADES</p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="55">&nbsp;</td>
+    <td><p align="center">Rubén D. Cervantes Cruz<br />
+SECRETARIO TÉCNICO DE CÓMPUTO Y  SISTEMAS </p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="70">&nbsp;</td>
+    <td><p align="center"><strong>INSTITUTO  DE INVESTIGACIONES BIBLIOGRÁFICAS</strong><br />
+    <strong>BIBLIOTECA  Y HEMEROTECA NACIONALES</strong></p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="55">&nbsp;</td>
+    <td><p align="center">Pablo Mora Pérez-Tejada<br />
+DIRECTOR DEL IIB</p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><p align="center">Miguel Ángel Castro Medina<br />
+SECRETARIO ACADÉMICO DEL IIB</p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="57">&nbsp;</td>
+    <td><p align="center">Ana María Romero Valle<br />
+SECRETARIA TÉCNICA</p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="51">&nbsp;</td>
+    <td><p align="center">Silvia Salgado Ruelas <br />
+COORDINADORA DE LA BNM</p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="56">&nbsp;</td>
+    <td align="center">Bibiano Camacho Miranda <br />
+SECRETARIO ADMINISTRATIVO</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="72">&nbsp;</td>
+    <td><p align="center">Ana Yuri Ramírez Molina<br />
+ JEFA DEL DEPARTAMENTO DE INFORMÁTICA Y  TELECOMUNICACIONES</p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="59">&nbsp;</td>
+    <td><p align="center"><strong>PROCESOS TÉCNICOS DE LA BIBLIOTECA NACIONAL DE MÉXICO</strong></p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="63">&nbsp;</td>
+    <td><p align="center">Adriana Gómez Llorente<br />
+Jefa del Departamento de Restauración y  Conservación de la BNM</p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="57">&nbsp;</td>
+    <td><p align="center">Alberto Partida Gómez<br />
+Jefe del Fondo Reservado</p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="59">&nbsp;</td>
+    <td><p align="center">Evelia Santana<br />
+Jefa del Departamento de Catalogación</p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="60">&nbsp;</td>
+    <td><p align="center">María Elena Ledesma Becerril<br />
+Jefe del Departamento de Formación de  Colecciones e Inventario</p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="50">&nbsp;</td>
+    <td><p align="center"> <strong>COMITÉ TÉCNICO PARA LOS SITIOS WEB DEL IIB</strong></p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="50">&nbsp;</td>
+    <td><p align="center">Coordinadora<br />
+Ana Yuri Ramírez Molina</p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="56">&nbsp;</td>
+    <td align="center"><p align="center">Revisora web <br />Gisel Cosío Colina</p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="43">&nbsp;</td>
+    <td><p align="center"> Editora web<br />
+Ma. Bertha V. Guillén</p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="78">&nbsp;</td>
+    <td><p align="center">Administradores web<br />
+Erika Arreguin Murillo<br />
+José Antonio Salazar Carmona</p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="87">&nbsp;</td>
+    <td><p align="center">Gestores de contenido<br />
+Martha Vicente Amparán <br/> 
+José Ramírez Carvajal<br/>
+Ma. de los Ángeles Espino Rivera</p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="58">&nbsp;</td>
+    <td><p align="center">Apoyo técnico <br />
+    Carlos Eduardo Saavedra  Moreno</p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="122">&nbsp;</td>
+    <td><p align="center">Diseñadoras web<br />
+Beatriz López García<br />
+Hilda Maldonado Gómez<br />
+María Teresa Cervantes García<br />
+Yael Coronel Navarro</p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><p align="center"><strong>COMITÉ DE EVALUACIÓN </strong></p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="52">&nbsp;</td>
+    <td><p align="center">Pablo Mora Pérez-Tejada<br />
+DIRECTOR DEL IIB</p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="49">&nbsp;</td>
+    <td><p align="center">Miguel Ángel Castro Medina<br />
+SECRETARIO ACADÉMICO DEL IIB</p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="55">&nbsp;</td>
+    <td><p align="center">Silvia Salgado Ruelas <br />
+COORDINADORA DE LA BNM</p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="64">&nbsp;</td>
+    <td><p align="center">Ana María Romero Valle<br />
+    SECRETARIA TÉCNICA</p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="58">&nbsp;</td>
+    <td><p align="center">Ricardo Jiménez Rivera<br />
+Coordinador de procesos técnicos de la  HNDM</p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="61">&nbsp;</td>
+    <td><p align="center">Ana Yuri Ramírez Molina<br />
+Jefa del Departamento de Informática y  Telecomunicaciones</p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="129">&nbsp;</td>
+    <td><p align="center">Elaboración de textos y mensajes<br />
+Gisel Cosío Colina<br />
+Ma. Bertha V. Guillén<br />
+María Andrea Giovine Yáñez <br />
+Martha Elena Romero Ramírez <br />
+Ricardo Jiménez Rivera<br />
+Rosa Dalia Valdez Garza <br />
+Rosario Páez Flores</p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="41">&nbsp;</td>
+    <td><p align="center"><strong>PRODUCCIÓN DIGITAL</strong></p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="94">&nbsp;</td>
+    <td><p align="center">Coordinación de procesos técnicos <br />
+Martha Elena Romero Ramírez <br />
+Ricardo Jiménez Rivera<br />
+Ana Yuri Ramírez Molina</p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="77">&nbsp;</td>
+    <td><p align="center">Construcción de objetos<br />
+Ana Elvia Olmedo<br />
+Carlos Saavedra Moreno</p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="61">&nbsp;</td>
+    <td><p align="center">Registro de Metadatos y control de la  producción <br />
+Martha Vicente Amparán</p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="58">&nbsp;</td>
+    <td><p align="center">Diseño gráfico<br />
+Hilda Maldonado Gómez</p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="62">&nbsp;</td>
+    <td align="center">Administrador del acervo digital<br />
+Luis Miguel Estrada Ramos</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="64">&nbsp;</td>
+    <td align="center">Administrador de Aleph<br />
+José Antonio Salazar Carmona</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="58">&nbsp;</td>
+    <td align="center">Construcción Web<br />
+Ana Yuri Ramírez Molina</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="115">&nbsp;</td>
+    <td align="center">Digitalización<br />
+Ana Elvia Olmedo<br />
+Carlos Saavedra Moreno<br />
+Ricardo Jiménez Rivera<br />
+Empresa Inteligencia Educativa</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<!---
+<table cellspacing=2 border=0 width=90%>
+ <tr>
+  <td class=td2 width=40% colspan="2">
+    Escriba el texto que desea encontrar
+  </td>
+ </tr>
+ <tr>
+  <td class=td2 id="small" width=40%>
+     <input size=60 name="request" value="$0100">
+  </td>
+ </tr>
+ <tr>
+  <td class=td2 nowrap>
+     <input type="image" 
+            alt=" Enviar "
+            src="&icon_path/f-go.gif" border=0>
+  </td>
+ </tr>
+</table>
+<br>
+</form>
+-->
+
+<include>copyrights
+</body>
+</html>
+
+
