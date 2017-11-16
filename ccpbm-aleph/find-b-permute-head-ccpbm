@@ -8,7 +8,7 @@
 <body>
 <include>head-1
 <div class="alert alert-danger" id="empty_alert">
-  <strong>Estimado usuario su búsqueda no arrojo resultados; le sugerimos intente con otros parámetros.</strong>
+  <strong>Estimado usuario su búsqueda no arrojó resultados; le sugerimos intente con otros parámetros.</strong>
 </div>
 <form method=get name=form1 action="&server_f" role="form">
 	<input type="hidden" name="func" value="find-b">
